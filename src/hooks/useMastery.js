@@ -14,7 +14,7 @@ export default function useMastery() {
       if (correct) {
         streak++;
         c++;
-        if (streak >= 2 && level < 4) level++;
+        if (level < 4) level++;
       } else {
         streak = 0;
         w++;
@@ -38,7 +38,8 @@ export default function useMastery() {
       const m = getWordMastery(wordKey(lesson.id, w.hanzi));
       counts[m.level]++;
     });
-    const pct = Math.round((counts[3] + counts[4]) / words.length * 100);
+    const weighted = counts[1] * 1 + counts[2] * 2 + counts[3] * 3 + counts[4] * 4;
+    const pct = Math.round(weighted / (words.length * 4) * 100);
     return { pct, counts };
   }, [getWordMastery]);
 

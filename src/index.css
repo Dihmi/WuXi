@@ -104,25 +104,67 @@ html, body { height: 100%; background: var(--bg); color: var(--text); font-famil
   transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* ── Home Screen ─────────────────────────────────────────────────── */
-.home-header {
-  padding: 40px 24px 28px; text-align: center;
+/* ── Home Hero ───────────────────────────────────────────────────── */
+.home-hero {
+  margin: 20px 24px 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px 28px 24px;
+  position: relative;
+  overflow: hidden;
 }
-.home-title {
-  font-family: 'Noto Serif SC', serif; font-size: 38px; font-weight: 700;
-  background: var(--accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  background-clip: text; margin-bottom: 8px;
+.home-hero::after {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle, rgba(226,201,126,0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
-.home-subtitle { font-size: 14px; color: var(--text3); max-width: 360px; margin: 0 auto; line-height: 1.6; }
-
-.stats-row {
-  display: flex; justify-content: center; gap: 32px;
-  padding: 16px 24px 28px; margin: 0 24px;
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+.home-hero-deco {
+  position: absolute;
+  top: 50%; right: 18px;
+  transform: translateY(-50%);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 140px; font-weight: 700; line-height: 1;
+  background: linear-gradient(160deg, rgba(226,201,126,0.13), rgba(249,115,22,0.04));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  user-select: none; pointer-events: none;
 }
-.stat-item { text-align: center; }
-.stat-num { font-size: 26px; font-weight: 700; color: var(--gold); font-family: 'Inter', sans-serif; }
-.stat-label { font-size: 11px; color: var(--text3); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+.home-hero-tag {
+  font-size: 11px; font-weight: 600; color: var(--gold);
+  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;
+}
+.home-hero-headline {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 26px; font-weight: 700; color: var(--text);
+  line-height: 1.25; margin-bottom: 24px;
+}
+.home-hero-pills {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px;
+}
+.home-pill {
+  background: var(--surface2); border: 1px solid var(--border2);
+  border-radius: 10px; padding: 10px 16px; min-width: 64px;
+}
+.home-pill--orange { border-color: rgba(249,115,22,0.3); background: rgba(249,115,22,0.07); }
+.home-pill--green  { border-color: rgba(34,197,94,0.3);  background: rgba(34,197,94,0.07);  }
+.home-pill-num {
+  font-size: 22px; font-weight: 700; color: var(--text); line-height: 1; margin-bottom: 3px;
+}
+.home-pill--orange .home-pill-num { color: var(--orange); }
+.home-pill--green  .home-pill-num { color: #22c55e; }
+.home-pill-label {
+  font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;
+}
+.home-hero-foot {}
+.home-hero-pct-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 8px; font-size: 12px; color: var(--text3);
+}
+.home-hero-pct-val { font-weight: 700; color: var(--gold); }
 
 .section-title {
   font-size: 12px; font-weight: 600; color: var(--text3); text-transform: uppercase;

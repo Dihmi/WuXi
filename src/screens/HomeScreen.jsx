@@ -6,53 +6,61 @@ import ProgressBar from '../components/ProgressBar';
 export default function HomeScreen({ navigate, getLessonProgress }) {
   const allWords = useMemo(() => LESSONS.reduce((s, l) => s + l.words.length, 0), []);
 
-  const allMastered = useMemo(() =>
-    LESSONS.reduce((s, l) => {
+  const { allSeen, allMastered, overallPct } = useMemo(() => {
+    let seen = 0, mastered = 0, weightedScore = 0;
+    LESSONS.forEach(l => {
       const { counts } = getLessonProgress(l);
-      return s + counts[4];
-    }, 0),
-  [getLessonProgress]);
-
-  const allPracticed = useMemo(() =>
-    LESSONS.reduce((s, l) => {
-      const { counts } = getLessonProgress(l);
-      return s + counts[3] + counts[4];
-    }, 0),
-  [getLessonProgress]);
+      seen      += counts[1] + counts[2] + counts[3] + counts[4];
+      mastered  += counts[4];
+      weightedScore += counts[1]*1 + counts[2]*2 + counts[3]*3 + counts[4]*4;
+    });
+    const pct = allWords > 0 ? Math.round(weightedScore / (allWords * 4) * 100) : 0;
+    return { allSeen: seen, allMastered: mastered, overallPct: pct };
+  }, [getLessonProgress, allWords]);
 
   return (
     <>
       <NavBar />
       <div className="screen">
-        <div className="home-header">
-          <div className="home-title">吴熙</div>
-          <div style={{ fontSize: 28, fontWeight: 700, marginBottom: 6, color: 'var(--text)' }}>WuXi</div>
-          <div className="home-subtitle">
-            Master Mandarin Chinese through spaced repetition and interactive quizzes.
+
+        {/* ── Hero ─────────────────────────────────────────────── */}
+        <div className="home-hero">
+          <div className="home-hero-deco">学</div>
+
+          <div className="home-hero-tag">Mandarin · 普通话</div>
+          <div className="home-hero-headline">
+            Your vocabulary<br />journey
+          </div>
+
+          <div className="home-hero-pills">
+            <div className="home-pill">
+              <div className="home-pill-num">{LESSONS.length}</div>
+              <div className="home-pill-label">Lessons</div>
+            </div>
+            <div className="home-pill">
+              <div className="home-pill-num">{allWords}</div>
+              <div className="home-pill-label">Words</div>
+            </div>
+            <div className="home-pill home-pill--orange">
+              <div className="home-pill-num">{allSeen}</div>
+              <div className="home-pill-label">Seen</div>
+            </div>
+            <div className="home-pill home-pill--green">
+              <div className="home-pill-num">{allMastered}</div>
+              <div className="home-pill-label">Mastered</div>
+            </div>
+          </div>
+
+          <div className="home-hero-foot">
+            <div className="home-hero-pct-row">
+              <span>Overall progress</span>
+              <span className="home-hero-pct-val">{overallPct}%</span>
+            </div>
+            <ProgressBar pct={overallPct} />
           </div>
         </div>
 
-        <div style={{ padding: '0 24px 24px' }}>
-          <div className="stats-row">
-            <div className="stat-item">
-              <div className="stat-num">{LESSONS.length}</div>
-              <div className="stat-label">Lessons</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-num">{allWords}</div>
-              <div className="stat-label">Words</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-num" style={{ color: 'var(--orange)' }}>{allPracticed}</div>
-              <div className="stat-label">Practiced</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-num" style={{ color: '#22c55e' }}>{allMastered}</div>
-              <div className="stat-label">Mastered</div>
-            </div>
-          </div>
-        </div>
-
+        {/* ── Lessons ──────────────────────────────────────────── */}
         <div className="section-title">Lessons</div>
         <div className="lesson-grid">
           {LESSONS.map(lesson => {
@@ -72,7 +80,7 @@ export default function HomeScreen({ navigate, getLessonProgress }) {
                 </div>
                 <div className="lesson-meta">
                   <div className="word-count">{lesson.words.length} words</div>
-                  <div className="mastery-pct">{pct}% mastered</div>
+                  <div className="mastery-pct">{pct}%</div>
                 </div>
                 <ProgressBar pct={pct} />
                 <div style={{ display: 'flex', gap: 6, marginTop: 10, flexWrap: 'wrap' }}>
