@@ -1,22 +1,22 @@
 import { useMemo } from 'react';
-import { LESSONS, MASTERY_LEVELS } from '../data/lessons';
-import NavBar from '../components/NavBar';
+import { MASTERY_LEVELS } from '../data/lessons';
+import NavBar      from '../components/NavBar';
 import ProgressBar from '../components/ProgressBar';
 
-export default function HomeScreen({ navigate, getLessonProgress }) {
-  const allWords = useMemo(() => LESSONS.reduce((s, l) => s + l.words.length, 0), []);
+export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, getLessonProgress }) {
+  const allWords = useMemo(() => lessons.reduce((s, l) => s + l.words.length, 0), [lessons]);
 
   const { allSeen, allMastered, overallPct } = useMemo(() => {
     let seen = 0, mastered = 0, weightedScore = 0;
-    LESSONS.forEach(l => {
+    lessons.forEach(l => {
       const { counts } = getLessonProgress(l);
-      seen      += counts[1] + counts[2] + counts[3] + counts[4];
-      mastered  += counts[4];
+      seen          += counts[1] + counts[2] + counts[3] + counts[4];
+      mastered      += counts[4];
       weightedScore += counts[1]*1 + counts[2]*2 + counts[3]*3 + counts[4]*4;
     });
     const pct = allWords > 0 ? Math.round(weightedScore / (allWords * 4) * 100) : 0;
     return { allSeen: seen, allMastered: mastered, overallPct: pct };
-  }, [getLessonProgress, allWords]);
+  }, [lessons, getLessonProgress, allWords]);
 
   return (
     <>
@@ -34,7 +34,7 @@ export default function HomeScreen({ navigate, getLessonProgress }) {
 
           <div className="home-hero-pills">
             <div className="home-pill">
-              <div className="home-pill-num">{LESSONS.length}</div>
+              <div className="home-pill-num">{lessons.length}</div>
               <div className="home-pill-label">Lessons</div>
             </div>
             <div className="home-pill">
@@ -60,10 +60,31 @@ export default function HomeScreen({ navigate, getLessonProgress }) {
           </div>
         </div>
 
-        {/* ── Lessons ──────────────────────────────────────────── */}
-        <div className="section-title">Lessons</div>
+        {/* ── Deck import errors ────────────────────────────────── */}
+        {deckErrors.length > 0 && (
+          <div className="deck-errors">
+            <div className="deck-errors-title">
+              ⚠ Failed to load {deckErrors.length} deck{deckErrors.length > 1 ? 's' : ''}
+            </div>
+            {deckErrors.map((e, i) => (
+              <div key={i} className="deck-errors-item">{e}</div>
+            ))}
+          </div>
+        )}
+
+        {/* ── Lesson list ───────────────────────────────────────── */}
+        <div className="section-title">
+          <span>Lessons</span>
+          {deckStatus === 'loading' && (
+            <span className="deck-loading-badge">
+              <span className="deck-spinner" />
+              Loading decks…
+            </span>
+          )}
+        </div>
+
         <div className="lesson-grid">
-          {LESSONS.map(lesson => {
+          {lessons.map(lesson => {
             const { pct, counts } = getLessonProgress(lesson);
             return (
               <div
@@ -73,7 +94,10 @@ export default function HomeScreen({ navigate, getLessonProgress }) {
               >
                 <div className="lesson-card-header">
                   <div>
-                    <div className="lesson-title">{lesson.title}</div>
+                    <div className="lesson-title">
+                      {lesson.title}
+                      {lesson.imported && <span className="imported-badge">IMPORTED</span>}
+                    </div>
                     <div className="lesson-desc">{lesson.description}</div>
                   </div>
                   <div className="lesson-icon">{lesson.icon}</div>
@@ -104,17 +128,16 @@ export default function HomeScreen({ navigate, getLessonProgress }) {
           })}
         </div>
 
-        <div style={{ padding: '32px 24px 0', textAlign: 'center', color: 'var(--text3)', fontSize: 12 }}>
-          <div style={{ marginBottom: 8, fontSize: 18 }}>📦</div>
-          <div style={{ fontWeight: 600, color: 'var(--text2)', marginBottom: 4 }}>Import Anki Decks</div>
-          <div style={{ lineHeight: 1.6 }}>
-            Upload{' '}
-            <code style={{ background: 'var(--surface2)', padding: '1px 5px', borderRadius: 4 }}>
-              .apkg
-            </code>{' '}
-            files to add your own lessons — coming soon
+        {/* ── Import instructions ───────────────────────────────── */}
+        <div className="import-hint">
+          <div className="import-hint-icon">📦</div>
+          <div className="import-hint-title">Import Anki Decks</div>
+          <div className="import-hint-body">
+            Drop <code>.apkg</code> files into <code>public/decks/</code>, then add each
+            filename to <code>public/decks/manifest.json</code> and reload.
           </div>
         </div>
+
       </div>
     </>
   );

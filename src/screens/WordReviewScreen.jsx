@@ -51,13 +51,17 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
             <div className="pinyin-main">{word.pinyin}</div>
             <div className="meaning-main">{word.meaning}</div>
             <MasteryBadge level={m.level} />
-            <div className="divider" />
-            <div className="example-section">
-              <div className="example-label">Example sentence</div>
-              <div className="example-hanzi">{word.example}</div>
-              <div className="example-pinyin">{word.examplePinyin}</div>
-              <div className="example-meaning">{word.exampleMeaning}</div>
-            </div>
+            {word.example && (
+              <>
+                <div className="divider" />
+                <div className="example-section">
+                  <div className="example-label">Example sentence</div>
+                  <div className="example-hanzi">{word.example}</div>
+                  {word.examplePinyin  && <div className="example-pinyin">{word.examplePinyin}</div>}
+                  {word.exampleMeaning && <div className="example-meaning">{word.exampleMeaning}</div>}
+                </div>
+              </>
+            )}
           </div>
 
           <div className="stats-grid slide-up" style={{ animationDelay: '0.05s' }}>

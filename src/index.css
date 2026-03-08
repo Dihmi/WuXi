@@ -306,6 +306,34 @@ html, body { height: 100%; background: var(--bg); color: var(--text); font-famil
 .summary-cell-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
 .summary-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
+/* ── Deck import UI ─────────────────────────────────────────────── */
+.section-title { display: flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1px; color: var(--text3); padding: 0 4px 12px; }
+
+.deck-loading-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 11px;
+  color: var(--gold); background: rgba(226,201,126,0.1); border: 1px solid rgba(226,201,126,0.3);
+  border-radius: 20px; padding: 2px 10px; font-weight: 500; }
+.deck-spinner { display: inline-block; width: 10px; height: 10px; border: 2px solid rgba(226,201,126,0.3);
+  border-top-color: var(--gold); border-radius: 50%; animation: spin 0.7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.deck-errors { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.3);
+  border-radius: var(--radius); padding: 14px 16px; margin-bottom: 20px; }
+.deck-errors-title { font-size: 13px; font-weight: 600; color: #f87171; margin-bottom: 6px; }
+.deck-errors-item { font-size: 12px; color: var(--text3); padding: 2px 0; }
+
+.imported-badge { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.5px;
+  color: var(--gold); background: rgba(226,201,126,0.12); border: 1px solid rgba(226,201,126,0.3);
+  border-radius: 4px; padding: 1px 5px; margin-left: 8px; vertical-align: middle; }
+
+.import-hint { margin-top: 32px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px; text-align: center; }
+.import-hint-icon { font-size: 28px; margin-bottom: 8px; }
+.import-hint-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.import-hint-body { font-size: 12px; color: var(--text3); line-height: 1.7; }
+.import-hint-body code { background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 4px; padding: 1px 5px; font-size: 11px; color: var(--gold); }
+
 /* ── Empty state ─────────────────────────────────────────────────── */
 .empty-state { text-align: center; padding: 60px 24px; color: var(--text3); }
 .empty-state .empty-icon { font-size: 48px; margin-bottom: 16px; }
