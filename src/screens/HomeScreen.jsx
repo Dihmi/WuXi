@@ -6,7 +6,7 @@ import ProgressBar from '../components/ProgressBar';
 export default function HomeScreen({
   lessons, deckStatus, deckErrors, navigate, getLessonProgress,
   currentProfile, onThemeClick, onProfileClick, onLogout,
-  onExport, onImport,
+  onExport, onImport, onWall,
 }) {
   const importRef = useRef(null);
 
@@ -31,6 +31,7 @@ export default function HomeScreen({
         onThemeClick={onThemeClick}
         onProfileClick={onProfileClick}
         onLogout={onLogout}
+        onWall={onWall}
       />
       <div className="screen">
 

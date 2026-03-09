@@ -53,14 +53,20 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
             <div className="pinyin-main">{word.pinyin}</div>
             <div className="meaning-main">{word.meaning}</div>
             <MasteryBadge level={m.level} />
-            {word.example && (
+            {word.examples?.length > 0 && (
               <>
                 <div className="divider" />
                 <div className="example-section">
-                  <div className="example-label">Example sentence</div>
-                  <div className="example-hanzi">{word.example}</div>
-                  {word.examplePinyin  && <div className="example-pinyin">{word.examplePinyin}</div>}
-                  {word.exampleMeaning && <div className="example-meaning">{word.exampleMeaning}</div>}
+                  <div className="example-label">
+                    {word.examples.length === 1 ? 'Example sentence' : 'Example sentences'}
+                  </div>
+                  {word.examples.map((ex, i) => (
+                    <div key={i} className={i > 0 ? 'example-item example-item-sep' : 'example-item'}>
+                      <div className="example-hanzi">{ex.hanzi}</div>
+                      {ex.pinyin  && <div className="example-pinyin">{ex.pinyin}</div>}
+                      {ex.meaning && <div className="example-meaning">{ex.meaning}</div>}
+                    </div>
+                  ))}
                 </div>
               </>
             )}

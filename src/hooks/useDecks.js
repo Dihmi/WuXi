@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { parseApkg } from '../utils/apkgParser';
+import { parseJsonDeck } from '../utils/jsonParser';
 
 /**
- * Loads .apkg decks listed in /decks/manifest.json at startup.
+ * Loads decks listed in /decks/manifest.json at startup.
+ * Supports .apkg (Anki) and .json (native WuXi) formats.
  *
  * Returns:
  *   importedLessons  — array of parsed lesson objects (same shape as LESSONS)
@@ -29,11 +31,15 @@ export default function useDecks() {
           return;
         }
 
-        // 2. Fetch + parse every .apkg in parallel
+        // 2. Fetch + parse every deck in parallel (.apkg or .json)
         const results = await Promise.allSettled(
           filenames.map(async name => {
             const r = await fetch(`/decks/${encodeURIComponent(name)}`);
             if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);
+            if (/\.json$/i.test(name)) {
+              const json = await r.json();
+              return parseJsonDeck(json, name);
+            }
             const buf = await r.arrayBuffer();
             return parseApkg(buf, name);
           })

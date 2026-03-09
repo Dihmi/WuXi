@@ -30,19 +30,27 @@ const ROLE_KEYWORDS = {
     'answer', '意思', '英文', 'deutsch', 'français', 'spanish', 'french',
     'italian', 'portuguese',
   ],
-  example: [
-    'example sentence', 'examplesentence', 'sentence', 'example usage',
+  // Un-numbered example fields (treated as examples[0])
+  example0: [
+    'example sentence', 'examplesentence', 'example usage',
     'example', 'usage', 'context', 'sample', '例句', '例子',
   ],
-  examplePinyin: [
+  example0Pinyin: [
     'sentence pinyin', 'sentencepinyin', 'example pinyin', 'examplepinyin',
     'sentence reading', 'sentence pronunciation',
   ],
-  exampleMeaning: [
+  example0Meaning: [
     'sentence meaning', 'sentencemeaning', 'sentence translation',
     'sentence english', 'example meaning', 'example translation',
     'examplemeaning',
   ],
+  // Numbered examples
+  example1: ['example 1', 'sentence 1', '例句1', 'example sentence 1'],
+  example1Pinyin: ['example pinyin 1', 'sentence pinyin 1'],
+  example1Meaning: ['example meaning 1', 'sentence translation 1', 'sentence meaning 1'],
+  example2: ['example 2', 'sentence 2', '例句2', 'example sentence 2'],
+  example2Pinyin: ['example pinyin 2', 'sentence pinyin 2'],
+  example2Meaning: ['example meaning 2', 'sentence translation 2', 'sentence meaning 2'],
 };
 
 /**
@@ -176,13 +184,20 @@ export async function parseApkg(arrayBuffer, filename) {
       if (!hanzi || !meaning || seen.has(hanzi)) continue;
       seen.add(hanzi);
 
+      // Build examples array from detected example fields (slots 0, 1, 2)
+      const examples = [];
+      for (const n of [0, 1, 2]) {
+        const h = parts[fm[`example${n}`]]        ?? '';
+        const p = parts[fm[`example${n}Pinyin`]]  ?? '';
+        const m = parts[fm[`example${n}Meaning`]] ?? '';
+        if (h) examples.push({ hanzi: h, pinyin: p, meaning: m });
+      }
+
       words.push({
         hanzi,
-        pinyin:          parts[fm.pinyin]        ?? '',
+        pinyin: parts[fm.pinyin] ?? '',
         meaning,
-        example:         parts[fm.example]        ?? '',
-        examplePinyin:   parts[fm.examplePinyin]  ?? '',
-        exampleMeaning:  parts[fm.exampleMeaning] ?? '',
+        examples,
       });
     }
 

@@ -8,6 +8,7 @@ import HomeScreen       from './screens/HomeScreen';
 import LessonScreen     from './screens/LessonScreen';
 import WordReviewScreen from './screens/WordReviewScreen';
 import QuizScreen       from './screens/QuizScreen';
+import HanziWallScreen  from './screens/HanziWallScreen';
 import ProfileModal     from './components/ProfileModal';
 import ThemeSelector    from './components/ThemeSelector';
 
@@ -127,6 +128,7 @@ export default function App() {
           onLogout={logout}
           onExport={handleExport}
           onImport={handleImport}
+          onWall={() => navigate('wall')}
         />
       )}
       {screen === 'lesson' && selectedLesson && (
@@ -151,6 +153,13 @@ export default function App() {
           lesson={selectedLesson}
           navigate={navigate}
           updateMastery={updateMastery}
+          getWordMastery={getWordMastery}
+        />
+      )}
+      {screen === 'wall' && (
+        <HanziWallScreen
+          lessons={allLessons}
+          navigate={navigate}
           getWordMastery={getWordMastery}
         />
       )}

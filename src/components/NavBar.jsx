@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 export default function NavBar({
   title, subtitle, onBack, actions,
   /* home-screen extras */
-  currentProfile, onThemeClick, onProfileClick, onLogout,
+  currentProfile, onThemeClick, onProfileClick, onLogout, onWall,
 }) {
   const [dropOpen, setDropOpen] = useState(false);
   const dropRef = useRef(null);
@@ -45,6 +45,15 @@ export default function NavBar({
       {/* Home-screen right side controls */}
       {isHome && currentProfile && (
         <>
+          {/* Hanzi Wall */}
+          <button className="nav-icon-btn" onClick={onWall} title="Hanzi Wall">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          </button>
+
           {/* Theme toggle */}
           <button className="nav-icon-btn" onClick={onThemeClick} title="Change theme">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
