@@ -9,13 +9,56 @@ const SORT_OPTIONS = [
   { id: 'az',     label: 'A–Z'    },
 ];
 
-const SIZES = [
-  { id: 'sm', label: 'A',  title: 'Small' },
-  { id: 'md', label: 'A',  title: 'Normal' },
-  { id: 'lg', label: 'A',  title: 'Large' },
-];
+// ── Shared dropdown button ───────────────────────────────────────────────────
+function WallDropdown({ id, label, active, open, onToggle, children }) {
+  return (
+    <div className="wall-dd-wrap">
+      <button
+        className={`wall-dd-btn${active ? ' filtered' : ''}${open ? ' open' : ''}`}
+        onClick={() => onToggle(id)}
+      >
+        <span>{label}</span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+          style={{ transform: open ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s', flexShrink: 0 }}>
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      {open && <div className="wall-dd-menu">{children}</div>}
+    </div>
+  );
+}
 
-// lessonFilters: null = all, [] = none, [id, ...] = specific lessons
+// ── Dropdown item types ──────────────────────────────────────────────────────
+function DDItem({ checked, color, dot, onClick, children }) {
+  return (
+    <button className={`wall-dd-item${checked ? ' checked' : ''}`} onClick={onClick}>
+      <span className="wall-dd-check" style={color ? { color } : {}}>
+        {checked
+          ? <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          : dot
+            ? <span className="wall-dd-dot" style={{ background: dot }} />
+            : null
+        }
+      </span>
+      {children}
+    </button>
+  );
+}
+
+function DDDivider() {
+  return <div className="wall-dd-divider" />;
+}
+
+// ── Label helpers ────────────────────────────────────────────────────────────
+function levelLabel(levelFilter) {
+  if (levelFilter === null) return 'All Levels';
+  return MASTERY_LEVELS[levelFilter]?.name ?? 'Level';
+}
+
 function lessonLabel(lessonFilters, lessons) {
   if (lessonFilters === null) return 'All Lessons';
   if (lessonFilters.length === 0) return 'No Lessons';
@@ -26,26 +69,42 @@ function lessonLabel(lessonFilters, lessons) {
   return `${lessonFilters.length} Lessons`;
 }
 
+function sortLabel(sort) {
+  return SORT_OPTIONS.find(o => o.id === sort)?.label ?? 'Sort';
+}
+
+function displayLabel(showPinyin, showMeaning, tileSize) {
+  const parts = [];
+  if (showPinyin)  parts.push('拼');
+  if (showMeaning) parts.push('En');
+  const sizeMap = { sm: 'S', md: 'M', lg: 'L' };
+  parts.push(sizeMap[tileSize] ?? 'M');
+  return parts.join(' · ');
+}
+
+// ── Main component ───────────────────────────────────────────────────────────
 export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
   const [search,        setSearch]        = useState('');
-  const [levelFilter,   setLevelFilter]   = useState(null);      // null = all
-  const [lessonFilters, setLessonFilters] = useState(null);      // null = all
+  const [levelFilter,   setLevelFilter]   = useState(null);   // null = all
+  const [lessonFilters, setLessonFilters] = useState(null);   // null = all, [] = none
   const [sort,          setSort]          = useState('lesson');
   const [showPinyin,    setShowPinyin]    = useState(true);
   const [showMeaning,   setShowMeaning]   = useState(true);
   const [tileSize,      setTileSize]      = useState('md');
-  const [dropOpen,      setDropOpen]      = useState(false);
-  const dropRef = useRef(null);
+  const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'lesson'|'sort'|'display'|null
+  const barRef = useRef(null);
 
-  // Close lesson dropdown on outside click
+  // Close all dropdowns on outside click
   useEffect(() => {
-    if (!dropOpen) return;
+    if (!openDrop) return;
     const h = (e) => {
-      if (dropRef.current && !dropRef.current.contains(e.target)) setDropOpen(false);
+      if (barRef.current && !barRef.current.contains(e.target)) setOpenDrop(null);
     };
     document.addEventListener('mousedown', h);
     return () => document.removeEventListener('mousedown', h);
-  }, [dropOpen]);
+  }, [openDrop]);
+
+  const toggleDrop = (id) => setOpenDrop(prev => prev === id ? null : id);
 
   // Flatten all words with metadata
   const allWords = useMemo(() => {
@@ -82,7 +141,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
     return arr;
   }, [filtered, sort]);
 
-  // Lesson dropdown handlers
+  // Lesson filter helpers
   const toggleLesson = (id) => {
     setLessonFilters(prev => {
       if (prev === null) return [id];
@@ -90,8 +149,6 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
       return has ? prev.filter(x => x !== id) : [...prev, id];
     });
   };
-  const selectAllLessons  = () => { setLessonFilters(null);  };
-  const selectNoLessons   = () => { setLessonFilters([]);    };
 
   return (
     <>
@@ -119,105 +176,87 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
           )}
         </div>
 
-        {/* ── Level filter chips (with All) ────────────────────────── */}
-        <div className="wall-filter-row">
-          <span className="wall-filter-section-label">Level</span>
-          <button
-            className={`wall-chip${levelFilter === null ? ' active' : ''}`}
-            onClick={() => setLevelFilter(null)}
+        {/* ── Dropdown toolbar ─────────────────────────────────────── */}
+        <div className="wall-controls-bar" ref={barRef}>
+
+          {/* Level */}
+          <WallDropdown
+            id="level"
+            label={levelLabel(levelFilter)}
+            active={levelFilter !== null}
+            open={openDrop === 'level'}
+            onToggle={toggleDrop}
           >
-            All
-          </button>
-          {MASTERY_LEVELS.map(ml => (
-            <button
-              key={ml.id}
-              className={`wall-chip${levelFilter === ml.id ? ' active' : ''}`}
-              style={levelFilter === ml.id ? { background: ml.bg, borderColor: ml.color, color: ml.color } : {}}
-              onClick={() => setLevelFilter(prev => prev === ml.id ? null : ml.id)}
-            >
-              {ml.name}
-            </button>
-          ))}
-        </div>
+            <DDItem checked={levelFilter === null} onClick={() => setLevelFilter(null)}>All Levels</DDItem>
+            <DDDivider />
+            {MASTERY_LEVELS.map(ml => (
+              <DDItem
+                key={ml.id}
+                checked={levelFilter === ml.id}
+                color={ml.color}
+                dot={levelFilter !== ml.id ? ml.color : undefined}
+                onClick={() => setLevelFilter(prev => prev === ml.id ? null : ml.id)}
+              >
+                {ml.name}
+              </DDItem>
+            ))}
+          </WallDropdown>
 
-        {/* ── Controls bar: Lesson dropdown + Sort + Toggles + Size ── */}
-        <div className="wall-controls-bar">
-
-          {/* Lesson dropdown */}
-          <div className="wall-lesson-dropdown" ref={dropRef}>
-            <button
-              className={`wall-lesson-btn${lessonFilters !== null ? ' filtered' : ''}`}
-              onClick={() => setDropOpen(v => !v)}
-            >
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 6h16M4 12h16M4 18h7"/>
-              </svg>
-              <span>{lessonLabel(lessonFilters, lessons)}</span>
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-                style={{ transform: dropOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s' }}>
-                <polyline points="6 9 12 15 18 9"/>
-              </svg>
-            </button>
-
-            {dropOpen && (
-              <div className="wall-lesson-menu">
-                <div className="wall-lesson-menu-actions">
-                  <button className="wall-lesson-menu-action" onClick={selectAllLessons}>All</button>
-                  <button className="wall-lesson-menu-action" onClick={selectNoLessons}>None</button>
-                </div>
-                <div className="wall-lesson-menu-divider" />
-                {lessons.map(l => {
-                  const checked = lessonFilters === null || lessonFilters.includes(l.id);
-                  return (
-                    <button
-                      key={l.id}
-                      className={`wall-lesson-menu-item${checked ? ' checked' : ''}`}
-                      onClick={() => toggleLesson(l.id)}
-                    >
-                      <span className="wall-lesson-menu-check">
-                        {checked && (
-                          <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                            <polyline points="20 6 9 17 4 12"/>
-                          </svg>
-                        )}
-                      </span>
-                      <span className="wall-lesson-menu-icon">{l.icon}</span>
-                      <span>{l.title}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-          </div>
+          {/* Lesson */}
+          <WallDropdown
+            id="lesson"
+            label={lessonLabel(lessonFilters, lessons)}
+            active={lessonFilters !== null}
+            open={openDrop === 'lesson'}
+            onToggle={toggleDrop}
+          >
+            <div className="wall-dd-actions">
+              <button className="wall-dd-action" onClick={() => setLessonFilters(null)}>All</button>
+              <button className="wall-dd-action" onClick={() => setLessonFilters([])}>None</button>
+            </div>
+            <DDDivider />
+            {lessons.map(l => {
+              const checked = lessonFilters === null || lessonFilters.includes(l.id);
+              return (
+                <DDItem key={l.id} checked={checked} onClick={() => toggleLesson(l.id)}>
+                  <span style={{ marginRight: 4 }}>{l.icon}</span>{l.title}
+                </DDItem>
+              );
+            })}
+          </WallDropdown>
 
           {/* Sort */}
-          <div className="wall-ctrl-group">
+          <WallDropdown
+            id="sort"
+            label={`${sortLabel(sort)}`}
+            active={sort !== 'lesson'}
+            open={openDrop === 'sort'}
+            onToggle={toggleDrop}
+          >
             {SORT_OPTIONS.map(opt => (
-              <button
-                key={opt.id}
-                className={`wall-sort-btn${sort === opt.id ? ' active' : ''}`}
-                onClick={() => setSort(opt.id)}
-              >
+              <DDItem key={opt.id} checked={sort === opt.id} onClick={() => setSort(opt.id)}>
                 {opt.label}
-              </button>
+              </DDItem>
             ))}
-          </div>
+          </WallDropdown>
 
-          {/* Display toggles */}
-          <div className="wall-ctrl-group">
-            <button className={`wall-toggle-btn${showPinyin ? ' on' : ''}`} onClick={() => setShowPinyin(v => !v)} title="Toggle pinyin">拼</button>
-            <button className={`wall-toggle-btn${showMeaning ? ' on' : ''}`} onClick={() => setShowMeaning(v => !v)} title="Toggle meaning">En</button>
-          </div>
-
-          {/* Tile size */}
-          <div className="wall-ctrl-group wall-size-group">
-            <button className={`wall-size-btn sm${tileSize === 'sm' ? ' active' : ''}`} onClick={() => setTileSize('sm')} title="Small">A</button>
-            <button className={`wall-size-btn md${tileSize === 'md' ? ' active' : ''}`} onClick={() => setTileSize('md')} title="Normal">A</button>
-            <button className={`wall-size-btn lg${tileSize === 'lg' ? ' active' : ''}`} onClick={() => setTileSize('lg')} title="Large">A</button>
-          </div>
+          {/* Display */}
+          <WallDropdown
+            id="display"
+            label={displayLabel(showPinyin, showMeaning, tileSize)}
+            active={!showPinyin || !showMeaning || tileSize !== 'md'}
+            open={openDrop === 'display'}
+            onToggle={toggleDrop}
+          >
+            <DDItem checked={showPinyin}  onClick={() => setShowPinyin(v => !v)}>Pinyin</DDItem>
+            <DDItem checked={showMeaning} onClick={() => setShowMeaning(v => !v)}>Meaning</DDItem>
+            <DDDivider />
+            <div className="wall-dd-size-row">
+              <button className={`wall-size-btn sm${tileSize === 'sm' ? ' active' : ''}`} onClick={() => setTileSize('sm')} title="Small">A</button>
+              <button className={`wall-size-btn md${tileSize === 'md' ? ' active' : ''}`} onClick={() => setTileSize('md')} title="Normal">A</button>
+              <button className={`wall-size-btn lg${tileSize === 'lg' ? ' active' : ''}`} onClick={() => setTileSize('lg')} title="Large">A</button>
+            </div>
+          </WallDropdown>
 
           <span className="wall-count">{sorted.length}</span>
         </div>

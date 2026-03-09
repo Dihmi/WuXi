@@ -813,8 +813,7 @@ html, body {
 
 /* Search */
 .wall-search-wrap {
-  position: relative;
-  margin: 16px 16px 0;
+  position: relative; margin: 16px 16px 0;
 }
 .wall-search-icon {
   position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
@@ -835,122 +834,91 @@ html, body {
   font-size: 12px; padding: 4px;
 }
 
-/* Level filter row */
-.wall-filter-row {
+/* ── Dropdown toolbar ── */
+.wall-controls-bar {
   display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
   padding: 10px 16px 0;
 }
-.wall-filter-section-label {
-  font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.8px; color: var(--text3); margin-right: 2px;
-  white-space: nowrap;
-}
-.wall-chip {
-  padding: 4px 11px; border-radius: 20px; font-size: 12px; font-weight: 500;
-  background: var(--surface2); border: 1px solid var(--border);
-  color: var(--text2); cursor: pointer; transition: all 0.15s; white-space: nowrap;
-}
-.wall-chip.active {
-  background: rgba(var(--accent-rgb, 139,127,245), 0.15);
-  border-color: var(--accent); color: var(--accent);
-}
+.wall-count { margin-left: auto; font-size: 11px; color: var(--text3); }
 
-/* ── Controls bar (lesson dropdown + sort + toggles + size) ── */
-.wall-controls-bar {
-  display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
-  padding: 8px 16px 0;
-}
+/* Shared dropdown wrapper */
+.wall-dd-wrap { position: relative; }
 
-/* Control group separator */
-.wall-ctrl-group {
-  display: flex; gap: 3px;
-}
-
-/* Lesson dropdown */
-.wall-lesson-dropdown { position: relative; }
-.wall-lesson-btn {
+/* Dropdown trigger button */
+.wall-dd-btn {
   display: flex; align-items: center; gap: 5px;
-  padding: 5px 10px; border-radius: 8px; font-size: 12px; font-weight: 500;
+  padding: 6px 10px; border-radius: 8px; font-size: 12px; font-weight: 500;
   background: var(--surface2); border: 1px solid var(--border);
-  color: var(--text2); cursor: pointer; transition: all 0.15s;
-  white-space: nowrap;
+  color: var(--text2); cursor: pointer; white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
-.wall-lesson-btn:hover,
-.wall-lesson-btn.filtered { border-color: var(--accent); color: var(--accent); }
-.wall-lesson-btn.filtered { background: rgba(var(--accent-rgb, 139,127,245), 0.1); }
+.wall-dd-btn:hover { border-color: var(--accent); color: var(--accent); }
+.wall-dd-btn.filtered,
+.wall-dd-btn.open {
+  border-color: var(--accent); color: var(--accent);
+  background: rgba(var(--accent-rgb, 139,127,245), 0.1);
+}
 
-.wall-lesson-menu {
-  position: absolute; top: calc(100% + 6px); left: 0; z-index: 100;
-  min-width: 210px; max-height: 280px; overflow-y: auto;
+/* Dropdown menu panel */
+.wall-dd-menu {
+  position: absolute; top: calc(100% + 6px); left: 0; z-index: 200;
+  min-width: 170px; max-height: 300px; overflow-y: auto;
   background: var(--surface2); border: 1px solid var(--border);
-  border-radius: 12px; padding: 6px;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.28);
+  border-radius: 12px; padding: 5px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
-.wall-lesson-menu-actions {
-  display: flex; gap: 5px; padding: 4px 2px 6px;
+
+/* All / None quick-action row (lesson dropdown) */
+.wall-dd-actions {
+  display: flex; gap: 5px; padding: 3px 2px 5px;
 }
-.wall-lesson-menu-action {
+.wall-dd-action {
   flex: 1; padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 600;
   background: var(--surface3); border: 1px solid var(--border);
   color: var(--text2); cursor: pointer; transition: all 0.13s;
 }
-.wall-lesson-menu-action:hover { border-color: var(--accent); color: var(--accent); }
-.wall-lesson-menu-divider {
-  height: 1px; background: var(--border); margin: 0 2px 4px;
-}
-.wall-lesson-menu-item {
+.wall-dd-action:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Divider */
+.wall-dd-divider { height: 1px; background: var(--border); margin: 3px 2px 4px; }
+
+/* Menu item row */
+.wall-dd-item {
   display: flex; align-items: center; gap: 7px; width: 100%;
   padding: 7px 8px; border-radius: 7px; font-size: 13px;
   background: none; border: none; color: var(--text2); cursor: pointer;
   text-align: left; transition: background 0.1s;
 }
-.wall-lesson-menu-item:hover { background: var(--surface3); }
-.wall-lesson-menu-item.checked { color: var(--text1); }
-.wall-lesson-menu-check {
+.wall-dd-item:hover { background: var(--surface3); color: var(--text1); }
+.wall-dd-item.checked { color: var(--text1); }
+
+/* Checkmark / dot slot */
+.wall-dd-check {
   width: 14px; height: 14px; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   color: var(--accent);
 }
-.wall-lesson-menu-icon { font-size: 14px; }
-
-/* Sort buttons */
-.wall-sort-btn {
-  padding: 5px 10px; border-radius: 8px; font-size: 12px; font-weight: 500;
-  background: var(--surface2); border: 1px solid var(--border);
-  color: var(--text2); cursor: pointer; transition: all 0.15s;
-}
-.wall-sort-btn.active {
-  background: var(--accent); border-color: var(--accent); color: #fff;
+.wall-dd-dot {
+  display: block; width: 7px; height: 7px; border-radius: 50%;
 }
 
-/* Display toggles (拼 / En) */
-.wall-toggle-btn {
-  padding: 5px 8px; border-radius: 7px; font-size: 11px; font-weight: 700;
-  background: var(--surface2); border: 1px solid var(--border);
-  color: var(--text3); cursor: pointer; transition: all 0.15s;
+/* Size picker row inside Display dropdown */
+.wall-dd-size-row {
+  display: flex; align-items: baseline; justify-content: center;
+  gap: 6px; padding: 5px 4px 2px;
 }
-.wall-toggle-btn.on {
-  background: rgba(var(--accent-rgb, 139,127,245), 0.15);
-  border-color: var(--accent); color: var(--accent);
-}
-
-/* Tile size buttons (A- / A / A+) */
-.wall-size-group { align-items: baseline; }
 .wall-size-btn {
   border-radius: 7px; font-weight: 700; line-height: 1;
-  background: var(--surface2); border: 1px solid var(--border);
+  background: var(--surface3); border: 1px solid var(--border);
   color: var(--text3); cursor: pointer; transition: all 0.15s;
 }
 .wall-size-btn.active {
   background: rgba(var(--accent-rgb, 139,127,245), 0.15);
   border-color: var(--accent); color: var(--accent);
 }
-.wall-size-btn.sm { font-size: 10px; padding: 5px 7px; }
-.wall-size-btn.md { font-size: 13px; padding: 4px 7px; }
-.wall-size-btn.lg { font-size: 17px; padding: 2px 7px; }
-
-/* Count */
-.wall-count { margin-left: auto; font-size: 11px; color: var(--text3); }
+.wall-size-btn.sm { font-size: 10px; padding: 5px 10px; }
+.wall-size-btn.md { font-size: 14px; padding: 4px 10px; }
+.wall-size-btn.lg { font-size: 18px; padding: 2px 10px; }
 
 /* Empty state */
 .wall-empty {
@@ -959,9 +927,7 @@ html, body {
 }
 
 /* ── Character grid — three sizes ── */
-.char-grid {
-  display: grid; gap: 8px; padding: 12px 16px 0;
-}
+.char-grid { display: grid; gap: 8px; padding: 12px 16px 0; }
 .char-grid-sm { grid-template-columns: repeat(auto-fill, minmax(64px,  1fr)); }
 .char-grid-md { grid-template-columns: repeat(auto-fill, minmax(90px,  1fr)); }
 .char-grid-lg { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
@@ -978,19 +944,13 @@ html, body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.18);
   border-color: var(--accent);
 }
-
-/* Size-specific card padding & font */
 .char-card-sm { padding: 8px 4px 12px; }
 .char-card-md { padding: 12px 6px 16px; }
 .char-card-lg { padding: 14px 8px 18px; }
-
 .char-card-sm .char-hanzi { font-size: 20px; margin-bottom: 2px; }
 .char-card-md .char-hanzi { font-size: 26px; margin-bottom: 4px; }
 .char-card-lg .char-hanzi { font-size: 36px; margin-bottom: 5px; }
-
-/* hanzi-only: remove bottom padding gap */
 .char-card-hanzi-only .char-hanzi { margin-bottom: 0; }
-
 .char-hanzi { line-height: 1.1; color: var(--text1); }
 .char-pinyin {
   font-size: 10px; color: var(--accent); margin-bottom: 2px;
