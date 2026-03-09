@@ -881,9 +881,9 @@ html, body {
   background: rgba(var(--accent-rgb, 139,127,245), 0.1);
 }
 
-/* Dropdown menu panel */
+/* Dropdown menu panel — position:fixed set inline via portal */
 .wall-dd-menu {
-  position: absolute; top: calc(100% + 6px); left: 0; z-index: 200;
+  z-index: 9999;
   min-width: 170px; max-height: 300px; overflow-y: auto;
   background: var(--surface2); border: 1px solid var(--border);
   border-radius: 12px; padding: 5px;

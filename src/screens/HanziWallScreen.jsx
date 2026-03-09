@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { MASTERY_LEVELS } from '../data/lessons';
 import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
@@ -23,10 +24,22 @@ function hanziFontSize(hanzi, tileSize) {
 }
 
 // ── Shared dropdown button ───────────────────────────────────────────────────
+// Menu is portaled to document.body so overflow-x:auto on the toolbar doesn't clip it.
 function WallDropdown({ id, label, active, open, onToggle, children }) {
+  const btnRef = useRef(null);
+  const [menuPos, setMenuPos] = useState({ top: 0, left: 0 });
+
+  useEffect(() => {
+    if (open && btnRef.current) {
+      const r = btnRef.current.getBoundingClientRect();
+      setMenuPos({ top: r.bottom + 6, left: r.left });
+    }
+  }, [open]);
+
   return (
     <div className="wall-dd-wrap">
       <button
+        ref={btnRef}
         className={`wall-dd-btn${active ? ' filtered' : ''}${open ? ' open' : ''}`}
         onClick={() => onToggle(id)}
       >
@@ -37,7 +50,12 @@ function WallDropdown({ id, label, active, open, onToggle, children }) {
           <polyline points="6 9 12 15 18 9"/>
         </svg>
       </button>
-      {open && <div className="wall-dd-menu">{children}</div>}
+      {open && createPortal(
+        <div className="wall-dd-menu" style={{ position: 'fixed', top: menuPos.top, left: menuPos.left }}>
+          {children}
+        </div>,
+        document.body
+      )}
     </div>
   );
 }
@@ -338,7 +356,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
                 >
                   <button
                     className={`char-card char-card-${tileSize}${!showPinyin && !showMeaning ? ' char-card-hanzi-only' : ''}`}
-                    onClick={() => navigate('word', { lesson, word })}
+                    onClick={() => navigate('word', { lesson, word, from: 'wall' })}
                     title={`${word.hanzi} · ${word.pinyin} · ${word.meaning}`}
                   >
                     <div className="char-hanzi" style={fs ? { fontSize: fs } : undefined}>{word.hanzi}</div>
@@ -350,7 +368,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
                   {hoverAnim && (
                     <div
                       className="char-popup"
-                      onClick={() => navigate('word', { lesson, word })}
+                      onClick={() => navigate('word', { lesson, word, from: 'wall' })}
                     >
                       <div className="char-popup-hanzi" style={{ fontSize: pfs }}>{word.hanzi}</div>
                       <div className="char-popup-pinyin">{word.pinyin}</div>

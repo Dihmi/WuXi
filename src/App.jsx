@@ -34,7 +34,7 @@ export default function App() {
   );
 
   const navigate = useCallback((nextScreen, data = {}) => {
-    if (nextScreen === 'word') setWordOrigin(data.from ?? screen);
+    if (nextScreen === 'word') setWordOrigin(data.from ?? 'lesson');
     setScreen(nextScreen);
     if (data.lesson !== undefined) setSelectedLesson(data.lesson);
     if (data.word   !== undefined) setSelectedWord(data.word);
