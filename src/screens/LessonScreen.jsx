@@ -31,7 +31,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
         subtitle={`${lesson.words.length} words · ${pct}% mastered`}
         actions={
           <button className="btn btn-primary" onClick={() => navigate('quiz', { lesson })}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <polygon points="5 3 19 12 5 21 5 3" />
             </svg>
             Quiz
@@ -39,35 +39,38 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
         }
       />
       <div className="screen">
-        <div className="lesson-hero">
-          <div className="lesson-hero-title">{lesson.icon} {lesson.title}</div>
-          <div className="lesson-hero-desc">{lesson.description}</div>
-          <div style={{ marginBottom: 8 }}>
-            <ProgressBar pct={pct} />
+
+        {/* ── Lesson header ─────────────────────────────────────── */}
+        <div className="lesson-header">
+          <div className="lesson-header-top">
+            <div className="lesson-header-icon">{lesson.icon}</div>
+            <div>
+              <div className="lesson-header-title">{lesson.title}</div>
+              <div className="lesson-header-desc">{lesson.description}</div>
+            </div>
           </div>
-          <div style={{ fontSize: 12, color: 'var(--text3)' }}>
-            {pct}% mastered · {counts[4]} of {lesson.words.length} words
+          <div className="lesson-progress-labels">
+            <span>{counts[4]} of {lesson.words.length} words mastered</span>
+            <span className="lesson-progress-pct">{pct}%</span>
           </div>
+          <ProgressBar pct={pct} />
         </div>
 
-        <div className="filter-tabs">
+        {/* ── Filter chips ──────────────────────────────────────── */}
+        <div className="filter-row">
           {FILTER_OPTIONS.map(f => (
             <button
               key={f}
-              className={`filter-tab${filter === f ? ' active' : ''}`}
+              className={`filter-chip${filter === f ? ' active' : ''}`}
               onClick={() => setFilter(f)}
             >
               {f}
-              <span
-                className="filter-count"
-                style={filter === f ? { borderColor: 'var(--gold)', color: 'var(--gold)' } : {}}
-              >
-                {filterCount(f)}
-              </span>
+              <span className="filter-chip-count">{filterCount(f)}</span>
             </button>
           ))}
         </div>
 
+        {/* ── Word grid ─────────────────────────────────────────── */}
         {filteredWords.length === 0 ? (
           <div className="empty-state">
             <div className="empty-icon">🔍</div>
@@ -82,7 +85,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
                 <div
                   key={w.hanzi}
                   className="card word-card"
-                  style={{ borderColor: `${ml.color}30` }}
+                  style={{ borderColor: `${ml.color}28` }}
                   onClick={() => navigate('word', { lesson, word: w })}
                 >
                   <div className="word-card-hanzi">{w.hanzi}</div>

@@ -23,44 +23,36 @@ export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, 
       <NavBar />
       <div className="screen">
 
-        {/* ── Hero ─────────────────────────────────────────────── */}
-        <div className="home-hero">
-          <div className="home-hero-deco">学</div>
-
-          <div className="home-hero-tag">Mandarin · 普通话</div>
-          <div className="home-hero-headline">
-            Your vocabulary<br />journey
+        {/* ── Stats bar ─────────────────────────────────────────── */}
+        <div className="home-stats-bar">
+          <div className="home-stat">
+            <div className="home-stat-num">{lessons.length}</div>
+            <div className="home-stat-label">Lessons</div>
           </div>
-
-          <div className="home-hero-pills">
-            <div className="home-pill">
-              <div className="home-pill-num">{lessons.length}</div>
-              <div className="home-pill-label">Lessons</div>
-            </div>
-            <div className="home-pill">
-              <div className="home-pill-num">{allWords}</div>
-              <div className="home-pill-label">Words</div>
-            </div>
-            <div className="home-pill home-pill--orange">
-              <div className="home-pill-num">{allSeen}</div>
-              <div className="home-pill-label">Seen</div>
-            </div>
-            <div className="home-pill home-pill--green">
-              <div className="home-pill-num">{allMastered}</div>
-              <div className="home-pill-label">Mastered</div>
-            </div>
+          <div className="home-stat">
+            <div className="home-stat-num">{allWords}</div>
+            <div className="home-stat-label">Words</div>
           </div>
-
-          <div className="home-hero-foot">
-            <div className="home-hero-pct-row">
-              <span>Overall progress</span>
-              <span className="home-hero-pct-val">{overallPct}%</span>
-            </div>
-            <ProgressBar pct={overallPct} />
+          <div className="home-stat">
+            <div className="home-stat-num clr-accent">{allSeen}</div>
+            <div className="home-stat-label">Seen</div>
+          </div>
+          <div className="home-stat">
+            <div className="home-stat-num clr-success">{allMastered}</div>
+            <div className="home-stat-label">Mastered</div>
           </div>
         </div>
 
-        {/* ── Deck import errors ────────────────────────────────── */}
+        {/* ── Overall progress ──────────────────────────────────── */}
+        <div className="overall-progress">
+          <div className="overall-progress-row">
+            <span className="overall-progress-label">Overall progress</span>
+            <span className="overall-progress-pct">{overallPct}%</span>
+          </div>
+          <ProgressBar pct={overallPct} />
+        </div>
+
+        {/* ── Deck errors ───────────────────────────────────────── */}
         {deckErrors.length > 0 && (
           <div className="deck-errors">
             <div className="deck-errors-title">
@@ -72,9 +64,9 @@ export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, 
           </div>
         )}
 
-        {/* ── Lesson list ───────────────────────────────────────── */}
-        <div className="section-title">
-          <span>Lessons</span>
+        {/* ── Lessons header ────────────────────────────────────── */}
+        <div className="section-header">
+          <span className="section-title">Lessons</span>
           {deckStatus === 'loading' && (
             <span className="deck-loading-badge">
               <span className="deck-spinner" />
@@ -83,6 +75,7 @@ export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, 
           )}
         </div>
 
+        {/* ── Lesson grid ───────────────────────────────────────── */}
         <div className="lesson-grid">
           {lessons.map(lesson => {
             const { pct, counts } = getLessonProgress(lesson);
@@ -92,7 +85,8 @@ export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, 
                 className="card lesson-card"
                 onClick={() => navigate('lesson', { lesson })}
               >
-                <div className="lesson-card-header">
+                <div className="lesson-card-top">
+                  <div className="lesson-icon">{lesson.icon}</div>
                   <div>
                     <div className="lesson-title">
                       {lesson.title}
@@ -100,14 +94,13 @@ export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, 
                     </div>
                     <div className="lesson-desc">{lesson.description}</div>
                   </div>
-                  <div className="lesson-icon">{lesson.icon}</div>
                 </div>
-                <div className="lesson-meta">
-                  <div className="word-count">{lesson.words.length} words</div>
-                  <div className="mastery-pct">{pct}%</div>
+                <div className="lesson-foot">
+                  <div className="lesson-word-count">{lesson.words.length} words</div>
+                  <div className="lesson-pct">{pct}%</div>
                 </div>
                 <ProgressBar pct={pct} />
-                <div style={{ display: 'flex', gap: 6, marginTop: 10, flexWrap: 'wrap' }}>
+                <div className="lesson-tags">
                   {MASTERY_LEVELS.map(ml =>
                     counts[ml.id] > 0 && (
                       <span
@@ -128,13 +121,13 @@ export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, 
           })}
         </div>
 
-        {/* ── Import instructions ───────────────────────────────── */}
+        {/* ── Import hint ───────────────────────────────────────── */}
         <div className="import-hint">
           <div className="import-hint-icon">📦</div>
           <div className="import-hint-title">Import Anki Decks</div>
           <div className="import-hint-body">
-            Drop <code>.apkg</code> files into <code>public/decks/</code>, then add each
-            filename to <code>public/decks/manifest.json</code> and reload.
+            Drop <code>.apkg</code> files into <code>public/decks/</code>, add each filename
+            to <code>public/decks/manifest.json</code> and reload.
           </div>
         </div>
 
