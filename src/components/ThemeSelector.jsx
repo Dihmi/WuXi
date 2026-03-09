@@ -1,6 +1,9 @@
 import { THEMES } from '../hooks/useTheme';
 
 export default function ThemeSelector({ currentTheme, onSelect, onClose }) {
+  const dark  = THEMES.filter(t => t.group === 'dark');
+  const light = THEMES.filter(t => t.group === 'light');
+
   return (
     <>
       <div className="modal-backdrop" onClick={onClose} />
@@ -15,32 +18,48 @@ export default function ThemeSelector({ currentTheme, onSelect, onClose }) {
           </button>
         </div>
 
-        <div className="theme-grid">
-          {THEMES.map(t => (
-            <button
-              key={t.id}
-              className={`theme-card${currentTheme === t.id ? ' active' : ''}`}
-              onClick={() => { onSelect(t.id); onClose(); }}
-            >
-              <div className="theme-swatches">
-                {t.swatch.map((c, i) => (
-                  <div key={i} className="theme-swatch" style={{ background: c }} />
-                ))}
-              </div>
-              <div className="theme-card-name">{t.name}</div>
-              <div className="theme-card-desc">{t.desc}</div>
-              {currentTheme === t.id && (
-                <div className="theme-card-check">
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                </div>
-              )}
-            </button>
-          ))}
+        <div className="theme-group-label">Dark</div>
+        <div className="theme-grid theme-grid-dark">
+          {dark.map(t => <ThemeCard key={t.id} t={t} active={currentTheme === t.id} onSelect={onSelect} onClose={onClose} />)}
+        </div>
+
+        <div className="theme-group-label" style={{ marginTop: 16 }}>Light</div>
+        <div className="theme-grid theme-grid-light">
+          {light.map(t => <ThemeCard key={t.id} t={t} active={currentTheme === t.id} onSelect={onSelect} onClose={onClose} />)}
         </div>
       </div>
     </>
+  );
+}
+
+function ThemeCard({ t, active, onSelect, onClose }) {
+  return (
+    <button
+      className={`theme-card${active ? ' active' : ''}`}
+      onClick={() => { onSelect(t.id); onClose(); }}
+    >
+      <div className="theme-swatches">
+        {t.swatch.map((c, i) => (
+          <div
+            key={i}
+            className="theme-swatch"
+            style={{
+              background: c,
+              border: i === 1 ? '1.5px solid rgba(128,128,128,0.3)' : 'none',
+            }}
+          />
+        ))}
+      </div>
+      <div className="theme-card-name">{t.name}</div>
+      <div className="theme-card-desc">{t.desc}</div>
+      {active && (
+        <div className="theme-card-check">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+      )}
+    </button>
   );
 }

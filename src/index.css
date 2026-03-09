@@ -1,14 +1,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* Surfaces */
-  --bg:        #09090c;
-  --bg2:       #0e0e14;
-  --surface:   #131318;
-  --surface2:  #18181f;
-  --surface3:  #1f1f28;
-  --border:    #252530;
-  --border2:   #2e2e3c;
+  /* Surfaces – Midnight (deep purple-black) */
+  --bg:        #0a0810;
+  --bg2:       #0f0c18;
+  --surface:   #14101e;
+  --surface2:  #1a1528;
+  --surface3:  #211c32;
+  --border:    #2c2542;
+  --border2:   #382f54;
 
   /* Text */
   --text:      #eeeef4;
@@ -33,7 +33,7 @@
   --danger-bg:  rgba(240,101,122,0.1);
   --warning:    #f5a742;
 
-  /* Mastery level colours (kept compatible with MASTERY_LEVELS data) */
+  /* Mastery level colours */
   --new:        #64748b;
   --learning:   #3b82f6;
   --familiar:   #eab308;
@@ -46,50 +46,119 @@
   --radius-lg: 16px;
   --transition: 0.16s ease;
 
-  /* Nav backdrop */
-  --nav-bg: rgba(9,9,12,0.88);
+  /* Theme-aware shadows */
+  --nav-bg:          rgba(10,8,16,0.88);
+  --card-shadow:     0 6px 24px rgba(0,0,0,0.5);
+  --dropdown-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  --accent-glow:     rgba(139,127,245,0.35);
 }
 
-/* ── Themes ──────────────────────────────────────────────────── */
+/* ── Dark themes ─────────────────────────────────────────────── */
 [data-theme="aurora"] {
-  --bg:        #030d0d; --bg2:      #061414;
-  --surface:   #0a1c1c; --surface2: #0e2222; --surface3: #122828;
-  --border:    #163030; --border2:  #1c3c3c;
-  --text:      #e0f7f4; --text2:    #5a9e99; --text3:    #2d6460;
+  /* Deep space teal — almost black with strong green tint */
+  --bg:        #030e10; --bg2:      #051518;
+  --surface:   #082022; --surface2: #0d292c; --surface3: #123234;
+  --border:    #1a4044; --border2:  #224c52;
+  --text:      #dff8f5; --text2:    #4e9e98; --text3:    #255a55;
   --accent:        #00d4b8; --accent-hover:  #1ae0c8;
   --accent-bg:     rgba(0,212,184,0.1); --accent-border: rgba(0,212,184,0.25);
-  --gold:          #4dd8c2; --gold-bg: rgba(77,216,194,0.08); --gold-border: rgba(77,216,194,0.2);
-  --nav-bg: rgba(3,13,13,0.88);
+  --gold:          #3dd8c0; --gold-bg: rgba(61,216,192,0.08); --gold-border: rgba(61,216,192,0.2);
+  --nav-bg:          rgba(3,14,16,0.9);
+  --card-shadow:     0 6px 24px rgba(0,0,0,0.55);
+  --dropdown-shadow: 0 8px 32px rgba(0,0,0,0.65);
+  --accent-glow:     rgba(0,212,184,0.3);
 }
 [data-theme="ember"] {
-  --bg:        #0c0907; --bg2:      #130e0a;
-  --surface:   #1a1208; --surface2: #201608; --surface3: #271a09;
-  --border:    #2e1e0c; --border2:  #3a2610;
-  --text:      #f5ede0; --text2:    #9b7a5a; --text3:    #5a4030;
-  --accent:        #f0823a; --accent-hover:  #f5924f;
-  --accent-bg:     rgba(240,130,58,0.1); --accent-border: rgba(240,130,58,0.25);
-  --gold:          #f5c842; --gold-bg: rgba(245,200,66,0.08); --gold-border: rgba(245,200,66,0.2);
-  --nav-bg: rgba(12,9,7,0.88);
+  /* Smouldering charcoal — warm brown-black with fire tones */
+  --bg:        #100a04; --bg2:      #180e06;
+  --surface:   #221408; --surface2: #2c1a0a; --surface3: #36200c;
+  --border:    #422810; --border2:  #503014;
+  --text:      #f8ede0; --text2:    #a07850; --text3:    #644830;
+  --accent:        #f07830; --accent-hover:  #f58840;
+  --accent-bg:     rgba(240,120,48,0.1); --accent-border: rgba(240,120,48,0.25);
+  --gold:          #f5c038; --gold-bg: rgba(245,192,56,0.08); --gold-border: rgba(245,192,56,0.2);
+  --nav-bg:          rgba(16,10,4,0.9);
+  --card-shadow:     0 6px 24px rgba(0,0,0,0.55);
+  --dropdown-shadow: 0 8px 32px rgba(0,0,0,0.65);
+  --accent-glow:     rgba(240,120,48,0.3);
 }
 [data-theme="sakura"] {
-  --bg:        #0d070a; --bg2:      #130a0f;
-  --surface:   #1a0d14; --surface2: #201018; --surface3: #27131d;
-  --border:    #2e1a24; --border2:  #3a202e;
-  --text:      #f5e8ef; --text2:    #9b6880; --text3:    #5a3548;
+  /* Dark rose — near-black with plum undertones */
+  --bg:        #0f0609; --bg2:      #160a0f;
+  --surface:   #200e16; --surface2: #2a121e; --surface3: #341626;
+  --border:    #401e2e; --border2:  #4e2438;
+  --text:      #f8e8f0; --text2:    #a06080; --text3:    #604050;
   --accent:        #e8609a; --accent-hover:  #f07aaa;
   --accent-bg:     rgba(232,96,154,0.1); --accent-border: rgba(232,96,154,0.25);
-  --gold:          #f0a0c8; --gold-bg: rgba(240,160,200,0.08); --gold-border: rgba(240,160,200,0.2);
-  --nav-bg: rgba(13,7,10,0.88);
+  --gold:          #f0a0c0; --gold-bg: rgba(240,160,192,0.08); --gold-border: rgba(240,160,192,0.2);
+  --nav-bg:          rgba(15,6,9,0.9);
+  --card-shadow:     0 6px 24px rgba(0,0,0,0.55);
+  --dropdown-shadow: 0 8px 32px rgba(0,0,0,0.65);
+  --accent-glow:     rgba(232,96,154,0.3);
 }
 [data-theme="slate"] {
-  --bg:        #07090c; --bg2:      #0c0f14;
-  --surface:   #111520; --surface2: #161b28; --surface3: #1b2130;
-  --border:    #222a38; --border2:  #2a3448;
-  --text:      #e8ecf5; --text2:    #6878a0; --text3:    #3a4560;
-  --accent:        #4d9cf0; --accent-hover:  #60aaF5;
+  /* Deep navy — cold dark blue with ink character */
+  --bg:        #060810; --bg2:      #090d18;
+  --surface:   #0e1424; --surface2: #141b2e; --surface3: #1a2238;
+  --border:    #222c44; --border2:  #2c3854;
+  --text:      #e4eaf8; --text2:    #5a70a0; --text3:    #324060;
+  --accent:        #4d9cf0; --accent-hover:  #60aaf5;
   --accent-bg:     rgba(77,156,240,0.1); --accent-border: rgba(77,156,240,0.25);
-  --gold:          #94b8f0; --gold-bg: rgba(148,184,240,0.08); --gold-border: rgba(148,184,240,0.2);
-  --nav-bg: rgba(7,9,12,0.88);
+  --gold:          #88b8f8; --gold-bg: rgba(136,184,248,0.08); --gold-border: rgba(136,184,248,0.2);
+  --nav-bg:          rgba(6,8,16,0.9);
+  --card-shadow:     0 6px 24px rgba(0,0,0,0.55);
+  --dropdown-shadow: 0 8px 32px rgba(0,0,0,0.65);
+  --accent-glow:     rgba(77,156,240,0.3);
+}
+
+/* ── Light themes ────────────────────────────────────────────── */
+[data-theme="dawn"] {
+  /* Warm parchment — cream tones, violet accent */
+  --bg:        #faf8f3; --bg2:      #f5f1ea;
+  --surface:   #ffffff; --surface2: #faf7f2; --surface3: #f3efe6;
+  --border:    #e6e0d0; --border2:  #d8d0bc;
+  --text:      #1c1810; --text2:    #6b6050; --text3:    #9e9080;
+  --accent:        #7c6ef0; --accent-hover:  #6a5de0;
+  --accent-bg:     rgba(124,110,240,0.08); --accent-border: rgba(124,110,240,0.2);
+  --gold:          #a07820; --gold-bg: rgba(160,120,32,0.08); --gold-border: rgba(160,120,32,0.2);
+  --success:    #16a34a; --success-bg: rgba(22,163,74,0.1);
+  --danger:     #dc2626; --danger-bg:  rgba(220,38,38,0.1);
+  --nav-bg:          rgba(250,248,243,0.92);
+  --card-shadow:     0 4px 16px rgba(0,0,0,0.08);
+  --dropdown-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  --accent-glow:     rgba(124,110,240,0.22);
+}
+[data-theme="cloud"] {
+  /* Cool white — airy gray-blue, sky accent */
+  --bg:        #f3f6fb; --bg2:      #ecf0f7;
+  --surface:   #ffffff; --surface2: #f6f8fc; --surface3: #edf1f7;
+  --border:    #dae0ed; --border2:  #c8d2e4;
+  --text:      #0f1623; --text2:    #506080; --text3:    #8090b0;
+  --accent:        #3b82f6; --accent-hover:  #2563eb;
+  --accent-bg:     rgba(59,130,246,0.08); --accent-border: rgba(59,130,246,0.2);
+  --gold:          #d97706; --gold-bg: rgba(217,119,6,0.08); --gold-border: rgba(217,119,6,0.2);
+  --success:    #059669; --success-bg: rgba(5,150,105,0.1);
+  --danger:     #dc2626; --danger-bg:  rgba(220,38,38,0.1);
+  --nav-bg:          rgba(243,246,251,0.92);
+  --card-shadow:     0 4px 16px rgba(0,0,0,0.07);
+  --dropdown-shadow: 0 8px 28px rgba(0,0,0,0.1);
+  --accent-glow:     rgba(59,130,246,0.22);
+}
+[data-theme="petal"] {
+  /* Soft rose — blush light, deep pink accent */
+  --bg:        #fdf5f8; --bg2:      #faecf3;
+  --surface:   #ffffff; --surface2: #fdf2f6; --surface3: #fae8f1;
+  --border:    #f0d4e4; --border2:  #e8c4d8;
+  --text:      #1a0810; --text2:    #7a4460; --text3:    #b08098;
+  --accent:        #db2777; --accent-hover:  #c4196a;
+  --accent-bg:     rgba(219,39,119,0.08); --accent-border: rgba(219,39,119,0.2);
+  --gold:          #b06030; --gold-bg: rgba(176,96,48,0.08); --gold-border: rgba(176,96,48,0.2);
+  --success:    #16a34a; --success-bg: rgba(22,163,74,0.1);
+  --danger:     #dc2626; --danger-bg:  rgba(220,38,38,0.1);
+  --nav-bg:          rgba(253,245,248,0.92);
+  --card-shadow:     0 4px 16px rgba(0,0,0,0.08);
+  --dropdown-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  --accent-glow:     rgba(219,39,119,0.22);
 }
 
 html, body {
@@ -158,11 +227,11 @@ html, body {
 }
 .btn-primary {
   background: var(--accent); color: #fff;
-  box-shadow: 0 2px 10px rgba(139,127,245,0.3);
+  box-shadow: 0 2px 10px var(--accent-glow);
 }
 .btn-primary:hover {
   background: var(--accent-hover);
-  box-shadow: 0 4px 18px rgba(139,127,245,0.45);
+  box-shadow: 0 4px 18px var(--accent-glow);
   transform: translateY(-1px);
 }
 .btn-secondary {
@@ -186,7 +255,7 @@ html, body {
   background: var(--surface2);
   border-color: var(--border2);
   transform: translateY(-1px);
-  box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+  box-shadow: var(--card-shadow);
 }
 
 /* ── Mastery badge ──────────────────────────────────────────── */
@@ -559,7 +628,7 @@ html, body {
   position: absolute; top: calc(100% + 6px); right: 0;
   background: var(--surface2); border: 1px solid var(--border2);
   border-radius: var(--radius); min-width: 160px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  box-shadow: var(--dropdown-shadow);
   z-index: 200; overflow: hidden;
 }
 .profile-dropdown-item {
@@ -685,9 +754,14 @@ html, body {
 .theme-modal-title { font-size: 14px; font-weight: 600; color: var(--text); }
 .theme-modal-close { padding: 6px; }
 
-.theme-grid {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;
+.theme-group-label {
+  font-size: 10px; font-weight: 600; color: var(--text3);
+  text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 8px;
 }
+.theme-grid { display: grid; gap: 8px; }
+.theme-grid-dark  { grid-template-columns: repeat(5, 1fr); }
+.theme-grid-light { grid-template-columns: repeat(3, 1fr); }
 .theme-card {
   display: flex; flex-direction: column; align-items: center; gap: 6px;
   padding: 12px 8px; border-radius: var(--radius);
@@ -721,7 +795,8 @@ html, body {
 }
 
 @media (max-width: 540px) {
-  .theme-grid { grid-template-columns: repeat(3, 1fr); }
+  .theme-grid-dark  { grid-template-columns: repeat(3, 1fr); }
+  .theme-grid-light { grid-template-columns: repeat(3, 1fr); }
   .avatar-grid { grid-template-columns: repeat(8, 1fr); }
   .profile-panel { padding: 28px 20px 24px; }
   .nav-profile-name { display: none; }
