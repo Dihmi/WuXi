@@ -1,9 +1,15 @@
-import { useMemo } from 'react';
+import { useMemo, useRef } from 'react';
 import { MASTERY_LEVELS } from '../data/lessons';
 import NavBar      from '../components/NavBar';
 import ProgressBar from '../components/ProgressBar';
 
-export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, getLessonProgress }) {
+export default function HomeScreen({
+  lessons, deckStatus, deckErrors, navigate, getLessonProgress,
+  currentProfile, onThemeClick, onProfileClick, onLogout,
+  onExport, onImport,
+}) {
+  const importRef = useRef(null);
+
   const allWords = useMemo(() => lessons.reduce((s, l) => s + l.words.length, 0), [lessons]);
 
   const { allSeen, allMastered, overallPct } = useMemo(() => {
@@ -20,7 +26,12 @@ export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, 
 
   return (
     <>
-      <NavBar />
+      <NavBar
+        currentProfile={currentProfile}
+        onThemeClick={onThemeClick}
+        onProfileClick={onProfileClick}
+        onLogout={onLogout}
+      />
       <div className="screen">
 
         {/* ── Stats bar ─────────────────────────────────────────── */}
@@ -64,15 +75,56 @@ export default function HomeScreen({ lessons, deckStatus, deckErrors, navigate, 
           </div>
         )}
 
-        {/* ── Lessons header ────────────────────────────────────── */}
-        <div className="section-header">
-          <span className="section-title">Lessons</span>
-          {deckStatus === 'loading' && (
-            <span className="deck-loading-badge">
-              <span className="deck-spinner" />
-              Loading decks…
-            </span>
-          )}
+        {/* ── Lessons header + toolbar ───────────────────────────── */}
+        <div className="home-toolbar">
+          <span className="home-toolbar-label">
+            Lessons
+            {deckStatus === 'loading' && (
+              <span className="deck-loading-badge" style={{ marginLeft: 8 }}>
+                <span className="deck-spinner" />
+                Loading…
+              </span>
+            )}
+          </span>
+
+          {/* Import */}
+          <input
+            ref={importRef}
+            type="file"
+            accept=".json"
+            style={{ display: 'none' }}
+            onChange={onImport}
+          />
+          <button
+            className="btn btn-secondary"
+            style={{ fontSize: 12, padding: '6px 12px' }}
+            onClick={() => importRef.current?.click()}
+            title="Import progress from a WuXi JSON file"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            Import
+          </button>
+
+          {/* Export */}
+          <button
+            className="btn btn-secondary"
+            style={{ fontSize: 12, padding: '6px 12px' }}
+            onClick={onExport}
+            title="Export progress as JSON"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Export
+          </button>
         </div>
 
         {/* ── Lesson grid ───────────────────────────────────────── */}
