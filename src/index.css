@@ -922,9 +922,49 @@ html, body {
   height: 3px; border-radius: 0 0 12px 12px;
 }
 
+/* Compact card (hanzi-only) */
+.char-card-compact { padding: 10px 6px 14px; }
+.char-card-compact .char-hanzi { font-size: 28px; margin-bottom: 0; }
+
 /* example-item separator for multi-example words */
 .example-item { margin-bottom: 0; }
 .example-item-sep { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+
+/* Wall display toggles (pinyin / meaning show/hide) */
+.wall-display-toggles {
+  display: flex; gap: 4px; margin-left: 6px;
+}
+.wall-toggle-btn {
+  padding: 4px 9px; border-radius: 6px; font-size: 11px; font-weight: 700;
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text3); cursor: pointer; transition: all 0.15s;
+}
+.wall-toggle-btn.on {
+  background: rgba(var(--accent-rgb, 139,127,245), 0.15);
+  border-color: var(--accent); color: var(--accent);
+}
+
+/* Profile modal: action row with New + Load buttons */
+.profile-action-row {
+  display: flex; gap: 8px; margin-top: 4px;
+}
+.profile-action-row .profile-new-btn,
+.profile-action-row .profile-load-btn {
+  flex: 1;
+}
+.profile-load-btn {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+
+/* Load from file link in create view */
+.profile-load-standalone {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  background: none; border: none; color: var(--text3);
+  font-size: 13px; cursor: pointer; margin-top: 10px; padding: 6px;
+  text-decoration: underline; text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+.profile-load-standalone:hover { color: var(--accent); }
 
 @media (max-width: 540px) {
   .char-grid { grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 6px; }

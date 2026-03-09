@@ -14,6 +14,8 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
   const [levelFilter,  setLevelFilter]  = useState(null);   // null = all
   const [lessonFilter, setLessonFilter] = useState(null);   // null = all
   const [sort,         setSort]         = useState('lesson');
+  const [showPinyin,   setShowPinyin]   = useState(true);
+  const [showMeaning,  setShowMeaning]  = useState(true);
 
   // Flatten all words with metadata
   const allWords = useMemo(() => {
@@ -47,11 +49,10 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
     } else if (sort === 'az') {
       arr.sort((a, b) => a.word.hanzi.localeCompare(b.word.hanzi, 'zh'));
     }
-    // 'lesson' keeps insertion order (already grouped by lesson)
     return arr;
   }, [filtered, sort]);
 
-  const toggleLevel = (id) => setLevelFilter(prev => prev === id ? null : id);
+  const toggleLevel  = (id) => setLevelFilter(prev  => prev  === id ? null : id);
   const toggleLesson = (id) => setLessonFilter(prev => prev === id ? null : id);
 
   return (
@@ -111,7 +112,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
           </div>
         </div>
 
-        {/* ── Sort tabs ────────────────────────────────────────────── */}
+        {/* ── Sort + display toggles ───────────────────────────────── */}
         <div className="wall-sort-row">
           <span className="wall-filter-section-label">Sort</span>
           {SORT_OPTIONS.map(opt => (
@@ -123,6 +124,24 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
               {opt.label}
             </button>
           ))}
+
+          <div className="wall-display-toggles">
+            <button
+              className={`wall-toggle-btn${showPinyin ? ' on' : ''}`}
+              onClick={() => setShowPinyin(v => !v)}
+              title="Toggle pinyin"
+            >
+              拼
+            </button>
+            <button
+              className={`wall-toggle-btn${showMeaning ? ' on' : ''}`}
+              onClick={() => setShowMeaning(v => !v)}
+              title="Toggle meaning"
+            >
+              En
+            </button>
+          </div>
+
           <span className="wall-count">{sorted.length} shown</span>
         </div>
 
@@ -136,17 +155,14 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
               return (
                 <button
                   key={`${lesson.id}-${word.hanzi}`}
-                  className="char-card"
+                  className={`char-card${!showPinyin && !showMeaning ? ' char-card-compact' : ''}`}
                   onClick={() => navigate('word', { lesson, word })}
                   title={`${word.hanzi} · ${word.pinyin} · ${word.meaning}`}
                 >
                   <div className="char-hanzi">{word.hanzi}</div>
-                  <div className="char-pinyin">{word.pinyin}</div>
-                  <div className="char-meaning">{word.meaning}</div>
-                  <div
-                    className="char-level-bar"
-                    style={{ background: ml.color }}
-                  />
+                  {showPinyin  && <div className="char-pinyin">{word.pinyin}</div>}
+                  {showMeaning && <div className="char-meaning">{word.meaning}</div>}
+                  <div className="char-level-bar" style={{ background: ml.color }} />
                 </button>
               );
             })}

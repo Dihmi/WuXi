@@ -1,18 +1,26 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const AVATARS = ['🐉','🦊','🐼','🦁','🐯','🦅','🌸','⚡','🌙','🔥','🌊','🍵','🎋','🏮','🎴','🦋'];
 
-export default function ProfileModal({ profiles, onCreate, onSelect, onDelete }) {
-  const [view,   setView]   = useState(profiles.length === 0 ? 'create' : 'list');
-  const [name,   setName]   = useState('');
-  const [avatar, setAvatar] = useState('🐉');
+export default function ProfileModal({ profiles, onCreate, onSelect, onDelete, onLoadFile }) {
+  const [view,    setView]    = useState(profiles.length === 0 ? 'create' : 'list');
+  const [name,    setName]    = useState('');
+  const [avatar,  setAvatar]  = useState('🐉');
   const [confirm, setConfirm] = useState(null); // id to confirm delete
+  const fileRef = useRef(null);
 
   const handleCreate = () => {
     const trimmed = name.trim();
     if (!trimmed) return;
     onCreate(trimmed, avatar);
     setName(''); setAvatar('🐉');
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    onLoadFile(file);
+    e.target.value = '';
   };
 
   return (
@@ -57,9 +65,20 @@ export default function ProfileModal({ profiles, onCreate, onSelect, onDelete })
               ))}
             </div>
 
-            <button className="btn btn-secondary profile-new-btn" onClick={() => setView('create')}>
-              + New Profile
-            </button>
+            <div className="profile-action-row">
+              <button className="btn btn-secondary profile-new-btn" onClick={() => setView('create')}>
+                + New Profile
+              </button>
+              <button className="btn btn-secondary profile-load-btn" onClick={() => fileRef.current?.click()}>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="17 8 12 3 7 8"/>
+                  <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+                Load from file
+              </button>
+            </div>
           </>
         ) : (
           <>
@@ -103,8 +122,26 @@ export default function ProfileModal({ profiles, onCreate, onSelect, onDelete })
             >
               Start Learning →
             </button>
+
+            <button className="profile-load-standalone" onClick={() => fileRef.current?.click()}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+              Load existing account from file
+            </button>
           </>
         )}
+
+        <input
+          ref={fileRef}
+          type="file"
+          accept=".json"
+          style={{ display: 'none' }}
+          onChange={handleFileChange}
+        />
 
       </div>
     </div>

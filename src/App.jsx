@@ -42,6 +42,30 @@ export default function App() {
     }, 0);
   }, []);
 
+  /* ── Load profile from exported file ───────────────────────── */
+  const handleLoadFile = useCallback((file) => {
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const data = JSON.parse(ev.target.result);
+        if (!data.mastery || typeof data.mastery !== 'object') {
+          alert('Invalid file — no mastery data found.');
+          return;
+        }
+        const importedName   = data.profile?.name   || 'Imported';
+        const importedAvatar = data.profile?.avatar || '🐉';
+        // Create a fresh profile (generates new id) and immediately store mastery under it
+        const newId = createProfile(importedName, importedAvatar);
+        localStorage.setItem(`wuxi_mastery_${newId}`, JSON.stringify(data.mastery));
+        if (data.theme) applyTheme(data.theme);
+        setShowProfiles(false);
+      } catch {
+        alert('Could not parse the file. Make sure it\'s a valid WuXi export.');
+      }
+    };
+    reader.readAsText(file);
+  }, [createProfile, applyTheme]);
+
   /* ── Export progress ────────────────────────────────────────── */
   const handleExport = useCallback(() => {
     const payload = {
@@ -90,6 +114,7 @@ export default function App() {
         onCreate={createProfile}
         onSelect={selectProfile}
         onDelete={deleteProfile}
+        onLoadFile={handleLoadFile}
       />
     );
   }
@@ -112,6 +137,7 @@ export default function App() {
           onCreate={(name, avatar) => { createProfile(name, avatar); setShowProfiles(false); }}
           onSelect={(id) => { selectProfile(id); setShowProfiles(false); }}
           onDelete={deleteProfile}
+          onLoadFile={handleLoadFile}
         />
       )}
 
