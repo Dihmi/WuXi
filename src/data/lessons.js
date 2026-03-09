@@ -17,6 +17,7 @@ export const LESSONS = [
     id: 'greetings',
     title: 'Greetings & Basics',
     icon: '👋',
+    group: 'Core',
     description: 'Essential phrases and words for everyday introductions and polite exchanges.',
     words: [
       { hanzi:'你好',   pinyin:'nǐ hǎo',       meaning:'hello',                   examples:[{ hanzi:'你好，我叫李明。',      pinyin:'Nǐ hǎo, wǒ jiào Lǐ Míng.',        meaning:'Hello, my name is Li Ming.' }] },
@@ -35,6 +36,7 @@ export const LESSONS = [
   },
   {
     id: 'money',
+    group: 'Core',
     title: 'Payment & Money',
     icon: '💳',
     description: 'Vocabulary for shopping, banking, and financial transactions in China.',
@@ -55,6 +57,7 @@ export const LESSONS = [
   },
   {
     id: 'food',
+    group: 'Daily Life',
     title: 'Food & Restaurants',
     icon: '🍜',
     description: 'Order food confidently, navigate menus, and discuss cuisine.',
@@ -75,6 +78,7 @@ export const LESSONS = [
   },
   {
     id: 'transport',
+    group: 'Daily Life',
     title: 'Transportation',
     icon: '🚇',
     description: "Navigate China's cities by subway, bus, taxi, and beyond.",
@@ -95,6 +99,7 @@ export const LESSONS = [
   },
   {
     id: 'numbers',
+    group: 'Core',
     title: 'Numbers & Time',
     icon: '🕐',
     description: 'Count, tell time, and discuss dates and quantities.',

@@ -1,4 +1,4 @@
-import { useMemo, useRef } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { MASTERY_LEVELS } from '../data/lessons';
 import NavBar      from '../components/NavBar';
 import ProgressBar from '../components/ProgressBar';
@@ -9,6 +9,7 @@ export default function HomeScreen({
   onExport, onImport, onWall,
 }) {
   const importRef = useRef(null);
+  const [collapsedGroups, setCollapsedGroups] = useState({});
 
   const allWords = useMemo(() => lessons.reduce((s, l) => s + l.words.length, 0), [lessons]);
 
@@ -23,6 +24,20 @@ export default function HomeScreen({
     const pct = allWords > 0 ? Math.round(weightedScore / (allWords * 4) * 100) : 0;
     return { allSeen: seen, allMastered: mastered, overallPct: pct };
   }, [lessons, getLessonProgress, allWords]);
+
+  // Group lessons preserving insertion order
+  const groups = useMemo(() => {
+    const map = new Map();
+    for (const l of lessons) {
+      const g = l.group ?? 'Other';
+      if (!map.has(g)) map.set(g, []);
+      map.get(g).push(l);
+    }
+    return [...map.entries()]; // [[groupName, lessons[]], …]
+  }, [lessons]);
+
+  const toggleGroup = (name) =>
+    setCollapsedGroups(prev => ({ ...prev, [name]: !prev[name] }));
 
   return (
     <>
@@ -126,54 +141,75 @@ export default function HomeScreen({
           </button>
         </div>
 
-        {/* ── Lesson grid ───────────────────────────────────────── */}
-        <div className="lesson-grid">
-          {lessons.map(lesson => {
-            const { pct, counts } = getLessonProgress(lesson);
-            const hasTags = counts.some((c, i) => i > 0 && c > 0);
-            return (
-              <div
-                key={lesson.id}
-                className="card lesson-card clickable"
-                onClick={() => navigate('lesson', { lesson })}
+        {/* ── Lesson groups ──────────────────────────────────────── */}
+        {groups.map(([groupName, groupLessons]) => {
+          const collapsed = !!collapsedGroups[groupName];
+          return (
+            <div key={groupName} className="lesson-group">
+              <button
+                className="lesson-group-header"
+                onClick={() => toggleGroup(groupName)}
               >
-                <div className="lesson-card-top">
-                  <div className="lesson-icon">{lesson.icon}</div>
-                  <div className="lesson-card-info">
-                    {/* Title row with imported badge */}
-                    <div className="lesson-title-row">
-                      <span className="lesson-title">{lesson.title}</span>
-                      {lesson.imported && <span className="imported-badge">IMPORTED</span>}
-                    </div>
-                    {/* Tags row */}
-                    <div className="lesson-tags">
-                      {hasTags
-                        ? MASTERY_LEVELS.map(ml =>
-                            counts[ml.id] > 0 && (
-                              <span
-                                key={ml.id}
-                                style={{
-                                  fontSize: 9, color: ml.color, background: ml.bg,
-                                  border: `1px solid ${ml.color}33`, borderRadius: 20,
-                                  padding: '1px 6px', fontWeight: 600,
-                                }}
-                              >
-                                {counts[ml.id]} {ml.name}
-                              </span>
-                            )
-                          )
-                        : <span className="lesson-new-label">Not started</span>
-                      }
-                    </div>
-                  </div>
-                  {/* Progress % on the right */}
-                  <span className="lesson-pct">{pct}%</span>
+                <span className="lesson-group-name">{groupName}</span>
+                <span className="lesson-group-count">{groupLessons.length}</span>
+                <svg
+                  width="12" height="12" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                  style={{ transform: collapsed ? 'rotate(-90deg)' : 'none', transition: 'transform 0.18s', flexShrink: 0, marginLeft: 'auto' }}
+                >
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+
+              {!collapsed && (
+                <div className="lesson-grid">
+                  {groupLessons.map(lesson => {
+                    const { pct, counts } = getLessonProgress(lesson);
+                    const hasTags = counts.some((c, i) => i > 0 && c > 0);
+                    return (
+                      <div
+                        key={lesson.id}
+                        className="card lesson-card clickable"
+                        onClick={() => navigate('lesson', { lesson })}
+                      >
+                        <div className="lesson-card-top">
+                          <div className="lesson-icon">{lesson.icon}</div>
+                          <div className="lesson-card-info">
+                            <div className="lesson-title-row">
+                              <span className="lesson-title">{lesson.title}</span>
+                              {lesson.imported && <span className="imported-badge">IMPORTED</span>}
+                            </div>
+                            <div className="lesson-tags">
+                              {hasTags
+                                ? MASTERY_LEVELS.map(ml =>
+                                    counts[ml.id] > 0 && (
+                                      <span
+                                        key={ml.id}
+                                        style={{
+                                          fontSize: 9, color: ml.color, background: ml.bg,
+                                          border: `1px solid ${ml.color}33`, borderRadius: 20,
+                                          padding: '1px 6px', fontWeight: 600,
+                                        }}
+                                      >
+                                        {counts[ml.id]} {ml.name}
+                                      </span>
+                                    )
+                                  )
+                                : <span className="lesson-new-label">Not started</span>
+                              }
+                            </div>
+                          </div>
+                          <span className="lesson-pct">{pct}%</span>
+                        </div>
+                        <ProgressBar pct={pct} />
+                      </div>
+                    );
+                  })}
                 </div>
-                <ProgressBar pct={pct} />
-              </div>
-            );
-          })}
-        </div>
+              )}
+            </div>
+          );
+        })}
 
       </div>
     </>

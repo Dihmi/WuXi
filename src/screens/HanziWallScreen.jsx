@@ -67,6 +67,10 @@ function DDDivider() {
 }
 
 // ── Label helpers ────────────────────────────────────────────────────────────
+function groupLabel(groupFilter) {
+  return groupFilter === null ? 'All Groups' : groupFilter;
+}
+
 function levelLabel(levelFilter) {
   if (levelFilter === null) return 'All Levels';
   return MASTERY_LEVELS[levelFilter]?.name ?? 'Level';
@@ -110,12 +114,13 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
   const [search,        setSearch]        = useState('');
   const [levelFilter,   setLevelFilter]   = useState(null);   // null = all
   const [lessonFilters, setLessonFilters] = useState(null);   // null = all, [] = none
+  const [groupFilter,   setGroupFilter]   = useState(null);   // null = all, string = specific group
   const [sort,          setSort]          = useState('lesson');
   const [showPinyin,    setShowPinyin]    = useState(true);
   const [showMeaning,   setShowMeaning]   = useState(true);
   const [tileSize,      setTileSize]      = useState('md');
   const [hoverAnim,     setHoverAnim]     = useState(false);
-  const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'lesson'|'sort'|'display'|null
+  const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'group'|'lesson'|'sort'|'display'|null
   const barRef = useRef(null);
 
   // Close all dropdowns on outside click
@@ -129,6 +134,17 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
   }, [openDrop]);
 
   const toggleDrop = (id) => setOpenDrop(prev => prev === id ? null : id);
+
+  // Unique groups across all lessons (insertion order)
+  const allGroups = useMemo(() => {
+    const seen = new Set();
+    const out = [];
+    for (const l of lessons) {
+      const g = l.group ?? 'Other';
+      if (!seen.has(g)) { seen.add(g); out.push(g); }
+    }
+    return out;
+  }, [lessons]);
 
   // Flatten all words with metadata
   const allWords = useMemo(() => {
@@ -147,6 +163,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
     return allWords.filter(({ word, lesson, mastery }) => {
+      if (groupFilter !== null && (lesson.group ?? 'Other') !== groupFilter) return false;
       if (levelFilter !== null && mastery.level !== levelFilter) return false;
       if (lessonFilters !== null) {
         if (lessonFilters.length === 0) return false;
@@ -155,7 +172,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
       if (q && !word.hanzi.includes(q) && !word.pinyin.toLowerCase().includes(q) && !word.meaning.toLowerCase().includes(q)) return false;
       return true;
     });
-  }, [allWords, levelFilter, lessonFilters, search]);
+  }, [allWords, groupFilter, levelFilter, lessonFilters, search]);
 
   // Sort
   const sorted = useMemo(() => {
@@ -202,6 +219,25 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
 
         {/* ── Dropdown toolbar ─────────────────────────────────────── */}
         <div className="wall-controls-bar" ref={barRef}>
+
+          {/* Group */}
+          {allGroups.length > 1 && (
+            <WallDropdown
+              id="group"
+              label={groupLabel(groupFilter)}
+              active={groupFilter !== null}
+              open={openDrop === 'group'}
+              onToggle={toggleDrop}
+            >
+              <DDItem checked={groupFilter === null} onClick={() => setGroupFilter(null)}>All Groups</DDItem>
+              <DDDivider />
+              {allGroups.map(g => (
+                <DDItem key={g} checked={groupFilter === g} onClick={() => setGroupFilter(prev => prev === g ? null : g)}>
+                  {g}
+                </DDItem>
+              ))}
+            </WallDropdown>
+          )}
 
           {/* Level */}
           <WallDropdown

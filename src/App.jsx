@@ -16,6 +16,7 @@ export default function App() {
   const [screen,         setScreen]         = useState('home');
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [selectedWord,   setSelectedWord]   = useState(null);
+  const [wordOrigin,     setWordOrigin]     = useState('lesson'); // 'lesson' | 'wall'
   const [showTheme,      setShowTheme]      = useState(false);
   const [showProfiles,   setShowProfiles]   = useState(false);
 
@@ -33,6 +34,7 @@ export default function App() {
   );
 
   const navigate = useCallback((nextScreen, data = {}) => {
+    if (nextScreen === 'word') setWordOrigin(data.from ?? screen);
     setScreen(nextScreen);
     if (data.lesson !== undefined) setSelectedLesson(data.lesson);
     if (data.word   !== undefined) setSelectedWord(data.word);
@@ -172,6 +174,7 @@ export default function App() {
           navigate={navigate}
           getWordMastery={getWordMastery}
           updateMastery={updateMastery}
+          wordOrigin={wordOrigin}
         />
       )}
       {screen === 'quiz' && selectedLesson && (

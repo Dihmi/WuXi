@@ -283,7 +283,6 @@ html, body {
 .hero-strip {
   display: flex; align-items: center; gap: 14px;
   padding: 14px 20px 16px;
-  border-bottom: 1px solid var(--border);
 }
 .hero-pct-block {
   display: flex; flex-direction: column; align-items: center; gap: 1px;
@@ -309,10 +308,29 @@ html, body {
 .hero-meta-item.clr-success .hero-meta-num { color: var(--success); }
 .hero-sep { color: var(--border2); }
 
+/* Lesson group */
+.lesson-group { margin-bottom: 4px; }
+.lesson-group-header {
+  display: flex; align-items: center; gap: 8px;
+  width: 100%; padding: 8px 20px; background: none; border: none;
+  cursor: pointer; text-align: left;
+}
+.lesson-group-name {
+  font-size: 11px; font-weight: 700; color: var(--text3);
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.lesson-group-count {
+  font-size: 10px; font-weight: 600; color: var(--text3);
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 0px 6px;
+}
+.lesson-group-header:hover .lesson-group-name,
+.lesson-group-header:hover .lesson-group-count { color: var(--accent); }
+
 /* Lesson grid — compact */
 .lesson-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 8px; padding: 0 20px;
+  gap: 8px; padding: 0 20px 12px;
 }
 .lesson-card { cursor: pointer; padding: 11px 13px; }
 .lesson-card-top {
@@ -836,10 +854,14 @@ html, body {
 
 /* ── Dropdown toolbar ── */
 .wall-controls-bar {
-  display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
+  display: flex; align-items: center; flex-wrap: nowrap; gap: 6px;
   padding: 10px 16px 0;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  /* hide scrollbar but keep scrollability */
+  scrollbar-width: none; -ms-overflow-style: none;
 }
-.wall-count { margin-left: auto; font-size: 11px; color: var(--text3); }
+.wall-controls-bar::-webkit-scrollbar { display: none; }
+.wall-count { flex-shrink: 0; font-size: 11px; color: var(--text3); margin-left: 4px; }
 
 /* Shared dropdown wrapper */
 .wall-dd-wrap { position: relative; }

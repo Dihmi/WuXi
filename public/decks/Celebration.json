@@ -6,12 +6,36 @@
       "pinyin": "lè / yuè",
       "meaning": "happy; cheerful; to laugh; music",
       "examples": [
-        { "hanzi": "你快乐吗？", "pinyin": "nǐ kuài lè ma？", "meaning": "Are you happy?" },
-        { "hanzi": "干白！新年快乐！", "pinyin": "gàn bēi！xīn nián kuài lè！", "meaning": "Cheers! Happy New Year!" },
-        { "hanzi": "生日快乐！", "pinyin": "shēng rì kuài lè！", "meaning": "Happy Birthday" },
-        { "hanzi": "祝大家新年快乐！", "pinyin": "zhù dà jiā xīn nián kuài lè！", "meaning": "Happy New Year everyone!" },
-        { "hanzi": "新年快乐！", "pinyin": "xīn nián kuài lè！", "meaning": "Happy New Year!" },
-        { "hanzi": "节日快乐！", "pinyin": "jié rì kuài lè！", "meaning": "Happy holidays" }
+        {
+          "hanzi": "你快乐吗？",
+          "pinyin": "nǐ kuài lè ma？",
+          "meaning": "Are you happy?"
+        },
+        {
+          "hanzi": "干白！新年快乐！",
+          "pinyin": "gàn bēi！xīn nián kuài lè！",
+          "meaning": "Cheers! Happy New Year!"
+        },
+        {
+          "hanzi": "生日快乐！",
+          "pinyin": "shēng rì kuài lè！",
+          "meaning": "Happy Birthday"
+        },
+        {
+          "hanzi": "祝大家新年快乐！",
+          "pinyin": "zhù dà jiā xīn nián kuài lè！",
+          "meaning": "Happy New Year everyone!"
+        },
+        {
+          "hanzi": "新年快乐！",
+          "pinyin": "xīn nián kuài lè！",
+          "meaning": "Happy New Year!"
+        },
+        {
+          "hanzi": "节日快乐！",
+          "pinyin": "jié rì kuài lè！",
+          "meaning": "Happy holidays"
+        }
       ]
     },
     {
@@ -19,8 +43,16 @@
       "pinyin": "gàn / gān",
       "meaning": "to work; to do; to manage; dry; clean; in vain; dried food; foster; adoptive",
       "examples": [
-        { "hanzi": "干白！新年快乐！", "pinyin": "gàn bēi！xīn nián kuài lè！", "meaning": "Cheers! Happy New Year!" },
-        { "hanzi": "干杯！我们多喝一点儿！", "pinyin": "gàn bēi！wǒ men duō hē yī diǎn ér！", "meaning": "Cheers! Let's drink a little more!" }
+        {
+          "hanzi": "干白！新年快乐！",
+          "pinyin": "gàn bēi！xīn nián kuài lè！",
+          "meaning": "Cheers! Happy New Year!"
+        },
+        {
+          "hanzi": "干杯！我们多喝一点儿！",
+          "pinyin": "gàn bēi！wǒ men duō hē yī diǎn ér！",
+          "meaning": "Cheers! Let's drink a little more!"
+        }
       ]
     },
     {
@@ -28,7 +60,11 @@
       "pinyin": "gān bēi",
       "meaning": "to drink a toast; Cheers! (proposing a toast); Here's to you!; Bottoms up!",
       "examples": [
-        { "hanzi": "干杯！我们多喝一点儿！", "pinyin": "gàn bēi！wǒ men duō hē yī diǎn ér！", "meaning": "Cheers! Let's drink a little more!" }
+        {
+          "hanzi": "干杯！我们多喝一点儿！",
+          "pinyin": "gàn bēi！wǒ men duō hē yī diǎn ér！",
+          "meaning": "Cheers! Let's drink a little more!"
+        }
       ]
     },
     {
@@ -36,10 +72,26 @@
       "pinyin": "kuài lè",
       "meaning": "happy; merry",
       "examples": [
-        { "hanzi": "你快乐吗？", "pinyin": "nǐ kuài lè ma？", "meaning": "Are you happy?" },
-        { "hanzi": "生日快乐！", "pinyin": "shēng rì kuài lè！", "meaning": "Happy Birthday" },
-        { "hanzi": "新年快乐！", "pinyin": "xīn nián kuài lè！", "meaning": "Happy New Year!" },
-        { "hanzi": "节日快乐！", "pinyin": "jié rì kuài lè！", "meaning": "Happy holidays" }
+        {
+          "hanzi": "你快乐吗？",
+          "pinyin": "nǐ kuài lè ma？",
+          "meaning": "Are you happy?"
+        },
+        {
+          "hanzi": "生日快乐！",
+          "pinyin": "shēng rì kuài lè！",
+          "meaning": "Happy Birthday"
+        },
+        {
+          "hanzi": "新年快乐！",
+          "pinyin": "xīn nián kuài lè！",
+          "meaning": "Happy New Year!"
+        },
+        {
+          "hanzi": "节日快乐！",
+          "pinyin": "jié rì kuài lè！",
+          "meaning": "Happy holidays"
+        }
       ]
     },
     {
@@ -47,11 +99,31 @@
       "pinyin": "xīn nián",
       "meaning": "New Year",
       "examples": [
-        { "hanzi": "干白！新年快乐！", "pinyin": "gàn bēi！xīn nián kuài lè！", "meaning": "Cheers! Happy New Year!" },
-        { "hanzi": "祝大家新年快乐！", "pinyin": "zhù dà jiā xīn nián kuài lè！", "meaning": "Happy New Year everyone!" },
-        { "hanzi": "新年快乐！", "pinyin": "xīn nián kuài lè！", "meaning": "Happy New Year!" },
-        { "hanzi": "中国人怎么过新年？", "pinyin": "zhōng guó rén zěn me guò xīn nián？", "meaning": "How do Chinese people spend New Year's?" },
-        { "hanzi": "你会来我们的新年派对吗？", "pinyin": "nǐ huì lái wǒ men de xīn nián pài duì ma？", "meaning": "Will you come to our New Year party?" }
+        {
+          "hanzi": "干白！新年快乐！",
+          "pinyin": "gàn bēi！xīn nián kuài lè！",
+          "meaning": "Cheers! Happy New Year!"
+        },
+        {
+          "hanzi": "祝大家新年快乐！",
+          "pinyin": "zhù dà jiā xīn nián kuài lè！",
+          "meaning": "Happy New Year everyone!"
+        },
+        {
+          "hanzi": "新年快乐！",
+          "pinyin": "xīn nián kuài lè！",
+          "meaning": "Happy New Year!"
+        },
+        {
+          "hanzi": "中国人怎么过新年？",
+          "pinyin": "zhōng guó rén zěn me guò xīn nián？",
+          "meaning": "How do Chinese people spend New Year's?"
+        },
+        {
+          "hanzi": "你会来我们的新年派对吗？",
+          "pinyin": "nǐ huì lái wǒ men de xīn nián pài duì ma？",
+          "meaning": "Will you come to our New Year party?"
+        }
       ]
     },
     {
@@ -59,10 +131,26 @@
       "pinyin": "chūn",
       "meaning": "spring (time); gay; joyful; youthful; love; lust; life",
       "examples": [
-        { "hanzi": "中国人在春节喜欢穿红的衣服。", "pinyin": "zhōng guó rén zài chūn jié xǐ huān chuān hóng de yī fú。", "meaning": "Chinese people like to wear red clothes during Spring Festival" },
-        { "hanzi": "今年春节我不能跟家人一起过。", "pinyin": "jīn nián chūn jié wǒ bù néng gēn jiā rén yī qǐ guò。", "meaning": "I cannot celebrate Chinese New Year with my family this year." },
-        { "hanzi": "春节是中国最大的节日。", "pinyin": "chūn jié shì zhōng guó zuì dà de jié rì。", "meaning": "Spring Festival is the biggest festival in China" },
-        { "hanzi": "今年春节是几月几号？", "pinyin": "jīn nián chūn jié shì jǐ yuè jǐ hào？", "meaning": "What date is the Spring Festival this year?" }
+        {
+          "hanzi": "中国人在春节喜欢穿红的衣服。",
+          "pinyin": "zhōng guó rén zài chūn jié xǐ huān chuān hóng de yī fú。",
+          "meaning": "Chinese people like to wear red clothes during Spring Festival"
+        },
+        {
+          "hanzi": "今年春节我不能跟家人一起过。",
+          "pinyin": "jīn nián chūn jié wǒ bù néng gēn jiā rén yī qǐ guò。",
+          "meaning": "I cannot celebrate Chinese New Year with my family this year."
+        },
+        {
+          "hanzi": "春节是中国最大的节日。",
+          "pinyin": "chūn jié shì zhōng guó zuì dà de jié rì。",
+          "meaning": "Spring Festival is the biggest festival in China"
+        },
+        {
+          "hanzi": "今年春节是几月几号？",
+          "pinyin": "jīn nián chūn jié shì jǐ yuè jǐ hào？",
+          "meaning": "What date is the Spring Festival this year?"
+        }
       ]
     },
     {
@@ -70,10 +158,26 @@
       "pinyin": "Chūn jié",
       "meaning": "Spring Festival (Chinese New Year)",
       "examples": [
-        { "hanzi": "中国人在春节喜欢穿红的衣服。", "pinyin": "zhōng guó rén zài chūn jié xǐ huān chuān hóng de yī fú。", "meaning": "Chinese people like to wear red clothes during Spring Festival" },
-        { "hanzi": "今年春节我不能跟家人一起过。", "pinyin": "jīn nián chūn jié wǒ bù néng gēn jiā rén yī qǐ guò。", "meaning": "I cannot celebrate Chinese New Year with my family this year." },
-        { "hanzi": "春节是中国最大的节日。", "pinyin": "chūn jié shì zhōng guó zuì dà de jié rì。", "meaning": "Spring Festival is the biggest festival in China" },
-        { "hanzi": "今年春节是几月几号？", "pinyin": "jīn nián chūn jié shì jǐ yuè jǐ hào？", "meaning": "What date is the Spring Festival this year?" }
+        {
+          "hanzi": "中国人在春节喜欢穿红的衣服。",
+          "pinyin": "zhōng guó rén zài chūn jié xǐ huān chuān hóng de yī fú。",
+          "meaning": "Chinese people like to wear red clothes during Spring Festival"
+        },
+        {
+          "hanzi": "今年春节我不能跟家人一起过。",
+          "pinyin": "jīn nián chūn jié wǒ bù néng gēn jiā rén yī qǐ guò。",
+          "meaning": "I cannot celebrate Chinese New Year with my family this year."
+        },
+        {
+          "hanzi": "春节是中国最大的节日。",
+          "pinyin": "chūn jié shì zhōng guó zuì dà de jié rì。",
+          "meaning": "Spring Festival is the biggest festival in China"
+        },
+        {
+          "hanzi": "今年春节是几月几号？",
+          "pinyin": "jīn nián chūn jié shì jǐ yuè jǐ hào？",
+          "meaning": "What date is the Spring Festival this year?"
+        }
       ]
     },
     {
@@ -81,8 +185,16 @@
       "pinyin": "fǎ / Fǎ",
       "meaning": "law; method; way; Buddhist teaching; France; French",
       "examples": [
-        { "hanzi": "他会做法国菜。", "pinyin": "tā huì zuò fǎ guó cài。", "meaning": "He can cook French cuisine" },
-        { "hanzi": "明年我和朋友会去法国。", "pinyin": "míng nián wǒ hé péng yǒu huì qù fǎ guó。", "meaning": "My friend and I are going to France next year" }
+        {
+          "hanzi": "他会做法国菜。",
+          "pinyin": "tā huì zuò fǎ guó cài。",
+          "meaning": "He can cook French cuisine"
+        },
+        {
+          "hanzi": "明年我和朋友会去法国。",
+          "pinyin": "míng nián wǒ hé péng yǒu huì qù fǎ guó。",
+          "meaning": "My friend and I are going to France next year"
+        }
       ]
     },
     {
@@ -90,8 +202,16 @@
       "pinyin": "Fǎ guó",
       "meaning": "France; French",
       "examples": [
-        { "hanzi": "他会做法国菜。", "pinyin": "tā huì zuò fǎ guó cài。", "meaning": "He can cook French cuisine" },
-        { "hanzi": "明年我和朋友会去法国。", "pinyin": "míng nián wǒ hé péng yǒu huì qù fǎ guó。", "meaning": "My friend and I are going to France next year" }
+        {
+          "hanzi": "他会做法国菜。",
+          "pinyin": "tā huì zuò fǎ guó cài。",
+          "meaning": "He can cook French cuisine"
+        },
+        {
+          "hanzi": "明年我和朋友会去法国。",
+          "pinyin": "míng nián wǒ hé péng yǒu huì qù fǎ guó。",
+          "meaning": "My friend and I are going to France next year"
+        }
       ]
     },
     {
@@ -99,9 +219,21 @@
       "pinyin": "wù",
       "meaning": "thing; object; matter",
       "examples": [
-        { "hanzi": "我们要送什么礼物给她？", "pinyin": "wǒ men yào sòng shén me lǐ wù gěi tā？", "meaning": "What gift should we give to her?" },
-        { "hanzi": "什么礼物不能送给中国人？", "pinyin": "shén me lǐ wù bù néng sòng gěi zhōng guó rén？", "meaning": "What gifts cannot be given to Chinese people?" },
-        { "hanzi": "你的生日快到了！你想要什么礼物？", "pinyin": "nǐ de shēng rì kuài dào le！nǐ xiǎng yào shén me lǐ wù？", "meaning": "Your birthday is coming up! What gift would you like?" }
+        {
+          "hanzi": "我们要送什么礼物给她？",
+          "pinyin": "wǒ men yào sòng shén me lǐ wù gěi tā？",
+          "meaning": "What gift should we give to her?"
+        },
+        {
+          "hanzi": "什么礼物不能送给中国人？",
+          "pinyin": "shén me lǐ wù bù néng sòng gěi zhōng guó rén？",
+          "meaning": "What gifts cannot be given to Chinese people?"
+        },
+        {
+          "hanzi": "你的生日快到了！你想要什么礼物？",
+          "pinyin": "nǐ de shēng rì kuài dào le！nǐ xiǎng yào shén me lǐ wù？",
+          "meaning": "Your birthday is coming up! What gift would you like?"
+        }
       ]
     },
     {
@@ -109,8 +241,16 @@
       "pinyin": "píng",
       "meaning": "bottle; vase; pitcher; classifier for wine and liquids",
       "examples": [
-        { "hanzi": "他喝了三瓶中国白酒，现在在睡觉。", "pinyin": "tā hē le sān píng zhōng guó bái jiǔ，xiàn zài zài shuì jué。", "meaning": "He drank three bottles of Baijiu, and he is sleeping now." },
-        { "hanzi": "我带了两瓶中国白酒。", "pinyin": "wǒ dài le liǎng píng zhōng guó bái jiǔ。", "meaning": "I brought two bottles of Baijiu" }
+        {
+          "hanzi": "他喝了三瓶中国白酒，现在在睡觉。",
+          "pinyin": "tā hē le sān píng zhōng guó bái jiǔ，xiàn zài zài shuì jué。",
+          "meaning": "He drank three bottles of Baijiu, and he is sleeping now."
+        },
+        {
+          "hanzi": "我带了两瓶中国白酒。",
+          "pinyin": "wǒ dài le liǎng píng zhōng guó bái jiǔ。",
+          "meaning": "I brought two bottles of Baijiu"
+        }
       ]
     },
     {
@@ -118,8 +258,16 @@
       "pinyin": "bái jiǔ",
       "meaning": "spirit usually distilled from sorghum or maize; white spirit; Baijiu",
       "examples": [
-        { "hanzi": "他喝了三瓶中国白酒，现在在睡觉。", "pinyin": "tā hē le sān píng zhōng guó bái jiǔ，xiàn zài zài shuì jué。", "meaning": "He drank three bottles of Baijiu, and he is sleeping now." },
-        { "hanzi": "我带了两瓶中国白酒。", "pinyin": "wǒ dài le liǎng píng zhōng guó bái jiǔ。", "meaning": "I brought two bottles of Baijiu" }
+        {
+          "hanzi": "他喝了三瓶中国白酒，现在在睡觉。",
+          "pinyin": "tā hē le sān píng zhōng guó bái jiǔ，xiàn zài zài shuì jué。",
+          "meaning": "He drank three bottles of Baijiu, and he is sleeping now."
+        },
+        {
+          "hanzi": "我带了两瓶中国白酒。",
+          "pinyin": "wǒ dài le liǎng píng zhōng guó bái jiǔ。",
+          "meaning": "I brought two bottles of Baijiu"
+        }
       ]
     },
     {
@@ -127,9 +275,21 @@
       "pinyin": "lǐ",
       "meaning": "gift; rite; ceremony; propriety; etiquette; courtesy",
       "examples": [
-        { "hanzi": "我们要送什么礼物给她？", "pinyin": "wǒ men yào sòng shén me lǐ wù gěi tā？", "meaning": "What gift should we give to her?" },
-        { "hanzi": "什么礼物不能送给中国人？", "pinyin": "shén me lǐ wù bù néng sòng gěi zhōng guó rén？", "meaning": "What gifts cannot be given to Chinese people?" },
-        { "hanzi": "你的生日快到了！你想要什么礼物？", "pinyin": "nǐ de shēng rì kuài dào le！nǐ xiǎng yào shén me lǐ wù？", "meaning": "Your birthday is coming up! What gift would you like?" }
+        {
+          "hanzi": "我们要送什么礼物给她？",
+          "pinyin": "wǒ men yào sòng shén me lǐ wù gěi tā？",
+          "meaning": "What gift should we give to her?"
+        },
+        {
+          "hanzi": "什么礼物不能送给中国人？",
+          "pinyin": "shén me lǐ wù bù néng sòng gěi zhōng guó rén？",
+          "meaning": "What gifts cannot be given to Chinese people?"
+        },
+        {
+          "hanzi": "你的生日快到了！你想要什么礼物？",
+          "pinyin": "nǐ de shēng rì kuài dào le！nǐ xiǎng yào shén me lǐ wù？",
+          "meaning": "Your birthday is coming up! What gift would you like?"
+        }
       ]
     },
     {
@@ -137,9 +297,21 @@
       "pinyin": "lǐ wù",
       "meaning": "gift; present",
       "examples": [
-        { "hanzi": "我们要送什么礼物给她？", "pinyin": "wǒ men yào sòng shén me lǐ wù gěi tā？", "meaning": "What gift should we give to her?" },
-        { "hanzi": "什么礼物不能送给中国人？", "pinyin": "shén me lǐ wù bù néng sòng gěi zhōng guó rén？", "meaning": "What gifts cannot be given to Chinese people?" },
-        { "hanzi": "你的生日快到了！你想要什么礼物？", "pinyin": "nǐ de shēng rì kuài dào le！nǐ xiǎng yào shén me lǐ wù？", "meaning": "Your birthday is coming up! What gift would you like?" }
+        {
+          "hanzi": "我们要送什么礼物给她？",
+          "pinyin": "wǒ men yào sòng shén me lǐ wù gěi tā？",
+          "meaning": "What gift should we give to her?"
+        },
+        {
+          "hanzi": "什么礼物不能送给中国人？",
+          "pinyin": "shén me lǐ wù bù néng sòng gěi zhōng guó rén？",
+          "meaning": "What gifts cannot be given to Chinese people?"
+        },
+        {
+          "hanzi": "你的生日快到了！你想要什么礼物？",
+          "pinyin": "nǐ de shēng rì kuài dào le！nǐ xiǎng yào shén me lǐ wù？",
+          "meaning": "Your birthday is coming up! What gift would you like?"
+        }
       ]
     },
     {
@@ -147,8 +319,16 @@
       "pinyin": "zhù",
       "meaning": "to wish; to express good wishes; to pray",
       "examples": [
-        { "hanzi": "祝大家新年快乐！", "pinyin": "zhù dà jiā xīn nián kuài lè！", "meaning": "Happy New Year everyone!" },
-        { "hanzi": "祝你们身体健康！", "pinyin": "zhù nǐ men shēn tǐ jiàn kāng！", "meaning": "I wish you good health" }
+        {
+          "hanzi": "祝大家新年快乐！",
+          "pinyin": "zhù dà jiā xīn nián kuài lè！",
+          "meaning": "Happy New Year everyone!"
+        },
+        {
+          "hanzi": "祝你们身体健康！",
+          "pinyin": "zhù nǐ men shēn tǐ jiàn kāng！",
+          "meaning": "I wish you good health"
+        }
       ]
     },
     {
@@ -156,9 +336,21 @@
       "pinyin": "hóng",
       "meaning": "red; popular; revolutionary; bonus",
       "examples": [
-        { "hanzi": "中国人在春节喜欢穿红的衣服。", "pinyin": "zhōng guó rén zài chūn jié xǐ huān chuān hóng de yī fú。", "meaning": "Chinese people like to wear red clothes during Spring Festival" },
-        { "hanzi": "你喜欢喝红酒吗？", "pinyin": "nǐ xǐ huān hē hóng jiǔ ma？", "meaning": "Do you like drinking red wine?" },
-        { "hanzi": "你想试一下我们的红酒吗？", "pinyin": "nǐ xiǎng shì yī xià wǒ men de hóng jiǔ ma？", "meaning": "Would you like to try our red wine?" }
+        {
+          "hanzi": "中国人在春节喜欢穿红的衣服。",
+          "pinyin": "zhōng guó rén zài chūn jié xǐ huān chuān hóng de yī fú。",
+          "meaning": "Chinese people like to wear red clothes during Spring Festival"
+        },
+        {
+          "hanzi": "你喜欢喝红酒吗？",
+          "pinyin": "nǐ xǐ huān hē hóng jiǔ ma？",
+          "meaning": "Do you like drinking red wine?"
+        },
+        {
+          "hanzi": "你想试一下我们的红酒吗？",
+          "pinyin": "nǐ xiǎng shì yī xià wǒ men de hóng jiǔ ma？",
+          "meaning": "Would you like to try our red wine?"
+        }
       ]
     },
     {
@@ -166,9 +358,21 @@
       "pinyin": "jié rì",
       "meaning": "holiday; festival",
       "examples": [
-        { "hanzi": "节日快乐！", "pinyin": "jié rì kuài lè！", "meaning": "Happy holidays" },
-        { "hanzi": "春节是中国最大的节日。", "pinyin": "chūn jié shì zhōng guó zuì dà de jié rì。", "meaning": "Spring Festival is the biggest festival in China" },
-        { "hanzi": "明天是什么节日？", "pinyin": "míng tiān shì shén me jié rì？", "meaning": "What festival is it tomorrow?" }
+        {
+          "hanzi": "节日快乐！",
+          "pinyin": "jié rì kuài lè！",
+          "meaning": "Happy holidays"
+        },
+        {
+          "hanzi": "春节是中国最大的节日。",
+          "pinyin": "chūn jié shì zhōng guó zuì dà de jié rì。",
+          "meaning": "Spring Festival is the biggest festival in China"
+        },
+        {
+          "hanzi": "明天是什么节日？",
+          "pinyin": "míng tiān shì shén me jié rì？",
+          "meaning": "What festival is it tomorrow?"
+        }
       ]
     },
     {
@@ -176,8 +380,16 @@
       "pinyin": "guò / guo",
       "meaning": "to cross; to go over; to pass (time); to celebrate (a holiday); to live; to get along; excessively",
       "examples": [
-        { "hanzi": "中国人怎么过新年？", "pinyin": "zhōng guó rén zěn me guò xīn nián？", "meaning": "How do Chinese people spend New Year's?" },
-        { "hanzi": "今年春节我不能跟家人一起过。", "pinyin": "jīn nián chūn jié wǒ bù néng gēn jiā rén yī qǐ guò。", "meaning": "I cannot celebrate Chinese New Year with my family this year." }
+        {
+          "hanzi": "中国人怎么过新年？",
+          "pinyin": "zhōng guó rén zěn me guò xīn nián？",
+          "meaning": "How do Chinese people spend New Year's?"
+        },
+        {
+          "hanzi": "今年春节我不能跟家人一起过。",
+          "pinyin": "jīn nián chūn jié wǒ bù néng gēn jiā rén yī qǐ guò。",
+          "meaning": "I cannot celebrate Chinese New Year with my family this year."
+        }
       ]
     },
     {
@@ -185,8 +397,16 @@
       "pinyin": "sòng",
       "meaning": "to deliver; to carry; to give (as a present); to present (with); to see off; to send",
       "examples": [
-        { "hanzi": "我们要送什么礼物给她？", "pinyin": "wǒ men yào sòng shén me lǐ wù gěi tā？", "meaning": "What gift should we give to her?" },
-        { "hanzi": "什么礼物不能送给中国人？", "pinyin": "shén me lǐ wù bù néng sòng gěi zhōng guó rén？", "meaning": "What gifts cannot be given to Chinese people?" }
+        {
+          "hanzi": "我们要送什么礼物给她？",
+          "pinyin": "wǒ men yào sòng shén me lǐ wù gěi tā？",
+          "meaning": "What gift should we give to her?"
+        },
+        {
+          "hanzi": "什么礼物不能送给中国人？",
+          "pinyin": "shén me lǐ wù bù néng sòng gěi zhōng guó rén？",
+          "meaning": "What gifts cannot be given to Chinese people?"
+        }
       ]
     },
     {
@@ -194,11 +414,29 @@
       "pinyin": "jiǔ",
       "meaning": "wine (esp. rice wine); liquor; spirits; alcoholic beverage",
       "examples": [
-        { "hanzi": "你喜欢喝红酒吗？", "pinyin": "nǐ xǐ huān hē hóng jiǔ ma？", "meaning": "Do you like drinking red wine?" },
-        { "hanzi": "他喝了三瓶中国白酒，现在在睡觉。", "pinyin": "tā hē le sān píng zhōng guó bái jiǔ，xiàn zài zài shuì jué。", "meaning": "He drank three bottles of Baijiu, and he is sleeping now." },
-        { "hanzi": "我带了两瓶中国白酒。", "pinyin": "wǒ dài le liǎng píng zhōng guó bái jiǔ。", "meaning": "I brought two bottles of Baijiu" },
-        { "hanzi": "你想试一下我们的红酒吗？", "pinyin": "nǐ xiǎng shì yī xià wǒ men de hóng jiǔ ma？", "meaning": "Would you like to try our red wine?" }
+        {
+          "hanzi": "你喜欢喝红酒吗？",
+          "pinyin": "nǐ xǐ huān hē hóng jiǔ ma？",
+          "meaning": "Do you like drinking red wine?"
+        },
+        {
+          "hanzi": "他喝了三瓶中国白酒，现在在睡觉。",
+          "pinyin": "tā hē le sān píng zhōng guó bái jiǔ，xiàn zài zài shuì jué。",
+          "meaning": "He drank three bottles of Baijiu, and he is sleeping now."
+        },
+        {
+          "hanzi": "我带了两瓶中国白酒。",
+          "pinyin": "wǒ dài le liǎng píng zhōng guó bái jiǔ。",
+          "meaning": "I brought two bottles of Baijiu"
+        },
+        {
+          "hanzi": "你想试一下我们的红酒吗？",
+          "pinyin": "nǐ xiǎng shì yī xià wǒ men de hóng jiǔ ma？",
+          "meaning": "Would you like to try our red wine?"
+        }
       ]
     }
-  ]
+  ],
+  "icon": "🎉",
+  "group": "Social"
 }

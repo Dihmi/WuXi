@@ -3,7 +3,7 @@ import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 import MasteryBadge from '../components/MasteryBadge';
 
-export default function WordReviewScreen({ word, lesson, navigate, getWordMastery, updateMastery }) {
+export default function WordReviewScreen({ word, lesson, navigate, getWordMastery, updateMastery, wordOrigin }) {
   const m = getWordMastery(wordKey(lesson.id, word.hanzi));
   const ml = MASTERY_LEVELS[m.level];
   const total = m.correct + m.wrong;
@@ -16,7 +16,7 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
   return (
     <>
       <NavBar
-        onBack={() => navigate('lesson', { lesson })}
+        onBack={() => wordOrigin === 'wall' ? navigate('wall') : navigate('lesson', { lesson })}
         title={`${wordIdx + 1} / ${lesson.words.length}`}
         subtitle={lesson.title}
         actions={

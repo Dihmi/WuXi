@@ -1,5 +1,7 @@
 {
   "name": "Time 2",
+  "icon": "🕐",
+  "group": "Core",
   "cards": [
     {
       "hanzi": "上",

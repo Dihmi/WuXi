@@ -1,5 +1,7 @@
 {
   "name": "Family 2",
+  "icon": "👨‍👩‍👧",
+  "group": "Social",
   "cards": [
     {
       "hanzi": "丈",

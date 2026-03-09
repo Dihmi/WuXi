@@ -23,7 +23,8 @@ export function parseJsonDeck(json, filename) {
   return {
     id:          `json-${slug}`,
     title:       json.name || filename.replace(/\.json$/i, ''),
-    icon:        '📋',
+    icon:        json.icon  || '📋',
+    group:       json.group || null,
     description: `${words.length} words`,
     words,
     imported:    true,
