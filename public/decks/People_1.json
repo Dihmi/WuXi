@@ -1,0 +1,270 @@
+{
+  "name": "People 1",
+  "cards": [
+    {
+      "hanzi": "亮",
+      "pinyin": "liàng",
+      "meaning": "bright; clear; resonant; to shine; to show; to reveal",
+      "examples": [
+        {
+          "hanzi": "我很高，也很漂亮。",
+          "pinyin": "wǒ hěn gāo，yě hěn piào liàng。",
+          "meaning": "I am tall and also pretty."
+        },
+        {
+          "hanzi": "我的朋友漂亮不漂亮？",
+          "pinyin": "wǒ de péng you piào liàng bù piào liàng？",
+          "meaning": "Is my friend pretty?"
+        },
+        {
+          "hanzi": "你们的猫很漂亮。",
+          "pinyin": "nǐ men de māo hěn piào liàng。",
+          "meaning": "Your cat is pretty."
+        }
+      ]
+    },
+    {
+      "hanzi": "友",
+      "pinyin": "yǒu",
+      "meaning": "friend",
+      "examples": [
+        {
+          "hanzi": "狗是我们的好朋友。",
+          "pinyin": "gǒu shì wǒ men de hǎo péng you。",
+          "meaning": "Dogs are our good friends."
+        },
+        {
+          "hanzi": "我的朋友漂亮不漂亮？",
+          "pinyin": "wǒ de péng you piào liàng bù piào liàng？",
+          "meaning": "Is my friend pretty?"
+        },
+        {
+          "hanzi": "我的男朋友爱猫。",
+          "pinyin": "wǒ de nán péng you ài māo。",
+          "meaning": "My boyfriend loves cats."
+        }
+      ]
+    },
+    {
+      "hanzi": "可",
+      "pinyin": "kè / kě",
+      "meaning": "see 可汗[ke4 han2]; can; may; able to; to approve; to permit; to suit; (particle used for emphasis) certainly; very",
+      "examples": [
+        {
+          "hanzi": "猫和狗都很可爱。",
+          "pinyin": "māo hé gǒu dōu hěn kě ài。",
+          "meaning": "Both cats and dogs are cute."
+        },
+        {
+          "hanzi": "我的女儿非常可爱。",
+          "pinyin": "wǒ de nǚ r fēi cháng kě ài。",
+          "meaning": "My daughter is very cute."
+        }
+      ]
+    },
+    {
+      "hanzi": "可爱",
+      "pinyin": "kě ài",
+      "meaning": "adorable; cute; lovely",
+      "examples": [
+        {
+          "hanzi": "猫和狗都很可爱。",
+          "pinyin": "māo hé gǒu dōu hěn kě ài。",
+          "meaning": "Both cats and dogs are cute."
+        },
+        {
+          "hanzi": "我的女儿非常可爱。",
+          "pinyin": "wǒ de nǚ r fēi cháng kě ài。",
+          "meaning": "My daughter is very cute."
+        }
+      ]
+    },
+    {
+      "hanzi": "女",
+      "pinyin": "nǚ / nǚ / rǔ",
+      "meaning": "female; woman; daughter; female; woman; daughter; archaic variant of 汝[ru3]",
+      "examples": [
+        {
+          "hanzi": "我的女儿非常可爱。",
+          "pinyin": "wǒ de nǚ r fēi cháng kě ài。",
+          "meaning": "My daughter is very cute."
+        }
+      ]
+    },
+    {
+      "hanzi": "常",
+      "pinyin": "cháng",
+      "meaning": "always; ever; often; frequently; common; general; constant",
+      "examples": [
+        {
+          "hanzi": "王医生早上非常忙。",
+          "pinyin": "wáng yī shēng zǎo shàng fēi cháng máng。",
+          "meaning": "Doctor Wang is very busy in the morning."
+        },
+        {
+          "hanzi": "我的女儿非常可爱。",
+          "pinyin": "wǒ de nǚ r fēi cháng kě ài。",
+          "meaning": "My daughter is very cute."
+        }
+      ]
+    },
+    {
+      "hanzi": "朋",
+      "pinyin": "péng",
+      "meaning": "friend",
+      "examples": [
+        {
+          "hanzi": "狗是我们的好朋友。",
+          "pinyin": "gǒu shì wǒ men de hǎo péng you。",
+          "meaning": "Dogs are our good friends."
+        },
+        {
+          "hanzi": "我的朋友漂亮不漂亮？",
+          "pinyin": "wǒ de péng you piào liàng bù piào liàng？",
+          "meaning": "Is my friend pretty?"
+        },
+        {
+          "hanzi": "我的男朋友爱猫。",
+          "pinyin": "wǒ de nán péng you ài māo。",
+          "meaning": "My boyfriend loves cats."
+        }
+      ]
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péng you",
+      "meaning": "friend",
+      "examples": [
+        {
+          "hanzi": "狗是我们的好朋友。",
+          "pinyin": "gǒu shì wǒ men de hǎo péng you。",
+          "meaning": "Dogs are our good friends."
+        },
+        {
+          "hanzi": "我的朋友漂亮不漂亮？",
+          "pinyin": "wǒ de péng you piào liàng bù piào liàng？",
+          "meaning": "Is my friend pretty?"
+        },
+        {
+          "hanzi": "我的男朋友爱猫。",
+          "pinyin": "wǒ de nán péng you ài māo。",
+          "meaning": "My boyfriend loves cats."
+        }
+      ]
+    },
+    {
+      "hanzi": "漂",
+      "pinyin": "piāo / piǎo / piào",
+      "meaning": "to float; to drift; to bleach; elegant; polished",
+      "examples": [
+        {
+          "hanzi": "我很高，也很漂亮。",
+          "pinyin": "wǒ hěn gāo，yě hěn piào liàng。",
+          "meaning": "I am tall and also pretty."
+        },
+        {
+          "hanzi": "我的朋友漂亮不漂亮？",
+          "pinyin": "wǒ de péng you piào liàng bù piào liàng？",
+          "meaning": "Is my friend pretty?"
+        },
+        {
+          "hanzi": "你们的猫很漂亮。",
+          "pinyin": "nǐ men de māo hěn piào liàng。",
+          "meaning": "Your cat is pretty."
+        }
+      ]
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piào liang",
+      "meaning": "pretty; beautiful",
+      "examples": [
+        {
+          "hanzi": "我很高，也很漂亮。",
+          "pinyin": "wǒ hěn gāo，yě hěn piào liàng。",
+          "meaning": "I am tall and also pretty."
+        },
+        {
+          "hanzi": "我的朋友漂亮不漂亮？",
+          "pinyin": "wǒ de péng you piào liàng bù piào liàng？",
+          "meaning": "Is my friend pretty?"
+        },
+        {
+          "hanzi": "你们的猫很漂亮。",
+          "pinyin": "nǐ men de māo hěn piào liàng。",
+          "meaning": "Your cat is pretty."
+        }
+      ]
+    },
+    {
+      "hanzi": "男",
+      "pinyin": "nán",
+      "meaning": "male; Baron, lowest of five orders of nobility 五等爵位[wu3 deng3 jue2 wei4]",
+      "examples": [
+        {
+          "hanzi": "我的男朋友爱猫。",
+          "pinyin": "wǒ de nán péng you ài māo。",
+          "meaning": "My boyfriend loves cats."
+        }
+      ]
+    },
+    {
+      "hanzi": "矮",
+      "pinyin": "ǎi",
+      "meaning": "low; short (in length)",
+      "examples": [
+        {
+          "hanzi": "你的弟弟矮不矮？",
+          "pinyin": "nǐ de dì dì ǎi bù ǎi？",
+          "meaning": "Is your younger brother short?"
+        }
+      ]
+    },
+    {
+      "hanzi": "非",
+      "pinyin": "fēi",
+      "meaning": "to not be; not; wrong; incorrect; non-; un-; in-; to reproach or blame; (colloquial) to insist on; simply must",
+      "examples": [
+        {
+          "hanzi": "王医生早上非常忙。",
+          "pinyin": "wáng yī shēng zǎo shàng fēi cháng máng。",
+          "meaning": "Doctor Wang is very busy in the morning."
+        },
+        {
+          "hanzi": "我的女儿非常可爱。",
+          "pinyin": "wǒ de nǚ r fēi cháng kě ài。",
+          "meaning": "My daughter is very cute."
+        }
+      ]
+    },
+    {
+      "hanzi": "非常",
+      "pinyin": "fēi cháng",
+      "meaning": "very; very much; unusual; extraordinary",
+      "examples": [
+        {
+          "hanzi": "王医生早上非常忙。",
+          "pinyin": "wáng yī shēng zǎo shàng fēi cháng máng。",
+          "meaning": "Doctor Wang is very busy in the morning."
+        },
+        {
+          "hanzi": "我的女儿非常可爱。",
+          "pinyin": "wǒ de nǚ r fēi cháng kě ài。",
+          "meaning": "My daughter is very cute."
+        }
+      ]
+    },
+    {
+      "hanzi": "高",
+      "pinyin": "gāo",
+      "meaning": "high; tall; above average; loud; your (honorific)",
+      "examples": [
+        {
+          "hanzi": "我很高，也很漂亮。",
+          "pinyin": "wǒ hěn gāo，yě hěn piào liàng。",
+          "meaning": "I am tall and also pretty."
+        }
+      ]
+    }
+  ]
+}

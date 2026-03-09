@@ -1,0 +1,254 @@
+{
+  "name": "Family 2",
+  "cards": [
+    {
+      "hanzi": "丈",
+      "pinyin": "zhàng",
+      "meaning": "measure of length, ten Chinese feet (3.3 m); to measure; husband; polite appellation for an older male",
+      "examples": [
+        {
+          "hanzi": "那不是我的丈夫。",
+          "pinyin": "nà bù shì wǒ de zhàng fu。",
+          "meaning": "That is not my husband."
+        }
+      ]
+    },
+    {
+      "hanzi": "丈夫",
+      "pinyin": "zhàng fu",
+      "meaning": "husband",
+      "examples": [
+        {
+          "hanzi": "那不是我的丈夫。",
+          "pinyin": "nà bù shì wǒ de zhàng fu。",
+          "meaning": "That is not my husband."
+        }
+      ]
+    },
+    {
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "meaning": "two; both; some; a few; tael, unit of weight equal to 50 grams (modern) or 1⁄16 of a catty 斤[jin1] (old)",
+      "examples": [
+        {
+          "hanzi": "王医生也有两个孩子。",
+          "pinyin": "wáng yī shēng yě yǒu liǎng gè hái zi。",
+          "meaning": "Doctor Wang also has two children."
+        }
+      ]
+    },
+    {
+      "hanzi": "儿",
+      "pinyin": "r / ér",
+      "meaning": "non-syllabic diminutive suffix; retroflex final; son",
+      "examples": [
+        {
+          "hanzi": "我们的儿子在美国。",
+          "pinyin": "wǒ men de r zi zài měi guó。",
+          "meaning": "Our son is in the US."
+        },
+        {
+          "hanzi": "他们没有女儿。",
+          "pinyin": "tā men méi yǒu nǚ r。",
+          "meaning": "They don't have daughters."
+        },
+        {
+          "hanzi": "我的狗在哪儿？",
+          "pinyin": "wǒ de gǒu zài nǎ r？",
+          "meaning": "Where is my dog?"
+        }
+      ]
+    },
+    {
+      "hanzi": "儿子",
+      "pinyin": "ér zi",
+      "meaning": "son",
+      "examples": [
+        {
+          "hanzi": "我们的儿子在美国。",
+          "pinyin": "wǒ men de r zi zài měi guó。",
+          "meaning": "Our son is in the US."
+        }
+      ]
+    },
+    {
+      "hanzi": "夫",
+      "pinyin": "fū / fú",
+      "meaning": "husband; man; manual worker; conscripted laborer (old); (classical) this, that; he, she, they; (exclamatory final particle); (initial particle, introduces an opinion)",
+      "examples": [
+        {
+          "hanzi": "那不是我的丈夫。",
+          "pinyin": "nà bù shì wǒ de zhàng fu。",
+          "meaning": "That is not my husband."
+        }
+      ]
+    },
+    {
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "meaning": "female; woman; daughter",
+      "examples": [
+        {
+          "hanzi": "他们没有女儿。",
+          "pinyin": "tā men méi yǒu nǚ r。",
+          "meaning": "They don't have daughters."
+        }
+      ]
+    },
+    {
+      "hanzi": "女儿",
+      "pinyin": "nǚ ér",
+      "meaning": "daughter",
+      "examples": [
+        {
+          "hanzi": "他们没有女儿。",
+          "pinyin": "tā men méi yǒu nǚ r。",
+          "meaning": "They don't have daughters."
+        }
+      ]
+    },
+    {
+      "hanzi": "妻",
+      "pinyin": "qī / qì",
+      "meaning": "wife; to marry off (a daughter)",
+      "examples": [
+        {
+          "hanzi": "这是不是王老师的妻子？",
+          "pinyin": "zhè shì bù shì wáng lǎo shī de qī zi？",
+          "meaning": "Is this Teacher Wang's wife?"
+        }
+      ]
+    },
+    {
+      "hanzi": "妻子",
+      "pinyin": "qī zǐ / qī zi",
+      "meaning": "wife and children; wife",
+      "examples": [
+        {
+          "hanzi": "这是不是王老师的妻子？",
+          "pinyin": "zhè shì bù shì wáng lǎo shī de qī zi？",
+          "meaning": "Is this Teacher Wang's wife?"
+        }
+      ]
+    },
+    {
+      "hanzi": "子",
+      "pinyin": "zǐ",
+      "meaning": "son; child; seed; egg; small thing; 1st earthly branch: 11 p.m.-1 a.m., midnight, 11th solar month (7th December to 5th January), year of the Rat; Viscount, fourth of five orders of nobility 五等爵位[wu3 deng3 jue2 wei4]; ancient Chinese compass point: 0° (north)",
+      "examples": [
+        {
+          "hanzi": "王医生也有两个孩子。",
+          "pinyin": "wáng yī shēng yě yǒu liǎng gè hái zi。",
+          "meaning": "Doctor Wang also has two children."
+        },
+        {
+          "hanzi": "他们有几个孩子？",
+          "pinyin": "tā men yǒu jǐ gè hái zi？",
+          "meaning": "How many children do they have?"
+        },
+        {
+          "hanzi": "这是不是王老师的妻子？",
+          "pinyin": "zhè shì bù shì wáng lǎo shī de qī zi？",
+          "meaning": "Is this Teacher Wang's wife?"
+        },
+        {
+          "hanzi": "我们的儿子在美国。",
+          "pinyin": "wǒ men de r zi zài měi guó。",
+          "meaning": "Our son is in the US."
+        }
+      ]
+    },
+    {
+      "hanzi": "孩",
+      "pinyin": "hái",
+      "meaning": "child",
+      "examples": [
+        {
+          "hanzi": "王医生也有两个孩子。",
+          "pinyin": "wáng yī shēng yě yǒu liǎng gè hái zi。",
+          "meaning": "Doctor Wang also has two children."
+        },
+        {
+          "hanzi": "他们有几个孩子？",
+          "pinyin": "tā men yǒu jǐ gè hái zi？",
+          "meaning": "How many children do they have?"
+        }
+      ]
+    },
+    {
+      "hanzi": "孩子",
+      "pinyin": "hái zi",
+      "meaning": "child",
+      "examples": [
+        {
+          "hanzi": "王医生也有两个孩子。",
+          "pinyin": "wáng yī shēng yě yǒu liǎng gè hái zi。",
+          "meaning": "Doctor Wang also has two children."
+        },
+        {
+          "hanzi": "他们有几个孩子？",
+          "pinyin": "tā men yǒu jǐ gè hái zi？",
+          "meaning": "How many children do they have?"
+        }
+      ]
+    },
+    {
+      "hanzi": "它",
+      "pinyin": "tā",
+      "meaning": "it",
+      "examples": [
+        {
+          "hanzi": "它吃鱼，也吃饭。",
+          "pinyin": "tā chī yú，yě chī fàn。",
+          "meaning": "It eats fish and also rice."
+        }
+      ]
+    },
+    {
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "meaning": "classifier for years (of age); year; year (of crop harvests)",
+      "examples": [
+        {
+          "hanzi": "他几岁？",
+          "pinyin": "tā jǐ suì？",
+          "meaning": "How old is he?"
+        },
+        {
+          "hanzi": "我的猫九岁。",
+          "pinyin": "wǒ de māo jiǔ suì。",
+          "meaning": "My cat is nine years old."
+        },
+        {
+          "hanzi": "我的姐姐二十四岁。",
+          "pinyin": "wǒ de jie jie èr shí sì suì。",
+          "meaning": "My older sister is twenty four years old."
+        }
+      ]
+    },
+    {
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "meaning": "dog",
+      "examples": [
+        {
+          "hanzi": "我的狗在哪儿？",
+          "pinyin": "wǒ de gǒu zài nǎ r？",
+          "meaning": "Where is my dog?"
+        }
+      ]
+    },
+    {
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "meaning": "cat; (dialect) to hide oneself; (coll.) modem",
+      "examples": [
+        {
+          "hanzi": "我的猫九岁。",
+          "pinyin": "wǒ de māo jiǔ suì。",
+          "meaning": "My cat is nine years old."
+        }
+      ]
+    }
+  ]
+}

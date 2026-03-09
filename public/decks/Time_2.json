@@ -1,0 +1,440 @@
+{
+  "name": "Time 2",
+  "cards": [
+    {
+      "hanzi": "上",
+      "pinyin": "shàng / shǎng",
+      "meaning": "on top; upon; above; upper; previous; first (of multiple parts); to climb; to get onto; to go up; to attend (class or university); see 上聲|上声[shang3 sheng1]",
+      "examples": [
+        {
+          "hanzi": "上午八点四十五分。",
+          "pinyin": "shàng wǔ bā diǎn sì shí wǔ fēn。",
+          "meaning": "8:45 in the morning."
+        },
+        {
+          "hanzi": "我们晚上九点吃饭吗？",
+          "pinyin": "wǒ men wǎn shàng jiǔ diǎn chī fàn ma？",
+          "meaning": "Do we eat at 9 in the evening?"
+        },
+        {
+          "hanzi": "现在是晚上十一点零六分。",
+          "pinyin": "xiàn zài shì wǎn shàng shí yī diǎn líng liù fēn。",
+          "meaning": "It is 11:06 in the evening now."
+        },
+        {
+          "hanzi": "她上个星期二做了什么？",
+          "pinyin": "tā shàng gè xīng qī èr zuò le shén me？",
+          "meaning": "What did she do last Tuesday?"
+        },
+        {
+          "hanzi": "我们昨天晚上做了什么？",
+          "pinyin": "wǒ men zuó tiān wǎn shàng zuò le shén me？",
+          "meaning": "What did we do last night?"
+        },
+        {
+          "hanzi": "你们上午几点喝茶？",
+          "pinyin": "nǐ men shàng wǔ jǐ diǎn hē chá？",
+          "meaning": "What time in the morning do you drink tea?"
+        }
+      ]
+    },
+    {
+      "hanzi": "上午",
+      "pinyin": "shàng wǔ",
+      "meaning": "morning",
+      "examples": [
+        {
+          "hanzi": "上午八点四十五分。",
+          "pinyin": "shàng wǔ bā diǎn sì shí wǔ fēn。",
+          "meaning": "8:45 in the morning."
+        },
+        {
+          "hanzi": "你们上午几点喝茶？",
+          "pinyin": "nǐ men shàng wǔ jǐ diǎn hē chá？",
+          "meaning": "What time in the morning do you drink tea?"
+        }
+      ]
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià / xià",
+      "meaning": "down; downwards; below; lower; later; next (week etc); second (of two parts); to decline; to go down; to arrive at (a decision, conclusion etc); measure word to show the frequency of an action; down; downwards; below; lower; later; next (week etc); second (of two parts); to decline; to go down; to arrive at (a decision, conclusion etc); measure word to show the frequency of an action",
+      "examples": [
+        {
+          "hanzi": "我们下午见老师。",
+          "pinyin": "wǒ men xià wǔ jiàn lǎo shī。",
+          "meaning": "We meet the teacher in the afternoon."
+        },
+        {
+          "hanzi": "你下午在哪儿？",
+          "pinyin": "nǐ xià wǔ zài nǎ r？",
+          "meaning": "Where are you in the afternoon?"
+        }
+      ]
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xià wǔ",
+      "meaning": "afternoon; p.m.",
+      "examples": [
+        {
+          "hanzi": "我们下午见老师。",
+          "pinyin": "wǒ men xià wǔ jiàn lǎo shī。",
+          "meaning": "We meet the teacher in the afternoon."
+        },
+        {
+          "hanzi": "你下午在哪儿？",
+          "pinyin": "nǐ xià wǔ zài nǎ r？",
+          "meaning": "Where are you in the afternoon?"
+        }
+      ]
+    },
+    {
+      "hanzi": "中午",
+      "pinyin": "zhōng wǔ",
+      "meaning": "noon; midday",
+      "examples": [
+        {
+          "hanzi": "我中午不吃饭。",
+          "pinyin": "wǒ zhōng wǔ bù chī fàn。",
+          "meaning": "I don't eat at noon."
+        },
+        {
+          "hanzi": "他们中午吃什么？",
+          "pinyin": "tā men zhōng wǔ chī shén me？",
+          "meaning": "What do they eat at noon?"
+        }
+      ]
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le / liǎo / liào / liǎo",
+      "meaning": "(modal particle intensifying preceding clause); (completed action marker); to finish; to achieve; variant of 瞭|了[liao3]; to understand clearly; unofficial variant of 瞭[liao4]; (of eyes) bright; clear-sighted; to understand clearly",
+      "examples": [
+        {
+          "hanzi": "她上个星期二做了什么？",
+          "pinyin": "tā shàng gè xīng qī èr zuò le shén me？",
+          "meaning": "What did she do last Tuesday?"
+        },
+        {
+          "hanzi": "我们昨天晚上做了什么？",
+          "pinyin": "wǒ men zuó tiān wǎn shàng zuò le shén me？",
+          "meaning": "What did we do last night?"
+        }
+      ]
+    },
+    {
+      "hanzi": "今年",
+      "pinyin": "jīn nián",
+      "meaning": "this year",
+      "examples": []
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì / kuài",
+      "meaning": "can; to be possible; to be able to; will; to be likely to; to be sure to; to assemble; to meet; to gather; to see; union; group; association; a moment (Taiwan pr. for this sense is [hui3]); to balance an account; accountancy; accounting",
+      "examples": [
+        {
+          "hanzi": "我的女儿明年会住在英国。",
+          "pinyin": "wǒ de nǚ r míng nián huì zhù zài yīng guó。",
+          "meaning": "My daughter will live in the UK next year."
+        },
+        {
+          "hanzi": "你明年会住在哪儿？",
+          "pinyin": "nǐ míng nián huì zhù zài nǎ r？",
+          "meaning": "Where will you live next year?"
+        }
+      ]
+    },
+    {
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "meaning": "to do; to make; to produce; to write; to compose; to act as; to engage in; to hold (a party); to be; to become; to function (in some capacity); to serve as; to be used for; to form (a bond or relationship); to pretend; to feign; to act a part; to put on appearance",
+      "examples": [
+        {
+          "hanzi": "她上个星期二做了什么？",
+          "pinyin": "tā shàng gè xīng qī èr zuò le shén me？",
+          "meaning": "What did she do last Tuesday?"
+        },
+        {
+          "hanzi": "我们昨天晚上做了什么？",
+          "pinyin": "wǒ men zuó tiān wǎn shàng zuò le shén me？",
+          "meaning": "What did we do last night?"
+        }
+      ]
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "meaning": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad); part or subdivision; fraction; one tenth (of certain units); unit of length equivalent to 0.33 cm; minute; a point (in sports or games); 0.01 yuan (unit of money)",
+      "examples": [
+        {
+          "hanzi": "上午八点四十五分。",
+          "pinyin": "shàng wǔ bā diǎn sì shí wǔ fēn。",
+          "meaning": "8:45 in the morning."
+        },
+        {
+          "hanzi": "现在是晚上十一点零六分。",
+          "pinyin": "xiàn zài shì wǎn shàng shí yī diǎn líng liù fēn。",
+          "meaning": "It is 11:06 in the evening now."
+        }
+      ]
+    },
+    {
+      "hanzi": "午",
+      "pinyin": "wǔ",
+      "meaning": "7th earthly branch: 11 a.m.-1 p.m., noon, 5th solar month (6th June-6th July), year of the Horse; ancient Chinese compass point: 180° (south)",
+      "examples": [
+        {
+          "hanzi": "上午八点四十五分。",
+          "pinyin": "shàng wǔ bā diǎn sì shí wǔ fēn。",
+          "meaning": "8:45 in the morning."
+        },
+        {
+          "hanzi": "我中午不吃饭。",
+          "pinyin": "wǒ zhōng wǔ bù chī fàn。",
+          "meaning": "I don't eat at noon."
+        },
+        {
+          "hanzi": "我们下午见老师。",
+          "pinyin": "wǒ men xià wǔ jiàn lǎo shī。",
+          "meaning": "We meet the teacher in the afternoon."
+        },
+        {
+          "hanzi": "他们中午吃什么？",
+          "pinyin": "tā men zhōng wǔ chī shén me？",
+          "meaning": "What do they eat at noon?"
+        },
+        {
+          "hanzi": "你们上午几点喝茶？",
+          "pinyin": "nǐ men shàng wǔ jǐ diǎn hē chá？",
+          "meaning": "What time in the morning do you drink tea?"
+        },
+        {
+          "hanzi": "你下午在哪儿？",
+          "pinyin": "nǐ xià wǔ zài nǎ r？",
+          "meaning": "Where are you in the afternoon?"
+        }
+      ]
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "meaning": "to go; to go to (a place); (of a time etc) last; just passed; to send; to remove; to get rid of; to reduce; to be apart from in space or time; to die (euphemism); to play (a part); (when used either before or after a verb) to go in order to do sth; (after a verb of motion indicates movement away from the speaker); (used after certain verbs to indicate detachment or separation)",
+      "examples": [
+        {
+          "hanzi": "我的老师去年在北京。",
+          "pinyin": "wǒ de lǎo shī qù nián zài běi jīng。",
+          "meaning": "My teacher was in Beijing last year."
+        }
+      ]
+    },
+    {
+      "hanzi": "去年",
+      "pinyin": "qù nián",
+      "meaning": "last year",
+      "examples": [
+        {
+          "hanzi": "我的老师去年在北京。",
+          "pinyin": "wǒ de lǎo shī qù nián zài běi jīng。",
+          "meaning": "My teacher was in Beijing last year."
+        }
+      ]
+    },
+    {
+      "hanzi": "周",
+      "pinyin": "zhōu / Zhōu / zhōu",
+      "meaning": "week; weekly; variant of 周[zhou1]; surname Zhou; Zhou Dynasty (1046-256 BC); to make a circuit; to circle; circle; circumference; lap; cycle; complete; all; all over; thorough; to help financially",
+      "examples": [
+        {
+          "hanzi": "我每个周末见英语老师。",
+          "pinyin": "wǒ měi gè zhōu mò jiàn yīng yǔ lǎo shī。",
+          "meaning": "I see my English teacher every weekend."
+        },
+        {
+          "hanzi": "我的哥哥这个周末在医院。",
+          "pinyin": "wǒ de gē gē zhè gè zhōu mò zài yī yuàn。",
+          "meaning": "My older brother will be in the hospital this weekend."
+        }
+      ]
+    },
+    {
+      "hanzi": "周末",
+      "pinyin": "zhōu mò",
+      "meaning": "weekend",
+      "examples": [
+        {
+          "hanzi": "我每个周末见英语老师。",
+          "pinyin": "wǒ měi gè zhōu mò jiàn yīng yǔ lǎo shī。",
+          "meaning": "I see my English teacher every weekend."
+        },
+        {
+          "hanzi": "我的哥哥这个周末在医院。",
+          "pinyin": "wǒ de gē gē zhè gè zhōu mò zài yī yuàn。",
+          "meaning": "My older brother will be in the hospital this weekend."
+        }
+      ]
+    },
+    {
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "meaning": "day; sky; heaven",
+      "examples": [
+        {
+          "hanzi": "她的妈妈每天都喝茶。",
+          "pinyin": "tā de mā mā měi tiān dōu hē chá。",
+          "meaning": "Her mom drinks tea every day."
+        },
+        {
+          "hanzi": "我的朋友昨天在纽约。",
+          "pinyin": "wǒ de péng you zuó tiān zài niǔ yuē。",
+          "meaning": "My friend was in New York yesterday."
+        },
+        {
+          "hanzi": "我们昨天晚上做了什么？",
+          "pinyin": "wǒ men zuó tiān wǎn shàng zuò le shén me？",
+          "meaning": "What did we do last night?"
+        },
+        {
+          "hanzi": "你每天都很忙。",
+          "pinyin": "nǐ měi tiān dōu hěn máng。",
+          "meaning": "You are busy every day."
+        }
+      ]
+    },
+    {
+      "hanzi": "明年",
+      "pinyin": "míng nián",
+      "meaning": "next year",
+      "examples": [
+        {
+          "hanzi": "我的女儿明年会住在英国。",
+          "pinyin": "wǒ de nǚ r míng nián huì zhù zài yīng guó。",
+          "meaning": "My daughter will live in the UK next year."
+        },
+        {
+          "hanzi": "你明年会住在哪儿？",
+          "pinyin": "nǐ míng nián huì zhù zài nǎ r？",
+          "meaning": "Where will you live next year?"
+        }
+      ]
+    },
+    {
+      "hanzi": "昨",
+      "pinyin": "zuó",
+      "meaning": "yesterday",
+      "examples": [
+        {
+          "hanzi": "我的朋友昨天在纽约。",
+          "pinyin": "wǒ de péng you zuó tiān zài niǔ yuē。",
+          "meaning": "My friend was in New York yesterday."
+        },
+        {
+          "hanzi": "我们昨天晚上做了什么？",
+          "pinyin": "wǒ men zuó tiān wǎn shàng zuò le shén me？",
+          "meaning": "What did we do last night?"
+        }
+      ]
+    },
+    {
+      "hanzi": "昨天",
+      "pinyin": "zuó tiān",
+      "meaning": "yesterday",
+      "examples": [
+        {
+          "hanzi": "我的朋友昨天在纽约。",
+          "pinyin": "wǒ de péng you zuó tiān zài niǔ yuē。",
+          "meaning": "My friend was in New York yesterday."
+        },
+        {
+          "hanzi": "我们昨天晚上做了什么？",
+          "pinyin": "wǒ men zuó tiān wǎn shàng zuò le shén me？",
+          "meaning": "What did we do last night?"
+        }
+      ]
+    },
+    {
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "meaning": "evening; night; late",
+      "examples": [
+        {
+          "hanzi": "我们晚上九点吃饭吗？",
+          "pinyin": "wǒ men wǎn shàng jiǔ diǎn chī fàn ma？",
+          "meaning": "Do we eat at 9 in the evening?"
+        },
+        {
+          "hanzi": "现在是晚上十一点零六分。",
+          "pinyin": "xiàn zài shì wǎn shàng shí yī diǎn líng liù fēn。",
+          "meaning": "It is 11:06 in the evening now."
+        },
+        {
+          "hanzi": "我们昨天晚上做了什么？",
+          "pinyin": "wǒ men zuó tiān wǎn shàng zuò le shén me？",
+          "meaning": "What did we do last night?"
+        }
+      ]
+    },
+    {
+      "hanzi": "晚上",
+      "pinyin": "wǎn shang",
+      "meaning": "evening; night; in the evening",
+      "examples": [
+        {
+          "hanzi": "我们晚上九点吃饭吗？",
+          "pinyin": "wǒ men wǎn shàng jiǔ diǎn chī fàn ma？",
+          "meaning": "Do we eat at 9 in the evening?"
+        },
+        {
+          "hanzi": "现在是晚上十一点零六分。",
+          "pinyin": "xiàn zài shì wǎn shàng shí yī diǎn líng liù fēn。",
+          "meaning": "It is 11:06 in the evening now."
+        },
+        {
+          "hanzi": "我们昨天晚上做了什么？",
+          "pinyin": "wǒ men zuó tiān wǎn shàng zuò le shén me？",
+          "meaning": "What did we do last night?"
+        }
+      ]
+    },
+    {
+      "hanzi": "末",
+      "pinyin": "mò",
+      "meaning": "tip; end; final stage; latter part; inessential detail; powder; dust; opera role of old man",
+      "examples": [
+        {
+          "hanzi": "我每个周末见英语老师。",
+          "pinyin": "wǒ měi gè zhōu mò jiàn yīng yǔ lǎo shī。",
+          "meaning": "I see my English teacher every weekend."
+        },
+        {
+          "hanzi": "我的哥哥这个周末在医院。",
+          "pinyin": "wǒ de gē gē zhè gè zhōu mò zài yī yuàn。",
+          "meaning": "My older brother will be in the hospital this weekend."
+        }
+      ]
+    },
+    {
+      "hanzi": "每",
+      "pinyin": "měi",
+      "meaning": "each; every",
+      "examples": [
+        {
+          "hanzi": "她的妈妈每天都喝茶。",
+          "pinyin": "tā de mā mā měi tiān dōu hē chá。",
+          "meaning": "Her mom drinks tea every day."
+        },
+        {
+          "hanzi": "我每个周末见英语老师。",
+          "pinyin": "wǒ měi gè zhōu mò jiàn yīng yǔ lǎo shī。",
+          "meaning": "I see my English teacher every weekend."
+        },
+        {
+          "hanzi": "你每天都很忙。",
+          "pinyin": "nǐ měi tiān dōu hěn máng。",
+          "meaning": "You are busy every day."
+        }
+      ]
+    }
+  ]
+}

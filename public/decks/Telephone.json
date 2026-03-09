@@ -1,0 +1,99 @@
+{
+  "name": "Telephone",
+  "cards": [
+    {
+      "hanzi": "一点儿",
+      "pinyin": "yī diǎn r",
+      "meaning": "erhua variant of 一點|一点[yi1 dian3]",
+      "examples": [
+        {
+          "hanzi": "请说慢一点儿！",
+          "pinyin": "qǐng shuō màn yī diǎn r ！",
+          "meaning": "Please speak more slowly!"
+        },
+        {
+          "hanzi": "请慢一点儿。",
+          "pinyin": "qǐng màn yī diǎn r。",
+          "meaning": "Slow down, please."
+        }
+      ]
+    },
+    {
+      "hanzi": "喂",
+      "pinyin": "wèi / wèi / wéi",
+      "meaning": "hey; to feed (an animal, baby, invalid etc); to feed; hello (when answering the phone)",
+      "examples": [
+        {
+          "hanzi": "喂？你是李医生吗？",
+          "pinyin": "wèi？nǐ shì li yī shēng ma？",
+          "meaning": "Hello? Are you Doctor Li?"
+        }
+      ]
+    },
+    {
+      "hanzi": "得",
+      "pinyin": "de / dé / děi",
+      "meaning": "structural particle: used after a verb (or adjective as main verb), linking it to following phrase indicating effect, degree, possibility etc; to obtain; to get; to gain; to catch (a disease); proper; suitable; proud; contented; to allow; to permit; ready; finished; to have to; must; ought to; to need to",
+      "examples": [
+        {
+          "hanzi": "你说得很快！",
+          "pinyin": "nǐ shuō de hěn kuài ！",
+          "meaning": "You speak very fast!"
+        }
+      ]
+    },
+    {
+      "hanzi": "快",
+      "pinyin": "kuài",
+      "meaning": "rapid; quick; speed; rate; soon; almost; to make haste; clever; sharp (of knives or wits); forthright; plainspoken; gratified; pleased; pleasant",
+      "examples": [
+        {
+          "hanzi": "你说得很快！",
+          "pinyin": "nǐ shuō de hěn kuài ！",
+          "meaning": "You speak very fast!"
+        }
+      ]
+    },
+    {
+      "hanzi": "慢",
+      "pinyin": "màn",
+      "meaning": "slow",
+      "examples": [
+        {
+          "hanzi": "请说慢一点儿！",
+          "pinyin": "qǐng shuō màn yī diǎn r ！",
+          "meaning": "Please speak more slowly!"
+        },
+        {
+          "hanzi": "请慢一点儿。",
+          "pinyin": "qǐng màn yī diǎn r。",
+          "meaning": "Slow down, please."
+        }
+      ]
+    },
+    {
+      "hanzi": "明白",
+      "pinyin": "míng bai",
+      "meaning": "clear; obvious; unequivocal; to understand; to realize",
+      "examples": [
+        {
+          "hanzi": "我不明白。",
+          "pinyin": "wǒ bù míng bái。",
+          "meaning": "I don't understand."
+        }
+      ]
+    },
+    {
+      "hanzi": "白",
+      "pinyin": "bái",
+      "meaning": "white; snowy; pure; bright; empty; blank; plain; clear; to make clear; in vain; gratuitous; free of charge; reactionary; anti-communist; funeral; to stare coldly; to write wrong character; to state; to explain; vernacular; spoken lines in opera",
+      "examples": [
+        {
+          "hanzi": "我不明白。",
+          "pinyin": "wǒ bù míng bái。",
+          "meaning": "I don't understand."
+        }
+      ]
+    }
+  ]
+}
