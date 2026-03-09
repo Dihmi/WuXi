@@ -34,38 +34,39 @@ export default function HomeScreen({
       />
       <div className="screen">
 
-        {/* ── Stats bar ─────────────────────────────────────────── */}
-        <div className="home-stats-bar">
-          <div className="home-stat">
-            <div className="home-stat-num">{lessons.length}</div>
-            <div className="home-stat-label">Lessons</div>
+        {/* ── Hero progress strip ───────────────────────────────── */}
+        <div className="hero-strip">
+          <div className="hero-pct-block">
+            <div className="hero-pct">
+              {overallPct}<span className="hero-pct-sign">%</span>
+            </div>
+            <div className="hero-pct-label">overall</div>
           </div>
-          <div className="home-stat">
-            <div className="home-stat-num">{allWords}</div>
-            <div className="home-stat-label">Words</div>
+          <div className="hero-right">
+            <ProgressBar pct={overallPct} />
+            <div className="hero-meta">
+              <span className="hero-meta-item">
+                <span className="hero-meta-num">{lessons.length}</span> lessons
+              </span>
+              <span className="hero-sep">·</span>
+              <span className="hero-meta-item">
+                <span className="hero-meta-num">{allWords}</span> words
+              </span>
+              <span className="hero-sep">·</span>
+              <span className="hero-meta-item clr-accent">
+                <span className="hero-meta-num">{allSeen}</span> seen
+              </span>
+              <span className="hero-sep">·</span>
+              <span className="hero-meta-item clr-success">
+                <span className="hero-meta-num">{allMastered}</span> mastered
+              </span>
+            </div>
           </div>
-          <div className="home-stat">
-            <div className="home-stat-num clr-accent">{allSeen}</div>
-            <div className="home-stat-label">Seen</div>
-          </div>
-          <div className="home-stat">
-            <div className="home-stat-num clr-success">{allMastered}</div>
-            <div className="home-stat-label">Mastered</div>
-          </div>
-        </div>
-
-        {/* ── Overall progress ──────────────────────────────────── */}
-        <div className="overall-progress">
-          <div className="overall-progress-row">
-            <span className="overall-progress-label">Overall progress</span>
-            <span className="overall-progress-pct">{overallPct}%</span>
-          </div>
-          <ProgressBar pct={overallPct} />
         </div>
 
         {/* ── Deck errors ───────────────────────────────────────── */}
         {deckErrors.length > 0 && (
-          <div className="deck-errors">
+          <div className="deck-errors" style={{ margin: '12px 20px' }}>
             <div className="deck-errors-title">
               ⚠ Failed to load {deckErrors.length} deck{deckErrors.length > 1 ? 's' : ''}
             </div>
@@ -75,7 +76,7 @@ export default function HomeScreen({
           </div>
         )}
 
-        {/* ── Lessons header + toolbar ───────────────────────────── */}
+        {/* ── Toolbar ───────────────────────────────────────────── */}
         <div className="home-toolbar">
           <span className="home-toolbar-label">
             Lessons
@@ -87,7 +88,6 @@ export default function HomeScreen({
             )}
           </span>
 
-          {/* Import */}
           <input
             ref={importRef}
             type="file"
@@ -97,11 +97,11 @@ export default function HomeScreen({
           />
           <button
             className="btn btn-secondary"
-            style={{ fontSize: 12, padding: '6px 12px' }}
+            style={{ fontSize: 12, padding: '5px 11px' }}
             onClick={() => importRef.current?.click()}
             title="Import progress from a WuXi JSON file"
           >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="17 8 12 3 7 8"/>
@@ -109,15 +109,13 @@ export default function HomeScreen({
             </svg>
             Import
           </button>
-
-          {/* Export */}
           <button
             className="btn btn-secondary"
-            style={{ fontSize: 12, padding: '6px 12px' }}
+            style={{ fontSize: 12, padding: '5px 11px' }}
             onClick={onExport}
             title="Export progress as JSON"
           >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
@@ -134,40 +132,41 @@ export default function HomeScreen({
             return (
               <div
                 key={lesson.id}
-                className="card lesson-card"
+                className="card lesson-card clickable"
                 onClick={() => navigate('lesson', { lesson })}
               >
                 <div className="lesson-card-top">
                   <div className="lesson-icon">{lesson.icon}</div>
-                  <div>
+                  <div className="lesson-card-info">
                     <div className="lesson-title">
                       {lesson.title}
                       {lesson.imported && <span className="imported-badge">IMPORTED</span>}
                     </div>
-                    <div className="lesson-desc">{lesson.description}</div>
+                    <div className="lesson-card-meta">
+                      <span className="lesson-word-count">{lesson.words.length} words</span>
+                      <span className="lesson-pct">{pct}%</span>
+                    </div>
                   </div>
                 </div>
-                <div className="lesson-foot">
-                  <div className="lesson-word-count">{lesson.words.length} words</div>
-                  <div className="lesson-pct">{pct}%</div>
-                </div>
                 <ProgressBar pct={pct} />
-                <div className="lesson-tags">
-                  {MASTERY_LEVELS.map(ml =>
-                    counts[ml.id] > 0 && (
-                      <span
-                        key={ml.id}
-                        style={{
-                          fontSize: 10, color: ml.color, background: ml.bg,
-                          border: `1px solid ${ml.color}33`, borderRadius: 20,
-                          padding: '2px 7px', fontWeight: 600,
-                        }}
-                      >
-                        {counts[ml.id]} {ml.name}
-                      </span>
-                    )
-                  )}
-                </div>
+                {counts.some((c, i) => i > 0 && c > 0) && (
+                  <div className="lesson-tags">
+                    {MASTERY_LEVELS.map(ml =>
+                      counts[ml.id] > 0 && (
+                        <span
+                          key={ml.id}
+                          style={{
+                            fontSize: 9, color: ml.color, background: ml.bg,
+                            border: `1px solid ${ml.color}33`, borderRadius: 20,
+                            padding: '1px 6px', fontWeight: 600,
+                          }}
+                        >
+                          {counts[ml.id]} {ml.name}
+                        </span>
+                      )
+                    )}
+                  </div>
+                )}
               </div>
             );
           })}

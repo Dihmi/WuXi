@@ -46,7 +46,8 @@ export default function App() {
     const payload = {
       version:    1,
       exportedAt: new Date().toISOString(),
-      profile:    currentProfile,
+      profile:    currentProfile,   // includes id, name, avatar, createdAt
+      theme,                        // active theme id
       mastery:    masteryData,
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
@@ -56,7 +57,7 @@ export default function App() {
     a.download = `wuxi-${currentProfile.name.replace(/\s+/g, '-')}-${Date.now()}.json`;
     a.click();
     URL.revokeObjectURL(url);
-  }, [currentProfile, masteryData]);
+  }, [currentProfile, masteryData, theme]);
 
   /* ── Import progress ────────────────────────────────────────── */
   const handleImport = useCallback((e) => {
@@ -68,6 +69,7 @@ export default function App() {
         const data = JSON.parse(ev.target.result);
         if (data.mastery && typeof data.mastery === 'object') {
           resetMastery(data.mastery);
+          if (data.theme) applyTheme(data.theme);
         } else {
           alert('Invalid progress file — no mastery data found.');
         }
@@ -77,7 +79,7 @@ export default function App() {
     };
     reader.readAsText(file);
     e.target.value = '';
-  }, [resetMastery]);
+  }, [resetMastery, applyTheme]);
 
   /* ── Profile not selected ───────────────────────────────────── */
   if (!currentProfile) {
