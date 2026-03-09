@@ -9,6 +9,19 @@ const SORT_OPTIONS = [
   { id: 'az',     label: 'A–Z'    },
 ];
 
+// Available inner width (tile minWidth minus horizontal padding) per size variant.
+// Used to scale down font so multi-char hanzi always fits on one line.
+const HANZI_AVAIL = { sm: 48, md: 70, lg: 96 };
+const HANZI_BASE  = { sm: 20, md: 26, lg: 36 };
+
+function hanziFontSize(hanzi, tileSize) {
+  const n = [...hanzi].length;        // proper Unicode-aware char count
+  if (n <= 2) return undefined;       // CSS handles short words fine
+  const avail = HANZI_AVAIL[tileSize] ?? 70;
+  const base  = HANZI_BASE[tileSize]  ?? 26;
+  return Math.max(10, Math.min(base, Math.floor(avail / n)));
+}
+
 // ── Shared dropdown button ───────────────────────────────────────────────────
 function WallDropdown({ id, label, active, open, onToggle, children }) {
   return (
@@ -275,7 +288,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
                   onClick={() => navigate('word', { lesson, word })}
                   title={`${word.hanzi} · ${word.pinyin} · ${word.meaning}`}
                 >
-                  <div className="char-hanzi">{word.hanzi}</div>
+                  <div className="char-hanzi" style={hanziFontSize(word.hanzi, tileSize) ? { fontSize: hanziFontSize(word.hanzi, tileSize) } : undefined}>{word.hanzi}</div>
                   {showPinyin  && <div className="char-pinyin">{word.pinyin}</div>}
                   {showMeaning && <div className="char-meaning">{word.meaning}</div>}
                   <div className="char-level-bar" style={{ background: ml.color }} />

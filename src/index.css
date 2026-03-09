@@ -951,7 +951,7 @@ html, body {
 .char-card-md .char-hanzi { font-size: 26px; margin-bottom: 4px; }
 .char-card-lg .char-hanzi { font-size: 36px; margin-bottom: 5px; }
 .char-card-hanzi-only .char-hanzi { margin-bottom: 0; }
-.char-hanzi { line-height: 1.1; color: var(--text1); }
+.char-hanzi { line-height: 1.1; color: var(--text1); white-space: nowrap; overflow: hidden; }
 .char-pinyin {
   font-size: 10px; color: var(--accent); margin-bottom: 2px;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
