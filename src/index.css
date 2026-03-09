@@ -958,14 +958,68 @@ html, body {
 }
 .char-card-lg .char-pinyin { font-size: 11px; }
 .char-meaning {
-  font-size: 10px; color: var(--text3); line-height: 1.3;
-  overflow: hidden; display: -webkit-box;
-  -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-width: 100%;
+  font-size: 10px; color: var(--text3);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
 }
 .char-card-lg .char-meaning { font-size: 11px; }
 .char-level-bar {
   position: absolute; bottom: 0; left: 0; right: 0;
   height: 3px; border-radius: 0 0 12px 12px;
+}
+
+/* ── Hover pop-up overlay ── */
+.char-card-wrap { position: relative; }
+.char-card-wrap.char-card-anim { z-index: 1; }
+.char-card-wrap.char-card-anim:hover { z-index: 20; }
+
+/* Suppress default card hover lift when pop-up mode is on */
+.char-card-wrap.char-card-anim .char-card:hover {
+  transform: none; box-shadow: none; border-color: var(--border);
+}
+
+.char-popup {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%) scale(0.78);
+  transform-origin: top center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 50;
+  min-width: 160px;
+  width: max-content;
+  max-width: 240px;
+  background: var(--surface2);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  padding: 14px 12px 18px;
+  text-align: center;
+  box-shadow: 0 10px 36px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+.char-card-wrap.char-card-anim:hover .char-popup {
+  opacity: 1;
+  pointer-events: auto;
+  animation: char-spring 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+@keyframes char-spring {
+  from { transform: translateX(-50%) scale(0.78); opacity: 0; }
+  to   { transform: translateX(-50%) scale(1);    opacity: 1; }
+}
+
+.char-popup-hanzi {
+  line-height: 1.1; color: var(--text1);
+  white-space: nowrap; margin-bottom: 5px;
+}
+.char-popup-pinyin {
+  font-size: 11px; color: var(--accent); margin-bottom: 4px; white-space: nowrap;
+}
+.char-popup-meaning {
+  font-size: 12px; color: var(--text2); line-height: 1.4;
+  white-space: normal; word-break: break-word; margin-bottom: 6px;
+}
+.char-popup-lesson {
+  font-size: 10px; color: var(--text3); white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis; max-width: 100%;
 }
 
 /* example-item separator for multi-example words */

@@ -86,13 +86,23 @@ function sortLabel(sort) {
   return SORT_OPTIONS.find(o => o.id === sort)?.label ?? 'Sort';
 }
 
-function displayLabel(showPinyin, showMeaning, tileSize) {
+function displayLabel(showPinyin, showMeaning, tileSize, hoverAnim) {
   const parts = [];
   if (showPinyin)  parts.push('拼');
   if (showMeaning) parts.push('En');
   const sizeMap = { sm: 'S', md: 'M', lg: 'L' };
   parts.push(sizeMap[tileSize] ?? 'M');
+  if (hoverAnim) parts.push('✦');
   return parts.join(' · ');
+}
+
+// Font size for the pop-up overlay (wider panel, so longer hanzi can stay larger)
+function popupHanziFontSize(hanzi) {
+  const n = [...hanzi].length;
+  const avail = 140;
+  const base  = 34;
+  if (n <= 2) return base;
+  return Math.max(14, Math.min(base, Math.floor(avail / n)));
 }
 
 // ── Main component ───────────────────────────────────────────────────────────
@@ -104,6 +114,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
   const [showPinyin,    setShowPinyin]    = useState(true);
   const [showMeaning,   setShowMeaning]   = useState(true);
   const [tileSize,      setTileSize]      = useState('md');
+  const [hoverAnim,     setHoverAnim]     = useState(false);
   const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'lesson'|'sort'|'display'|null
   const barRef = useRef(null);
 
@@ -256,13 +267,14 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
           {/* Display */}
           <WallDropdown
             id="display"
-            label={displayLabel(showPinyin, showMeaning, tileSize)}
-            active={!showPinyin || !showMeaning || tileSize !== 'md'}
+            label={displayLabel(showPinyin, showMeaning, tileSize, hoverAnim)}
+            active={!showPinyin || !showMeaning || tileSize !== 'md' || hoverAnim}
             open={openDrop === 'display'}
             onToggle={toggleDrop}
           >
             <DDItem checked={showPinyin}  onClick={() => setShowPinyin(v => !v)}>Pinyin</DDItem>
             <DDItem checked={showMeaning} onClick={() => setShowMeaning(v => !v)}>Meaning</DDItem>
+            <DDItem checked={hoverAnim}   onClick={() => setHoverAnim(v => !v)}>Pop-up on hover</DDItem>
             <DDDivider />
             <div className="wall-dd-size-row">
               <button className={`wall-size-btn sm${tileSize === 'sm' ? ' active' : ''}`} onClick={() => setTileSize('sm')} title="Small">A</button>
@@ -280,19 +292,38 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
         ) : (
           <div className={`char-grid char-grid-${tileSize}`}>
             {sorted.map(({ word, lesson, mastery }) => {
-              const ml = MASTERY_LEVELS[mastery.level];
+              const ml  = MASTERY_LEVELS[mastery.level];
+              const fs  = hanziFontSize(word.hanzi, tileSize);
+              const pfs = popupHanziFontSize(word.hanzi);
               return (
-                <button
+                <div
                   key={`${lesson.id}-${word.hanzi}`}
-                  className={`char-card char-card-${tileSize}${!showPinyin && !showMeaning ? ' char-card-hanzi-only' : ''}`}
-                  onClick={() => navigate('word', { lesson, word })}
-                  title={`${word.hanzi} · ${word.pinyin} · ${word.meaning}`}
+                  className={`char-card-wrap${hoverAnim ? ' char-card-anim' : ''}`}
                 >
-                  <div className="char-hanzi" style={hanziFontSize(word.hanzi, tileSize) ? { fontSize: hanziFontSize(word.hanzi, tileSize) } : undefined}>{word.hanzi}</div>
-                  {showPinyin  && <div className="char-pinyin">{word.pinyin}</div>}
-                  {showMeaning && <div className="char-meaning">{word.meaning}</div>}
-                  <div className="char-level-bar" style={{ background: ml.color }} />
-                </button>
+                  <button
+                    className={`char-card char-card-${tileSize}${!showPinyin && !showMeaning ? ' char-card-hanzi-only' : ''}`}
+                    onClick={() => navigate('word', { lesson, word })}
+                    title={`${word.hanzi} · ${word.pinyin} · ${word.meaning}`}
+                  >
+                    <div className="char-hanzi" style={fs ? { fontSize: fs } : undefined}>{word.hanzi}</div>
+                    {showPinyin  && <div className="char-pinyin">{word.pinyin}</div>}
+                    {showMeaning && <div className="char-meaning">{word.meaning}</div>}
+                    <div className="char-level-bar" style={{ background: ml.color }} />
+                  </button>
+
+                  {hoverAnim && (
+                    <div
+                      className="char-popup"
+                      onClick={() => navigate('word', { lesson, word })}
+                    >
+                      <div className="char-popup-hanzi" style={{ fontSize: pfs }}>{word.hanzi}</div>
+                      <div className="char-popup-pinyin">{word.pinyin}</div>
+                      <div className="char-popup-meaning">{word.meaning}</div>
+                      <div className="char-popup-lesson">{lesson.icon} {lesson.title}</div>
+                      <div className="char-level-bar" style={{ background: ml.color }} />
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>
