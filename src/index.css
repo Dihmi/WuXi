@@ -928,9 +928,9 @@ html, body {
 
 /* ── Character grid — three sizes ── */
 .char-grid { display: grid; gap: 8px; padding: 12px 16px 0; }
-.char-grid-sm { grid-template-columns: repeat(auto-fill, minmax(64px,  1fr)); }
-.char-grid-md { grid-template-columns: repeat(auto-fill, minmax(90px,  1fr)); }
-.char-grid-lg { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+.char-grid-sm { grid-template-columns: repeat(auto-fill, 64px);  }
+.char-grid-md { grid-template-columns: repeat(auto-fill, 90px);  }
+.char-grid-lg { grid-template-columns: repeat(auto-fill, 120px); }
 
 .char-card {
   position: relative; overflow: hidden;
