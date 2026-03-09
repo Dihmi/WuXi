@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { MASTERY_LEVELS } from '../data/lessons';
 import { wordKey } from '../utils/helpers';
@@ -27,12 +27,15 @@ function hanziFontSize(hanzi, tileSize) {
 // Menu is portaled to document.body so overflow-x:auto on the toolbar doesn't clip it.
 function WallDropdown({ id, label, active, open, onToggle, children }) {
   const btnRef = useRef(null);
-  const [menuPos, setMenuPos] = useState({ top: 0, left: 0 });
+  const [menuPos, setMenuPos] = useState(null);
 
-  useEffect(() => {
+  // useLayoutEffect: runs synchronously after DOM mutation, before paint → no position jump
+  useLayoutEffect(() => {
     if (open && btnRef.current) {
       const r = btnRef.current.getBoundingClientRect();
       setMenuPos({ top: r.bottom + 6, left: r.left });
+    } else {
+      setMenuPos(null);
     }
   }, [open]);
 
@@ -50,8 +53,12 @@ function WallDropdown({ id, label, active, open, onToggle, children }) {
           <polyline points="6 9 12 15 18 9"/>
         </svg>
       </button>
-      {open && createPortal(
-        <div className="wall-dd-menu" style={{ position: 'fixed', top: menuPos.top, left: menuPos.left }}>
+      {open && menuPos && createPortal(
+        <div
+          className="wall-dd-menu"
+          style={{ position: 'fixed', top: menuPos.top, left: menuPos.left }}
+          onMouseDown={e => e.stopPropagation()}
+        >
           {children}
         </div>,
         document.body
