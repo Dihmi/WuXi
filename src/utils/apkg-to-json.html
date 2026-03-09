@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APKG → JSON</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1208;
+    --paper: #f5f0e8;
+    --accent: #c0392b;
+    --accent2: #e67e22;
+    --muted: #8b7d6b;
+    --border: #d4c9b0;
+    --card-bg: #fdfaf4;
+    --success: #27ae60;
+    --code-bg: #2c2416;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Space Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Grain texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.5;
+  }
+
+  header {
+    border-bottom: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  header .subtitle {
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  header .badge {
+    margin-left: auto;
+    font-size: 0.65rem;
+    background: var(--accent);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0;
+  }
+
+  .drop-zone {
+    grid-column: 1 / -1;
+    border-bottom: 2px solid var(--ink);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .drop-zone::after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1.5px dashed var(--border);
+    pointer-events: none;
+  }
+
+  .drop-zone:hover, .drop-zone.drag-over {
+    background: #ede8dc;
+  }
+
+  .drop-zone.drag-over::after {
+    border-color: var(--accent);
+  }
+
+  .drop-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .drop-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .drop-sub {
+    font-size: 0.65rem;
+    color: var(--border);
+    letter-spacing: 0.1em;
+  }
+
+  .drop-zone input[type=file] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Status bar */
+  .status-bar {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--border);
+    padding: 0.6rem 2rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 2.5rem;
+    background: var(--card-bg);
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--border);
+    flex-shrink: 0;
+  }
+
+  .status-dot.active { background: var(--success); }
+  .status-dot.loading { background: var(--accent2); animation: pulse 1s infinite; }
+  .status-dot.error { background: var(--accent); }
+
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .status-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    padding: 0.3rem 0.75rem;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .btn:hover { background: var(--ink); color: var(--paper); }
+  .btn.primary { background: var(--accent); color: white; border-color: var(--accent); }
+  .btn.primary:hover { background: #a93226; border-color: #a93226; }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn:disabled:hover { background: transparent; color: var(--ink); }
+
+  /* Panels */
+  .panel {
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .panel:last-child { border-right: none; }
+
+  .panel-header {
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--card-bg);
+  }
+
+  .panel-header .count {
+    margin-left: auto;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 0.6rem;
+    padding: 0.15rem 0.4rem;
+    letter-spacing: 0.05em;
+  }
+
+  .panel-body {
+    flex: 1;
+    overflow: auto;
+    padding: 1rem 1.5rem;
+  }
+
+  /* Card list */
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .vocab-card {
+    border: 1px solid var(--border);
+    padding: 0.75rem 1rem;
+    background: var(--card-bg);
+    cursor: pointer;
+    transition: border-color 0.15s, transform 0.1s;
+  }
+
+  .vocab-card:hover {
+    border-color: var(--ink);
+    transform: translateX(2px);
+  }
+
+  .vocab-card.selected {
+    border-color: var(--accent);
+    border-left: 3px solid var(--accent);
+  }
+
+  .card-hanzi {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-pinyin {
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
+  }
+
+  .card-meaning {
+    font-size: 0.68rem;
+    color: var(--muted);
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* JSON output */
+  .json-output {
+    background: var(--code-bg);
+    color: #d4b896;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    line-height: 1.7;
+    padding: 1.25rem;
+    white-space: pre-wrap;
+    overflow: auto;
+    height: 100%;
+    margin: 0;
+  }
+
+  .json-key { color: #e8a87c; }
+  .json-string { color: #98d8a0; }
+  .json-hanzi { color: #f0c040; font-family: 'Noto Serif SC', serif; }
+  .json-bracket { color: #888; }
+
+  /* Empty state */
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 0.75rem;
+    color: var(--border);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .empty-state-icon { font-size: 2rem; opacity: 0.4; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); }
+
+  /* Progress */
+  .progress-bar {
+    height: 2px;
+    background: var(--border);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    width: 0%;
+    transition: width 0.3s;
+  }
+
+  .filter-bar {
+    padding: 0.6rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--card-bg);
+  }
+
+  .filter-input {
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    border: 1px solid var(--border);
+    background: var(--paper);
+    color: var(--ink);
+    padding: 0.4rem 0.6rem;
+    letter-spacing: 0.05em;
+    outline: none;
+  }
+
+  .filter-input:focus { border-color: var(--accent); }
+  .filter-input::placeholder { color: var(--border); }
+
+  /* Metadata bar */
+  .meta-bar {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--border);
+    background: var(--card-bg);
+    padding: 0.75rem 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .meta-field {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  .meta-field:last-child { flex: 2; }
+
+  .meta-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .meta-input {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    border: 1px solid var(--border);
+    background: var(--paper);
+    color: var(--ink);
+    padding: 0.35rem 0.6rem;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.15s;
+  }
+
+  .meta-input:focus { border-color: var(--accent); }
+  .meta-input::placeholder { color: var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>APKG → JSON</h1>
+  <span class="subtitle">Anki deck converter</span>
+  <span class="badge">Chinese Vocab</span>
+</header>
+
+<main>
+  <div class="drop-zone" id="dropZone">
+    <input type="file" id="fileInput" accept=".apkg" multiple>
+    <div class="drop-icon">漢</div>
+    <div class="drop-label">Drop one or two .apkg files — vocab + sentences</div>
+    <div class="drop-sub" id="dropSub">Drag both at once, or drop them one at a time</div>
+  </div>
+
+  <div class="meta-bar">
+    <div class="meta-field">
+      <span class="meta-label">Deck Name</span>
+      <input type="text" class="meta-input" id="deckName" placeholder="e.g. HSK Level 1" oninput="rebuildJSON()">
+    </div>
+    <div class="meta-field">
+      <span class="meta-label">Description</span>
+      <input type="text" class="meta-input" id="deckDesc" placeholder="e.g. Basic vocabulary for beginners" oninput="rebuildJSON()">
+    </div>
+  </div>
+
+  <div class="status-bar" id="statusBar">
+    <div class="status-dot" id="statusDot"></div>
+    <span id="statusText">No file loaded — drop an .apkg file above</span>
+    <div class="status-actions">
+      <button class="btn" id="btnCopy" disabled onclick="copyJSON()">Copy JSON</button>
+      <button class="btn primary" id="btnDownload" disabled onclick="downloadJSON()">Download JSON</button>
+    </div>
+  </div>
+
+  <div class="progress-bar" style="grid-column:1/-1"><div class="progress-fill" id="progressFill"></div></div>
+
+  <div class="panel">
+    <div class="panel-header">
+      Cards
+      <span class="count" id="cardCount">0</span>
+    </div>
+    <div class="filter-bar" style="display:flex;gap:0.5rem;align-items:center">
+      <input type="text" class="filter-input" id="filterInput" placeholder="Filter by hanzi, pinyin or meaning..." oninput="filterCards()" style="flex:1">
+      <button class="btn" id="btnSelectAll" disabled onclick="selectAll()" style="white-space:nowrap;flex-shrink:0">Select All</button>
+    </div>
+    <div class="panel-body">
+      <div class="card-list" id="cardList">
+        <div class="empty-state">
+          <div class="empty-state-icon">📦</div>
+          <span>Load a file to see cards</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      JSON Output
+      <span class="count" id="jsonCount">0 entries</span>
+    </div>
+    <div class="panel-body" style="padding:0">
+      <pre class="json-output" id="jsonOutput"><span style="color:#555;font-style:italic">// JSON will appear here after loading a file
+// Click a card to preview its entry</span></pre>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+
+<script>
+// ── State ─────────────────────────────────────────────────────
+let allCards = [];
+let filteredCards = [];
+let selectedIndex = -1;
+let fullJSON = '';
+let sqlReady = false;
+let pendingSentencesFile = null;
+
+// ── SQL.js init ───────────────────────────────────────────────
+const sqlPromise = initSqlJs({
+  locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/${file}`
+}).then(SQL => { sqlReady = SQL; });
+
+// ── Drag & Drop ───────────────────────────────────────────────
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+dropZone.addEventListener('drop', e => {
+  e.preventDefault();
+  dropZone.classList.remove('drag-over');
+  const files = Array.from(e.dataTransfer.files).filter(f => f.name.endsWith('.apkg'));
+  if (!files.length) { setStatus('error', 'Only .apkg files are supported'); return; }
+  handleFiles(files);
+});
+fileInput.addEventListener('change', e => {
+  const files = Array.from(e.target.files).filter(f => f.name.endsWith('.apkg'));
+  if (files.length) handleFiles(files);
+});
+
+// ── File routing — classify vocab vs sentences ────────────────
+function classifyFile(filename) {
+  if (/[_\s]sentences/i.test(filename)) return 'sentences';
+  if (/[_\s]vocab/i.test(filename)) return 'vocab';
+  return 'vocab'; // default
+}
+
+function handleFiles(files) {
+  let vocabFile = null, sentencesFile = null;
+  for (const f of files) {
+    const type = classifyFile(f.name);
+    if (type === 'sentences') sentencesFile = f;
+    else vocabFile = f;
+  }
+  // If only one file dropped, check if it's sentences (wait for vocab) or vocab (process alone)
+  if (files.length === 1 && sentencesFile && !vocabFile) {
+    // Sentences only — store and wait
+    pendingSentencesFile = sentencesFile;
+    setStatus('loading', `Sentences file "${sentencesFile.name}" loaded — now drop the vocab file`);
+    document.getElementById('dropSub').textContent = `✓ Sentences loaded — drop the _Vocab file to merge`;
+    return;
+  }
+  if (!vocabFile && pendingSentencesFile) {
+    sentencesFile = pendingSentencesFile;
+    pendingSentencesFile = null;
+  }
+  processFiles(vocabFile, sentencesFile);
+}
+
+// ── HTML strip ────────────────────────────────────────────────
+function stripHtml(html) {
+  const d = document.createElement('div');
+  d.innerHTML = html;
+  return d.textContent.trim();
+}
+
+// ── Extract cell values ───────────────────────────────────────
+function extractCells(html, className) {
+  const d = document.createElement('div');
+  d.innerHTML = html;
+  return Array.from(d.querySelectorAll(`.${className}`)).map(el => el.textContent.trim());
+}
+
+// ── Parse a vocab note ────────────────────────────────────────
+function parseVocabNote(flds) {
+  const parts = flds.split('\x1f');
+  const hanzi = parts[0] ? parts[0].trim() : '';
+  if (!hanzi) return null;
+
+  const pinyins = extractCells(parts[1] || '', 'cell1');
+  const meanings = extractCells(parts[1] || '', 'cell2');
+
+  const pinyin = pinyins.join(' / ');
+  const meaning = meanings.map(m => m.replace(/;\s*CL:[^;]*/g, '').trim()).filter(Boolean).join('; ');
+
+  if (!pinyin && !meaning) return null;
+  return { hanzi, pinyin, meaning, examples: [] };
+}
+
+// ── Parse a sentences note ────────────────────────────────────
+function parseSentenceNote(flds) {
+  const parts = flds.split('\x1f');
+  const meaning = parts[0] ? parts[0].trim() : '';
+  if (!meaning || !parts[1]) return null;
+
+  const d = document.createElement('div');
+  d.innerHTML = parts[1];
+
+  const pinyinEl = d.querySelector('.highlight');
+  const hanziEl = d.querySelector('.cell5');
+
+  const pinyin = pinyinEl ? pinyinEl.textContent.trim() : '';
+  const hanzi = hanziEl ? hanziEl.textContent.trim() : '';
+
+  if (!hanzi) return null;
+  return { hanzi, pinyin, meaning };
+}
+
+// ── Match sentences to vocab cards ───────────────────────────
+function mergeSentences(vocabCards, sentences) {
+  // Build lookup: for each sentence, find which vocab cards' hanzi appear in it
+  for (const card of vocabCards) {
+    card.examples = sentences.filter(s => s.hanzi.includes(card.hanzi));
+  }
+}
+
+// ── Read apkg → array of flds strings ────────────────────────
+async function readApkgNotes(file) {
+  const zip = await JSZip.loadAsync(file);
+  const dbFile = zip.file('collection.anki2');
+  if (!dbFile) throw new Error(`No collection.anki2 in ${file.name}`);
+  const dbBuf = await dbFile.async('arraybuffer');
+  const db = new sqlReady.Database(new Uint8Array(dbBuf));
+  const result = db.exec('SELECT flds FROM notes');
+  db.close();
+  if (!result.length) return [];
+  return result[0].values.map(r => r[0]);
+}
+
+// ── Main processing ───────────────────────────────────────────
+async function processFiles(vocabFile, sentencesFile) {
+  const label = vocabFile ? vocabFile.name : (sentencesFile ? sentencesFile.name : '?');
+  setStatus('loading', `Loading${sentencesFile ? ' & merging' : ''} "${label}"…`);
+  setProgress(10);
+
+  try {
+    await sqlPromise;
+    if (!sqlReady) throw new Error('SQL.js failed to initialize');
+
+    setProgress(20);
+
+    // Load vocab
+    const vocabFlds = await readApkgNotes(vocabFile);
+    setProgress(50);
+    allCards = vocabFlds.map(parseVocabNote).filter(Boolean);
+
+    // Load + merge sentences if available
+    if (sentencesFile) {
+      const sentFlds = await readApkgNotes(sentencesFile);
+      setProgress(75);
+      const sentences = sentFlds.map(parseSentenceNote).filter(Boolean);
+      mergeSentences(allCards, sentences);
+      const withExamples = allCards.filter(c => c.examples.length > 0).length;
+      setStatus('active', `Loaded ${allCards.length} vocab cards + ${sentences.length} sentences — ${withExamples} cards enriched`);
+    } else {
+      setStatus('active', `Loaded ${allCards.length} vocabulary cards from "${vocabFile.name}"`);
+    }
+
+    filteredCards = [...allCards];
+    setProgress(95);
+
+    renderCardList(filteredCards);
+    document.getElementById('cardCount').textContent = allCards.length;
+    renderFullJSON();
+
+    setProgress(100);
+    setTimeout(() => setProgress(0), 600);
+
+    document.getElementById('btnCopy').disabled = false;
+    document.getElementById('btnDownload').disabled = false;
+    document.getElementById('btnSelectAll').disabled = false;
+
+    // Auto-extract deck name
+    const nameField = document.getElementById('deckName');
+    if (!nameField.value) {
+      const srcName = vocabFile ? vocabFile.name : sentencesFile.name;
+      const match = srcName.match(/Duo_\d+_(.+?)_(?:vocab|sentences)/i);
+      nameField.value = match ? match[1].replace(/_/g, ' ') : srcName.replace(/\.apkg$/i, '').replace(/_/g, ' ');
+      rebuildJSON();
+    }
+
+    // Reset drop sub hint
+    document.getElementById('dropSub').textContent = 'Drag both at once, or drop them one at a time';
+
+  } catch (err) {
+    setStatus('error', `Error: ${err.message}`);
+    setProgress(0);
+    console.error(err);
+  }
+}
+
+
+// ── Render card list ──────────────────────────────────────────
+function renderCardList(cards) {
+  const list = document.getElementById('cardList');
+  if (!cards.length) {
+    list.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🔍</div><span>No matching cards</span></div>';
+    return;
+  }
+  list.innerHTML = cards.map((c, i) => `
+    <div class="vocab-card${selectedIndex === i ? ' selected' : ''}" onclick="selectCard(${i})">
+      <div class="card-hanzi">${c.hanzi}${c.examples.length ? `<span style="font-family:'Space Mono',monospace;font-size:0.55rem;color:var(--success);margin-left:0.5rem;vertical-align:middle;letter-spacing:0.05em">${c.examples.length} eg.</span>` : ''}</div>
+      <div class="card-pinyin">${c.pinyin}</div>
+      <div class="card-meaning">${c.meaning}</div>
+    </div>
+  `).join('');
+}
+
+// ── Select a card → preview JSON ─────────────────────────────
+function selectCard(i) {
+  selectedIndex = i;
+  renderCardList(filteredCards);
+  const card = filteredCards[i];
+  renderSingleJSON(card);
+}
+
+// ── Syntax-highlight JSON (display only, never affects raw data) ──
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function highlight(json) {
+  // Tokenize line-by-line for safe highlighting
+  return json.split('\n').map(line => {
+    // Escape HTML entities first
+    let safe = escHtml(line);
+    // Highlight keys: "word":
+    safe = safe.replace(/^(\s*)(&quot;[\w]+&quot;)(\s*:)/g,
+      (_, indent, key, colon) => `${indent}<span class="json-key">${key}</span>${colon}`);
+    // Highlight string values containing CJK
+    safe = safe.replace(/: (&quot;([^&]|&amp;|&lt;|&gt;)*[\u4e00-\u9fff]([^&]|&amp;|&lt;|&gt;)*&quot;)/g,
+      (m, val) => `: <span class="json-hanzi">${val}</span>`);
+    // Highlight other string values
+    safe = safe.replace(/: (&quot;[^&quot;]*&quot;)/g,
+      (m, val) => `: <span class="json-string">${val}</span>`);
+    // Highlight brackets
+    safe = safe.replace(/([{}\[\]])/g, '<span class="json-bracket">$1</span>');
+    return safe;
+  }).join('\n');
+}
+
+// ── Build full output object ──────────────────────────────────
+function buildOutput(cards) {
+  const name = document.getElementById('deckName').value.trim();
+  const description = document.getElementById('deckDesc').value.trim();
+  const obj = {};
+  if (name) obj.name = name;
+  if (description) obj.description = description;
+  obj.cards = cards;
+  return obj;
+}
+
+function rebuildJSON() {
+  if (!allCards.length) return;
+  const cards = filteredCards.length ? filteredCards : allCards;
+  fullJSON = JSON.stringify(buildOutput(cards), null, 2);
+  const previewObj = buildOutput(cards.slice(0, 50));
+  const j = JSON.stringify(previewObj, null, 2);
+  const suffix = cards.length > 50 ? `\n<span style="color:#555;font-style:italic">// … and ${cards.length - 50} more entries — download for full JSON</span>` : '';
+  document.getElementById('jsonOutput').innerHTML = highlight(j) + suffix;
+}
+
+function renderSingleJSON(card) {
+  const j = JSON.stringify(card, null, 2);
+  document.getElementById('jsonOutput').innerHTML = highlight(j);
+  document.getElementById('jsonCount').textContent = '1 entry (preview)';
+}
+
+function renderFullJSON() {
+  const previewObj = buildOutput(allCards.slice(0, 50));
+  const j = JSON.stringify(previewObj, null, 2);
+  const suffix = allCards.length > 50 ? `\n<span style="color:#555;font-style:italic">// … and ${allCards.length - 50} more entries — download for full JSON</span>` : '';
+  document.getElementById('jsonOutput').innerHTML = highlight(j) + suffix;
+  fullJSON = JSON.stringify(buildOutput(allCards), null, 2);
+  document.getElementById('jsonCount').textContent = `${allCards.length} entries`;
+}
+
+// ── Select All ────────────────────────────────────────────────
+function selectAll() {
+  selectedIndex = -1;
+  const cards = filteredCards.length ? filteredCards : allCards;
+  fullJSON = JSON.stringify(buildOutput(cards), null, 2);
+  const previewObj = buildOutput(cards.slice(0, 50));
+  const j = JSON.stringify(previewObj, null, 2);
+  const suffix = cards.length > 50 ? `\n<span style="color:#555;font-style:italic">// … and ${cards.length - 50} more entries — download for full JSON</span>` : '';
+  document.getElementById('jsonOutput').innerHTML = highlight(j) + suffix;
+  document.getElementById('jsonCount').textContent = `${cards.length} entries`;
+  renderCardList(filteredCards);
+  const btn = document.getElementById('btnSelectAll');
+  btn.textContent = 'Selected!';
+  setTimeout(() => btn.textContent = 'Select All', 1200);
+}
+
+// ── Filter ────────────────────────────────────────────────────
+function filterCards() {
+  const q = document.getElementById('filterInput').value.toLowerCase().trim();
+  filteredCards = q
+    ? allCards.filter(c =>
+        c.hanzi.includes(q) ||
+        c.pinyin.toLowerCase().includes(q) ||
+        c.meaning.toLowerCase().includes(q))
+    : [...allCards];
+  selectedIndex = -1;
+  renderCardList(filteredCards);
+  document.getElementById('cardCount').textContent = filteredCards.length === allCards.length
+    ? allCards.length
+    : `${filteredCards.length}/${allCards.length}`;
+}
+
+// ── Export ────────────────────────────────────────────────────
+function copyJSON() {
+  navigator.clipboard.writeText(fullJSON).then(() => {
+    const btn = document.getElementById('btnCopy');
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy JSON', 1500);
+  });
+}
+
+function downloadJSON() {
+  const name = document.getElementById('deckName').value.trim();
+  const filename = (name ? name.replace(/[^a-z0-9_\-]/gi, '_') : 'vocab') + '.json';
+  const a = document.createElement('a');
+  a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(fullJSON);
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+// ── Status helpers ────────────────────────────────────────────
+function setStatus(type, msg) {
+  document.getElementById('statusText').textContent = msg;
+  const dot = document.getElementById('statusDot');
+  dot.className = 'status-dot ' + (type === 'active' ? 'active' : type === 'loading' ? 'loading' : type === 'error' ? 'error' : '');
+}
+
+function setProgress(pct) {
+  document.getElementById('progressFill').style.width = pct + '%';
+}
+</script>
+</body>
+</html>
