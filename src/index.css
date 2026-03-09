@@ -314,24 +314,25 @@ html, body {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 8px; padding: 0 20px;
 }
-.lesson-card { cursor: pointer; padding: 12px 14px; }
+.lesson-card { cursor: pointer; padding: 11px 13px; }
 .lesson-card-top {
-  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+  display: flex; align-items: center; gap: 10px; margin-bottom: 9px;
 }
 .lesson-card-info { flex: 1; min-width: 0; }
 .lesson-icon {
-  width: 34px; height: 34px; border-radius: 8px;
+  width: 32px; height: 32px; border-radius: 7px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 17px; flex-shrink: 0;
+  font-size: 16px; flex-shrink: 0;
   background: var(--surface2); border: 1px solid var(--border2);
 }
-.lesson-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
-.lesson-card-meta {
-  display: flex; align-items: center; justify-content: space-between;
+.lesson-title-row {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin-bottom: 4px;
 }
-.lesson-word-count { font-size: 11px; color: var(--text3); }
-.lesson-pct        { font-size: 12px; font-weight: 700; color: var(--accent); }
-.lesson-tags { display: flex; gap: 4px; margin-top: 8px; flex-wrap: wrap; }
+.lesson-title { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.2; }
+.lesson-pct   { font-size: 12px; font-weight: 700; color: var(--accent); flex-shrink: 0; margin-left: auto; }
+.lesson-tags  { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; min-height: 16px; }
+.lesson-new-label { font-size: 9px; color: var(--text3); font-weight: 500; }
 
 /* ── Lesson Screen ──────────────────────────────────────────── */
 .lesson-header {

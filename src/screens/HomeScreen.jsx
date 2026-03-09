@@ -129,6 +129,7 @@ export default function HomeScreen({
         <div className="lesson-grid">
           {lessons.map(lesson => {
             const { pct, counts } = getLessonProgress(lesson);
+            const hasTags = counts.some((c, i) => i > 0 && c > 0);
             return (
               <div
                 key={lesson.id}
@@ -138,48 +139,39 @@ export default function HomeScreen({
                 <div className="lesson-card-top">
                   <div className="lesson-icon">{lesson.icon}</div>
                   <div className="lesson-card-info">
-                    <div className="lesson-title">
-                      {lesson.title}
+                    {/* Title row with imported badge */}
+                    <div className="lesson-title-row">
+                      <span className="lesson-title">{lesson.title}</span>
                       {lesson.imported && <span className="imported-badge">IMPORTED</span>}
                     </div>
-                    <div className="lesson-card-meta">
-                      <span className="lesson-word-count">{lesson.words.length} words</span>
-                      <span className="lesson-pct">{pct}%</span>
+                    {/* Tags row */}
+                    <div className="lesson-tags">
+                      {hasTags
+                        ? MASTERY_LEVELS.map(ml =>
+                            counts[ml.id] > 0 && (
+                              <span
+                                key={ml.id}
+                                style={{
+                                  fontSize: 9, color: ml.color, background: ml.bg,
+                                  border: `1px solid ${ml.color}33`, borderRadius: 20,
+                                  padding: '1px 6px', fontWeight: 600,
+                                }}
+                              >
+                                {counts[ml.id]} {ml.name}
+                              </span>
+                            )
+                          )
+                        : <span className="lesson-new-label">Not started</span>
+                      }
                     </div>
                   </div>
+                  {/* Progress % on the right */}
+                  <span className="lesson-pct">{pct}%</span>
                 </div>
                 <ProgressBar pct={pct} />
-                {counts.some((c, i) => i > 0 && c > 0) && (
-                  <div className="lesson-tags">
-                    {MASTERY_LEVELS.map(ml =>
-                      counts[ml.id] > 0 && (
-                        <span
-                          key={ml.id}
-                          style={{
-                            fontSize: 9, color: ml.color, background: ml.bg,
-                            border: `1px solid ${ml.color}33`, borderRadius: 20,
-                            padding: '1px 6px', fontWeight: 600,
-                          }}
-                        >
-                          {counts[ml.id]} {ml.name}
-                        </span>
-                      )
-                    )}
-                  </div>
-                )}
               </div>
             );
           })}
-        </div>
-
-        {/* ── Import hint ───────────────────────────────────────── */}
-        <div className="import-hint">
-          <div className="import-hint-icon">📦</div>
-          <div className="import-hint-title">Import Anki Decks</div>
-          <div className="import-hint-body">
-            Drop <code>.apkg</code> files into <code>public/decks/</code>, add each filename
-            to <code>public/decks/manifest.json</code> and reload.
-          </div>
         </div>
 
       </div>
