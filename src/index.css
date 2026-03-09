@@ -934,6 +934,7 @@ html, body {
 
 .char-card {
   position: relative; overflow: hidden;
+  width: 100%; box-sizing: border-box;
   display: flex; flex-direction: column; align-items: center;
   background: var(--surface2); border: 1px solid var(--border);
   border-radius: 12px; cursor: pointer; text-align: center;
@@ -959,7 +960,7 @@ html, body {
 .char-card-lg .char-pinyin { font-size: 11px; }
 .char-meaning {
   font-size: 10px; color: var(--text3);
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%; box-sizing: border-box;
 }
 .char-card-lg .char-meaning { font-size: 11px; }
 .char-level-bar {
@@ -968,7 +969,7 @@ html, body {
 }
 
 /* ── Hover pop-up overlay ── */
-.char-card-wrap { position: relative; }
+.char-card-wrap { position: relative; width: 100%; box-sizing: border-box; }
 .char-card-wrap.char-card-anim { z-index: 1; }
 .char-card-wrap.char-card-anim:hover { z-index: 20; }
 
