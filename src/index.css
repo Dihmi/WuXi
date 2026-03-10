@@ -1058,7 +1058,7 @@ html, body {
 /* ═══════════════════════════════════════════════════════════════
    HANZI WALL SCREEN
    ═══════════════════════════════════════════════════════════════ */
-.wall-screen { padding-bottom: 48px; }
+.wall-screen { padding-bottom: 48px; position: relative; }
 
 /* Search */
 .wall-search-wrap {

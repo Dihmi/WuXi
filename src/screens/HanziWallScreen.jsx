@@ -43,24 +43,21 @@ function hanziFontSize(hanzi, tileSize) {
 }
 
 // ── Shared dropdown button ───────────────────────────────────────────────────
-// Menu is portaled to document.body so overflow-x:auto on the toolbar doesn't clip it.
-function WallDropdown({ id, label, active, open, onToggle, children }) {
+// Menu is portaled into the .screen scroll-container with position:absolute so
+// it lives in the same coordinate space as the buttons and scrolls with them.
+function WallDropdown({ id, label, active, open, onToggle, children, screenRef }) {
   const btnRef = useRef(null);
   const [menuPos, setMenuPos] = useState(null);
 
-  // Keep the fixed-position menu anchored to the button while scrolling
   useLayoutEffect(() => {
-    if (!open) { setMenuPos(null); return; }
-    const update = () => {
-      if (btnRef.current) {
-        const r = btnRef.current.getBoundingClientRect();
-        setMenuPos({ top: r.bottom + 6, left: r.left });
-      }
-    };
-    update();
-    window.addEventListener('scroll', update, true);
-    return () => window.removeEventListener('scroll', update, true);
-  }, [open]);
+    if (!open || !btnRef.current || !screenRef?.current) { setMenuPos(null); return; }
+    const btn = btnRef.current.getBoundingClientRect();
+    const scr = screenRef.current.getBoundingClientRect();
+    setMenuPos({
+      top:  btn.bottom - scr.top  + screenRef.current.scrollTop  + 6,
+      left: btn.left   - scr.left + screenRef.current.scrollLeft,
+    });
+  }, [open, screenRef]);
 
   return (
     <div className="wall-dd-wrap">
@@ -76,15 +73,15 @@ function WallDropdown({ id, label, active, open, onToggle, children }) {
           <polyline points="6 9 12 15 18 9"/>
         </svg>
       </button>
-      {open && menuPos && createPortal(
+      {open && menuPos && screenRef?.current && createPortal(
         <div
           className="wall-dd-menu"
-          style={{ position: 'fixed', top: menuPos.top, left: menuPos.left }}
+          style={{ position: 'absolute', top: menuPos.top, left: menuPos.left }}
           onMouseDown={e => e.stopPropagation()}
         >
           {children}
         </div>,
-        document.body
+        screenRef.current
       )}
     </div>
   );
@@ -169,6 +166,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
   const [tileSize,      setTileSize]      = usePersisted('tileSize',      'md');
   const [hoverAnim,     setHoverAnim]     = usePersisted('hoverAnim',     false);
   const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'group'|'lesson'|'sort'|'display'|null
+  const screenRef = useRef(null);
   const barRef = useRef(null);
 
   // Close all dropdowns on outside click
@@ -246,7 +244,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
         title="Hanzi Wall"
         subtitle={`${sorted.length} characters`}
       />
-      <div className="screen wall-screen">
+      <div className="screen wall-screen" ref={screenRef}>
 
         {/* ── Search ──────────────────────────────────────────────── */}
         <div className="wall-search-wrap">
@@ -276,6 +274,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
               active={groupFilter !== null}
               open={openDrop === 'group'}
               onToggle={toggleDrop}
+              screenRef={screenRef}
             >
               <DDItem checked={groupFilter === null} onClick={() => setGroupFilter(null)}>All Groups</DDItem>
               <DDDivider />
@@ -294,6 +293,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
             active={levelFilter !== null}
             open={openDrop === 'level'}
             onToggle={toggleDrop}
+            screenRef={screenRef}
           >
             <DDItem checked={levelFilter === null} onClick={() => setLevelFilter(null)}>All Levels</DDItem>
             <DDDivider />
@@ -317,6 +317,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
             active={lessonFilters !== null}
             open={openDrop === 'lesson'}
             onToggle={toggleDrop}
+            screenRef={screenRef}
           >
             <div className="wall-dd-actions">
               <button className="wall-dd-action" onClick={() => setLessonFilters(null)}>All</button>
@@ -340,6 +341,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
             active={sort !== 'lesson'}
             open={openDrop === 'sort'}
             onToggle={toggleDrop}
+            screenRef={screenRef}
           >
             {SORT_OPTIONS.map(opt => (
               <DDItem key={opt.id} checked={sort === opt.id} onClick={() => setSort(opt.id)}>
@@ -355,6 +357,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
             active={!showPinyin || !showMeaning || tileSize !== 'md' || hoverAnim}
             open={openDrop === 'display'}
             onToggle={toggleDrop}
+            screenRef={screenRef}
           >
             <DDItem checked={showPinyin}  onClick={() => setShowPinyin(v => !v)}>Pinyin</DDItem>
             <DDItem checked={showMeaning} onClick={() => setShowMeaning(v => !v)}>Meaning</DDItem>
