@@ -72,6 +72,13 @@ export const THEMES = [
     swatch: ['#0e0c08', '#201e18', '#f59e0b'],
     group:  'dark',
   },
+  {
+    id:     'matrix',
+    name:   'Matrix',
+    desc:   'Neon terminal',
+    swatch: ['#0d1318', '#141e26', '#00e090'],
+    group:  'dark',
+  },
   /* ── Light ────────────────────────────────────────────────── */
   {
     id:     'dawn',
@@ -127,6 +134,13 @@ export const THEMES = [
     name:   'Citrus',
     desc:   'Lime grove',
     swatch: ['#f8fff0', '#ffffff', '#65a30d'],
+    group:  'light',
+  },
+  {
+    id:     'terminal',
+    name:   'Terminal',
+    desc:   'Bright teal',
+    swatch: ['#eef8f5', '#fafefe', '#00a878'],
     group:  'light',
   },
 ];
