@@ -1,4 +1,19 @@
 import { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
+
+// Persists wall UI state in localStorage so it survives navigation
+function usePersisted(key, def) {
+  const [val, setValRaw] = useState(() => {
+    try {
+      const s = localStorage.getItem('wall_' + key);
+      return s !== null ? JSON.parse(s) : def;
+    } catch { return def; }
+  });
+  const set = (v) => {
+    setValRaw(v);
+    try { localStorage.setItem('wall_' + key, JSON.stringify(v)); } catch {}
+  };
+  return [val, set];
+}
 import { createPortal } from 'react-dom';
 import { MASTERY_LEVELS } from '../data/lessons';
 import { wordKey } from '../utils/helpers';
@@ -136,15 +151,15 @@ function popupHanziFontSize(hanzi) {
 
 // ── Main component ───────────────────────────────────────────────────────────
 export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
-  const [search,        setSearch]        = useState('');
-  const [levelFilter,   setLevelFilter]   = useState(null);   // null = all
-  const [lessonFilters, setLessonFilters] = useState(null);   // null = all, [] = none
-  const [groupFilter,   setGroupFilter]   = useState(null);   // null = all, string = specific group
-  const [sort,          setSort]          = useState('lesson');
-  const [showPinyin,    setShowPinyin]    = useState(true);
-  const [showMeaning,   setShowMeaning]   = useState(true);
-  const [tileSize,      setTileSize]      = useState('md');
-  const [hoverAnim,     setHoverAnim]     = useState(false);
+  const [search,        setSearch]        = usePersisted('search',        '');
+  const [levelFilter,   setLevelFilter]   = usePersisted('levelFilter',   null);
+  const [lessonFilters, setLessonFilters] = usePersisted('lessonFilters', null);
+  const [groupFilter,   setGroupFilter]   = usePersisted('groupFilter',   null);
+  const [sort,          setSort]          = usePersisted('sort',          'lesson');
+  const [showPinyin,    setShowPinyin]    = usePersisted('showPinyin',    true);
+  const [showMeaning,   setShowMeaning]   = usePersisted('showMeaning',   true);
+  const [tileSize,      setTileSize]      = usePersisted('tileSize',      'md');
+  const [hoverAnim,     setHoverAnim]     = usePersisted('hoverAnim',     false);
   const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'group'|'lesson'|'sort'|'display'|null
   const barRef = useRef(null);
 
@@ -380,6 +395,13 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
                       <div className="char-popup-hanzi" style={{ fontSize: pfs }}>{word.hanzi}</div>
                       <div className="char-popup-pinyin">{word.pinyin}</div>
                       <div className="char-popup-meaning">{word.meaning}</div>
+                      {word.examples?.[0] && (
+                        <div className="char-popup-example">
+                          <div className="char-popup-ex-hanzi">{word.examples[0].hanzi}</div>
+                          <div className="char-popup-ex-pinyin">{word.examples[0].pinyin}</div>
+                          <div className="char-popup-ex-meaning">{word.examples[0].meaning}</div>
+                        </div>
+                      )}
                       <div className="char-popup-lesson">{lesson.icon} {lesson.title}</div>
                       <div className="char-level-bar" style={{ background: ml.color }} />
                     </div>
