@@ -1245,6 +1245,7 @@ html, body {
   min-width: 160px;
   width: max-content;
   max-width: 240px;
+  overflow: hidden;
   background: var(--surface2);
   border: 1px solid var(--accent-border);
   border-radius: 16px;

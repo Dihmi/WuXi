@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
 
-// Persists wall UI state in localStorage so it survives navigation
+// Persists wall UI state in localStorage so it survives navigation.
+// Handles both direct values and function updaters (e.g. setX(prev => ...)).
 function usePersisted(key, def) {
   const [val, setValRaw] = useState(() => {
     try {
@@ -9,8 +10,11 @@ function usePersisted(key, def) {
     } catch { return def; }
   });
   const set = (v) => {
-    setValRaw(v);
-    try { localStorage.setItem('wall_' + key, JSON.stringify(v)); } catch {}
+    setValRaw(current => {
+      const next = typeof v === 'function' ? v(current) : v;
+      try { localStorage.setItem('wall_' + key, JSON.stringify(next)); } catch {}
+      return next;
+    });
   };
   return [val, set];
 }
@@ -44,14 +48,18 @@ function WallDropdown({ id, label, active, open, onToggle, children }) {
   const btnRef = useRef(null);
   const [menuPos, setMenuPos] = useState(null);
 
-  // useLayoutEffect: runs synchronously after DOM mutation, before paint → no position jump
+  // Keep the fixed-position menu anchored to the button while scrolling
   useLayoutEffect(() => {
-    if (open && btnRef.current) {
-      const r = btnRef.current.getBoundingClientRect();
-      setMenuPos({ top: r.bottom + 6, left: r.left });
-    } else {
-      setMenuPos(null);
-    }
+    if (!open) { setMenuPos(null); return; }
+    const update = () => {
+      if (btnRef.current) {
+        const r = btnRef.current.getBoundingClientRect();
+        setMenuPos({ top: r.bottom + 6, left: r.left });
+      }
+    };
+    update();
+    window.addEventListener('scroll', update, true);
+    return () => window.removeEventListener('scroll', update, true);
   }, [open]);
 
   return (
