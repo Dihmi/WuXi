@@ -209,7 +209,6 @@ export async function parseApkg(arrayBuffer, filename) {
       icon:        '📦',
       description: `${words.length} cards · imported from ${filename}`,
       words,
-      imported:    true,
     };
 
   } finally {

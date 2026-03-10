@@ -795,12 +795,6 @@ html, body {
 .deck-errors-title { font-size: 13px; font-weight: 700; color: var(--danger); margin-bottom: 6px; }
 .deck-errors-item  { font-size: 12px; color: var(--text3); padding: 2px 0; }
 
-.imported-badge {
-  display: inline-block; font-size: 9px; font-weight: 800; letter-spacing: 0.5px;
-  color: var(--gold); background: var(--gold-bg); border: 1px solid var(--gold-border);
-  border-radius: 5px; padding: 1px 6px; vertical-align: middle;
-}
-
 .import-hint {
   margin: 24px 20px 0;
   background: var(--surface); border: 1px solid var(--border);

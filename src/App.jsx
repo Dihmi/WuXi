@@ -1,5 +1,4 @@
 import { useState, useCallback, useMemo } from 'react';
-import { LESSONS } from './data/lessons';
 import useMastery   from './hooks/useMastery';
 import useDecks     from './hooks/useDecks';
 import useProfiles  from './hooks/useProfiles';
@@ -29,7 +28,7 @@ export default function App() {
   const { importedLessons, deckStatus, deckErrors } = useDecks();
 
   const allLessons = useMemo(
-    () => [...LESSONS, ...importedLessons],
+    () => importedLessons,
     [importedLessons],
   );
 

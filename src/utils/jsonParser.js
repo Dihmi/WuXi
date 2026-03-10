@@ -27,6 +27,5 @@ export function parseJsonDeck(json, filename) {
     group:       json.group || 'Default',
     description: `${words.length} words`,
     words,
-    imported:    true,
   };
 }

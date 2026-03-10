@@ -177,7 +177,6 @@ export default function HomeScreen({
                           <div className="lesson-card-info">
                             <div className="lesson-title-row">
                               <span className="lesson-title">{lesson.title}</span>
-                              {lesson.imported && <span className="imported-badge">IMPORTED</span>}
                             </div>
                             <div className="lesson-tags">
                               {hasTags
