@@ -1,2 +1,6 @@
-["Greeting_1.json", "Numbers.json", "Name.json", "Greeting_2.json", "Food_1.json", "Occupation",
-  "Family_2.json", "Time_2.json", "People_1.json", "Telephone.json", "Celebration.json"]
+[
+  "Greeting_1.json", "Numbers.json", "Name.json", "Greeting_2.json", "Food_1.json", "Occupation.json",
+  "Contact.json", "Nationality.json", "Greeting_3.json", "Location_1.json", "Phrases_1.json", "Family_1.json",
+  "Phrases_2.json", "Greeting_4.json", "Drink.json", "Location_2.json", "Time_1.json",
+  "Family_2.json", "Time_2.json", "People_1.json", "Telephone.json", "Celebration.json"
+]

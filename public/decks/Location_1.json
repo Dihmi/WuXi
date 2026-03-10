@@ -1,0 +1,55 @@
+{
+  "name": "Location 1",
+  "group": "Unit 2",
+  "icon": "📍",
+  "cards": [
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "meaning": "home",
+      "examples": [
+        {
+          "hanzi": "我在家。",
+          "pinyin": "wǒ zài jiā",
+          "meaning": "I am at home."
+        }
+      ]
+    },
+    {
+      "hanzi": "北京",
+      "pinyin": "běi jīng",
+      "meaning": "Beijing",
+      "examples": [
+        {
+          "hanzi": "我住在北京。",
+          "pinyin": "wǒ zhù zài běi jīng",
+          "meaning": "I live in Beijing."
+        }
+      ]
+    },
+    {
+      "hanzi": "哪儿",
+      "pinyin": "nǎ er",
+      "meaning": "where",
+      "examples": [
+        {
+          "hanzi": "你在哪儿？",
+          "pinyin": "nǐ zài nǎ er",
+          "meaning": "Where are you?"
+        }
+      ]
+    },
+    {
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "meaning": "to live",
+      "examples": [
+        {
+          "hanzi": "我住在纽约。",
+          "pinyin": "wǒ zhù zài niǔ yuē",
+          "meaning": "I live in New York."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Greeting 3",
+  "group": "Unit 2",
+  "icon": "☀️",
+  "cards": [
+    {
+      "hanzi": "忙",
+      "pinyin": "máng",
+      "meaning": "busy",
+      "examples": [
+        {
+          "hanzi": "我今天很忙。",
+          "pinyin": "wǒ jīn tiān hěn máng",
+          "meaning": "I am very busy today."
+        }
+      ]
+    },
+    {
+      "hanzi": "早上",
+      "pinyin": "zǎo shang",
+      "meaning": "morning",
+      "examples": [
+        {
+          "hanzi": "早上好！",
+          "pinyin": "zǎo shang hǎo",
+          "meaning": "Good morning!"
+        }
+      ]
+    },
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěn me yàng",
+      "meaning": "how about; how is it",
+      "examples": [
+        {
+          "hanzi": "你今天怎么样？",
+          "pinyin": "nǐ jīn tiān zěn me yàng",
+          "meaning": "How are you today?"
+        }
+      ]
+    },
+    {
+      "hanzi": "今天",
+      "pinyin": "jīn tiān",
+      "meaning": "today",
+      "examples": [
+        {
+          "hanzi": "今天天气很好。",
+          "pinyin": "jīn tiān tiān qì hěn hǎo",
+          "meaning": "The weather is nice today."
+        }
+      ]
+    }
+  ]
+}
