@@ -4,8 +4,6 @@ import { MASTERY_LEVELS } from '../data/lessons';
 import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 
-const MIN_WIDTHS = { sm: 64, md: 90, lg: 120 };
-
 const SORT_OPTIONS = [
   { id: 'lesson', label: 'Lesson' },
   { id: 'level',  label: 'Level'  },
@@ -148,22 +146,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
   const [tileSize,      setTileSize]      = useState('md');
   const [hoverAnim,     setHoverAnim]     = useState(false);
   const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'group'|'lesson'|'sort'|'display'|null
-  const [numCols,       setNumCols]       = useState(0);
-  const barRef  = useRef(null);
-  const gridRef = useRef(null);
-
-  // Compute column count so tiles fill full width uniformly
-  useEffect(() => {
-    const el = gridRef.current;
-    if (!el) return;
-    const observer = new ResizeObserver(([entry]) => {
-      const w = entry.contentRect.width;
-      const minW = MIN_WIDTHS[tileSize] ?? 90;
-      setNumCols(Math.max(1, Math.floor(w / minW)));
-    });
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [tileSize]);
+  const barRef = useRef(null);
 
   // Close all dropdowns on outside click
   useEffect(() => {
@@ -368,11 +351,7 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
         {sorted.length === 0 ? (
           <div className="wall-empty">No characters match your filters.</div>
         ) : (
-          <div
-            ref={gridRef}
-            className="char-grid"
-            style={numCols > 0 ? { gridTemplateColumns: `repeat(${numCols}, 1fr)` } : undefined}
-          >
+          <div className={`char-grid char-grid-${tileSize}`}>
             {sorted.map(({ word, lesson, mastery }) => {
               const ml  = MASTERY_LEVELS[mastery.level];
               const fs  = hanziFontSize(word.hanzi, tileSize);
