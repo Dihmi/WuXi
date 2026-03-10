@@ -1,0 +1,79 @@
+{
+  "name": "Food 1",
+  "group": "Unit 1",
+  "cards": [
+    {
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "meaning": "eat",
+      "examples": [
+        {
+          "hanzi": "我吃饭。",
+          "pinyin": "wǒ chī fàn",
+          "meaning": "I eat rice."
+        }
+      ]
+    },
+    {
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "meaning": "meal; rice",
+      "examples": [
+        {
+          "hanzi": "我们吃饭。",
+          "pinyin": "wǒ men chī fàn",
+          "meaning": "We eat."
+        }
+      ]
+    },
+    {
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "meaning": "drink",
+      "examples": [
+        {
+          "hanzi": "我喝水。",
+          "pinyin": "wǒ hē shuǐ",
+          "meaning": "I drink water."
+        }
+      ]
+    },
+    {
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "meaning": "water",
+      "examples": [
+        {
+          "hanzi": "我要水。",
+          "pinyin": "wǒ yào shuǐ",
+          "meaning": "I want water."
+        }
+      ]
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "meaning": "tea",
+      "examples": [
+        {
+          "hanzi": "我喝茶。",
+          "pinyin": "wǒ hē chá",
+          "meaning": "I drink tea."
+        }
+      ]
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "meaning": "not",
+      "examples": [
+        {
+          "hanzi": "我不喝茶。",
+          "pinyin": "wǒ bù hē chá",
+          "meaning": "I do not drink tea."
+        }
+      ]
+    }
+  ],
+  "icon": "🍜"
+}

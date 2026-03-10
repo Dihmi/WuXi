@@ -1,0 +1,55 @@
+{
+  "name": "Phrases 1",
+  "group": "Unit 2",
+  "icon": "🙏",
+  "cards": [
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xiè xie",
+      "meaning": "thank you",
+      "examples": [
+        {
+          "hanzi": "谢谢你。",
+          "pinyin": "xiè xie nǐ",
+          "meaning": "Thank you."
+        }
+      ]
+    },
+    {
+      "hanzi": "不客气",
+      "pinyin": "bú kè qi",
+      "meaning": "you're welcome",
+      "examples": [
+        {
+          "hanzi": "不客气。",
+          "pinyin": "bú kè qi",
+          "meaning": "You're welcome."
+        }
+      ]
+    },
+    {
+      "hanzi": "对不起",
+      "pinyin": "duì bu qǐ",
+      "meaning": "sorry",
+      "examples": [
+        {
+          "hanzi": "对不起。",
+          "pinyin": "duì bu qǐ",
+          "meaning": "Sorry."
+        }
+      ]
+    },
+    {
+      "hanzi": "没关系",
+      "pinyin": "méi guān xi",
+      "meaning": "no problem",
+      "examples": [
+        {
+          "hanzi": "没关系。",
+          "pinyin": "méi guān xi",
+          "meaning": "It's okay."
+        }
+      ]
+    }
+  ]
+}

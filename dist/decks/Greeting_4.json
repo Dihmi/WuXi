@@ -1,0 +1,43 @@
+{
+  "name": "Greeting 4",
+  "group": "Unit 2",
+  "icon": "👋",
+  "cards": [
+    {
+      "hanzi": "早安",
+      "pinyin": "zǎo ān",
+      "meaning": "good morning",
+      "examples": [
+        {
+          "hanzi": "早安！",
+          "pinyin": "zǎo ān",
+          "meaning": "Good morning!"
+        }
+      ]
+    },
+    {
+      "hanzi": "晚安",
+      "pinyin": "wǎn ān",
+      "meaning": "good night",
+      "examples": [
+        {
+          "hanzi": "晚安！",
+          "pinyin": "wǎn ān",
+          "meaning": "Good night!"
+        }
+      ]
+    },
+    {
+      "hanzi": "好久不见",
+      "pinyin": "hǎo jiǔ bú jiàn",
+      "meaning": "long time no see",
+      "examples": [
+        {
+          "hanzi": "好久不见！",
+          "pinyin": "hǎo jiǔ bú jiàn",
+          "meaning": "Long time no see!"
+        }
+      ]
+    }
+  ]
+}

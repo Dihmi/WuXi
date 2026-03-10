@@ -1,0 +1,55 @@
+{
+  "name": "Phrases 2",
+  "group": "Unit 2",
+  "icon": "💬",
+  "cards": [
+    {
+      "hanzi": "请问",
+      "pinyin": "qǐng wèn",
+      "meaning": "excuse me; may I ask",
+      "examples": [
+        {
+          "hanzi": "请问，厕所在哪儿？",
+          "pinyin": "qǐng wèn cè suǒ zài nǎ er",
+          "meaning": "Excuse me, where is the restroom?"
+        }
+      ]
+    },
+    {
+      "hanzi": "知道",
+      "pinyin": "zhī dào",
+      "meaning": "to know",
+      "examples": [
+        {
+          "hanzi": "我知道。",
+          "pinyin": "wǒ zhī dào",
+          "meaning": "I know."
+        }
+      ]
+    },
+    {
+      "hanzi": "英语",
+      "pinyin": "yīng yǔ",
+      "meaning": "English language",
+      "examples": [
+        {
+          "hanzi": "我会说英语。",
+          "pinyin": "wǒ huì shuō yīng yǔ",
+          "meaning": "I can speak English."
+        }
+      ]
+    },
+    {
+      "hanzi": "汉语",
+      "pinyin": "hàn yǔ",
+      "meaning": "Chinese language",
+      "examples": [
+        {
+          "hanzi": "我学汉语。",
+          "pinyin": "wǒ xué hàn yǔ",
+          "meaning": "I study Chinese."
+        }
+      ]
+    }
+  ]
+}

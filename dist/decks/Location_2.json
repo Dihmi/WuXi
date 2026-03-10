@@ -1,0 +1,43 @@
+{
+  "name": "Location 2",
+  "group": "Unit 2",
+  "icon": "📍",
+  "cards": [
+    {
+      "hanzi": "洗手间",
+      "pinyin": "xǐ shǒu jiān",
+      "meaning": "restroom",
+      "examples": [
+        {
+          "hanzi": "洗手间在哪儿？",
+          "pinyin": "xǐ shǒu jiān zài nǎ er",
+          "meaning": "Where is the restroom?"
+        }
+      ]
+    },
+    {
+      "hanzi": "医院",
+      "pinyin": "yī yuàn",
+      "meaning": "hospital",
+      "examples": [
+        {
+          "hanzi": "他在医院。",
+          "pinyin": "tā zài yī yuàn",
+          "meaning": "He is at the hospital."
+        }
+      ]
+    },
+    {
+      "hanzi": "饭馆",
+      "pinyin": "fàn guǎn",
+      "meaning": "restaurant",
+      "examples": [
+        {
+          "hanzi": "我们去饭馆。",
+          "pinyin": "wǒ men qù fàn guǎn",
+          "meaning": "We go to the restaurant."
+        }
+      ]
+    }
+  ]
+}

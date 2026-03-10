@@ -1,0 +1,43 @@
+{
+  "name": "Contact",
+  "group": "Unit 2",
+  "icon": "☎️",
+  "cards": [
+    {
+      "hanzi": "电话",
+      "pinyin": "diàn huà",
+      "meaning": "telephone; phone",
+      "examples": [
+        {
+          "hanzi": "我的电话号码是多少？",
+          "pinyin": "wǒ de diàn huà hào mǎ shì duō shǎo",
+          "meaning": "What is my phone number?"
+        }
+      ]
+    },
+    {
+      "hanzi": "号码",
+      "pinyin": "hào mǎ",
+      "meaning": "number",
+      "examples": [
+        {
+          "hanzi": "你的号码是多少？",
+          "pinyin": "nǐ de hào mǎ shì duō shǎo",
+          "meaning": "What is your number?"
+        }
+      ]
+    },
+    {
+      "hanzi": "多少",
+      "pinyin": "duō shǎo",
+      "meaning": "how many; how much",
+      "examples": [
+        {
+          "hanzi": "这个多少钱？",
+          "pinyin": "zhè ge duō shǎo qián",
+          "meaning": "How much is this?"
+        }
+      ]
+    }
+  ]
+}

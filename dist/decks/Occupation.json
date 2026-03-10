@@ -1,0 +1,79 @@
+{
+  "name": "Occupation",
+  "group": "Unit 1",
+  "cards": [
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "meaning": "to be",
+      "examples": [
+        {
+          "hanzi": "我是学生。",
+          "pinyin": "wǒ shì xué shēng",
+          "meaning": "I am a student."
+        }
+      ]
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xué shēng",
+      "meaning": "student",
+      "examples": [
+        {
+          "hanzi": "他是学生。",
+          "pinyin": "tā shì xué shēng",
+          "meaning": "He is a student."
+        }
+      ]
+    },
+    {
+      "hanzi": "老师",
+      "pinyin": "lǎo shī",
+      "meaning": "teacher",
+      "examples": [
+        {
+          "hanzi": "她是老师。",
+          "pinyin": "tā shì lǎo shī",
+          "meaning": "She is a teacher."
+        }
+      ]
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yī shēng",
+      "meaning": "doctor",
+      "examples": [
+        {
+          "hanzi": "他是医生。",
+          "pinyin": "tā shì yī shēng",
+          "meaning": "He is a doctor."
+        }
+      ]
+    },
+    {
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "meaning": "question particle",
+      "examples": [
+        {
+          "hanzi": "你是学生吗？",
+          "pinyin": "nǐ shì xué shēng ma",
+          "meaning": "Are you a student?"
+        }
+      ]
+    },
+    {
+      "hanzi": "他们",
+      "pinyin": "tā men",
+      "meaning": "they",
+      "examples": [
+        {
+          "hanzi": "他们是老师。",
+          "pinyin": "tā men shì lǎo shī",
+          "meaning": "They are teachers."
+        }
+      ]
+    }
+  ],
+  "icon": "👨‍🏫"
+}

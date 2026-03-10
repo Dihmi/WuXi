@@ -1,0 +1,55 @@
+{
+  "name": "Family 1",
+  "group": "Unit 2",
+  "icon": "👪",
+  "cards": [
+    {
+      "hanzi": "爸爸",
+      "pinyin": "bà ba",
+      "meaning": "father",
+      "examples": [
+        {
+          "hanzi": "我爸爸很好。",
+          "pinyin": "wǒ bà ba hěn hǎo",
+          "meaning": "My father is nice."
+        }
+      ]
+    },
+    {
+      "hanzi": "妈妈",
+      "pinyin": "mā ma",
+      "meaning": "mother",
+      "examples": [
+        {
+          "hanzi": "我爱妈妈。",
+          "pinyin": "wǒ ài mā ma",
+          "meaning": "I love my mother."
+        }
+      ]
+    },
+    {
+      "hanzi": "哥哥",
+      "pinyin": "gē ge",
+      "meaning": "older brother",
+      "examples": [
+        {
+          "hanzi": "我哥哥很高。",
+          "pinyin": "wǒ gē ge hěn gāo",
+          "meaning": "My older brother is tall."
+        }
+      ]
+    },
+    {
+      "hanzi": "姐姐",
+      "pinyin": "jiě jie",
+      "meaning": "older sister",
+      "examples": [
+        {
+          "hanzi": "我姐姐很好。",
+          "pinyin": "wǒ jiě jie hěn hǎo",
+          "meaning": "My older sister is nice."
+        }
+      ]
+    }
+  ]
+}

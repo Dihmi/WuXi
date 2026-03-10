@@ -1,0 +1,79 @@
+{
+  "name": "Name",
+  "group": "Unit 1",
+  "cards": [
+    {
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "meaning": "to be called; to call",
+      "examples": [
+        {
+          "hanzi": "我叫李明。",
+          "pinyin": "wǒ jiào lǐ míng",
+          "meaning": "My name is Li Ming."
+        }
+      ]
+    },
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "meaning": "I; me",
+      "examples": [
+        {
+          "hanzi": "我是学生。",
+          "pinyin": "wǒ shì xué shēng",
+          "meaning": "I am a student."
+        }
+      ]
+    },
+    {
+      "hanzi": "名字",
+      "pinyin": "míng zi",
+      "meaning": "name",
+      "examples": [
+        {
+          "hanzi": "你的名字是什么？",
+          "pinyin": "nǐ de míng zi shì shén me",
+          "meaning": "What is your name?"
+        }
+      ]
+    },
+    {
+      "hanzi": "什么",
+      "pinyin": "shén me",
+      "meaning": "what",
+      "examples": [
+        {
+          "hanzi": "这是什么？",
+          "pinyin": "zhè shì shén me",
+          "meaning": "What is this?"
+        }
+      ]
+    },
+    {
+      "hanzi": "姓",
+      "pinyin": "xìng",
+      "meaning": "surname",
+      "examples": [
+        {
+          "hanzi": "你姓什么？",
+          "pinyin": "nǐ xìng shén me",
+          "meaning": "What is your surname?"
+        }
+      ]
+    },
+    {
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "meaning": "question particle",
+      "examples": [
+        {
+          "hanzi": "你呢？",
+          "pinyin": "nǐ ne",
+          "meaning": "And you?"
+        }
+      ]
+    }
+  ],
+  "icon": "🪪"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Nationality",
+  "group": "Unit 2",
+  "icon": "🌍",
+  "cards": [
+    {
+      "hanzi": "中国",
+      "pinyin": "zhōng guó",
+      "meaning": "China",
+      "examples": [
+        {
+          "hanzi": "我来自中国。",
+          "pinyin": "wǒ lái zì zhōng guó",
+          "meaning": "I come from China."
+        }
+      ]
+    },
+    {
+      "hanzi": "英国",
+      "pinyin": "yīng guó",
+      "meaning": "United Kingdom",
+      "examples": [
+        {
+          "hanzi": "他是英国人。",
+          "pinyin": "tā shì yīng guó rén",
+          "meaning": "He is British."
+        }
+      ]
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "měi guó",
+      "meaning": "United States",
+      "examples": [
+        {
+          "hanzi": "她来自美国。",
+          "pinyin": "tā lái zì měi guó",
+          "meaning": "She comes from the United States."
+        }
+      ]
+    },
+    {
+      "hanzi": "加拿大",
+      "pinyin": "jiā ná dà",
+      "meaning": "Canada",
+      "examples": [
+        {
+          "hanzi": "他住在加拿大。",
+          "pinyin": "tā zhù zài jiā ná dà",
+          "meaning": "He lives in Canada."
+        }
+      ]
+    }
+  ]
+}

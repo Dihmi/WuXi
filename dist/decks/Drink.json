@@ -1,0 +1,31 @@
+{
+  "name": "Drink",
+  "group": "Unit 2",
+  "icon": "☕",
+  "cards": [
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niú nǎi",
+      "meaning": "milk",
+      "examples": [
+        {
+          "hanzi": "我喝牛奶。",
+          "pinyin": "wǒ hē niú nǎi",
+          "meaning": "I drink milk."
+        }
+      ]
+    },
+    {
+      "hanzi": "咖啡",
+      "pinyin": "kā fēi",
+      "meaning": "coffee",
+      "examples": [
+        {
+          "hanzi": "我喝咖啡。",
+          "pinyin": "wǒ hē kā fēi",
+          "meaning": "I drink coffee."
+        }
+      ]
+    }
+  ]
+}

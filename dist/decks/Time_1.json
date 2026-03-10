@@ -1,0 +1,55 @@
+{
+  "name": "Time 1",
+  "group": "Unit 2",
+  "icon": "⏰",
+  "cards": [
+    {
+      "hanzi": "今天",
+      "pinyin": "jīn tiān",
+      "meaning": "today",
+      "examples": [
+        {
+          "hanzi": "今天天气很好。",
+          "pinyin": "jīn tiān tiān qì hěn hǎo",
+          "meaning": "The weather is nice today."
+        }
+      ]
+    },
+    {
+      "hanzi": "明天",
+      "pinyin": "míng tiān",
+      "meaning": "tomorrow",
+      "examples": [
+        {
+          "hanzi": "明天见。",
+          "pinyin": "míng tiān jiàn",
+          "meaning": "See you tomorrow."
+        }
+      ]
+    },
+    {
+      "hanzi": "星期",
+      "pinyin": "xīng qī",
+      "meaning": "week",
+      "examples": [
+        {
+          "hanzi": "今天星期一。",
+          "pinyin": "jīn tiān xīng qī yī",
+          "meaning": "Today is Monday."
+        }
+      ]
+    },
+    {
+      "hanzi": "现在",
+      "pinyin": "xiàn zài",
+      "meaning": "now",
+      "examples": [
+        {
+          "hanzi": "我现在很忙。",
+          "pinyin": "wǒ xiàn zài hěn máng",
+          "meaning": "I am busy now."
+        }
+      ]
+    }
+  ]
+}

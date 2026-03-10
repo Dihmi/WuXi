@@ -1,0 +1,79 @@
+{
+  "name": "Greeting 1",
+  "group": "Unit 1",
+  "cards": [
+    {
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "meaning": "hello",
+      "examples": [
+        {
+          "hanzi": "你好！",
+          "pinyin": "nǐ hǎo",
+          "meaning": "Hello!"
+        }
+      ]
+    },
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "meaning": "you",
+      "examples": [
+        {
+          "hanzi": "你好吗？",
+          "pinyin": "nǐ hǎo ma",
+          "meaning": "How are you?"
+        }
+      ]
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "meaning": "good; well",
+      "examples": [
+        {
+          "hanzi": "我很好。",
+          "pinyin": "wǒ hěn hǎo",
+          "meaning": "I am very well."
+        }
+      ]
+    },
+    {
+      "hanzi": "再见",
+      "pinyin": "zài jiàn",
+      "meaning": "goodbye",
+      "examples": [
+        {
+          "hanzi": "再见！",
+          "pinyin": "zài jiàn",
+          "meaning": "Goodbye!"
+        }
+      ]
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "meaning": "again",
+      "examples": [
+        {
+          "hanzi": "我们再见。",
+          "pinyin": "wǒ men zài jiàn",
+          "meaning": "See you again."
+        }
+      ]
+    },
+    {
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "meaning": "see; meet",
+      "examples": [
+        {
+          "hanzi": "明天见。",
+          "pinyin": "míng tiān jiàn",
+          "meaning": "See you tomorrow."
+        }
+      ]
+    }
+  ],
+  "icon": "👋"
+}

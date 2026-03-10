@@ -1,0 +1,55 @@
+{
+  "name": "Greeting 2",
+  "group": "Unit 1",
+  "cards": [
+    {
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "meaning": "very",
+      "examples": [
+        {
+          "hanzi": "我很好。",
+          "pinyin": "wǒ hěn hǎo",
+          "meaning": "I am very well."
+        }
+      ]
+    },
+    {
+      "hanzi": "高兴",
+      "pinyin": "gāo xìng",
+      "meaning": "happy; glad",
+      "examples": [
+        {
+          "hanzi": "我很高兴。",
+          "pinyin": "wǒ hěn gāo xìng",
+          "meaning": "I am happy."
+        }
+      ]
+    },
+    {
+      "hanzi": "认识",
+      "pinyin": "rèn shi",
+      "meaning": "to know; to meet",
+      "examples": [
+        {
+          "hanzi": "很高兴认识你。",
+          "pinyin": "hěn gāo xìng rèn shi nǐ",
+          "meaning": "Nice to meet you."
+        }
+      ]
+    },
+    {
+      "hanzi": "也",
+      "pinyin": "yě",
+      "meaning": "also",
+      "examples": [
+        {
+          "hanzi": "我也是学生。",
+          "pinyin": "wǒ yě shì xué shēng",
+          "meaning": "I am also a student."
+        }
+      ]
+    }
+  ],
+  "icon": "🙂"
+}
