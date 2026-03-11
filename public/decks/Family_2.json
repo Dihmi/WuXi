@@ -10,7 +10,7 @@
       "examples": [
         {
           "hanzi": "她有一个孩子。",
-          "pinyin": "tā yǒu yí ge hái zi。",
+          "pinyin": "tā yǒu yí gè hái zi。",
           "meaning": "She has one child."
         }
       ]
@@ -22,7 +22,7 @@
       "examples": [
         {
           "hanzi": "我有两个孩子。",
-          "pinyin": "wǒ yǒu liǎng ge hái zi。",
+          "pinyin": "wǒ yǒu liǎng gè hái zi。",
           "meaning": "I have two children."
         }
       ]
@@ -34,7 +34,7 @@
       "examples": [
         {
           "hanzi": "这个孩子很可爱。",
-          "pinyin": "zhè ge hái zi hěn kě ài。",
+          "pinyin": "zhè gè hái zi hěn kě ài。",
           "meaning": "This child is very cute."
         }
       ]
