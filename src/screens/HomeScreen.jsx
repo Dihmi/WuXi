@@ -151,14 +151,17 @@ export default function HomeScreen({
                 onClick={() => toggleGroup(groupName)}
               >
                 <span className="lesson-group-name">{groupName}</span>
-                <span className="lesson-group-count">{groupLessons.length}</span>
-                <svg
-                  width="12" height="12" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-                  style={{ transform: collapsed ? 'rotate(-90deg)' : 'none', transition: 'transform 0.18s', flexShrink: 0, marginLeft: 'auto' }}
-                >
-                  <polyline points="6 9 12 15 18 9"/>
-                </svg>
+                <span className="lesson-group-count">{groupLessons.length} decks</span>
+                <span className="lesson-group-sep" />
+                <span className="lesson-group-toggle">
+                  <svg
+                    width="10" height="10" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                    style={{ transform: collapsed ? 'rotate(-90deg)' : 'none', transition: 'transform 0.18s' }}
+                  >
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </span>
               </button>
 
               {!collapsed && (
@@ -177,6 +180,7 @@ export default function HomeScreen({
                           <div className="lesson-card-info">
                             <div className="lesson-title-row">
                               <span className="lesson-title">{lesson.title}</span>
+                              <span className="lesson-card-count">{lesson.words.length}</span>
                             </div>
                             <div className="lesson-tags">
                               {hasTags
