@@ -4,6 +4,42 @@
   "icon": "🛒",
   "cards": [
     {
+      "hanzi": "些",
+      "pinyin": "xiē",
+      "meaning": "some",
+      "examples": [
+        {
+          "hanzi": "我买一些水果。",
+          "pinyin": "wǒ mǎi yì xiē shuǐ guǒ",
+          "meaning": "I buy some fruit."
+        }
+      ]
+    },
+    {
+      "hanzi": "西",
+      "pinyin": "xī",
+      "meaning": "west",
+      "examples": [
+        {
+          "hanzi": "西瓜很好吃。",
+          "pinyin": "xī guā hěn hǎo chī",
+          "meaning": "Watermelon is delicious."
+        }
+      ]
+    },
+    {
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "meaning": "east",
+      "examples": [
+        {
+          "hanzi": "东西很多。",
+          "pinyin": "dōng xi hěn duō",
+          "meaning": "There are many things."
+        }
+      ]
+    },
+    {
       "hanzi": "东西",
       "pinyin": "dōng xi",
       "meaning": "thing; stuff",
@@ -12,6 +48,18 @@
           "hanzi": "我要买很多东西。",
           "pinyin": "wǒ yào mǎi hěn duō dōng xi",
           "meaning": "I want to buy many things."
+        }
+      ]
+    },
+    {
+      "hanzi": "帮",
+      "pinyin": "bāng",
+      "meaning": "to help",
+      "examples": [
+        {
+          "hanzi": "请帮我。",
+          "pinyin": "qǐng bāng wǒ",
+          "meaning": "Please help me."
         }
       ]
     },
@@ -40,6 +88,54 @@
       ]
     },
     {
+      "hanzi": "超",
+      "pinyin": "chāo",
+      "meaning": "super; exceed",
+      "examples": [
+        {
+          "hanzi": "这个超市很大。",
+          "pinyin": "zhè gè chāo shì hěn dà",
+          "meaning": "This supermarket is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "市",
+      "pinyin": "shì",
+      "meaning": "market; city",
+      "examples": [
+        {
+          "hanzi": "这个城市很好。",
+          "pinyin": "zhè gè chéng shì hěn hǎo",
+          "meaning": "This city is very nice."
+        }
+      ]
+    },
+    {
+      "hanzi": "果",
+      "pinyin": "guǒ",
+      "meaning": "fruit",
+      "examples": [
+        {
+          "hanzi": "苹果是水果。",
+          "pinyin": "píng guǒ shì shuǐ guǒ",
+          "meaning": "Apples are fruit."
+        }
+      ]
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "meaning": "to give; for",
+      "examples": [
+        {
+          "hanzi": "请给我一个袋子。",
+          "pinyin": "qǐng gěi wǒ yí gè dài zi",
+          "meaning": "Please give me a bag."
+        }
+      ]
+    },
+    {
       "hanzi": "苹果",
       "pinyin": "píng guǒ",
       "meaning": "apple",
@@ -59,7 +155,31 @@
         {
           "hanzi": "这个西瓜很大。",
           "pinyin": "zhè gè xī guā hěn dà",
-          "meaning": "This watermelon is big."
+          "meaning": "This watermelon is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "苹",
+      "pinyin": "píng",
+      "meaning": "apple (in 苹果)",
+      "examples": [
+        {
+          "hanzi": "苹果很甜。",
+          "pinyin": "píng guǒ hěn tián",
+          "meaning": "Apples are sweet."
+        }
+      ]
+    },
+    {
+      "hanzi": "瓜",
+      "pinyin": "guā",
+      "meaning": "melon; gourd",
+      "examples": [
+        {
+          "hanzi": "我喜欢吃西瓜。",
+          "pinyin": "wǒ xǐ huan chī xī guā",
+          "meaning": "I like eating watermelon."
         }
       ]
     },
@@ -76,6 +196,54 @@
       ]
     },
     {
+      "hanzi": "新鲜",
+      "pinyin": "xīn xiān",
+      "meaning": "fresh",
+      "examples": [
+        {
+          "hanzi": "这些水果很新鲜。",
+          "pinyin": "zhè xiē shuǐ guǒ hěn xīn xiān",
+          "meaning": "These fruits are very fresh."
+        }
+      ]
+    },
+    {
+      "hanzi": "鸡",
+      "pinyin": "jī",
+      "meaning": "chicken",
+      "examples": [
+        {
+          "hanzi": "鸡蛋在这里。",
+          "pinyin": "jī dàn zài zhè lǐ",
+          "meaning": "The eggs are here."
+        }
+      ]
+    },
+    {
+      "hanzi": "蛋",
+      "pinyin": "dàn",
+      "meaning": "egg",
+      "examples": [
+        {
+          "hanzi": "我喜欢吃鸡蛋。",
+          "pinyin": "wǒ xǐ huan chī jī dàn",
+          "meaning": "I like eating eggs."
+        }
+      ]
+    },
+    {
+      "hanzi": "鲜",
+      "pinyin": "xiān",
+      "meaning": "fresh",
+      "examples": [
+        {
+          "hanzi": "鱼很新鲜。",
+          "pinyin": "yú hěn xīn xiān",
+          "meaning": "The fish is fresh."
+        }
+      ]
+    },
+    {
       "hanzi": "蔬菜",
       "pinyin": "shū cài",
       "meaning": "vegetables",
@@ -88,6 +256,42 @@
       ]
     },
     {
+      "hanzi": "蔬",
+      "pinyin": "shū",
+      "meaning": "vegetable (in 蔬菜)",
+      "examples": [
+        {
+          "hanzi": "蔬菜很新鲜。",
+          "pinyin": "shū cài hěn xīn xiān",
+          "meaning": "The vegetables are fresh."
+        }
+      ]
+    },
+    {
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "meaning": "bag; package; to wrap",
+      "examples": [
+        {
+          "hanzi": "请给我一个包。",
+          "pinyin": "qǐng gěi wǒ yí gè bāo",
+          "meaning": "Please give me a bag."
+        }
+      ]
+    },
+    {
+      "hanzi": "米",
+      "pinyin": "mǐ",
+      "meaning": "rice",
+      "examples": [
+        {
+          "hanzi": "我买了很多米。",
+          "pinyin": "wǒ mǎi le hěn duō mǐ",
+          "meaning": "I bought a lot of rice."
+        }
+      ]
+    },
+    {
       "hanzi": "面包",
       "pinyin": "miàn bāo",
       "meaning": "bread",
@@ -96,6 +300,30 @@
           "hanzi": "这个面包很好吃。",
           "pinyin": "zhè gè miàn bāo hěn hǎo chī",
           "meaning": "This bread is delicious."
+        }
+      ]
+    },
+    {
+      "hanzi": "袋",
+      "pinyin": "dài",
+      "meaning": "bag; sack",
+      "examples": [
+        {
+          "hanzi": "这个袋子很大。",
+          "pinyin": "zhè gè dài zi hěn dà",
+          "meaning": "This bag is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "糖",
+      "pinyin": "táng",
+      "meaning": "sugar; candy",
+      "examples": [
+        {
+          "hanzi": "我想买糖。",
+          "pinyin": "wǒ xiǎng mǎi táng",
+          "meaning": "I want to buy candy."
         }
       ]
     }

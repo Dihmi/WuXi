@@ -1,7 +1,7 @@
 {
   "name": "Payment",
   "group": "Unit 3",
-  "icon": "💰",
+  "icon": "💳",
   "cards": [
     {
       "hanzi": "钱",
@@ -9,16 +9,16 @@
       "meaning": "money",
       "examples": [
         {
-          "hanzi": "我没有钱。",
-          "pinyin": "wǒ méi yǒu qián",
-          "meaning": "I don't have money."
+          "hanzi": "我没有很多钱。",
+          "pinyin": "wǒ méi yǒu hěn duō qián",
+          "meaning": "I don't have a lot of money."
         }
       ]
     },
     {
       "hanzi": "块",
       "pinyin": "kuài",
-      "meaning": "yuan; piece",
+      "meaning": "yuan; piece; chunk",
       "examples": [
         {
           "hanzi": "这个十块。",
@@ -28,14 +28,146 @@
       ]
     },
     {
+      "hanzi": "只",
+      "pinyin": "zhǐ / zhī",
+      "meaning": "only; classifier for animals",
+      "examples": [
+        {
+          "hanzi": "我只有十块钱。",
+          "pinyin": "wǒ zhǐ yǒu shí kuài qián",
+          "meaning": "I only have ten yuan."
+        }
+      ]
+    },
+    {
       "hanzi": "买",
       "pinyin": "mǎi",
-      "meaning": "buy",
+      "meaning": "to buy",
       "examples": [
         {
           "hanzi": "我要买这个。",
           "pinyin": "wǒ yào mǎi zhè gè",
           "meaning": "I want to buy this."
+        }
+      ]
+    },
+    {
+      "hanzi": "一共",
+      "pinyin": "yí gòng",
+      "meaning": "altogether; in total",
+      "examples": [
+        {
+          "hanzi": "一共多少钱？",
+          "pinyin": "yí gòng duō shǎo qián",
+          "meaning": "How much is it altogether?"
+        }
+      ]
+    },
+    {
+      "hanzi": "毛",
+      "pinyin": "máo",
+      "meaning": "ten cents; hair",
+      "examples": [
+        {
+          "hanzi": "这个五毛。",
+          "pinyin": "zhè gè wǔ máo",
+          "meaning": "This is fifty cents."
+        }
+      ]
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "meaning": "cent; minute",
+      "examples": [
+        {
+          "hanzi": "这个三分。",
+          "pinyin": "zhè gè sān fēn",
+          "meaning": "This is three cents."
+        }
+      ]
+    },
+    {
+      "hanzi": "共",
+      "pinyin": "gòng",
+      "meaning": "together; altogether",
+      "examples": [
+        {
+          "hanzi": "一共二十块。",
+          "pinyin": "yí gòng èr shí kuài",
+          "meaning": "It is twenty yuan altogether."
+        }
+      ]
+    },
+    {
+      "hanzi": "信用卡",
+      "pinyin": "xìn yòng kǎ",
+      "meaning": "credit card",
+      "examples": [
+        {
+          "hanzi": "我用信用卡。",
+          "pinyin": "wǒ yòng xìn yòng kǎ",
+          "meaning": "I use a credit card."
+        }
+      ]
+    },
+    {
+      "hanzi": "收",
+      "pinyin": "shōu",
+      "meaning": "to receive; to accept",
+      "examples": [
+        {
+          "hanzi": "你们收信用卡吗？",
+          "pinyin": "nǐ men shōu xìn yòng kǎ ma",
+          "meaning": "Do you accept credit cards?"
+        }
+      ]
+    },
+    {
+      "hanzi": "千",
+      "pinyin": "qiān",
+      "meaning": "thousand",
+      "examples": [
+        {
+          "hanzi": "这个一千块。",
+          "pinyin": "zhè gè yì qiān kuài",
+          "meaning": "This costs one thousand yuan."
+        }
+      ]
+    },
+    {
+      "hanzi": "信",
+      "pinyin": "xìn",
+      "meaning": "trust; letter",
+      "examples": [
+        {
+          "hanzi": "我相信你。",
+          "pinyin": "wǒ xiāng xìn nǐ",
+          "meaning": "I trust you."
+        }
+      ]
+    },
+    {
+      "hanzi": "用",
+      "pinyin": "yòng",
+      "meaning": "to use",
+      "examples": [
+        {
+          "hanzi": "我不用现金。",
+          "pinyin": "wǒ bù yòng xiàn jīn",
+          "meaning": "I don't use cash."
+        }
+      ]
+    },
+    {
+      "hanzi": "卡",
+      "pinyin": "kǎ",
+      "meaning": "card",
+      "examples": [
+        {
+          "hanzi": "这是我的卡。",
+          "pinyin": "zhè shì wǒ de kǎ",
+          "meaning": "This is my card."
         }
       ]
     },
@@ -54,12 +186,12 @@
     {
       "hanzi": "便宜",
       "pinyin": "pián yi",
-      "meaning": "cheap",
+      "meaning": "cheap; inexpensive",
       "examples": [
         {
           "hanzi": "这个很便宜。",
           "pinyin": "zhè gè hěn pián yi",
-          "meaning": "This is cheap."
+          "meaning": "This is very cheap."
         }
       ]
     },
@@ -69,9 +201,93 @@
       "meaning": "cash",
       "examples": [
         {
+          "hanzi": "我没有现金。",
+          "pinyin": "wǒ méi yǒu xiàn jīn",
+          "meaning": "I don't have cash."
+        }
+      ]
+    },
+    {
+      "hanzi": "便",
+      "pinyin": "pián / biàn",
+      "meaning": "cheap; convenient",
+      "examples": [
+        {
+          "hanzi": "这里的东西很便宜。",
+          "pinyin": "zhè lǐ de dōng xi hěn pián yi",
+          "meaning": "Things here are cheap."
+        }
+      ]
+    },
+    {
+      "hanzi": "宜",
+      "pinyin": "yí",
+      "meaning": "suitable; cheap (in 便宜)",
+      "examples": [
+        {
+          "hanzi": "这个很便宜。",
+          "pinyin": "zhè gè hěn pián yi",
+          "meaning": "This is very cheap."
+        }
+      ]
+    },
+    {
+      "hanzi": "金",
+      "pinyin": "jīn",
+      "meaning": "gold; money; metal",
+      "examples": [
+        {
           "hanzi": "我用现金。",
           "pinyin": "wǒ yòng xiàn jīn",
-          "meaning": "I pay with cash."
+          "meaning": "I use cash."
+        }
+      ]
+    },
+    {
+      "hanzi": "太",
+      "pinyin": "tài",
+      "meaning": "too; extremely",
+      "examples": [
+        {
+          "hanzi": "这个太贵了。",
+          "pinyin": "zhè gè tài guì le",
+          "meaning": "This is too expensive."
+        }
+      ]
+    },
+    {
+      "hanzi": "万",
+      "pinyin": "wàn",
+      "meaning": "ten thousand",
+      "examples": [
+        {
+          "hanzi": "他有一万块。",
+          "pinyin": "tā yǒu yí wàn kuài",
+          "meaning": "He has ten thousand yuan."
+        }
+      ]
+    },
+    {
+      "hanzi": "行",
+      "pinyin": "xíng",
+      "meaning": "okay; to be possible",
+      "examples": [
+        {
+          "hanzi": "这样行吗？",
+          "pinyin": "zhè yàng xíng ma",
+          "meaning": "Is this okay?"
+        }
+      ]
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "meaning": "particle indicating change or completion",
+      "examples": [
+        {
+          "hanzi": "太贵了。",
+          "pinyin": "tài guì le",
+          "meaning": "It is too expensive."
         }
       ]
     }

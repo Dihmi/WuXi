@@ -40,9 +40,57 @@
       ]
     },
     {
+      "hanzi": "旁",
+      "pinyin": "páng",
+      "meaning": "side; beside",
+      "examples": [
+        {
+          "hanzi": "他站在我旁边。",
+          "pinyin": "tā zhàn zài wǒ páng biān",
+          "meaning": "He is standing beside me."
+        }
+      ]
+    },
+    {
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "meaning": "left",
+      "examples": [
+        {
+          "hanzi": "请往左走。",
+          "pinyin": "qǐng wǎng zuǒ zǒu",
+          "meaning": "Please go left."
+        }
+      ]
+    },
+    {
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "meaning": "right",
+      "examples": [
+        {
+          "hanzi": "请往右看。",
+          "pinyin": "qǐng wǎng yòu kàn",
+          "meaning": "Please look right."
+        }
+      ]
+    },
+    {
+      "hanzi": "边",
+      "pinyin": "biān",
+      "meaning": "side; edge",
+      "examples": [
+        {
+          "hanzi": "他在门边。",
+          "pinyin": "tā zài mén biān",
+          "meaning": "He is by the door."
+        }
+      ]
+    },
+    {
       "hanzi": "前面",
       "pinyin": "qián miàn",
-      "meaning": "in front",
+      "meaning": "front; in front of",
       "examples": [
         {
           "hanzi": "学校在前面。",
@@ -54,12 +102,12 @@
     {
       "hanzi": "后面",
       "pinyin": "hòu miàn",
-      "meaning": "behind",
+      "meaning": "back; behind",
       "examples": [
         {
           "hanzi": "我家在学校后面。",
           "pinyin": "wǒ jiā zài xué xiào hòu miàn",
-          "meaning": "My house is behind the school."
+          "meaning": "My home is behind the school."
         }
       ]
     },
@@ -76,9 +124,45 @@
       ]
     },
     {
+      "hanzi": "前",
+      "pinyin": "qián",
+      "meaning": "front; before",
+      "examples": [
+        {
+          "hanzi": "我在门前。",
+          "pinyin": "wǒ zài mén qián",
+          "meaning": "I am in front of the door."
+        }
+      ]
+    },
+    {
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "meaning": "back; after",
+      "examples": [
+        {
+          "hanzi": "我在后面。",
+          "pinyin": "wǒ zài hòu miàn",
+          "meaning": "I am at the back."
+        }
+      ]
+    },
+    {
+      "hanzi": "校",
+      "pinyin": "xiào",
+      "meaning": "school",
+      "examples": [
+        {
+          "hanzi": "学校很大。",
+          "pinyin": "xué xiào hěn dà",
+          "meaning": "The school is big."
+        }
+      ]
+    },
+    {
       "hanzi": "走",
       "pinyin": "zǒu",
-      "meaning": "walk; go",
+      "meaning": "to walk; to go",
       "examples": [
         {
           "hanzi": "我们走吧。",
@@ -90,7 +174,7 @@
     {
       "hanzi": "到",
       "pinyin": "dào",
-      "meaning": "arrive",
+      "meaning": "to arrive; until",
       "examples": [
         {
           "hanzi": "我到学校了。",
@@ -102,12 +186,12 @@
     {
       "hanzi": "路",
       "pinyin": "lù",
-      "meaning": "road",
+      "meaning": "road; way",
       "examples": [
         {
           "hanzi": "这条路很长。",
           "pinyin": "zhè tiáo lù hěn cháng",
-          "meaning": "This road is long."
+          "meaning": "This road is very long."
         }
       ]
     },
@@ -120,6 +204,66 @@
           "hanzi": "怎么去学校？",
           "pinyin": "zěn me qù xué xiào",
           "meaning": "How do you go to school?"
+        }
+      ]
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎ lǐ",
+      "meaning": "where",
+      "examples": [
+        {
+          "hanzi": "你住在哪里？",
+          "pinyin": "nǐ zhù zài nǎ lǐ",
+          "meaning": "Where do you live?"
+        }
+      ]
+    },
+    {
+      "hanzi": "这里",
+      "pinyin": "zhè lǐ",
+      "meaning": "here",
+      "examples": [
+        {
+          "hanzi": "我在这里。",
+          "pinyin": "wǒ zài zhè lǐ",
+          "meaning": "I am here."
+        }
+      ]
+    },
+    {
+      "hanzi": "那里",
+      "pinyin": "nà lǐ",
+      "meaning": "there",
+      "examples": [
+        {
+          "hanzi": "他在那里。",
+          "pinyin": "tā zài nà lǐ",
+          "meaning": "He is there."
+        }
+      ]
+    },
+    {
+      "hanzi": "往",
+      "pinyin": "wǎng",
+      "meaning": "toward",
+      "examples": [
+        {
+          "hanzi": "请往前走。",
+          "pinyin": "qǐng wǎng qián zǒu",
+          "meaning": "Please walk forward."
+        }
+      ]
+    },
+    {
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "meaning": "inside; within",
+      "examples": [
+        {
+          "hanzi": "他在房间里。",
+          "pinyin": "tā zài fáng jiān lǐ",
+          "meaning": "He is in the room."
         }
       ]
     }

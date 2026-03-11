@@ -1,17 +1,17 @@
 {
   "name": "People 1",
   "group": "Unit 3",
-  "icon": "🧍",
+  "icon": "🧑",
   "cards": [
     {
       "hanzi": "漂亮",
       "pinyin": "piào liang",
-      "meaning": "pretty; beautiful",
+      "meaning": "beautiful; pretty",
       "examples": [
         {
           "hanzi": "她很漂亮。",
-          "pinyin": "tā hěn piào liang。",
-          "meaning": "She is very pretty."
+          "pinyin": "tā hěn piào liang",
+          "meaning": "She is very beautiful."
         }
       ]
     },
@@ -22,8 +22,8 @@
       "examples": [
         {
           "hanzi": "他很高。",
-          "pinyin": "tā hěn gāo。",
-          "meaning": "He is very tall."
+          "pinyin": "tā hěn gāo",
+          "meaning": "He is tall."
         }
       ]
     },
@@ -34,8 +34,8 @@
       "examples": [
         {
           "hanzi": "她很漂亮。",
-          "pinyin": "tā hěn piào liang。",
-          "meaning": "She is very pretty."
+          "pinyin": "tā hěn piào liang",
+          "meaning": "She is very beautiful."
         }
       ]
     },
@@ -46,7 +46,7 @@
       "examples": [
         {
           "hanzi": "今天很亮。",
-          "pinyin": "jīn tiān hěn liàng。",
+          "pinyin": "jīn tiān hěn liàng",
           "meaning": "It is bright today."
         }
       ]
@@ -58,7 +58,7 @@
       "examples": [
         {
           "hanzi": "他是我的朋友。",
-          "pinyin": "tā shì wǒ de péng you。",
+          "pinyin": "tā shì wǒ de péng you",
           "meaning": "He is my friend."
         }
       ]
@@ -70,7 +70,7 @@
       "examples": [
         {
           "hanzi": "他是男学生。",
-          "pinyin": "tā shì nán xué shēng。",
+          "pinyin": "tā shì nán xué shēng",
           "meaning": "He is a male student."
         }
       ]
@@ -82,7 +82,7 @@
       "examples": [
         {
           "hanzi": "她不高，她很矮。",
-          "pinyin": "tā bù gāo，tā hěn ǎi。",
+          "pinyin": "tā bù gāo, tā hěn ǎi",
           "meaning": "She is not tall; she is short."
         }
       ]
@@ -94,7 +94,7 @@
       "examples": [
         {
           "hanzi": "朋友很多。",
-          "pinyin": "péng you hěn duō。",
+          "pinyin": "péng you hěn duō",
           "meaning": "There are many friends."
         }
       ]
@@ -106,7 +106,7 @@
       "examples": [
         {
           "hanzi": "我是他的朋友。",
-          "pinyin": "wǒ shì tā de péng you。",
+          "pinyin": "wǒ shì tā de péng you",
           "meaning": "I am his friend."
         }
       ]
@@ -118,7 +118,7 @@
       "examples": [
         {
           "hanzi": "她是女老师。",
-          "pinyin": "tā shì nǚ lǎo shī。",
+          "pinyin": "tā shì nǚ lǎo shī",
           "meaning": "She is a female teacher."
         }
       ]
@@ -130,7 +130,7 @@
       "examples": [
         {
           "hanzi": "这个孩子很可爱。",
-          "pinyin": "zhè gè hái zi hěn kě ài。",
+          "pinyin": "zhè gè hái zi hěn kě ài",
           "meaning": "This child is very cute."
         }
       ]
@@ -142,7 +142,7 @@
       "examples": [
         {
           "hanzi": "他非常高兴。",
-          "pinyin": "tā fēi cháng gāo xìng。",
+          "pinyin": "tā fēi cháng gāo xìng",
           "meaning": "He is extremely happy."
         }
       ]
@@ -154,7 +154,7 @@
       "examples": [
         {
           "hanzi": "这个孩子很可爱。",
-          "pinyin": "zhè gè hái zi hěn kě ài。",
+          "pinyin": "zhè gè hái zi hěn kě ài",
           "meaning": "This child is very cute."
         }
       ]
@@ -162,11 +162,11 @@
     {
       "hanzi": "非",
       "pinyin": "fēi",
-      "meaning": "not; un-; very (in compounds)",
+      "meaning": "not; un-",
       "examples": [
         {
           "hanzi": "今天天气非常好。",
-          "pinyin": "jīn tiān tiān qì fēi cháng hǎo。",
+          "pinyin": "jīn tiān tiān qì fēi cháng hǎo",
           "meaning": "The weather is very good today."
         }
       ]
@@ -178,7 +178,7 @@
       "examples": [
         {
           "hanzi": "我常去学校。",
-          "pinyin": "wǒ cháng qù xué xiào。",
+          "pinyin": "wǒ cháng qù xué xiào",
           "meaning": "I often go to school."
         }
       ]

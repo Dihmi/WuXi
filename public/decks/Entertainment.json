@@ -1,24 +1,72 @@
 {
   "name": "Entertainment",
   "group": "Unit 3",
-  "icon": "🎬",
+  "icon": "📺",
   "cards": [
+    {
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "meaning": "to want; to think",
+      "examples": [
+        {
+          "hanzi": "我想看电影。",
+          "pinyin": "wǒ xiǎng kàn diàn yǐng",
+          "meaning": "I want to watch a movie."
+        }
+      ]
+    },
+    {
+      "hanzi": "干",
+      "pinyin": "gàn",
+      "meaning": "to do",
+      "examples": [
+        {
+          "hanzi": "你想干什么？",
+          "pinyin": "nǐ xiǎng gàn shén me",
+          "meaning": "What do you want to do?"
+        }
+      ]
+    },
+    {
+      "hanzi": "影",
+      "pinyin": "yǐng",
+      "meaning": "shadow; image; movie",
+      "examples": [
+        {
+          "hanzi": "我喜欢看电影。",
+          "pinyin": "wǒ xǐ huan kàn diàn yǐng",
+          "meaning": "I like watching movies."
+        }
+      ]
+    },
+    {
+      "hanzi": "视",
+      "pinyin": "shì",
+      "meaning": "to look at; vision",
+      "examples": [
+        {
+          "hanzi": "我看电视。",
+          "pinyin": "wǒ kàn diàn shì",
+          "meaning": "I watch TV."
+        }
+      ]
+    },
     {
       "hanzi": "电视",
       "pinyin": "diàn shì",
-      "meaning": "television",
+      "meaning": "television; TV",
       "examples": [
         {
-          "hanzi": "我晚上看电视。",
-          "pinyin": "wǒ wǎn shang kàn diàn shì",
-          "meaning": "I watch TV in the evening."
+          "hanzi": "晚上我看电视。",
+          "pinyin": "wǎn shang wǒ kàn diàn shì",
+          "meaning": "I watch TV at night."
         }
       ]
     },
     {
       "hanzi": "电影",
       "pinyin": "diàn yǐng",
-      "meaning": "movie",
+      "meaning": "movie; film",
       "examples": [
         {
           "hanzi": "这个电影很好看。",
@@ -42,12 +90,48 @@
     {
       "hanzi": "上网",
       "pinyin": "shàng wǎng",
-      "meaning": "go online",
+      "meaning": "to go online",
       "examples": [
         {
           "hanzi": "我喜欢上网。",
           "pinyin": "wǒ xǐ huan shàng wǎng",
           "meaning": "I like going online."
+        }
+      ]
+    },
+    {
+      "hanzi": "报",
+      "pinyin": "bào",
+      "meaning": "newspaper; to report",
+      "examples": [
+        {
+          "hanzi": "这份报纸很好。",
+          "pinyin": "zhè fèn bào zhǐ hěn hǎo",
+          "meaning": "This newspaper is good."
+        }
+      ]
+    },
+    {
+      "hanzi": "纸",
+      "pinyin": "zhǐ",
+      "meaning": "paper",
+      "examples": [
+        {
+          "hanzi": "纸在桌子上。",
+          "pinyin": "zhǐ zài zhuō zi shàng",
+          "meaning": "The paper is on the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "网",
+      "pinyin": "wǎng",
+      "meaning": "net; web",
+      "examples": [
+        {
+          "hanzi": "我今天不上网。",
+          "pinyin": "wǒ jīn tiān bù shàng wǎng",
+          "meaning": "I am not going online today."
         }
       ]
     },
@@ -59,7 +143,19 @@
         {
           "hanzi": "这是我的手机。",
           "pinyin": "zhè shì wǒ de shǒu jī",
-          "meaning": "This is my phone."
+          "meaning": "This is my mobile phone."
+        }
+      ]
+    },
+    {
+      "hanzi": "用",
+      "pinyin": "yòng",
+      "meaning": "to use",
+      "examples": [
+        {
+          "hanzi": "我用手机上网。",
+          "pinyin": "wǒ yòng shǒu jī shàng wǎng",
+          "meaning": "I use my phone to go online."
         }
       ]
     },
@@ -72,6 +168,150 @@
           "hanzi": "我喜欢看新闻。",
           "pinyin": "wǒ xǐ huan kàn xīn wén",
           "meaning": "I like watching the news."
+        }
+      ]
+    },
+    {
+      "hanzi": "机",
+      "pinyin": "jī",
+      "meaning": "machine; device",
+      "examples": [
+        {
+          "hanzi": "手机很新。",
+          "pinyin": "shǒu jī hěn xīn",
+          "meaning": "The mobile phone is new."
+        }
+      ]
+    },
+    {
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "meaning": "new",
+      "examples": [
+        {
+          "hanzi": "这是新手机。",
+          "pinyin": "zhè shì xīn shǒu jī",
+          "meaning": "This is a new phone."
+        }
+      ]
+    },
+    {
+      "hanzi": "闻",
+      "pinyin": "wén",
+      "meaning": "to hear; news",
+      "examples": [
+        {
+          "hanzi": "这个新闻很重要。",
+          "pinyin": "zhè gè xīn wén hěn zhòng yào",
+          "meaning": "This news is important."
+        }
+      ]
+    },
+    {
+      "hanzi": "明星",
+      "pinyin": "míng xīng",
+      "meaning": "celebrity; star",
+      "examples": [
+        {
+          "hanzi": "她是明星。",
+          "pinyin": "tā shì míng xīng",
+          "meaning": "She is a celebrity."
+        }
+      ]
+    },
+    {
+      "hanzi": "体育",
+      "pinyin": "tǐ yù",
+      "meaning": "sports; physical education",
+      "examples": [
+        {
+          "hanzi": "我喜欢体育节目。",
+          "pinyin": "wǒ xǐ huan tǐ yù jié mù",
+          "meaning": "I like sports programs."
+        }
+      ]
+    },
+    {
+      "hanzi": "节目",
+      "pinyin": "jié mù",
+      "meaning": "program; show",
+      "examples": [
+        {
+          "hanzi": "这个节目很好看。",
+          "pinyin": "zhè gè jié mù hěn hǎo kàn",
+          "meaning": "This program is very good."
+        }
+      ]
+    },
+    {
+      "hanzi": "韩国",
+      "pinyin": "hán guó",
+      "meaning": "Korea; South Korea",
+      "examples": [
+        {
+          "hanzi": "我喜欢韩国电影。",
+          "pinyin": "wǒ xǐ huan hán guó diàn yǐng",
+          "meaning": "I like Korean movies."
+        }
+      ]
+    },
+    {
+      "hanzi": "体",
+      "pinyin": "tǐ",
+      "meaning": "body",
+      "examples": [
+        {
+          "hanzi": "体育很好玩。",
+          "pinyin": "tǐ yù hěn hǎo wán",
+          "meaning": "Sports are fun."
+        }
+      ]
+    },
+    {
+      "hanzi": "节",
+      "pinyin": "jié",
+      "meaning": "festival; section",
+      "examples": [
+        {
+          "hanzi": "这个节目很长。",
+          "pinyin": "zhè gè jié mù hěn cháng",
+          "meaning": "This program is very long."
+        }
+      ]
+    },
+    {
+      "hanzi": "韩",
+      "pinyin": "hán",
+      "meaning": "Korea (in compounds)",
+      "examples": [
+        {
+          "hanzi": "我喜欢韩国菜。",
+          "pinyin": "wǒ xǐ huan hán guó cài",
+          "meaning": "I like Korean food."
+        }
+      ]
+    },
+    {
+      "hanzi": "育",
+      "pinyin": "yù",
+      "meaning": "to educate; growth",
+      "examples": [
+        {
+          "hanzi": "体育课很好。",
+          "pinyin": "tǐ yù kè hěn hǎo",
+          "meaning": "PE class is good."
+        }
+      ]
+    },
+    {
+      "hanzi": "目",
+      "pinyin": "mù",
+      "meaning": "eye; item",
+      "examples": [
+        {
+          "hanzi": "这个节目有意思。",
+          "pinyin": "zhè gè jié mù yǒu yì si",
+          "meaning": "This program is interesting."
         }
       ]
     }

@@ -6,7 +6,7 @@
     {
       "hanzi": "起床",
       "pinyin": "qǐ chuáng",
-      "meaning": "get up",
+      "meaning": "to get up; get out of bed",
       "examples": [
         {
           "hanzi": "我六点起床。",
@@ -18,72 +18,204 @@
     {
       "hanzi": "上学",
       "pinyin": "shàng xué",
-      "meaning": "go to school",
+      "meaning": "to go to school",
       "examples": [
         {
-          "hanzi": "我七点上学。",
-          "pinyin": "wǒ qī diǎn shàng xué",
-          "meaning": "I go to school at seven."
+          "hanzi": "我每天七点上学。",
+          "pinyin": "wǒ měi tiān qī diǎn shàng xué",
+          "meaning": "I go to school at seven every day."
         }
       ]
     },
     {
       "hanzi": "上班",
       "pinyin": "shàng bān",
-      "meaning": "go to work",
+      "meaning": "to go to work",
       "examples": [
         {
-          "hanzi": "他八点上班。",
-          "pinyin": "tā bā diǎn shàng bān",
-          "meaning": "He starts work at eight."
+          "hanzi": "他早上八点上班。",
+          "pinyin": "tā zǎo shang bā diǎn shàng bān",
+          "meaning": "He goes to work at 8 a.m."
+        }
+      ]
+    },
+    {
+      "hanzi": "早饭",
+      "pinyin": "zǎo fàn",
+      "meaning": "breakfast",
+      "examples": [
+        {
+          "hanzi": "我早上吃早饭。",
+          "pinyin": "wǒ zǎo shang chī zǎo fàn",
+          "meaning": "I eat breakfast in the morning."
+        }
+      ]
+    },
+    {
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "meaning": "to do; to make",
+      "examples": [
+        {
+          "hanzi": "我做作业。",
+          "pinyin": "wǒ zuò zuò yè",
+          "meaning": "I do homework."
+        }
+      ]
+    },
+    {
+      "hanzi": "起",
+      "pinyin": "qǐ",
+      "meaning": "to rise",
+      "examples": [
+        {
+          "hanzi": "我七点起床。",
+          "pinyin": "wǒ qī diǎn qǐ chuáng",
+          "meaning": "I get up at seven."
+        }
+      ]
+    },
+    {
+      "hanzi": "床",
+      "pinyin": "chuáng",
+      "meaning": "bed",
+      "examples": [
+        {
+          "hanzi": "床在房间里。",
+          "pinyin": "chuáng zài fáng jiān lǐ",
+          "meaning": "The bed is in the room."
+        }
+      ]
+    },
+    {
+      "hanzi": "班",
+      "pinyin": "bān",
+      "meaning": "class; work shift",
+      "examples": [
+        {
+          "hanzi": "我下午上班。",
+          "pinyin": "wǒ xià wǔ shàng bān",
+          "meaning": "I go to work in the afternoon."
+        }
+      ]
+    },
+    {
+      "hanzi": "从",
+      "pinyin": "cóng",
+      "meaning": "from",
+      "examples": [
+        {
+          "hanzi": "我从家去学校。",
+          "pinyin": "wǒ cóng jiā qù xué xiào",
+          "meaning": "I go to school from home."
         }
       ]
     },
     {
       "hanzi": "睡觉",
       "pinyin": "shuì jiào",
-      "meaning": "sleep",
+      "meaning": "to sleep",
       "examples": [
         {
-          "hanzi": "我十点睡觉。",
-          "pinyin": "wǒ shí diǎn shuì jiào",
-          "meaning": "I go to sleep at ten."
+          "hanzi": "我晚上十点睡觉。",
+          "pinyin": "wǒ wǎn shang shí diǎn shuì jiào",
+          "meaning": "I go to sleep at 10 p.m."
+        }
+      ]
+    },
+    {
+      "hanzi": "午饭",
+      "pinyin": "wǔ fàn",
+      "meaning": "lunch",
+      "examples": [
+        {
+          "hanzi": "中午我们吃午饭。",
+          "pinyin": "zhōng wǔ wǒ men chī wǔ fàn",
+          "meaning": "We eat lunch at noon."
+        }
+      ]
+    },
+    {
+      "hanzi": "睡",
+      "pinyin": "shuì",
+      "meaning": "to sleep",
+      "examples": [
+        {
+          "hanzi": "孩子在睡觉。",
+          "pinyin": "hái zi zài shuì jiào",
+          "meaning": "The child is sleeping."
+        }
+      ]
+    },
+    {
+      "hanzi": "觉",
+      "pinyin": "jiào / jué",
+      "meaning": "sleep; feel",
+      "examples": [
+        {
+          "hanzi": "我想睡觉。",
+          "pinyin": "wǒ xiǎng shuì jiào",
+          "meaning": "I want to sleep."
         }
       ]
     },
     {
       "hanzi": "放学",
       "pinyin": "fàng xué",
-      "meaning": "finish school",
+      "meaning": "school finishes; to get out of school",
       "examples": [
         {
           "hanzi": "我五点放学。",
           "pinyin": "wǒ wǔ diǎn fàng xué",
-          "meaning": "School finishes at five."
+          "meaning": "School finishes at five for me."
         }
       ]
     },
     {
       "hanzi": "下班",
       "pinyin": "xià bān",
-      "meaning": "get off work",
+      "meaning": "to get off work",
       "examples": [
         {
           "hanzi": "他六点下班。",
           "pinyin": "tā liù diǎn xià bān",
-          "meaning": "He finishes work at six."
+          "meaning": "He gets off work at six."
         }
       ]
     },
     {
       "hanzi": "回",
       "pinyin": "huí",
-      "meaning": "return",
+      "meaning": "to return; back",
       "examples": [
         {
           "hanzi": "我晚上回家。",
           "pinyin": "wǒ wǎn shang huí jiā",
-          "meaning": "I return home in the evening."
+          "meaning": "I go back home in the evening."
+        }
+      ]
+    },
+    {
+      "hanzi": "晚饭",
+      "pinyin": "wǎn fàn",
+      "meaning": "dinner",
+      "examples": [
+        {
+          "hanzi": "我们七点吃晚饭。",
+          "pinyin": "wǒ men qī diǎn chī wǎn fàn",
+          "meaning": "We eat dinner at seven."
+        }
+      ]
+    },
+    {
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "meaning": "to release; put; let go",
+      "examples": [
+        {
+          "hanzi": "请把书放在桌子上。",
+          "pinyin": "qǐng bǎ shū fàng zài zhuō zi shàng",
+          "meaning": "Please put the book on the table."
         }
       ]
     }

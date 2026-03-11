@@ -10,7 +10,7 @@
       "examples": [
         {
           "hanzi": "我上午上班。",
-          "pinyin": "wǒ shàng wǔ shàng bān。",
+          "pinyin": "wǒ shàng wǔ shàng bān",
           "meaning": "I work in the morning."
         }
       ]
@@ -22,7 +22,7 @@
       "examples": [
         {
           "hanzi": "现在三点十分。",
-          "pinyin": "xiàn zài sān diǎn shí fēn。",
+          "pinyin": "xiàn zài sān diǎn shí fēn",
           "meaning": "It is 3:10 now."
         }
       ]
@@ -34,7 +34,7 @@
       "examples": [
         {
           "hanzi": "我们下午见。",
-          "pinyin": "wǒ men xià wǔ jiàn。",
+          "pinyin": "wǒ men xià wǔ jiàn",
           "meaning": "Let's meet in the afternoon."
         }
       ]
@@ -46,7 +46,7 @@
       "examples": [
         {
           "hanzi": "我晚上看电视。",
-          "pinyin": "wǒ wǎn shang kàn diàn shì。",
+          "pinyin": "wǒ wǎn shang kàn diàn shì",
           "meaning": "I watch TV at night."
         }
       ]
@@ -58,7 +58,7 @@
       "examples": [
         {
           "hanzi": "中午我们吃饭。",
-          "pinyin": "zhōng wǔ wǒ men chī fàn。",
+          "pinyin": "zhōng wǔ wǒ men chī fàn",
           "meaning": "We eat lunch at noon."
         }
       ]
@@ -70,7 +70,7 @@
       "examples": [
         {
           "hanzi": "今天我回来很晚。",
-          "pinyin": "jīn tiān wǒ huí lái hěn wǎn。",
+          "pinyin": "jīn tiān wǒ huí lái hěn wǎn",
           "meaning": "I came back very late today."
         }
       ]
@@ -82,7 +82,7 @@
       "examples": [
         {
           "hanzi": "下星期我很忙。",
-          "pinyin": "xià xīng qī wǒ hěn máng。",
+          "pinyin": "xià xīng qī wǒ hěn máng",
           "meaning": "I will be busy next week."
         }
       ]
@@ -94,7 +94,7 @@
       "examples": [
         {
           "hanzi": "我每天喝茶。",
-          "pinyin": "wǒ měi tiān hē chá。",
+          "pinyin": "wǒ měi tiān hē chá",
           "meaning": "I drink tea every day."
         }
       ]
@@ -106,7 +106,7 @@
       "examples": [
         {
           "hanzi": "中午我们吃饭。",
-          "pinyin": "zhōng wǔ wǒ men chī fàn。",
+          "pinyin": "zhōng wǔ wǒ men chī fàn",
           "meaning": "We eat lunch at noon."
         }
       ]
@@ -118,7 +118,7 @@
       "examples": [
         {
           "hanzi": "周末我喜欢睡觉。",
-          "pinyin": "zhōu mò wǒ xǐ huan shuì jiào。",
+          "pinyin": "zhōu mò wǒ xǐ huan shuì jiào",
           "meaning": "I like to sleep on weekends."
         }
       ]
@@ -130,7 +130,7 @@
       "examples": [
         {
           "hanzi": "明天天气很好。",
-          "pinyin": "míng tiān tiān qì hěn hǎo。",
+          "pinyin": "míng tiān tiān qì hěn hǎo",
           "meaning": "The weather will be good tomorrow."
         }
       ]
@@ -142,7 +142,7 @@
       "examples": [
         {
           "hanzi": "这周我很忙。",
-          "pinyin": "zhè zhōu wǒ hěn máng。",
+          "pinyin": "zhè zhōu wǒ hěn máng",
           "meaning": "I am busy this week."
         }
       ]
@@ -150,11 +150,11 @@
     {
       "hanzi": "末",
       "pinyin": "mò",
-      "meaning": "end; final",
+      "meaning": "end",
       "examples": [
         {
           "hanzi": "周末我们去北京。",
-          "pinyin": "zhōu mò wǒ men qù běi jīng。",
+          "pinyin": "zhōu mò wǒ men qù běi jīng",
           "meaning": "We are going to Beijing on the weekend."
         }
       ]
@@ -166,7 +166,7 @@
       "examples": [
         {
           "hanzi": "昨天我很忙。",
-          "pinyin": "zuó tiān wǒ hěn máng。",
+          "pinyin": "zuó tiān wǒ hěn máng",
           "meaning": "I was very busy yesterday."
         }
       ]
@@ -178,7 +178,7 @@
       "examples": [
         {
           "hanzi": "上个月我在北京。",
-          "pinyin": "shàng gè yuè wǒ zài běi jīng。",
+          "pinyin": "shàng gè yuè wǒ zài běi jīng",
           "meaning": "I was in Beijing last month."
         }
       ]
@@ -190,7 +190,7 @@
       "examples": [
         {
           "hanzi": "我吃饭了。",
-          "pinyin": "wǒ chī fàn le。",
+          "pinyin": "wǒ chī fàn le",
           "meaning": "I ate."
         }
       ]
@@ -202,7 +202,7 @@
       "examples": [
         {
           "hanzi": "我昨天做作业了。",
-          "pinyin": "wǒ zuó tiān zuò zuò yè le。",
+          "pinyin": "wǒ zuó tiān zuò zuò yè le",
           "meaning": "I did homework yesterday."
         }
       ]
@@ -210,11 +210,11 @@
     {
       "hanzi": "昨",
       "pinyin": "zuó",
-      "meaning": "yesterday (as in 昨天)",
+      "meaning": "yesterday",
       "examples": [
         {
           "hanzi": "昨天我在家。",
-          "pinyin": "zuó tiān wǒ zài jiā。",
+          "pinyin": "zuó tiān wǒ zài jiā",
           "meaning": "I was at home yesterday."
         }
       ]
@@ -226,7 +226,7 @@
       "examples": [
         {
           "hanzi": "今年我学习汉语。",
-          "pinyin": "jīn nián wǒ xué xí hàn yǔ。",
+          "pinyin": "jīn nián wǒ xué xí hàn yǔ",
           "meaning": "This year I study Chinese."
         }
       ]
@@ -238,7 +238,7 @@
       "examples": [
         {
           "hanzi": "去年我住在伦敦。",
-          "pinyin": "qù nián wǒ zhù zài lún dūn。",
+          "pinyin": "qù nián wǒ zhù zài lún dūn",
           "meaning": "Last year I lived in London."
         }
       ]
@@ -250,7 +250,7 @@
       "examples": [
         {
           "hanzi": "明年我想去中国。",
-          "pinyin": "míng nián wǒ xiǎng qù zhōng guó。",
+          "pinyin": "míng nián wǒ xiǎng qù zhōng guó",
           "meaning": "Next year I want to go to China."
         }
       ]
@@ -262,7 +262,7 @@
       "examples": [
         {
           "hanzi": "明年我会去北京。",
-          "pinyin": "míng nián wǒ huì qù běi jīng。",
+          "pinyin": "míng nián wǒ huì qù běi jīng",
           "meaning": "Next year I will go to Beijing."
         }
       ]
@@ -274,7 +274,7 @@
       "examples": [
         {
           "hanzi": "我明天去学校。",
-          "pinyin": "wǒ míng tiān qù xué xiào。",
+          "pinyin": "wǒ míng tiān qù xué xiào",
           "meaning": "I will go to school tomorrow."
         }
       ]

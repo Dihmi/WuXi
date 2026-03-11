@@ -4,9 +4,57 @@
   "icon": "📷",
   "cards": [
     {
+      "hanzi": "为",
+      "pinyin": "wèi",
+      "meaning": "for; because of",
+      "examples": [
+        {
+          "hanzi": "你为什么学习中文？",
+          "pinyin": "nǐ wèi shén me xué xí zhōng wén",
+          "meaning": "Why do you study Chinese?"
+        }
+      ]
+    },
+    {
+      "hanzi": "文",
+      "pinyin": "wén",
+      "meaning": "language; writing",
+      "examples": [
+        {
+          "hanzi": "我喜欢中文。",
+          "pinyin": "wǒ xǐ huan zhōng wén",
+          "meaning": "I like Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "习",
+      "pinyin": "xí",
+      "meaning": "to practice; habit",
+      "examples": [
+        {
+          "hanzi": "我学习汉语。",
+          "pinyin": "wǒ xué xí hàn yǔ",
+          "meaning": "I study Chinese."
+        }
+      ]
+    },
+    {
       "hanzi": "学习",
       "pinyin": "xué xí",
-      "meaning": "study; learn",
+      "meaning": "to study; to learn",
+      "examples": [
+        {
+          "hanzi": "我学习中文。",
+          "pinyin": "wǒ xué xí zhōng wén",
+          "meaning": "I study Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "zhōng wén",
+      "meaning": "Chinese language",
       "examples": [
         {
           "hanzi": "我学习中文。",
@@ -28,6 +76,18 @@
       ]
     },
     {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "meaning": "to go",
+      "examples": [
+        {
+          "hanzi": "我想去中国。",
+          "pinyin": "wǒ xiǎng qù zhōng guó",
+          "meaning": "I want to go to China."
+        }
+      ]
+    },
+    {
       "hanzi": "因为",
       "pinyin": "yīn wèi",
       "meaning": "because",
@@ -42,19 +102,103 @@
     {
       "hanzi": "所以",
       "pinyin": "suǒ yǐ",
-      "meaning": "therefore; so",
+      "meaning": "so; therefore",
       "examples": [
         {
           "hanzi": "我喜欢中文，所以我学习中文。",
-          "pinyin": "wǒ xǐ huan zhōng wén suǒ yǐ wǒ xué xí zhōng wén",
-          "meaning": "I like Chinese, so I study it."
+          "pinyin": "wǒ xǐ huan zhōng wén, suǒ yǐ wǒ xué xí zhōng wén",
+          "meaning": "I like Chinese, so I study Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "西班牙",
+      "pinyin": "xī bān yá",
+      "meaning": "Spain",
+      "examples": [
+        {
+          "hanzi": "他来自西班牙。",
+          "pinyin": "tā lái zì xī bān yá",
+          "meaning": "He comes from Spain."
+        }
+      ]
+    },
+    {
+      "hanzi": "因",
+      "pinyin": "yīn",
+      "meaning": "cause; because",
+      "examples": [
+        {
+          "hanzi": "因为我喜欢中文。",
+          "pinyin": "yīn wèi wǒ xǐ huan zhōng wén",
+          "meaning": "Because I like Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "所",
+      "pinyin": "suǒ",
+      "meaning": "place; that which",
+      "examples": [
+        {
+          "hanzi": "所以我学习中文。",
+          "pinyin": "suǒ yǐ wǒ xué xí zhōng wén",
+          "meaning": "So I study Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "以",
+      "pinyin": "yǐ",
+      "meaning": "using; by means of",
+      "examples": [
+        {
+          "hanzi": "所以我很高兴。",
+          "pinyin": "suǒ yǐ wǒ hěn gāo xìng",
+          "meaning": "So I am very happy."
+        }
+      ]
+    },
+    {
+      "hanzi": "西",
+      "pinyin": "xī",
+      "meaning": "west",
+      "examples": [
+        {
+          "hanzi": "西班牙很远。",
+          "pinyin": "xī bān yá hěn yuǎn",
+          "meaning": "Spain is far away."
+        }
+      ]
+    },
+    {
+      "hanzi": "班",
+      "pinyin": "bān",
+      "meaning": "class; shift",
+      "examples": [
+        {
+          "hanzi": "今天我有中文班。",
+          "pinyin": "jīn tiān wǒ yǒu zhōng wén bān",
+          "meaning": "I have Chinese class today."
+        }
+      ]
+    },
+    {
+      "hanzi": "牙",
+      "pinyin": "yá",
+      "meaning": "tooth",
+      "examples": [
+        {
+          "hanzi": "我每天刷牙。",
+          "pinyin": "wǒ měi tiān shuā yá",
+          "meaning": "I brush my teeth every day."
         }
       ]
     },
     {
       "hanzi": "旅游",
       "pinyin": "lǚ yóu",
-      "meaning": "travel",
+      "meaning": "to travel; travel",
       "examples": [
         {
           "hanzi": "我喜欢旅游。",
@@ -76,14 +220,86 @@
       ]
     },
     {
-      "hanzi": "拍照",
-      "pinyin": "pāi zhào",
-      "meaning": "take photos",
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "meaning": "new",
       "examples": [
         {
-          "hanzi": "我喜欢拍照。",
-          "pinyin": "wǒ xǐ huan pāi zhào",
-          "meaning": "I like taking photos."
+          "hanzi": "这是我的新爱好。",
+          "pinyin": "zhè shì wǒ de xīn ài hào",
+          "meaning": "This is my new hobby."
+        }
+      ]
+    },
+    {
+      "hanzi": "西班牙语",
+      "pinyin": "xī bān yá yǔ",
+      "meaning": "Spanish language",
+      "examples": [
+        {
+          "hanzi": "他会说西班牙语。",
+          "pinyin": "tā huì shuō xī bān yá yǔ",
+          "meaning": "He can speak Spanish."
+        }
+      ]
+    },
+    {
+      "hanzi": "轻松",
+      "pinyin": "qīng sōng",
+      "meaning": "relaxed; easy",
+      "examples": [
+        {
+          "hanzi": "旅游让我很轻松。",
+          "pinyin": "lǚ yóu ràng wǒ hěn qīng sōng",
+          "meaning": "Traveling makes me feel relaxed."
+        }
+      ]
+    },
+    {
+      "hanzi": "旅",
+      "pinyin": "lǚ",
+      "meaning": "travel",
+      "examples": [
+        {
+          "hanzi": "我喜欢旅游。",
+          "pinyin": "wǒ xǐ huan lǚ yóu",
+          "meaning": "I like traveling."
+        }
+      ]
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hào / hǎo",
+      "meaning": "to like; good",
+      "examples": [
+        {
+          "hanzi": "我的爱好很多。",
+          "pinyin": "wǒ de ài hào hěn duō",
+          "meaning": "I have many hobbies."
+        }
+      ]
+    },
+    {
+      "hanzi": "轻",
+      "pinyin": "qīng",
+      "meaning": "light",
+      "examples": [
+        {
+          "hanzi": "今天我很轻松。",
+          "pinyin": "jīn tiān wǒ hěn qīng sōng",
+          "meaning": "I feel relaxed today."
+        }
+      ]
+    },
+    {
+      "hanzi": "松",
+      "pinyin": "sōng",
+      "meaning": "loose; relaxed",
+      "examples": [
+        {
+          "hanzi": "周末我很轻松。",
+          "pinyin": "zhōu mò wǒ hěn qīng sōng",
+          "meaning": "I am relaxed on weekends."
         }
       ]
     },
@@ -96,6 +312,90 @@
           "hanzi": "我有一个照相机。",
           "pinyin": "wǒ yǒu yí gè zhào xiàng jī",
           "meaning": "I have a camera."
+        }
+      ]
+    },
+    {
+      "hanzi": "印度",
+      "pinyin": "yìn dù",
+      "meaning": "India",
+      "examples": [
+        {
+          "hanzi": "他来自印度。",
+          "pinyin": "tā lái zì yìn dù",
+          "meaning": "He comes from India."
+        }
+      ]
+    },
+    {
+      "hanzi": "拍照",
+      "pinyin": "pāi zhào",
+      "meaning": "to take photos",
+      "examples": [
+        {
+          "hanzi": "我喜欢拍照。",
+          "pinyin": "wǒ xǐ huan pāi zhào",
+          "meaning": "I like taking photos."
+        }
+      ]
+    },
+    {
+      "hanzi": "拍",
+      "pinyin": "pāi",
+      "meaning": "to拍; to take (a photo)",
+      "examples": [
+        {
+          "hanzi": "请帮我拍照。",
+          "pinyin": "qǐng bāng wǒ pāi zhào",
+          "meaning": "Please help me take a photo."
+        }
+      ]
+    },
+    {
+      "hanzi": "照",
+      "pinyin": "zhào",
+      "meaning": "to shine; photo",
+      "examples": [
+        {
+          "hanzi": "我喜欢拍照。",
+          "pinyin": "wǒ xǐ huan pāi zhào",
+          "meaning": "I like taking photos."
+        }
+      ]
+    },
+    {
+      "hanzi": "印",
+      "pinyin": "yìn",
+      "meaning": "print; stamp (used in 印度)",
+      "examples": [
+        {
+          "hanzi": "印度很大。",
+          "pinyin": "yìn dù hěn dà",
+          "meaning": "India is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "相",
+      "pinyin": "xiàng",
+      "meaning": "appearance; photo; mutual",
+      "examples": [
+        {
+          "hanzi": "我看这张相片。",
+          "pinyin": "wǒ kàn zhè zhāng xiàng piàn",
+          "meaning": "I am looking at this photo."
+        }
+      ]
+    },
+    {
+      "hanzi": "度",
+      "pinyin": "dù",
+      "meaning": "degree; to spend time",
+      "examples": [
+        {
+          "hanzi": "今天三十度。",
+          "pinyin": "jīn tiān sān shí dù",
+          "meaning": "Today it is 30 degrees."
         }
       ]
     }
