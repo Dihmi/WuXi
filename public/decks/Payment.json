@@ -1,0 +1,79 @@
+{
+  "name": "Payment",
+  "group": "Unit 3",
+  "icon": "💰",
+  "cards": [
+    {
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "meaning": "money",
+      "examples": [
+        {
+          "hanzi": "我没有钱。",
+          "pinyin": "wǒ méi yǒu qián",
+          "meaning": "I don't have money."
+        }
+      ]
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "yuan; piece",
+      "examples": [
+        {
+          "hanzi": "这个十块。",
+          "pinyin": "zhè gè shí kuài",
+          "meaning": "This costs ten yuan."
+        }
+      ]
+    },
+    {
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "meaning": "buy",
+      "examples": [
+        {
+          "hanzi": "我要买这个。",
+          "pinyin": "wǒ yào mǎi zhè gè",
+          "meaning": "I want to buy this."
+        }
+      ]
+    },
+    {
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "meaning": "expensive",
+      "examples": [
+        {
+          "hanzi": "这个太贵了。",
+          "pinyin": "zhè gè tài guì le",
+          "meaning": "This is too expensive."
+        }
+      ]
+    },
+    {
+      "hanzi": "便宜",
+      "pinyin": "pián yi",
+      "meaning": "cheap",
+      "examples": [
+        {
+          "hanzi": "这个很便宜。",
+          "pinyin": "zhè gè hěn pián yi",
+          "meaning": "This is cheap."
+        }
+      ]
+    },
+    {
+      "hanzi": "现金",
+      "pinyin": "xiàn jīn",
+      "meaning": "cash",
+      "examples": [
+        {
+          "hanzi": "我用现金。",
+          "pinyin": "wǒ yòng xiàn jīn",
+          "meaning": "I pay with cash."
+        }
+      ]
+    }
+  ]
+}

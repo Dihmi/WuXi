@@ -1,0 +1,91 @@
+{
+  "name": "Restaurant",
+  "group": "Unit 3",
+  "icon": "🍜",
+  "cards": [
+    {
+      "hanzi": "位",
+      "pinyin": "wèi",
+      "meaning": "seat; polite measure word for people",
+      "examples": [
+        {
+          "hanzi": "两位吗？",
+          "pinyin": "liǎng wèi ma",
+          "meaning": "Table for two?"
+        }
+      ]
+    },
+    {
+      "hanzi": "等",
+      "pinyin": "děng",
+      "meaning": "wait",
+      "examples": [
+        {
+          "hanzi": "请等一下。",
+          "pinyin": "qǐng děng yí xià",
+          "meaning": "Please wait a moment."
+        }
+      ]
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "meaning": "sit",
+      "examples": [
+        {
+          "hanzi": "请坐。",
+          "pinyin": "qǐng zuò",
+          "meaning": "Please sit."
+        }
+      ]
+    },
+    {
+      "hanzi": "菜单",
+      "pinyin": "cài dān",
+      "meaning": "menu",
+      "examples": [
+        {
+          "hanzi": "请给我菜单。",
+          "pinyin": "qǐng gěi wǒ cài dān",
+          "meaning": "Please give me the menu."
+        }
+      ]
+    },
+    {
+      "hanzi": "点菜",
+      "pinyin": "diǎn cài",
+      "meaning": "order food",
+      "examples": [
+        {
+          "hanzi": "我想点菜。",
+          "pinyin": "wǒ xiǎng diǎn cài",
+          "meaning": "I would like to order."
+        }
+      ]
+    },
+    {
+      "hanzi": "买单",
+      "pinyin": "mǎi dān",
+      "meaning": "pay the bill",
+      "examples": [
+        {
+          "hanzi": "服务员，买单！",
+          "pinyin": "fú wù yuán mǎi dān",
+          "meaning": "Waiter, the bill please!"
+        }
+      ]
+    },
+    {
+      "hanzi": "订位",
+      "pinyin": "dìng wèi",
+      "meaning": "reserve a table",
+      "examples": [
+        {
+          "hanzi": "我想订位。",
+          "pinyin": "wǒ xiǎng dìng wèi",
+          "meaning": "I would like to reserve a table."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Entertainment",
+  "group": "Unit 3",
+  "icon": "🎬",
+  "cards": [
+    {
+      "hanzi": "电视",
+      "pinyin": "diàn shì",
+      "meaning": "television",
+      "examples": [
+        {
+          "hanzi": "我晚上看电视。",
+          "pinyin": "wǒ wǎn shang kàn diàn shì",
+          "meaning": "I watch TV in the evening."
+        }
+      ]
+    },
+    {
+      "hanzi": "电影",
+      "pinyin": "diàn yǐng",
+      "meaning": "movie",
+      "examples": [
+        {
+          "hanzi": "这个电影很好看。",
+          "pinyin": "zhè gè diàn yǐng hěn hǎo kàn",
+          "meaning": "This movie is very good."
+        }
+      ]
+    },
+    {
+      "hanzi": "报纸",
+      "pinyin": "bào zhǐ",
+      "meaning": "newspaper",
+      "examples": [
+        {
+          "hanzi": "我早上看报纸。",
+          "pinyin": "wǒ zǎo shang kàn bào zhǐ",
+          "meaning": "I read the newspaper in the morning."
+        }
+      ]
+    },
+    {
+      "hanzi": "上网",
+      "pinyin": "shàng wǎng",
+      "meaning": "go online",
+      "examples": [
+        {
+          "hanzi": "我喜欢上网。",
+          "pinyin": "wǒ xǐ huan shàng wǎng",
+          "meaning": "I like going online."
+        }
+      ]
+    },
+    {
+      "hanzi": "手机",
+      "pinyin": "shǒu jī",
+      "meaning": "mobile phone",
+      "examples": [
+        {
+          "hanzi": "这是我的手机。",
+          "pinyin": "zhè shì wǒ de shǒu jī",
+          "meaning": "This is my phone."
+        }
+      ]
+    },
+    {
+      "hanzi": "新闻",
+      "pinyin": "xīn wén",
+      "meaning": "news",
+      "examples": [
+        {
+          "hanzi": "我喜欢看新闻。",
+          "pinyin": "wǒ xǐ huan kàn xīn wén",
+          "meaning": "I like watching the news."
+        }
+      ]
+    }
+  ]
+}

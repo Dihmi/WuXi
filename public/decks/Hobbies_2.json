@@ -1,0 +1,103 @@
+{
+  "name": "Hobbies 2",
+  "group": "Unit 3",
+  "icon": "📷",
+  "cards": [
+    {
+      "hanzi": "学习",
+      "pinyin": "xué xí",
+      "meaning": "study; learn",
+      "examples": [
+        {
+          "hanzi": "我学习中文。",
+          "pinyin": "wǒ xué xí zhōng wén",
+          "meaning": "I study Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "为什么",
+      "pinyin": "wèi shén me",
+      "meaning": "why",
+      "examples": [
+        {
+          "hanzi": "你为什么学习中文？",
+          "pinyin": "nǐ wèi shén me xué xí zhōng wén",
+          "meaning": "Why do you study Chinese?"
+        }
+      ]
+    },
+    {
+      "hanzi": "因为",
+      "pinyin": "yīn wèi",
+      "meaning": "because",
+      "examples": [
+        {
+          "hanzi": "因为我喜欢中国文化。",
+          "pinyin": "yīn wèi wǒ xǐ huan zhōng guó wén huà",
+          "meaning": "Because I like Chinese culture."
+        }
+      ]
+    },
+    {
+      "hanzi": "所以",
+      "pinyin": "suǒ yǐ",
+      "meaning": "therefore; so",
+      "examples": [
+        {
+          "hanzi": "我喜欢中文，所以我学习中文。",
+          "pinyin": "wǒ xǐ huan zhōng wén suǒ yǐ wǒ xué xí zhōng wén",
+          "meaning": "I like Chinese, so I study it."
+        }
+      ]
+    },
+    {
+      "hanzi": "旅游",
+      "pinyin": "lǚ yóu",
+      "meaning": "travel",
+      "examples": [
+        {
+          "hanzi": "我喜欢旅游。",
+          "pinyin": "wǒ xǐ huan lǚ yóu",
+          "meaning": "I like traveling."
+        }
+      ]
+    },
+    {
+      "hanzi": "爱好",
+      "pinyin": "ài hào",
+      "meaning": "hobby",
+      "examples": [
+        {
+          "hanzi": "旅游是我的爱好。",
+          "pinyin": "lǚ yóu shì wǒ de ài hào",
+          "meaning": "Traveling is my hobby."
+        }
+      ]
+    },
+    {
+      "hanzi": "拍照",
+      "pinyin": "pāi zhào",
+      "meaning": "take photos",
+      "examples": [
+        {
+          "hanzi": "我喜欢拍照。",
+          "pinyin": "wǒ xǐ huan pāi zhào",
+          "meaning": "I like taking photos."
+        }
+      ]
+    },
+    {
+      "hanzi": "照相机",
+      "pinyin": "zhào xiàng jī",
+      "meaning": "camera",
+      "examples": [
+        {
+          "hanzi": "我有一个照相机。",
+          "pinyin": "wǒ yǒu yí gè zhào xiàng jī",
+          "meaning": "I have a camera."
+        }
+      ]
+    }
+  ]
+}

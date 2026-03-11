@@ -1,0 +1,127 @@
+{
+  "name": "Location 3",
+  "group": "Unit 3",
+  "icon": "📍",
+  "cards": [
+    {
+      "hanzi": "旁边",
+      "pinyin": "páng biān",
+      "meaning": "beside; next to",
+      "examples": [
+        {
+          "hanzi": "学校在我家旁边。",
+          "pinyin": "xué xiào zài wǒ jiā páng biān",
+          "meaning": "The school is next to my house."
+        }
+      ]
+    },
+    {
+      "hanzi": "左边",
+      "pinyin": "zuǒ biān",
+      "meaning": "left side",
+      "examples": [
+        {
+          "hanzi": "饭馆在左边。",
+          "pinyin": "fàn guǎn zài zuǒ biān",
+          "meaning": "The restaurant is on the left."
+        }
+      ]
+    },
+    {
+      "hanzi": "右边",
+      "pinyin": "yòu biān",
+      "meaning": "right side",
+      "examples": [
+        {
+          "hanzi": "医院在右边。",
+          "pinyin": "yī yuàn zài yòu biān",
+          "meaning": "The hospital is on the right."
+        }
+      ]
+    },
+    {
+      "hanzi": "前面",
+      "pinyin": "qián miàn",
+      "meaning": "in front",
+      "examples": [
+        {
+          "hanzi": "学校在前面。",
+          "pinyin": "xué xiào zài qián miàn",
+          "meaning": "The school is in front."
+        }
+      ]
+    },
+    {
+      "hanzi": "后面",
+      "pinyin": "hòu miàn",
+      "meaning": "behind",
+      "examples": [
+        {
+          "hanzi": "我家在学校后面。",
+          "pinyin": "wǒ jiā zài xué xiào hòu miàn",
+          "meaning": "My house is behind the school."
+        }
+      ]
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xué xiào",
+      "meaning": "school",
+      "examples": [
+        {
+          "hanzi": "我在学校学习。",
+          "pinyin": "wǒ zài xué xiào xué xí",
+          "meaning": "I study at school."
+        }
+      ]
+    },
+    {
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "meaning": "walk; go",
+      "examples": [
+        {
+          "hanzi": "我们走吧。",
+          "pinyin": "wǒ men zǒu ba",
+          "meaning": "Let's go."
+        }
+      ]
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "meaning": "arrive",
+      "examples": [
+        {
+          "hanzi": "我到学校了。",
+          "pinyin": "wǒ dào xué xiào le",
+          "meaning": "I arrived at school."
+        }
+      ]
+    },
+    {
+      "hanzi": "路",
+      "pinyin": "lù",
+      "meaning": "road",
+      "examples": [
+        {
+          "hanzi": "这条路很长。",
+          "pinyin": "zhè tiáo lù hěn cháng",
+          "meaning": "This road is long."
+        }
+      ]
+    },
+    {
+      "hanzi": "怎么",
+      "pinyin": "zěn me",
+      "meaning": "how",
+      "examples": [
+        {
+          "hanzi": "怎么去学校？",
+          "pinyin": "zěn me qù xué xiào",
+          "meaning": "How do you go to school?"
+        }
+      ]
+    }
+  ]
+}

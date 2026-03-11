@@ -1,0 +1,115 @@
+{
+  "name": "Hobbies 1",
+  "group": "Unit 3",
+  "icon": "🎮",
+  "cards": [
+    {
+      "hanzi": "喜欢",
+      "pinyin": "xǐ huan",
+      "meaning": "to like",
+      "examples": [
+        {
+          "hanzi": "我喜欢看书。",
+          "pinyin": "wǒ xǐ huan kàn shū",
+          "meaning": "I like reading books."
+        }
+      ]
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "meaning": "look; read; watch",
+      "examples": [
+        {
+          "hanzi": "我看书。",
+          "pinyin": "wǒ kàn shū",
+          "meaning": "I read a book."
+        }
+      ]
+    },
+    {
+      "hanzi": "书",
+      "pinyin": "shū",
+      "meaning": "book",
+      "examples": [
+        {
+          "hanzi": "这本书很好。",
+          "pinyin": "zhè běn shū hěn hǎo",
+          "meaning": "This book is very good."
+        }
+      ]
+    },
+    {
+      "hanzi": "玩",
+      "pinyin": "wán",
+      "meaning": "play",
+      "examples": [
+        {
+          "hanzi": "我喜欢玩游戏。",
+          "pinyin": "wǒ xǐ huan wán yóu xì",
+          "meaning": "I like playing games."
+        }
+      ]
+    },
+    {
+      "hanzi": "电脑",
+      "pinyin": "diàn nǎo",
+      "meaning": "computer",
+      "examples": [
+        {
+          "hanzi": "我有一个电脑。",
+          "pinyin": "wǒ yǒu yí gè diàn nǎo",
+          "meaning": "I have a computer."
+        }
+      ]
+    },
+    {
+      "hanzi": "游戏",
+      "pinyin": "yóu xì",
+      "meaning": "game",
+      "examples": [
+        {
+          "hanzi": "这个游戏很好玩。",
+          "pinyin": "zhè gè yóu xì hěn hǎo wán",
+          "meaning": "This game is fun."
+        }
+      ]
+    },
+    {
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "meaning": "listen",
+      "examples": [
+        {
+          "hanzi": "我喜欢听音乐。",
+          "pinyin": "wǒ xǐ huan tīng yīn yuè",
+          "meaning": "I like listening to music."
+        }
+      ]
+    },
+    {
+      "hanzi": "音乐",
+      "pinyin": "yīn yuè",
+      "meaning": "music",
+      "examples": [
+        {
+          "hanzi": "音乐很好听。",
+          "pinyin": "yīn yuè hěn hǎo tīng",
+          "meaning": "The music sounds nice."
+        }
+      ]
+    },
+    {
+      "hanzi": "跳舞",
+      "pinyin": "tiào wǔ",
+      "meaning": "dance",
+      "examples": [
+        {
+          "hanzi": "她喜欢跳舞。",
+          "pinyin": "tā xǐ huan tiào wǔ",
+          "meaning": "She likes dancing."
+        }
+      ]
+    }
+  ]
+}

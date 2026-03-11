@@ -1,0 +1,91 @@
+{
+  "name": "Daily Routine 1",
+  "group": "Unit 3",
+  "icon": "⏰",
+  "cards": [
+    {
+      "hanzi": "起床",
+      "pinyin": "qǐ chuáng",
+      "meaning": "get up",
+      "examples": [
+        {
+          "hanzi": "我六点起床。",
+          "pinyin": "wǒ liù diǎn qǐ chuáng",
+          "meaning": "I get up at six."
+        }
+      ]
+    },
+    {
+      "hanzi": "上学",
+      "pinyin": "shàng xué",
+      "meaning": "go to school",
+      "examples": [
+        {
+          "hanzi": "我七点上学。",
+          "pinyin": "wǒ qī diǎn shàng xué",
+          "meaning": "I go to school at seven."
+        }
+      ]
+    },
+    {
+      "hanzi": "上班",
+      "pinyin": "shàng bān",
+      "meaning": "go to work",
+      "examples": [
+        {
+          "hanzi": "他八点上班。",
+          "pinyin": "tā bā diǎn shàng bān",
+          "meaning": "He starts work at eight."
+        }
+      ]
+    },
+    {
+      "hanzi": "睡觉",
+      "pinyin": "shuì jiào",
+      "meaning": "sleep",
+      "examples": [
+        {
+          "hanzi": "我十点睡觉。",
+          "pinyin": "wǒ shí diǎn shuì jiào",
+          "meaning": "I go to sleep at ten."
+        }
+      ]
+    },
+    {
+      "hanzi": "放学",
+      "pinyin": "fàng xué",
+      "meaning": "finish school",
+      "examples": [
+        {
+          "hanzi": "我五点放学。",
+          "pinyin": "wǒ wǔ diǎn fàng xué",
+          "meaning": "School finishes at five."
+        }
+      ]
+    },
+    {
+      "hanzi": "下班",
+      "pinyin": "xià bān",
+      "meaning": "get off work",
+      "examples": [
+        {
+          "hanzi": "他六点下班。",
+          "pinyin": "tā liù diǎn xià bān",
+          "meaning": "He finishes work at six."
+        }
+      ]
+    },
+    {
+      "hanzi": "回",
+      "pinyin": "huí",
+      "meaning": "return",
+      "examples": [
+        {
+          "hanzi": "我晚上回家。",
+          "pinyin": "wǒ wǎn shang huí jiā",
+          "meaning": "I return home in the evening."
+        }
+      ]
+    }
+  ]
+}

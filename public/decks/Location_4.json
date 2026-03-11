@@ -1,0 +1,79 @@
+{
+  "name": "Location 4",
+  "group": "Unit 3",
+  "icon": "🏠",
+  "cards": [
+    {
+      "hanzi": "桌子",
+      "pinyin": "zhuō zi",
+      "meaning": "table; desk",
+      "examples": [
+        {
+          "hanzi": "书在桌子上。",
+          "pinyin": "shū zài zhuō zi shàng",
+          "meaning": "The book is on the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "椅子",
+      "pinyin": "yǐ zi",
+      "meaning": "chair",
+      "examples": [
+        {
+          "hanzi": "椅子在桌子旁边。",
+          "pinyin": "yǐ zi zài zhuō zi páng biān",
+          "meaning": "The chair is beside the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "房间",
+      "pinyin": "fáng jiān",
+      "meaning": "room",
+      "examples": [
+        {
+          "hanzi": "我在房间里。",
+          "pinyin": "wǒ zài fáng jiān lǐ",
+          "meaning": "I am in the room."
+        }
+      ]
+    },
+    {
+      "hanzi": "冰箱",
+      "pinyin": "bīng xiāng",
+      "meaning": "refrigerator",
+      "examples": [
+        {
+          "hanzi": "牛奶在冰箱里。",
+          "pinyin": "niú nǎi zài bīng xiāng lǐ",
+          "meaning": "The milk is in the refrigerator."
+        }
+      ]
+    },
+    {
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "meaning": "inside",
+      "examples": [
+        {
+          "hanzi": "书在包里。",
+          "pinyin": "shū zài bāo lǐ",
+          "meaning": "The book is inside the bag."
+        }
+      ]
+    },
+    {
+      "hanzi": "外",
+      "pinyin": "wài",
+      "meaning": "outside",
+      "examples": [
+        {
+          "hanzi": "他在房间外。",
+          "pinyin": "tā zài fáng jiān wài",
+          "meaning": "He is outside the room."
+        }
+      ]
+    }
+  ]
+}
