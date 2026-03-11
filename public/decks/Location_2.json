@@ -1,16 +1,16 @@
 {
   "name": "Location 2",
   "group": "Unit 2",
-  "icon": "📍",
+  "icon": "🏥",
   "cards": [
     {
       "hanzi": "洗手间",
       "pinyin": "xǐ shǒu jiān",
-      "meaning": "restroom",
+      "meaning": "restroom; bathroom",
       "examples": [
         {
           "hanzi": "洗手间在哪儿？",
-          "pinyin": "xǐ shǒu jiān zài nǎ er",
+          "pinyin": "xǐ shǒu jiān zài nǎ er？",
           "meaning": "Where is the restroom?"
         }
       ]
@@ -22,8 +22,80 @@
       "examples": [
         {
           "hanzi": "他在医院。",
-          "pinyin": "tā zài yī yuàn",
+          "pinyin": "tā zài yī yuàn。",
           "meaning": "He is at the hospital."
+        }
+      ]
+    },
+    {
+      "hanzi": "洗",
+      "pinyin": "xǐ",
+      "meaning": "to wash",
+      "examples": [
+        {
+          "hanzi": "我洗手。",
+          "pinyin": "wǒ xǐ shǒu。",
+          "meaning": "I wash my hands."
+        }
+      ]
+    },
+    {
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "meaning": "hand",
+      "examples": [
+        {
+          "hanzi": "我的手很干净。",
+          "pinyin": "wǒ de shǒu hěn gān jìng。",
+          "meaning": "My hands are very clean."
+        }
+      ]
+    },
+    {
+      "hanzi": "间",
+      "pinyin": "jiān",
+      "meaning": "room; between",
+      "examples": [
+        {
+          "hanzi": "这是我的房间。",
+          "pinyin": "zhè shì wǒ de fáng jiān。",
+          "meaning": "This is my room."
+        }
+      ]
+    },
+    {
+      "hanzi": "院",
+      "pinyin": "yuàn",
+      "meaning": "courtyard; institution",
+      "examples": [
+        {
+          "hanzi": "医院很大。",
+          "pinyin": "yī yuàn hěn dà。",
+          "meaning": "The hospital is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "这儿",
+      "pinyin": "zhè er",
+      "meaning": "here",
+      "examples": [
+        {
+          "hanzi": "我在这儿。",
+          "pinyin": "wǒ zài zhè er。",
+          "meaning": "I am here."
+        }
+      ]
+    },
+    {
+      "hanzi": "那儿",
+      "pinyin": "nà er",
+      "meaning": "there",
+      "examples": [
+        {
+          "hanzi": "他在那儿。",
+          "pinyin": "tā zài nà er。",
+          "meaning": "He is there."
         }
       ]
     },
@@ -33,9 +105,21 @@
       "meaning": "restaurant",
       "examples": [
         {
-          "hanzi": "我们去饭馆。",
-          "pinyin": "wǒ men qù fàn guǎn",
-          "meaning": "We go to the restaurant."
+          "hanzi": "我们去饭馆吃饭。",
+          "pinyin": "wǒ men qù fàn guǎn chī fàn。",
+          "meaning": "We are going to a restaurant to eat."
+        }
+      ]
+    },
+    {
+      "hanzi": "馆",
+      "pinyin": "guǎn",
+      "meaning": "building; establishment",
+      "examples": [
+        {
+          "hanzi": "这个饭馆很好。",
+          "pinyin": "zhè ge fàn guǎn hěn hǎo。",
+          "meaning": "This restaurant is very good."
         }
       ]
     }

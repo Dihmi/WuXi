@@ -10,7 +10,7 @@
       "examples": [
         {
           "hanzi": "谢谢你。",
-          "pinyin": "xiè xie nǐ",
+          "pinyin": "xiè xie nǐ。",
           "meaning": "Thank you."
         }
       ]
@@ -22,8 +22,44 @@
       "examples": [
         {
           "hanzi": "不客气。",
-          "pinyin": "bú kè qi",
+          "pinyin": "bú kè qi。",
           "meaning": "You're welcome."
+        }
+      ]
+    },
+    {
+      "hanzi": "谢",
+      "pinyin": "xiè",
+      "meaning": "to thank",
+      "examples": [
+        {
+          "hanzi": "我要谢谢你。",
+          "pinyin": "wǒ yào xiè xie nǐ。",
+          "meaning": "I want to thank you."
+        }
+      ]
+    },
+    {
+      "hanzi": "客",
+      "pinyin": "kè",
+      "meaning": "guest; customer",
+      "examples": [
+        {
+          "hanzi": "客人来了。",
+          "pinyin": "kè rén lái le。",
+          "meaning": "The guest arrived."
+        }
+      ]
+    },
+    {
+      "hanzi": "气",
+      "pinyin": "qì",
+      "meaning": "air; gas; anger; spirit",
+      "examples": [
+        {
+          "hanzi": "今天天气很好。",
+          "pinyin": "jīn tiān tiān qì hěn hǎo。",
+          "meaning": "The weather is very good today."
         }
       ]
     },
@@ -33,21 +69,69 @@
       "meaning": "sorry",
       "examples": [
         {
-          "hanzi": "对不起。",
-          "pinyin": "duì bu qǐ",
-          "meaning": "Sorry."
+          "hanzi": "对不起，我来晚了。",
+          "pinyin": "duì bu qǐ，wǒ lái wǎn le。",
+          "meaning": "Sorry, I came late."
         }
       ]
     },
     {
       "hanzi": "没关系",
       "pinyin": "méi guān xi",
-      "meaning": "no problem",
+      "meaning": "it's okay; no problem",
       "examples": [
         {
           "hanzi": "没关系。",
-          "pinyin": "méi guān xi",
-          "meaning": "It's okay."
+          "pinyin": "méi guān xi。",
+          "meaning": "No problem."
+        }
+      ]
+    },
+    {
+      "hanzi": "起",
+      "pinyin": "qǐ",
+      "meaning": "to rise; to get up",
+      "examples": [
+        {
+          "hanzi": "我七点起床。",
+          "pinyin": "wǒ qī diǎn qǐ chuáng。",
+          "meaning": "I get up at seven."
+        }
+      ]
+    },
+    {
+      "hanzi": "没",
+      "pinyin": "méi",
+      "meaning": "not have; not",
+      "examples": [
+        {
+          "hanzi": "我没有钱。",
+          "pinyin": "wǒ méi yǒu qián。",
+          "meaning": "I don't have money."
+        }
+      ]
+    },
+    {
+      "hanzi": "关",
+      "pinyin": "guān",
+      "meaning": "to close; relation",
+      "examples": [
+        {
+          "hanzi": "请关门。",
+          "pinyin": "qǐng guān mén。",
+          "meaning": "Please close the door."
+        }
+      ]
+    },
+    {
+      "hanzi": "系",
+      "pinyin": "xì",
+      "meaning": "system; relation; to connect",
+      "examples": [
+        {
+          "hanzi": "我们有关系。",
+          "pinyin": "wǒ men yǒu guān xì。",
+          "meaning": "We have a relationship."
         }
       ]
     }

@@ -4,14 +4,74 @@
   "icon": "⏰",
   "cards": [
     {
-      "hanzi": "今天",
-      "pinyin": "jīn tiān",
-      "meaning": "today",
+      "hanzi": "年",
+      "pinyin": "nián",
+      "meaning": "year",
       "examples": [
         {
-          "hanzi": "今天天气很好。",
-          "pinyin": "jīn tiān tiān qì hěn hǎo",
-          "meaning": "The weather is nice today."
+          "hanzi": "今年是2026年。",
+          "pinyin": "jīn nián shì èr líng èr liù nián。",
+          "meaning": "This year is 2026."
+        }
+      ]
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "meaning": "month; moon",
+      "examples": [
+        {
+          "hanzi": "现在是三月。",
+          "pinyin": "xiàn zài shì sān yuè。",
+          "meaning": "It is March now."
+        }
+      ]
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "hào",
+      "meaning": "date; number",
+      "examples": [
+        {
+          "hanzi": "今天是十号。",
+          "pinyin": "jīn tiān shì shí hào。",
+          "meaning": "Today is the tenth."
+        }
+      ]
+    },
+    {
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "meaning": "how many; what (number)",
+      "examples": [
+        {
+          "hanzi": "今天几号？",
+          "pinyin": "jīn tiān jǐ hào？",
+          "meaning": "What date is today?"
+        }
+      ]
+    },
+    {
+      "hanzi": "〇",
+      "pinyin": "líng",
+      "meaning": "zero",
+      "examples": [
+        {
+          "hanzi": "二〇二六年。",
+          "pinyin": "èr líng èr liù nián。",
+          "meaning": "The year 2026."
+        }
+      ]
+    },
+    {
+      "hanzi": "星期",
+      "pinyin": "xīng qī",
+      "meaning": "week",
+      "examples": [
+        {
+          "hanzi": "今天星期二。",
+          "pinyin": "jīn tiān xīng qī èr。",
+          "meaning": "Today is Tuesday."
         }
       ]
     },
@@ -22,20 +82,80 @@
       "examples": [
         {
           "hanzi": "明天见。",
-          "pinyin": "míng tiān jiàn",
+          "pinyin": "míng tiān jiàn。",
           "meaning": "See you tomorrow."
         }
       ]
     },
     {
-      "hanzi": "星期",
-      "pinyin": "xīng qī",
-      "meaning": "week",
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "meaning": "day; sky",
       "examples": [
         {
-          "hanzi": "今天星期一。",
-          "pinyin": "jīn tiān xīng qī yī",
-          "meaning": "Today is Monday."
+          "hanzi": "今天天气很好。",
+          "pinyin": "jīn tiān tiān qì hěn hǎo。",
+          "meaning": "The weather is very good today."
+        }
+      ]
+    },
+    {
+      "hanzi": "日",
+      "pinyin": "rì",
+      "meaning": "day; sun",
+      "examples": [
+        {
+          "hanzi": "今天是十日。",
+          "pinyin": "jīn tiān shì shí rì。",
+          "meaning": "Today is the tenth day."
+        }
+      ]
+    },
+    {
+      "hanzi": "星",
+      "pinyin": "xīng",
+      "meaning": "star",
+      "examples": [
+        {
+          "hanzi": "晚上有很多星星。",
+          "pinyin": "wǎn shang yǒu hěn duō xīng xing。",
+          "meaning": "There are many stars at night."
+        }
+      ]
+    },
+    {
+      "hanzi": "期",
+      "pinyin": "qī",
+      "meaning": "period; term",
+      "examples": [
+        {
+          "hanzi": "下星期我很忙。",
+          "pinyin": "xià xīng qī wǒ hěn máng。",
+          "meaning": "I will be busy next week."
+        }
+      ]
+    },
+    {
+      "hanzi": "明",
+      "pinyin": "míng",
+      "meaning": "bright; next",
+      "examples": [
+        {
+          "hanzi": "明天我在家。",
+          "pinyin": "míng tiān wǒ zài jiā。",
+          "meaning": "I will be at home tomorrow."
+        }
+      ]
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "meaning": "o'clock; dot; point",
+      "examples": [
+        {
+          "hanzi": "现在三点。",
+          "pinyin": "xiàn zài sān diǎn。",
+          "meaning": "It is three o'clock now."
         }
       ]
     },
@@ -46,8 +166,32 @@
       "examples": [
         {
           "hanzi": "我现在很忙。",
-          "pinyin": "wǒ xiàn zài hěn máng",
+          "pinyin": "wǒ xiàn zài hěn máng。",
           "meaning": "I am busy now."
+        }
+      ]
+    },
+    {
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "meaning": "half",
+      "examples": [
+        {
+          "hanzi": "现在三点半。",
+          "pinyin": "xiàn zài sān diǎn bàn。",
+          "meaning": "It is 3:30 now."
+        }
+      ]
+    },
+    {
+      "hanzi": "现",
+      "pinyin": "xiàn",
+      "meaning": "present; current; appear",
+      "examples": [
+        {
+          "hanzi": "现在我在家。",
+          "pinyin": "xiàn zài wǒ zài jiā。",
+          "meaning": "I am at home now."
         }
       ]
     }

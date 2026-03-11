@@ -6,11 +6,11 @@
     {
       "hanzi": "家",
       "pinyin": "jiā",
-      "meaning": "home",
+      "meaning": "home; family",
       "examples": [
         {
           "hanzi": "我在家。",
-          "pinyin": "wǒ zài jiā",
+          "pinyin": "wǒ zài jiā。",
           "meaning": "I am at home."
         }
       ]
@@ -22,8 +22,44 @@
       "examples": [
         {
           "hanzi": "我住在北京。",
-          "pinyin": "wǒ zhù zài běi jīng",
+          "pinyin": "wǒ zhù zài běi jīng。",
           "meaning": "I live in Beijing."
+        }
+      ]
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "meaning": "at; in; on; to be located at",
+      "examples": [
+        {
+          "hanzi": "我在北京。",
+          "pinyin": "wǒ zài běi jīng。",
+          "meaning": "I am in Beijing."
+        }
+      ]
+    },
+    {
+      "hanzi": "北",
+      "pinyin": "běi",
+      "meaning": "north",
+      "examples": [
+        {
+          "hanzi": "北京在北边。",
+          "pinyin": "běi jīng zài běi biān。",
+          "meaning": "Beijing is in the north."
+        }
+      ]
+    },
+    {
+      "hanzi": "京",
+      "pinyin": "jīng",
+      "meaning": "capital (in place names)",
+      "examples": [
+        {
+          "hanzi": "北京是中国的首都。",
+          "pinyin": "běi jīng shì zhōng guó de shǒu dū。",
+          "meaning": "Beijing is the capital of China."
         }
       ]
     },
@@ -34,20 +70,176 @@
       "examples": [
         {
           "hanzi": "你在哪儿？",
-          "pinyin": "nǐ zài nǎ er",
+          "pinyin": "nǐ zài nǎ er？",
           "meaning": "Where are you?"
+        }
+      ]
+    },
+    {
+      "hanzi": "纽约",
+      "pinyin": "niǔ yuē",
+      "meaning": "New York",
+      "examples": [
+        {
+          "hanzi": "他住在纽约。",
+          "pinyin": "tā zhù zài niǔ yuē。",
+          "meaning": "He lives in New York."
+        }
+      ]
+    },
+    {
+      "hanzi": "香港",
+      "pinyin": "xiāng gǎng",
+      "meaning": "Hong Kong",
+      "examples": [
+        {
+          "hanzi": "她在香港工作。",
+          "pinyin": "tā zài xiāng gǎng gōng zuò。",
+          "meaning": "She works in Hong Kong."
+        }
+      ]
+    },
+    {
+      "hanzi": "儿",
+      "pinyin": "er",
+      "meaning": "suffix often used in northern Mandarin",
+      "examples": [
+        {
+          "hanzi": "你在哪儿？",
+          "pinyin": "nǐ zài nǎ er？",
+          "meaning": "Where are you?"
+        }
+      ]
+    },
+    {
+      "hanzi": "纽",
+      "pinyin": "niǔ",
+      "meaning": "button; knob (used in transliteration)",
+      "examples": [
+        {
+          "hanzi": "纽约很大。",
+          "pinyin": "niǔ yuē hěn dà。",
+          "meaning": "New York is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "约",
+      "pinyin": "yuē",
+      "meaning": "about; approximately; appointment",
+      "examples": [
+        {
+          "hanzi": "我们约三点见。",
+          "pinyin": "wǒ men yuē sān diǎn jiàn。",
+          "meaning": "Let's meet at about three."
+        }
+      ]
+    },
+    {
+      "hanzi": "香",
+      "pinyin": "xiāng",
+      "meaning": "fragrant; good-smelling",
+      "examples": [
+        {
+          "hanzi": "这个茶很香。",
+          "pinyin": "zhè ge chá hěn xiāng。",
+          "meaning": "This tea smells nice."
+        }
+      ]
+    },
+    {
+      "hanzi": "港",
+      "pinyin": "gǎng",
+      "meaning": "harbor; port",
+      "examples": [
+        {
+          "hanzi": "香港是一个港口城市。",
+          "pinyin": "xiāng gǎng shì yí ge gǎng kǒu chéng shì。",
+          "meaning": "Hong Kong is a port city."
         }
       ]
     },
     {
       "hanzi": "住",
       "pinyin": "zhù",
-      "meaning": "to live",
+      "meaning": "to live; to reside",
       "examples": [
         {
-          "hanzi": "我住在纽约。",
-          "pinyin": "wǒ zhù zài niǔ yuē",
-          "meaning": "I live in New York."
+          "hanzi": "我住在伦敦。",
+          "pinyin": "wǒ zhù zài lún dūn。",
+          "meaning": "I live in London."
+        }
+      ]
+    },
+    {
+      "hanzi": "伦敦",
+      "pinyin": "lún dūn",
+      "meaning": "London",
+      "examples": [
+        {
+          "hanzi": "他住在伦敦。",
+          "pinyin": "tā zhù zài lún dūn。",
+          "meaning": "He lives in London."
+        }
+      ]
+    },
+    {
+      "hanzi": "台湾",
+      "pinyin": "tái wān",
+      "meaning": "Taiwan",
+      "examples": [
+        {
+          "hanzi": "她来自台湾。",
+          "pinyin": "tā lái zì tái wān。",
+          "meaning": "She comes from Taiwan."
+        }
+      ]
+    },
+    {
+      "hanzi": "伦",
+      "pinyin": "lún",
+      "meaning": "human relations; order (used in transliteration)",
+      "examples": [
+        {
+          "hanzi": "伦敦很有名。",
+          "pinyin": "lún dūn hěn yǒu míng。",
+          "meaning": "London is very famous."
+        }
+      ]
+    },
+    {
+      "hanzi": "敦",
+      "pinyin": "dūn",
+      "meaning": "honest; sincere (used in transliteration)",
+      "examples": [
+        {
+          "hanzi": "我想去伦敦。",
+          "pinyin": "wǒ xiǎng qù lún dūn。",
+          "meaning": "I want to go to London."
+        }
+      ]
+    },
+    {
+      "hanzi": "台",
+      "pinyin": "tái",
+      "meaning": "platform; Taiwan (short form)",
+      "examples": [
+        {
+          "hanzi": "他在台湾学习。",
+          "pinyin": "tā zài tái wān xué xí。",
+          "meaning": "He studies in Taiwan."
+        }
+      ]
+    },
+    {
+      "hanzi": "湾",
+      "pinyin": "wān",
+      "meaning": "bay; gulf",
+      "examples": [
+        {
+          "hanzi": "台湾是一个岛。",
+          "pinyin": "tái wān shì yí ge dǎo。",
+          "meaning": "Taiwan is an island."
         }
       ]
     }

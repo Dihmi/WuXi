@@ -10,7 +10,7 @@
       "examples": [
         {
           "hanzi": "早安！",
-          "pinyin": "zǎo ān",
+          "pinyin": "zǎo ān！",
           "meaning": "Good morning!"
         }
       ]
@@ -22,8 +22,68 @@
       "examples": [
         {
           "hanzi": "晚安！",
-          "pinyin": "wǎn ān",
+          "pinyin": "wǎn ān！",
           "meaning": "Good night!"
+        }
+      ]
+    },
+    {
+      "hanzi": "一会儿",
+      "pinyin": "yí huì er",
+      "meaning": "a little while; soon",
+      "examples": [
+        {
+          "hanzi": "我们一会儿见。",
+          "pinyin": "wǒ men yí huì er jiàn。",
+          "meaning": "We'll see each other soon."
+        }
+      ]
+    },
+    {
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "meaning": "to see; to meet",
+      "examples": [
+        {
+          "hanzi": "明天见。",
+          "pinyin": "míng tiān jiàn。",
+          "meaning": "See you tomorrow."
+        }
+      ]
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì",
+      "meaning": "can; know how to; meeting",
+      "examples": [
+        {
+          "hanzi": "我会说英语。",
+          "pinyin": "wǒ huì shuō yīng yǔ。",
+          "meaning": "I can speak English."
+        }
+      ]
+    },
+    {
+      "hanzi": "安",
+      "pinyin": "ān",
+      "meaning": "peaceful; safe",
+      "examples": [
+        {
+          "hanzi": "晚安。",
+          "pinyin": "wǎn ān。",
+          "meaning": "Good night."
+        }
+      ]
+    },
+    {
+      "hanzi": "最近",
+      "pinyin": "zuì jìn",
+      "meaning": "recently; lately",
+      "examples": [
+        {
+          "hanzi": "你最近怎么样？",
+          "pinyin": "nǐ zuì jìn zěn me yàng？",
+          "meaning": "How have you been recently?"
         }
       ]
     },
@@ -34,8 +94,68 @@
       "examples": [
         {
           "hanzi": "好久不见！",
-          "pinyin": "hǎo jiǔ bú jiàn",
+          "pinyin": "hǎo jiǔ bú jiàn！",
           "meaning": "Long time no see!"
+        }
+      ]
+    },
+    {
+      "hanzi": "不错",
+      "pinyin": "bú cuò",
+      "meaning": "not bad; pretty good",
+      "examples": [
+        {
+          "hanzi": "我最近不错。",
+          "pinyin": "wǒ zuì jìn bú cuò。",
+          "meaning": "I've been pretty good lately."
+        }
+      ]
+    },
+    {
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "meaning": "most",
+      "examples": [
+        {
+          "hanzi": "这是最好的。",
+          "pinyin": "zhè shì zuì hǎo de。",
+          "meaning": "This is the best."
+        }
+      ]
+    },
+    {
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "meaning": "near; recent",
+      "examples": [
+        {
+          "hanzi": "我家很近。",
+          "pinyin": "wǒ jiā hěn jìn。",
+          "meaning": "My home is very near."
+        }
+      ]
+    },
+    {
+      "hanzi": "久",
+      "pinyin": "jiǔ",
+      "meaning": "long time",
+      "examples": [
+        {
+          "hanzi": "我等了很久。",
+          "pinyin": "wǒ děng le hěn jiǔ。",
+          "meaning": "I waited a long time."
+        }
+      ]
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "meaning": "wrong; mistake",
+      "examples": [
+        {
+          "hanzi": "这个字错了。",
+          "pinyin": "zhè ge zì cuò le。",
+          "meaning": "This character is wrong."
         }
       ]
     }
