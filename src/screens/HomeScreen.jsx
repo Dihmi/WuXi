@@ -86,9 +86,17 @@ export default function HomeScreen({
             <div className="deck-errors-title">
               ⚠ Failed to load {deckErrors.length} deck{deckErrors.length > 1 ? 's' : ''}
             </div>
-            {deckErrors.map((e, i) => (
-              <div key={i} className="deck-errors-item">{e}</div>
-            ))}
+            {deckErrors.map((e, i) => {
+              const colon = e.indexOf(': ');
+              const file  = colon !== -1 ? e.slice(0, colon) : null;
+              const msg   = colon !== -1 ? e.slice(colon + 2) : e;
+              return (
+                <div key={i} className="deck-errors-item">
+                  {file && <span style={{ fontWeight: 700, color: 'var(--text2)' }}>{file}:</span>}{' '}
+                  {msg}
+                </div>
+              );
+            })}
           </div>
         )}
 

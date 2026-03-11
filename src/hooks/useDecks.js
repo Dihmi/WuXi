@@ -34,14 +34,30 @@ export default function useDecks() {
         // 2. Fetch + parse every deck in parallel (.apkg or .json)
         const results = await Promise.allSettled(
           filenames.map(async name => {
-            const r = await fetch(`/decks/${encodeURIComponent(name)}`);
-            if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);
-            if (/\.json$/i.test(name)) {
-              const json = await r.json();
-              return parseJsonDeck(json, name);
+            let r;
+            try {
+              r = await fetch(`/decks/${encodeURIComponent(name)}`);
+            } catch (err) {
+              throw new Error(`${name}: network error — ${err.message}`);
             }
-            const buf = await r.arrayBuffer();
-            return parseApkg(buf, name);
+            if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);
+
+            // Guard against SPA fallback returning HTML instead of the file
+            const ct = r.headers.get('content-type') ?? '';
+            if (ct.includes('text/html')) {
+              throw new Error(`${name}: file not found on server (got HTML)`);
+            }
+
+            try {
+              if (/\.json$/i.test(name)) {
+                const json = await r.json();
+                return parseJsonDeck(json, name);
+              }
+              const buf = await r.arrayBuffer();
+              return parseApkg(buf, name);
+            } catch (err) {
+              throw new Error(`${name}: ${err.message}`);
+            }
           })
         );
 
