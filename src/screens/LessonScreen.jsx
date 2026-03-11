@@ -1,4 +1,5 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect, useLayoutEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { MASTERY_LEVELS } from '../data/lessons';
 import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
@@ -9,7 +10,28 @@ const FILTER_OPTIONS = ['All', 'New', 'Learning', 'Familiar', 'Practiced', 'Mast
 
 export default function LessonScreen({ lesson, navigate, getWordMastery, getLessonProgress }) {
   const [filter, setFilter] = useState('All');
+  const [dropOpen, setDropOpen] = useState(false);
+  const [menuPos, setMenuPos] = useState(null);
+  const dropWrapRef = useRef(null);
+  const btnRef = useRef(null);
   const { pct, counts } = getLessonProgress(lesson);
+
+  // Close on outside click
+  useEffect(() => {
+    if (!dropOpen) return;
+    const h = (e) => {
+      if (dropWrapRef.current && !dropWrapRef.current.contains(e.target)) setDropOpen(false);
+    };
+    document.addEventListener('mousedown', h);
+    return () => document.removeEventListener('mousedown', h);
+  }, [dropOpen]);
+
+  // Anchor menu below button using fixed positioning
+  useLayoutEffect(() => {
+    if (!dropOpen || !btnRef.current) { setMenuPos(null); return; }
+    const r = btnRef.current.getBoundingClientRect();
+    setMenuPos({ top: r.bottom + 6, left: r.left });
+  }, [dropOpen]);
 
   const filteredWords = useMemo(() => {
     if (filter === 'All') return lesson.words;
@@ -23,6 +45,8 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
     return counts[levelIdx] || 0;
   };
 
+  const activeLevel = filter !== 'All' ? MASTERY_LEVELS.find(m => m.name === filter) : null;
+
   return (
     <>
       <NavBar
@@ -34,7 +58,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <polygon points="5 3 19 12 5 21 5 3" />
             </svg>
-            Quiz
+            Quick
           </button>
         }
       />
@@ -44,8 +68,63 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
         <div className="lesson-header">
           <div className="lesson-header-top">
             <div className="lesson-header-icon">{lesson.icon}</div>
-            <div>
-              <div className="lesson-header-title">{lesson.title}</div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 5 }}>
+                <div className="lesson-header-title" style={{ marginBottom: 0 }}>{lesson.title}</div>
+
+                {/* ── Filter dropdown ──────────────────────────── */}
+                <div ref={dropWrapRef} className="wall-dd-wrap" style={{ flexShrink: 0 }}>
+                  <button
+                    ref={btnRef}
+                    className={`wall-dd-btn${filter !== 'All' ? ' filtered' : ''}${dropOpen ? ' open' : ''}`}
+                    onClick={() => setDropOpen(v => !v)}
+                  >
+                    <span style={activeLevel ? { color: activeLevel.color } : {}}>
+                      {filter === 'All' ? 'All' : filter}
+                    </span>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                      style={{ transform: dropOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s', flexShrink: 0 }}>
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </button>
+
+                  {dropOpen && menuPos && createPortal(
+                    <div
+                      className="wall-dd-menu"
+                      style={{ position: 'fixed', top: menuPos.top, left: menuPos.left, zIndex: 9999 }}
+                      onMouseDown={e => e.stopPropagation()}
+                    >
+                      {FILTER_OPTIONS.map(f => {
+                        const lvl = MASTERY_LEVELS.find(m => m.name === f);
+                        const cnt = filterCount(f);
+                        return (
+                          <button
+                            key={f}
+                            className={`wall-dd-item${filter === f ? ' checked' : ''}`}
+                            onClick={() => { setFilter(f); setDropOpen(false); }}
+                          >
+                            <span className="wall-dd-check" style={lvl ? { color: lvl.color } : {}}>
+                              {filter === f
+                                ? <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                  </svg>
+                                : lvl
+                                  ? <span className="wall-dd-dot" style={{ background: lvl.color }} />
+                                  : null
+                              }
+                            </span>
+                            <span style={{ flex: 1 }}>{f}</span>
+                            <span style={{ fontSize: 11, color: 'var(--text3)', fontWeight: 600 }}>{cnt}</span>
+                          </button>
+                        );
+                      })}
+                    </div>,
+                    document.body
+                  )}
+                </div>
+              </div>
               <div className="lesson-header-desc">{lesson.description}</div>
             </div>
           </div>
@@ -54,20 +133,6 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
             <span className="lesson-progress-pct">{pct}%</span>
           </div>
           <ProgressBar pct={pct} />
-        </div>
-
-        {/* ── Filter chips ──────────────────────────────────────── */}
-        <div className="filter-row">
-          {FILTER_OPTIONS.map(f => (
-            <button
-              key={f}
-              className={`filter-chip${filter === f ? ' active' : ''}`}
-              onClick={() => setFilter(f)}
-            >
-              {f}
-              <span className="filter-chip-count">{filterCount(f)}</span>
-            </button>
-          ))}
         </div>
 
         {/* ── Word grid ─────────────────────────────────────────── */}

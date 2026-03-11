@@ -3,7 +3,7 @@ import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 import MasteryBadge from '../components/MasteryBadge';
 
-export default function WordReviewScreen({ word, lesson, navigate, getWordMastery, updateMastery, wordOrigin }) {
+export default function WordReviewScreen({ word, lesson, navigate, getWordMastery, wordOrigin }) {
   const m = getWordMastery(wordKey(lesson.id, word.hanzi));
   const ml = MASTERY_LEVELS[m.level];
   const total = m.correct + m.wrong;
@@ -40,6 +40,12 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="9 18 15 12 9 6" />
               </svg>
+            </button>
+            <button className="btn btn-primary" onClick={() => navigate('quiz', { lesson })}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+              Quick
             </button>
           </div>
         }
@@ -116,28 +122,8 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
             </div>
           </div>
 
-          {/* ── Actions ─────────────────────────────────────────── */}
-          <div className="action-row slide-up" style={{ animationDelay: '0.1s' }}>
-            <button
-              className="btn btn-secondary"
-              style={{ borderColor: 'rgba(240,101,122,0.3)', color: 'var(--danger)' }}
-              onClick={() => updateMastery(wordKey(lesson.id, word.hanzi), false)}
-            >
-              ✗ Mark Wrong
-            </button>
-            <button
-              className="btn btn-secondary"
-              style={{ borderColor: 'rgba(62,207,142,0.3)', color: 'var(--success)' }}
-              onClick={() => updateMastery(wordKey(lesson.id, word.hanzi), true)}
-            >
-              ✓ Mark Correct
-            </button>
-            <button className="btn btn-primary" onClick={() => navigate('quiz', { lesson })}>
-              Quiz this lesson
-            </button>
-          </div>
 
-        </div>
+</div>
       </div>
     </>
   );
