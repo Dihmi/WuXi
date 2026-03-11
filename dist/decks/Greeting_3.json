@@ -10,7 +10,7 @@
       "examples": [
         {
           "hanzi": "我今天很忙。",
-          "pinyin": "wǒ jīn tiān hěn máng",
+          "pinyin": "wǒ jīn tiān hěn máng。",
           "meaning": "I am very busy today."
         }
       ]
@@ -22,8 +22,32 @@
       "examples": [
         {
           "hanzi": "早上好！",
-          "pinyin": "zǎo shang hǎo",
+          "pinyin": "zǎo shang hǎo！",
           "meaning": "Good morning!"
+        }
+      ]
+    },
+    {
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "meaning": "early; morning",
+      "examples": [
+        {
+          "hanzi": "你今天很早。",
+          "pinyin": "nǐ jīn tiān hěn zǎo。",
+          "meaning": "You are early today."
+        }
+      ]
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "meaning": "up; above; previous",
+      "examples": [
+        {
+          "hanzi": "我早上上班。",
+          "pinyin": "wǒ zǎo shang shàng bān。",
+          "meaning": "I go to work in the morning."
         }
       ]
     },
@@ -34,7 +58,7 @@
       "examples": [
         {
           "hanzi": "你今天怎么样？",
-          "pinyin": "nǐ jīn tiān zěn me yàng",
+          "pinyin": "nǐ jīn tiān zěn me yàng？",
           "meaning": "How are you today?"
         }
       ]
@@ -46,8 +70,56 @@
       "examples": [
         {
           "hanzi": "今天天气很好。",
-          "pinyin": "jīn tiān tiān qì hěn hǎo",
-          "meaning": "The weather is nice today."
+          "pinyin": "jīn tiān tiān qì hěn hǎo。",
+          "meaning": "The weather is good today."
+        }
+      ]
+    },
+    {
+      "hanzi": "怎",
+      "pinyin": "zěn",
+      "meaning": "how",
+      "examples": [
+        {
+          "hanzi": "怎么了？",
+          "pinyin": "zěn me le？",
+          "meaning": "What happened?"
+        }
+      ]
+    },
+    {
+      "hanzi": "样",
+      "pinyin": "yàng",
+      "meaning": "appearance; way; kind",
+      "examples": [
+        {
+          "hanzi": "这个样子很好。",
+          "pinyin": "zhè ge yàng zi hěn hǎo。",
+          "meaning": "This appearance is good."
+        }
+      ]
+    },
+    {
+      "hanzi": "今",
+      "pinyin": "jīn",
+      "meaning": "today; modern",
+      "examples": [
+        {
+          "hanzi": "今天我不忙。",
+          "pinyin": "jīn tiān wǒ bù máng。",
+          "meaning": "I am not busy today."
+        }
+      ]
+    },
+    {
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "meaning": "day; sky",
+      "examples": [
+        {
+          "hanzi": "明天见。",
+          "pinyin": "míng tiān jiàn。",
+          "meaning": "See you tomorrow."
         }
       ]
     }

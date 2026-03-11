@@ -15,38 +15,26 @@
       ]
     },
     {
-      "hanzi": "学生",
-      "pinyin": "xué shēng",
-      "meaning": "student",
-      "examples": [
-        {
-          "hanzi": "他是学生。",
-          "pinyin": "tā shì xué shēng",
-          "meaning": "He is a student."
-        }
-      ]
-    },
-    {
-      "hanzi": "老师",
-      "pinyin": "lǎo shī",
-      "meaning": "teacher",
-      "examples": [
-        {
-          "hanzi": "她是老师。",
-          "pinyin": "tā shì lǎo shī",
-          "meaning": "She is a teacher."
-        }
-      ]
-    },
-    {
-      "hanzi": "医生",
-      "pinyin": "yī shēng",
-      "meaning": "doctor",
+      "hanzi": "他",
+      "pinyin": "tā",
+      "meaning": "he",
       "examples": [
         {
           "hanzi": "他是医生。",
           "pinyin": "tā shì yī shēng",
           "meaning": "He is a doctor."
+        }
+      ]
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xué shēng",
+      "meaning": "student",
+      "examples": [
+        {
+          "hanzi": "我是学生。",
+          "pinyin": "wǒ shì xué shēng",
+          "meaning": "I am a student."
         }
       ]
     },
@@ -63,6 +51,42 @@
       ]
     },
     {
+      "hanzi": "她",
+      "pinyin": "tā",
+      "meaning": "she",
+      "examples": [
+        {
+          "hanzi": "她是老师。",
+          "pinyin": "tā shì lǎo shī",
+          "meaning": "She is a teacher."
+        }
+      ]
+    },
+    {
+      "hanzi": "你们",
+      "pinyin": "nǐ men",
+      "meaning": "you (plural)",
+      "examples": [
+        {
+          "hanzi": "你们是学生吗？",
+          "pinyin": "nǐ men shì xué shēng ma",
+          "meaning": "Are you all students?"
+        }
+      ]
+    },
+    {
+      "hanzi": "我们",
+      "pinyin": "wǒ men",
+      "meaning": "we",
+      "examples": [
+        {
+          "hanzi": "我们是朋友。",
+          "pinyin": "wǒ men shì péng you",
+          "meaning": "We are friends."
+        }
+      ]
+    },
+    {
       "hanzi": "他们",
       "pinyin": "tā men",
       "meaning": "they",
@@ -73,7 +97,31 @@
           "meaning": "They are teachers."
         }
       ]
+    },
+    {
+      "hanzi": "老师",
+      "pinyin": "lǎo shī",
+      "meaning": "teacher",
+      "examples": [
+        {
+          "hanzi": "他是老师。",
+          "pinyin": "tā shì lǎo shī",
+          "meaning": "He is a teacher."
+        }
+      ]
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yī shēng",
+      "meaning": "doctor",
+      "examples": [
+        {
+          "hanzi": "她是医生。",
+          "pinyin": "tā shì yī shēng",
+          "meaning": "She is a doctor."
+        }
+      ]
     }
   ],
-  "icon": "👨‍🏫"
+  "icon": "👩‍🏫"
 }

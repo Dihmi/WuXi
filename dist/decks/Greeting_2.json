@@ -17,7 +17,31 @@
     {
       "hanzi": "高兴",
       "pinyin": "gāo xìng",
-      "meaning": "happy; glad",
+      "meaning": "happy",
+      "examples": [
+        {
+          "hanzi": "很高兴认识你。",
+          "pinyin": "hěn gāo xìng rèn shi nǐ",
+          "meaning": "Nice to meet you."
+        }
+      ]
+    },
+    {
+      "hanzi": "高",
+      "pinyin": "gāo",
+      "meaning": "tall / high",
+      "examples": [
+        {
+          "hanzi": "他很高。",
+          "pinyin": "tā hěn gāo",
+          "meaning": "He is tall."
+        }
+      ]
+    },
+    {
+      "hanzi": "兴",
+      "pinyin": "xìng",
+      "meaning": "happy mood",
       "examples": [
         {
           "hanzi": "我很高兴。",
@@ -29,11 +53,11 @@
     {
       "hanzi": "认识",
       "pinyin": "rèn shi",
-      "meaning": "to know; to meet",
+      "meaning": "to meet / know",
       "examples": [
         {
-          "hanzi": "很高兴认识你。",
-          "pinyin": "hěn gāo xìng rèn shi nǐ",
+          "hanzi": "认识你很高兴。",
+          "pinyin": "rèn shi nǐ hěn gāo xìng",
           "meaning": "Nice to meet you."
         }
       ]

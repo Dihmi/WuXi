@@ -6,24 +6,120 @@
     {
       "hanzi": "爸爸",
       "pinyin": "bà ba",
-      "meaning": "father",
+      "meaning": "dad; father",
       "examples": [
         {
           "hanzi": "我爸爸很好。",
-          "pinyin": "wǒ bà ba hěn hǎo",
-          "meaning": "My father is nice."
+          "pinyin": "wǒ bà ba hěn hǎo。",
+          "meaning": "My dad is very nice."
         }
       ]
     },
     {
       "hanzi": "妈妈",
       "pinyin": "mā ma",
-      "meaning": "mother",
+      "meaning": "mom; mother",
       "examples": [
         {
-          "hanzi": "我爱妈妈。",
-          "pinyin": "wǒ ài mā ma",
-          "meaning": "I love my mother."
+          "hanzi": "我妈妈很忙。",
+          "pinyin": "wǒ mā ma hěn máng。",
+          "meaning": "My mom is very busy."
+        }
+      ]
+    },
+    {
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "meaning": "to love",
+      "examples": [
+        {
+          "hanzi": "我爱家人。",
+          "pinyin": "wǒ ài jiā rén。",
+          "meaning": "I love my family."
+        }
+      ]
+    },
+    {
+      "hanzi": "家人",
+      "pinyin": "jiā rén",
+      "meaning": "family members",
+      "examples": [
+        {
+          "hanzi": "我的家人都在北京。",
+          "pinyin": "wǒ de jiā rén dōu zài běi jīng。",
+          "meaning": "My family members are all in Beijing."
+        }
+      ]
+    },
+    {
+      "hanzi": "爸",
+      "pinyin": "bà",
+      "meaning": "dad; father",
+      "examples": [
+        {
+          "hanzi": "我爸在家。",
+          "pinyin": "wǒ bà zài jiā。",
+          "meaning": "My dad is at home."
+        }
+      ]
+    },
+    {
+      "hanzi": "妈",
+      "pinyin": "mā",
+      "meaning": "mom; mother",
+      "examples": [
+        {
+          "hanzi": "我妈很好。",
+          "pinyin": "wǒ mā hěn hǎo。",
+          "meaning": "My mom is very nice."
+        }
+      ]
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "meaning": "who",
+      "examples": [
+        {
+          "hanzi": "他是谁？",
+          "pinyin": "tā shì shéi？",
+          "meaning": "Who is he?"
+        }
+      ]
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "meaning": "that",
+      "examples": [
+        {
+          "hanzi": "那是我爸爸。",
+          "pinyin": "nà shì wǒ bà ba。",
+          "meaning": "That is my dad."
+        }
+      ]
+    },
+    {
+      "hanzi": "个",
+      "pinyin": "ge",
+      "meaning": "general measure word",
+      "examples": [
+        {
+          "hanzi": "那个人是我哥哥。",
+          "pinyin": "nà ge rén shì wǒ gē ge。",
+          "meaning": "That person is my older brother."
+        }
+      ]
+    },
+    {
+      "hanzi": "这",
+      "pinyin": "zhè",
+      "meaning": "this",
+      "examples": [
+        {
+          "hanzi": "这是我妈妈。",
+          "pinyin": "zhè shì wǒ mā ma。",
+          "meaning": "This is my mother."
         }
       ]
     },
@@ -34,8 +130,8 @@
       "examples": [
         {
           "hanzi": "我哥哥很高。",
-          "pinyin": "wǒ gē ge hěn gāo",
-          "meaning": "My older brother is tall."
+          "pinyin": "wǒ gē ge hěn gāo。",
+          "meaning": "My older brother is very tall."
         }
       ]
     },
@@ -45,9 +141,117 @@
       "meaning": "older sister",
       "examples": [
         {
-          "hanzi": "我姐姐很好。",
-          "pinyin": "wǒ jiě jie hěn hǎo",
-          "meaning": "My older sister is nice."
+          "hanzi": "我姐姐是学生。",
+          "pinyin": "wǒ jiě jie shì xué shēng。",
+          "meaning": "My older sister is a student."
+        }
+      ]
+    },
+    {
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "meaning": "to have",
+      "examples": [
+        {
+          "hanzi": "我有一个哥哥。",
+          "pinyin": "wǒ yǒu yí ge gē ge。",
+          "meaning": "I have an older brother."
+        }
+      ]
+    },
+    {
+      "hanzi": "哥",
+      "pinyin": "gē",
+      "meaning": "older brother",
+      "examples": [
+        {
+          "hanzi": "我哥很忙。",
+          "pinyin": "wǒ gē hěn máng。",
+          "meaning": "My older brother is busy."
+        }
+      ]
+    },
+    {
+      "hanzi": "姐",
+      "pinyin": "jiě",
+      "meaning": "older sister",
+      "examples": [
+        {
+          "hanzi": "我姐在家。",
+          "pinyin": "wǒ jiě zài jiā。",
+          "meaning": "My older sister is at home."
+        }
+      ]
+    },
+    {
+      "hanzi": "弟弟",
+      "pinyin": "dì di",
+      "meaning": "younger brother",
+      "examples": [
+        {
+          "hanzi": "我弟弟很可爱。",
+          "pinyin": "wǒ dì di hěn kě ài。",
+          "meaning": "My younger brother is very cute."
+        }
+      ]
+    },
+    {
+      "hanzi": "和",
+      "pinyin": "hé",
+      "meaning": "and",
+      "examples": [
+        {
+          "hanzi": "我和妈妈在家。",
+          "pinyin": "wǒ hé mā ma zài jiā。",
+          "meaning": "My mom and I are at home."
+        }
+      ]
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèi mei",
+      "meaning": "younger sister",
+      "examples": [
+        {
+          "hanzi": "我妹妹很小。",
+          "pinyin": "wǒ mèi mei hěn xiǎo。",
+          "meaning": "My younger sister is very young."
+        }
+      ]
+    },
+    {
+      "hanzi": "没",
+      "pinyin": "méi",
+      "meaning": "not have; not",
+      "examples": [
+        {
+          "hanzi": "我没有弟弟。",
+          "pinyin": "wǒ méi yǒu dì di。",
+          "meaning": "I don't have a younger brother."
+        }
+      ]
+    },
+    {
+      "hanzi": "弟",
+      "pinyin": "dì",
+      "meaning": "younger brother; junior",
+      "examples": [
+        {
+          "hanzi": "我弟很高。",
+          "pinyin": "wǒ dì hěn gāo。",
+          "meaning": "My younger brother is tall."
+        }
+      ]
+    },
+    {
+      "hanzi": "妹",
+      "pinyin": "mèi",
+      "meaning": "younger sister",
+      "examples": [
+        {
+          "hanzi": "我妹在学校。",
+          "pinyin": "wǒ mèi zài xué xiào。",
+          "meaning": "My younger sister is at school."
         }
       ]
     }

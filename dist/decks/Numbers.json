@@ -3,30 +3,6 @@
   "group": "Unit 1",
   "cards": [
     {
-      "hanzi": "一",
-      "pinyin": "yī",
-      "meaning": "one",
-      "examples": [
-        {
-          "hanzi": "我有一个苹果。",
-          "pinyin": "wǒ yǒu yí gè píng guǒ",
-          "meaning": "I have one apple."
-        }
-      ]
-    },
-    {
-      "hanzi": "二",
-      "pinyin": "èr",
-      "meaning": "two",
-      "examples": [
-        {
-          "hanzi": "我有两个朋友。",
-          "pinyin": "wǒ yǒu liǎng gè péng yǒu",
-          "meaning": "I have two friends."
-        }
-      ]
-    },
-    {
       "hanzi": "三",
       "pinyin": "sān",
       "meaning": "three",
@@ -34,43 +10,19 @@
         {
           "hanzi": "三个人来了。",
           "pinyin": "sān gè rén lái le",
-          "meaning": "Three people came."
+          "meaning": "Three people arrived."
         }
       ]
     },
     {
-      "hanzi": "四",
-      "pinyin": "sì",
-      "meaning": "four",
+      "hanzi": "一",
+      "pinyin": "yī",
+      "meaning": "one",
       "examples": [
         {
-          "hanzi": "四个学生。",
-          "pinyin": "sì gè xué shēng",
-          "meaning": "Four students."
-        }
-      ]
-    },
-    {
-      "hanzi": "五",
-      "pinyin": "wǔ",
-      "meaning": "five",
-      "examples": [
-        {
-          "hanzi": "五个人。",
-          "pinyin": "wǔ gè rén",
-          "meaning": "Five people."
-        }
-      ]
-    },
-    {
-      "hanzi": "六",
-      "pinyin": "liù",
-      "meaning": "six",
-      "examples": [
-        {
-          "hanzi": "现在六点。",
-          "pinyin": "xiàn zài liù diǎn",
-          "meaning": "It is six o'clock."
+          "hanzi": "我有一个朋友。",
+          "pinyin": "wǒ yǒu yí gè péng you",
+          "meaning": "I have one friend."
         }
       ]
     },
@@ -80,9 +32,9 @@
       "meaning": "seven",
       "examples": [
         {
-          "hanzi": "七个苹果。",
-          "pinyin": "qī gè píng guǒ",
-          "meaning": "Seven apples."
+          "hanzi": "我七点起床。",
+          "pinyin": "wǒ qī diǎn qǐ chuáng",
+          "meaning": "I wake up at seven."
         }
       ]
     },
@@ -92,21 +44,9 @@
       "meaning": "eight",
       "examples": [
         {
-          "hanzi": "八个人吃饭。",
-          "pinyin": "bā gè rén chī fàn",
-          "meaning": "Eight people eat."
-        }
-      ]
-    },
-    {
-      "hanzi": "九",
-      "pinyin": "jiǔ",
-      "meaning": "nine",
-      "examples": [
-        {
-          "hanzi": "九点见。",
-          "pinyin": "jiǔ diǎn jiàn",
-          "meaning": "See you at nine."
+          "hanzi": "八点上班。",
+          "pinyin": "bā diǎn shàng bān",
+          "meaning": "Work starts at eight."
         }
       ]
     },
@@ -116,9 +56,57 @@
       "meaning": "ten",
       "examples": [
         {
-          "hanzi": "十个人。",
-          "pinyin": "shí gè rén",
-          "meaning": "Ten people."
+          "hanzi": "十个学生。",
+          "pinyin": "shí gè xué shēng",
+          "meaning": "Ten students."
+        }
+      ]
+    },
+    {
+      "hanzi": "零",
+      "pinyin": "líng",
+      "meaning": "zero",
+      "examples": [
+        {
+          "hanzi": "二零二六年。",
+          "pinyin": "èr líng èr liù nián",
+          "meaning": "The year 2026."
+        }
+      ]
+    },
+    {
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "meaning": "yuan; dollar (currency unit)",
+      "examples": [
+        {
+          "hanzi": "这个十元。",
+          "pinyin": "zhè gè shí yuán",
+          "meaning": "This costs ten yuan."
+        }
+      ]
+    },
+    {
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "meaning": "five",
+      "examples": [
+        {
+          "hanzi": "我有五本书。",
+          "pinyin": "wǒ yǒu wǔ běn shū",
+          "meaning": "I have five books."
+        }
+      ]
+    },
+    {
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "meaning": "nine",
+      "examples": [
+        {
+          "hanzi": "九个人来了。",
+          "pinyin": "jiǔ gè rén lái le",
+          "meaning": "Nine people arrived."
         }
       ]
     },
@@ -135,26 +123,38 @@
       ]
     },
     {
-      "hanzi": "零",
-      "pinyin": "líng",
-      "meaning": "zero",
+      "hanzi": "二",
+      "pinyin": "èr",
+      "meaning": "two",
       "examples": [
         {
-          "hanzi": "零度。",
-          "pinyin": "líng dù",
-          "meaning": "Zero degrees."
+          "hanzi": "我有两个苹果。",
+          "pinyin": "wǒ yǒu liǎng gè píng guǒ",
+          "meaning": "I have two apples."
         }
       ]
     },
     {
-      "hanzi": "元",
-      "pinyin": "yuán",
-      "meaning": "yuan (Chinese currency)",
+      "hanzi": "四",
+      "pinyin": "sì",
+      "meaning": "four",
       "examples": [
         {
-          "hanzi": "五元。",
-          "pinyin": "wǔ yuán",
-          "meaning": "Five yuan."
+          "hanzi": "四点见。",
+          "pinyin": "sì diǎn jiàn",
+          "meaning": "See you at four."
+        }
+      ]
+    },
+    {
+      "hanzi": "六",
+      "pinyin": "liù",
+      "meaning": "six",
+      "examples": [
+        {
+          "hanzi": "六个人在这儿。",
+          "pinyin": "liù gè rén zài zhèr",
+          "meaning": "Six people are here."
         }
       ]
     }

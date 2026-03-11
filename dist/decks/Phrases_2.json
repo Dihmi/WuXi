@@ -9,8 +9,8 @@
       "meaning": "excuse me; may I ask",
       "examples": [
         {
-          "hanzi": "请问，厕所在哪儿？",
-          "pinyin": "qǐng wèn cè suǒ zài nǎ er",
+          "hanzi": "请问，洗手间在哪儿？",
+          "pinyin": "qǐng wèn，xǐ shǒu jiān zài nǎ er？",
           "meaning": "Excuse me, where is the restroom?"
         }
       ]
@@ -22,8 +22,68 @@
       "examples": [
         {
           "hanzi": "我知道。",
-          "pinyin": "wǒ zhī dào",
+          "pinyin": "wǒ zhī dào。",
           "meaning": "I know."
+        }
+      ]
+    },
+    {
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "meaning": "to ask",
+      "examples": [
+        {
+          "hanzi": "我想问一个问题。",
+          "pinyin": "wǒ xiǎng wèn yí ge wèn tí。",
+          "meaning": "I want to ask a question."
+        }
+      ]
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "meaning": "please; to invite",
+      "examples": [
+        {
+          "hanzi": "请坐。",
+          "pinyin": "qǐng zuò。",
+          "meaning": "Please sit."
+        }
+      ]
+    },
+    {
+      "hanzi": "知",
+      "pinyin": "zhī",
+      "meaning": "to know; knowledge",
+      "examples": [
+        {
+          "hanzi": "我不知道。",
+          "pinyin": "wǒ bù zhī dào。",
+          "meaning": "I don't know."
+        }
+      ]
+    },
+    {
+      "hanzi": "道",
+      "pinyin": "dào",
+      "meaning": "road; way; to say",
+      "examples": [
+        {
+          "hanzi": "这条路很小。",
+          "pinyin": "zhè tiáo lù hěn xiǎo。",
+          "meaning": "This road is very small."
+        }
+      ]
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "meaning": "to speak; to say",
+      "examples": [
+        {
+          "hanzi": "我会说汉语。",
+          "pinyin": "wǒ huì shuō hàn yǔ。",
+          "meaning": "I can speak Chinese."
         }
       ]
     },
@@ -33,9 +93,9 @@
       "meaning": "English language",
       "examples": [
         {
-          "hanzi": "我会说英语。",
-          "pinyin": "wǒ huì shuō yīng yǔ",
-          "meaning": "I can speak English."
+          "hanzi": "他会说英语。",
+          "pinyin": "tā huì shuō yīng yǔ。",
+          "meaning": "He can speak English."
         }
       ]
     },
@@ -45,9 +105,93 @@
       "meaning": "Chinese language",
       "examples": [
         {
-          "hanzi": "我学汉语。",
-          "pinyin": "wǒ xué hàn yǔ",
+          "hanzi": "我学习汉语。",
+          "pinyin": "wǒ xué xí hàn yǔ。",
           "meaning": "I study Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "汉",
+      "pinyin": "hàn",
+      "meaning": "Han; Chinese",
+      "examples": [
+        {
+          "hanzi": "我学汉字。",
+          "pinyin": "wǒ xué hàn zì。",
+          "meaning": "I study Chinese characters."
+        }
+      ]
+    },
+    {
+      "hanzi": "语",
+      "pinyin": "yǔ",
+      "meaning": "language",
+      "examples": [
+        {
+          "hanzi": "英语和汉语都很有意思。",
+          "pinyin": "yīng yǔ hé hàn yǔ dōu hěn yǒu yì si。",
+          "meaning": "Both English and Chinese are interesting."
+        }
+      ]
+    },
+    {
+      "hanzi": "帮助",
+      "pinyin": "bāng zhù",
+      "meaning": "help; to help",
+      "examples": [
+        {
+          "hanzi": "谢谢你的帮助。",
+          "pinyin": "xiè xie nǐ de bāng zhù。",
+          "meaning": "Thank you for your help."
+        }
+      ]
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "meaning": "again",
+      "examples": [
+        {
+          "hanzi": "请再说一次。",
+          "pinyin": "qǐng zài shuō yí cì。",
+          "meaning": "Please say it again."
+        }
+      ]
+    },
+    {
+      "hanzi": "次",
+      "pinyin": "cì",
+      "meaning": "time; occurrence",
+      "examples": [
+        {
+          "hanzi": "我去过两次北京。",
+          "pinyin": "wǒ qù guò liǎng cì běi jīng。",
+          "meaning": "I have been to Beijing twice."
+        }
+      ]
+    },
+    {
+      "hanzi": "帮",
+      "pinyin": "bāng",
+      "meaning": "to help",
+      "examples": [
+        {
+          "hanzi": "请帮我。",
+          "pinyin": "qǐng bāng wǒ。",
+          "meaning": "Please help me."
+        }
+      ]
+    },
+    {
+      "hanzi": "助",
+      "pinyin": "zhù",
+      "meaning": "to assist; help",
+      "examples": [
+        {
+          "hanzi": "谢谢你的帮助。",
+          "pinyin": "xiè xie nǐ de bāng zhù。",
+          "meaning": "Thank you for your help."
         }
       ]
     }

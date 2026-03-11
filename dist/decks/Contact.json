@@ -4,14 +4,50 @@
   "icon": "☎️",
   "cards": [
     {
+      "hanzi": "的",
+      "pinyin": "de",
+      "meaning": "possessive particle; of",
+      "examples": [
+        {
+          "hanzi": "我的电话是123。",
+          "pinyin": "wǒ de diàn huà shì yī èr sān。",
+          "meaning": "My phone number is 123."
+        }
+      ]
+    },
+    {
       "hanzi": "电话",
       "pinyin": "diàn huà",
       "meaning": "telephone; phone",
       "examples": [
         {
-          "hanzi": "我的电话号码是多少？",
-          "pinyin": "wǒ de diàn huà hào mǎ shì duō shǎo",
-          "meaning": "What is my phone number?"
+          "hanzi": "我的电话是123。",
+          "pinyin": "wǒ de diàn huà shì yī èr sān。",
+          "meaning": "My phone number is 123."
+        }
+      ]
+    },
+    {
+      "hanzi": "电",
+      "pinyin": "diàn",
+      "meaning": "electricity; electric",
+      "examples": [
+        {
+          "hanzi": "电话来了。",
+          "pinyin": "diàn huà lái le。",
+          "meaning": "The phone is ringing."
+        }
+      ]
+    },
+    {
+      "hanzi": "话",
+      "pinyin": "huà",
+      "meaning": "speech; words; talk",
+      "examples": [
+        {
+          "hanzi": "他说话很快。",
+          "pinyin": "tā shuō huà hěn kuài。",
+          "meaning": "He speaks very quickly."
         }
       ]
     },
@@ -22,7 +58,7 @@
       "examples": [
         {
           "hanzi": "你的号码是多少？",
-          "pinyin": "nǐ de hào mǎ shì duō shǎo",
+          "pinyin": "nǐ de hào mǎ shì duō shǎo？",
           "meaning": "What is your number?"
         }
       ]
@@ -30,12 +66,60 @@
     {
       "hanzi": "多少",
       "pinyin": "duō shǎo",
-      "meaning": "how many; how much",
+      "meaning": "how much; how many",
       "examples": [
         {
-          "hanzi": "这个多少钱？",
-          "pinyin": "zhè ge duō shǎo qián",
-          "meaning": "How much is this?"
+          "hanzi": "你的号码是多少？",
+          "pinyin": "nǐ de hào mǎ shì duō shǎo？",
+          "meaning": "What is your number?"
+        }
+      ]
+    },
+    {
+      "hanzi": "多",
+      "pinyin": "duō",
+      "meaning": "many; much",
+      "examples": [
+        {
+          "hanzi": "这里人很多。",
+          "pinyin": "zhè lǐ rén hěn duō。",
+          "meaning": "There are many people here."
+        }
+      ]
+    },
+    {
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "meaning": "few; little; less",
+      "examples": [
+        {
+          "hanzi": "他的钱很少。",
+          "pinyin": "tā de qián hěn shǎo。",
+          "meaning": "He has very little money."
+        }
+      ]
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "hào",
+      "meaning": "number; date",
+      "examples": [
+        {
+          "hanzi": "今天是三号。",
+          "pinyin": "jīn tiān shì sān hào。",
+          "meaning": "Today is the third."
+        }
+      ]
+    },
+    {
+      "hanzi": "码",
+      "pinyin": "mǎ",
+      "meaning": "code; number",
+      "examples": [
+        {
+          "hanzi": "这个号码很长。",
+          "pinyin": "zhè ge hào mǎ hěn cháng。",
+          "meaning": "This number is very long."
         }
       ]
     }

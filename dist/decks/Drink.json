@@ -4,13 +4,49 @@
   "icon": "☕",
   "cards": [
     {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "meaning": "to want; need",
+      "examples": [
+        {
+          "hanzi": "我要咖啡。",
+          "pinyin": "wǒ yào kā fēi。",
+          "meaning": "I want coffee."
+        }
+      ]
+    },
+    {
+      "hanzi": "热",
+      "pinyin": "rè",
+      "meaning": "hot",
+      "examples": [
+        {
+          "hanzi": "我要热茶。",
+          "pinyin": "wǒ yào rè chá。",
+          "meaning": "I want hot tea."
+        }
+      ]
+    },
+    {
+      "hanzi": "冰",
+      "pinyin": "bīng",
+      "meaning": "ice",
+      "examples": [
+        {
+          "hanzi": "我要冰水。",
+          "pinyin": "wǒ yào bīng shuǐ。",
+          "meaning": "I want ice water."
+        }
+      ]
+    },
+    {
       "hanzi": "牛奶",
       "pinyin": "niú nǎi",
       "meaning": "milk",
       "examples": [
         {
           "hanzi": "我喝牛奶。",
-          "pinyin": "wǒ hē niú nǎi",
+          "pinyin": "wǒ hē niú nǎi。",
           "meaning": "I drink milk."
         }
       ]
@@ -21,9 +57,57 @@
       "meaning": "coffee",
       "examples": [
         {
-          "hanzi": "我喝咖啡。",
-          "pinyin": "wǒ hē kā fēi",
-          "meaning": "I drink coffee."
+          "hanzi": "她喜欢喝咖啡。",
+          "pinyin": "tā xǐ huān hē kā fēi。",
+          "meaning": "She likes to drink coffee."
+        }
+      ]
+    },
+    {
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "meaning": "cow; ox",
+      "examples": [
+        {
+          "hanzi": "牛奶很好喝。",
+          "pinyin": "niú nǎi hěn hǎo hē。",
+          "meaning": "Milk is very tasty."
+        }
+      ]
+    },
+    {
+      "hanzi": "奶",
+      "pinyin": "nǎi",
+      "meaning": "milk",
+      "examples": [
+        {
+          "hanzi": "我早上喝奶。",
+          "pinyin": "wǒ zǎo shang hē nǎi。",
+          "meaning": "I drink milk in the morning."
+        }
+      ]
+    },
+    {
+      "hanzi": "咖",
+      "pinyin": "kā",
+      "meaning": "phonetic component used in 咖啡",
+      "examples": [
+        {
+          "hanzi": "我喜欢咖啡。",
+          "pinyin": "wǒ xǐ huān kā fēi。",
+          "meaning": "I like coffee."
+        }
+      ]
+    },
+    {
+      "hanzi": "啡",
+      "pinyin": "fēi",
+      "meaning": "phonetic component used in 咖啡",
+      "examples": [
+        {
+          "hanzi": "这杯咖啡很热。",
+          "pinyin": "zhè bēi kā fēi hěn rè。",
+          "meaning": "This cup of coffee is hot."
         }
       ]
     }

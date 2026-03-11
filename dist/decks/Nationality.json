@@ -9,20 +9,68 @@
       "meaning": "China",
       "examples": [
         {
-          "hanzi": "我来自中国。",
-          "pinyin": "wǒ lái zì zhōng guó",
-          "meaning": "I come from China."
+          "hanzi": "我是中国人。",
+          "pinyin": "wǒ shì zhōng guó rén。",
+          "meaning": "I am Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "meaning": "person; people",
+      "examples": [
+        {
+          "hanzi": "他是中国人。",
+          "pinyin": "tā shì zhōng guó rén。",
+          "meaning": "He is Chinese."
+        }
+      ]
+    },
+    {
+      "hanzi": "中",
+      "pinyin": "zhōng",
+      "meaning": "middle; center; China (in compounds)",
+      "examples": [
+        {
+          "hanzi": "中国很大。",
+          "pinyin": "zhōng guó hěn dà。",
+          "meaning": "China is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "国",
+      "pinyin": "guó",
+      "meaning": "country; nation",
+      "examples": [
+        {
+          "hanzi": "我的国家很大。",
+          "pinyin": "wǒ de guó jiā hěn dà。",
+          "meaning": "My country is big."
+        }
+      ]
+    },
+    {
+      "hanzi": "哪",
+      "pinyin": "nǎ",
+      "meaning": "which; where",
+      "examples": [
+        {
+          "hanzi": "你是哪国人？",
+          "pinyin": "nǐ shì nǎ guó rén？",
+          "meaning": "Which country are you from?"
         }
       ]
     },
     {
       "hanzi": "英国",
       "pinyin": "yīng guó",
-      "meaning": "United Kingdom",
+      "meaning": "United Kingdom; Britain",
       "examples": [
         {
           "hanzi": "他是英国人。",
-          "pinyin": "tā shì yīng guó rén",
+          "pinyin": "tā shì yīng guó rén。",
           "meaning": "He is British."
         }
       ]
@@ -30,12 +78,60 @@
     {
       "hanzi": "美国",
       "pinyin": "měi guó",
-      "meaning": "United States",
+      "meaning": "United States; America",
       "examples": [
         {
-          "hanzi": "她来自美国。",
-          "pinyin": "tā lái zì měi guó",
-          "meaning": "She comes from the United States."
+          "hanzi": "她是美国人。",
+          "pinyin": "tā shì měi guó rén。",
+          "meaning": "She is American."
+        }
+      ]
+    },
+    {
+      "hanzi": "英",
+      "pinyin": "yīng",
+      "meaning": "Britain; English",
+      "examples": [
+        {
+          "hanzi": "他会说英语。",
+          "pinyin": "tā huì shuō yīng yǔ。",
+          "meaning": "He can speak English."
+        }
+      ]
+    },
+    {
+      "hanzi": "美",
+      "pinyin": "měi",
+      "meaning": "beautiful; America (in compounds)",
+      "examples": [
+        {
+          "hanzi": "美国很大。",
+          "pinyin": "měi guó hěn dà。",
+          "meaning": "America is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "meaning": "all; both",
+      "examples": [
+        {
+          "hanzi": "我们都是学生。",
+          "pinyin": "wǒ men dōu shì xué shēng。",
+          "meaning": "We are all students."
+        }
+      ]
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "meaning": "correct; right; yes",
+      "examples": [
+        {
+          "hanzi": "对，我是美国人。",
+          "pinyin": "duì，wǒ shì měi guó rén。",
+          "meaning": "Yes, I am American."
         }
       ]
     },
@@ -46,8 +142,44 @@
       "examples": [
         {
           "hanzi": "他住在加拿大。",
-          "pinyin": "tā zhù zài jiā ná dà",
+          "pinyin": "tā zhù zài jiā ná dà。",
           "meaning": "He lives in Canada."
+        }
+      ]
+    },
+    {
+      "hanzi": "加",
+      "pinyin": "jiā",
+      "meaning": "to add; plus",
+      "examples": [
+        {
+          "hanzi": "一加一等于二。",
+          "pinyin": "yī jiā yī děng yú èr。",
+          "meaning": "One plus one equals two."
+        }
+      ]
+    },
+    {
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "meaning": "to take; to hold",
+      "examples": [
+        {
+          "hanzi": "请拿书。",
+          "pinyin": "qǐng ná shū。",
+          "meaning": "Please take the book."
+        }
+      ]
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "meaning": "big; large",
+      "examples": [
+        {
+          "hanzi": "这个国家很大。",
+          "pinyin": "zhè ge guó jiā hěn dà。",
+          "meaning": "This country is very big."
         }
       ]
     }

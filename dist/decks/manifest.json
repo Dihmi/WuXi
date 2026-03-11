@@ -2,5 +2,8 @@
   "Greeting_1.json", "Numbers.json", "Name.json", "Greeting_2.json", "Food_1.json", "Occupation.json",
   "Contact.json", "Nationality.json", "Greeting_3.json", "Location_1.json", "Phrases_1.json", "Family_1.json",
   "Phrases_2.json", "Greeting_4.json", "Drink.json", "Location_2.json", "Time_1.json",
-  "Family_2.json", "Time_2.json", "People_1.json", "Telephone.json", "Celebration.json"
+
+  "Family_2.json", "Time_2.json", "People_1.json", "Telephone.json", "Celebration.json",
+  "Location_3.json", "Hobbies_1.json", "Daily_Routine_1.json", "Payment.json", "Entertainment.json",
+  "Location_4.json", "Restaurant.json", "Supermarket.json", "Hobbies_2.json"
 ]
