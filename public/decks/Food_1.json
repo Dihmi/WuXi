@@ -8,21 +8,45 @@
       "meaning": "eat",
       "examples": [
         {
-          "hanzi": "我吃饭。",
-          "pinyin": "wǒ chī fàn",
-          "meaning": "I eat rice."
+          "hanzi": "我吃鱼。",
+          "pinyin": "wǒ chī yú",
+          "meaning": "I eat fish."
         }
       ]
     },
     {
       "hanzi": "饭",
       "pinyin": "fàn",
-      "meaning": "meal; rice",
+      "meaning": "meal / rice",
       "examples": [
         {
-          "hanzi": "我们吃饭。",
-          "pinyin": "wǒ men chī fàn",
-          "meaning": "We eat."
+          "hanzi": "我吃饭。",
+          "pinyin": "wǒ chī fàn",
+          "meaning": "I eat a meal."
+        }
+      ]
+    },
+    {
+      "hanzi": "鱼",
+      "pinyin": "yú",
+      "meaning": "fish",
+      "examples": [
+        {
+          "hanzi": "我喜欢吃鱼。",
+          "pinyin": "wǒ xǐ huan chī yú",
+          "meaning": "I like to eat fish."
+        }
+      ]
+    },
+    {
+      "hanzi": "面",
+      "pinyin": "miàn",
+      "meaning": "noodles",
+      "examples": [
+        {
+          "hanzi": "我吃面。",
+          "pinyin": "wǒ chī miàn",
+          "meaning": "I eat noodles."
         }
       ]
     },
@@ -44,9 +68,9 @@
       "meaning": "water",
       "examples": [
         {
-          "hanzi": "我要水。",
-          "pinyin": "wǒ yào shuǐ",
-          "meaning": "I want water."
+          "hanzi": "我喝水。",
+          "pinyin": "wǒ hē shuǐ",
+          "meaning": "I drink water."
         }
       ]
     },
@@ -65,7 +89,7 @@
     {
       "hanzi": "不",
       "pinyin": "bù",
-      "meaning": "not",
+      "meaning": "not / no",
       "examples": [
         {
           "hanzi": "我不喝茶。",
