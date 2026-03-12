@@ -1,6 +1,6 @@
 {
   "name": "Celebration",
-  "group": "Unit 5",
+  "group": "Unit 3",
   "icon": "🎉",
   "cards": [
     {
@@ -9,9 +9,9 @@
       "meaning": "spring",
       "examples": [
         {
-          "hanzi": "春天很美。",
-          "pinyin": "chūn tiān hěn měi。",
-          "meaning": "Spring is beautiful."
+          "hanzi": "春节快到了。",
+          "pinyin": "chūn jié kuài dào le",
+          "meaning": "Spring Festival is coming soon."
         }
       ]
     },
@@ -21,9 +21,9 @@
       "meaning": "happy; music",
       "examples": [
         {
-          "hanzi": "新年快乐！",
-          "pinyin": "xīn nián kuài lè！",
-          "meaning": "Happy New Year!"
+          "hanzi": "生日快乐！",
+          "pinyin": "shēng rì kuài lè",
+          "meaning": "Happy birthday!"
         }
       ]
     },
@@ -33,21 +33,21 @@
       "meaning": "happy; joyful",
       "examples": [
         {
-          "hanzi": "生日快乐！",
-          "pinyin": "shēng rì kuài lè！",
-          "meaning": "Happy Birthday!"
+          "hanzi": "新年快乐！",
+          "pinyin": "xīn nián kuài lè",
+          "meaning": "Happy New Year!"
         }
       ]
     },
     {
       "hanzi": "节日",
       "pinyin": "jié rì",
-      "meaning": "holiday; festival",
+      "meaning": "festival; holiday",
       "examples": [
         {
-          "hanzi": "节日快乐！",
-          "pinyin": "jié rì kuài lè！",
-          "meaning": "Happy holidays!"
+          "hanzi": "今天是节日。",
+          "pinyin": "jīn tiān shì jié rì",
+          "meaning": "Today is a holiday."
         }
       ]
     },
@@ -58,7 +58,7 @@
       "examples": [
         {
           "hanzi": "春节是中国最大的节日。",
-          "pinyin": "chūn jié shì zhōng guó zuì dà de jié rì。",
+          "pinyin": "chūn jié shì zhōng guó zuì dà de jié rì",
           "meaning": "Spring Festival is the biggest festival in China."
         }
       ]
@@ -69,21 +69,21 @@
       "meaning": "gift; present",
       "examples": [
         {
-          "hanzi": "我想买一个礼物。",
-          "pinyin": "wǒ xiǎng mǎi yí ge lǐ wù。",
-          "meaning": "I want to buy a gift."
+          "hanzi": "这是给你的礼物。",
+          "pinyin": "zhè shì gěi nǐ de lǐ wù",
+          "meaning": "This is a gift for you."
         }
       ]
     },
     {
       "hanzi": "送",
       "pinyin": "sòng",
-      "meaning": "to give; to present",
+      "meaning": "to give as a gift; send",
       "examples": [
         {
-          "hanzi": "我送她一个礼物。",
-          "pinyin": "wǒ sòng tā yí ge lǐ wù。",
-          "meaning": "I give her a gift."
+          "hanzi": "我想送她礼物。",
+          "pinyin": "wǒ xiǎng sòng tā lǐ wù",
+          "meaning": "I want to give her a gift."
         }
       ]
     },
@@ -93,20 +93,20 @@
       "meaning": "New Year",
       "examples": [
         {
-          "hanzi": "新年快乐！",
-          "pinyin": "xīn nián kuài lè！",
-          "meaning": "Happy New Year!"
+          "hanzi": "新年快到了。",
+          "pinyin": "xīn nián kuài dào le",
+          "meaning": "New Year is coming soon."
         }
       ]
     },
     {
       "hanzi": "瓶",
       "pinyin": "píng",
-      "meaning": "bottle",
+      "meaning": "bottle; classifier for bottles",
       "examples": [
         {
           "hanzi": "我买了一瓶红酒。",
-          "pinyin": "wǒ mǎi le yì píng hóng jiǔ。",
+          "pinyin": "wǒ mǎi le yì píng hóng jiǔ",
           "meaning": "I bought a bottle of red wine."
         }
       ]
@@ -118,20 +118,20 @@
       "examples": [
         {
           "hanzi": "他喜欢喝白酒。",
-          "pinyin": "tā xǐ huan hē bái jiǔ。",
-          "meaning": "He likes to drink baijiu."
+          "pinyin": "tā xǐ huan hē bái jiǔ",
+          "meaning": "He likes drinking baijiu."
         }
       ]
     },
     {
       "hanzi": "礼",
       "pinyin": "lǐ",
-      "meaning": "gift; rite; etiquette",
+      "meaning": "gift; rite; courtesy",
       "examples": [
         {
-          "hanzi": "这是我的一点心意和礼。",
-          "pinyin": "zhè shì wǒ de yì diǎn xīn yì hé lǐ。",
-          "meaning": "This is a small token and gift from me."
+          "hanzi": "这个礼物很好。",
+          "pinyin": "zhè gè lǐ wù hěn hǎo",
+          "meaning": "This gift is very good."
         }
       ]
     },
@@ -141,9 +141,9 @@
       "meaning": "thing; object",
       "examples": [
         {
-          "hanzi": "这个礼物很特别。",
-          "pinyin": "zhè ge lǐ wù hěn tè bié。",
-          "meaning": "This gift is very special."
+          "hanzi": "这个物品很漂亮。",
+          "pinyin": "zhè gè wù pǐn hěn piào liang",
+          "meaning": "This item is very pretty."
         }
       ]
     },
@@ -154,7 +154,7 @@
       "examples": [
         {
           "hanzi": "我们一起过春节。",
-          "pinyin": "wǒ men yì qǐ guò chūn jié。",
+          "pinyin": "wǒ men yì qǐ guò chūn jié",
           "meaning": "We celebrate Spring Festival together."
         }
       ]
@@ -162,12 +162,12 @@
     {
       "hanzi": "干杯",
       "pinyin": "gān bēi",
-      "meaning": "cheers; toast",
+      "meaning": "cheers",
       "examples": [
         {
-          "hanzi": "来，干杯！",
-          "pinyin": "lái，gān bēi！",
-          "meaning": "Come on, cheers!"
+          "hanzi": "我们一起干杯！",
+          "pinyin": "wǒ men yì qǐ gān bēi",
+          "meaning": "Let's make a toast together!"
         }
       ]
     },
@@ -178,8 +178,8 @@
       "examples": [
         {
           "hanzi": "祝你新年快乐！",
-          "pinyin": "zhù nǐ xīn nián kuài lè！",
-          "meaning": "Wish you a Happy New Year!"
+          "pinyin": "zhù nǐ xīn nián kuài lè",
+          "meaning": "Wish you a happy New Year!"
         }
       ]
     },
@@ -190,7 +190,7 @@
       "examples": [
         {
           "hanzi": "他来自法国。",
-          "pinyin": "tā lái zì fǎ guó。",
+          "pinyin": "tā lái zì fǎ guó",
           "meaning": "He comes from France."
         }
       ]
@@ -202,8 +202,8 @@
       "examples": [
         {
           "hanzi": "我喜欢喝红酒。",
-          "pinyin": "wǒ xǐ huan hē hóng jiǔ。",
-          "meaning": "I like to drink red wine."
+          "pinyin": "wǒ xǐ huan hē hóng jiǔ",
+          "meaning": "I like drinking red wine."
         }
       ]
     },
@@ -213,9 +213,9 @@
       "meaning": "dry; to do",
       "examples": [
         {
-          "hanzi": "来，干杯！",
-          "pinyin": "lái，gān bēi！",
-          "meaning": "Come on, cheers!"
+          "hanzi": "我们干杯吧。",
+          "pinyin": "wǒ men gān bēi ba",
+          "meaning": "Let's have a toast."
         }
       ]
     },
@@ -225,9 +225,9 @@
       "meaning": "law; method; France (in compounds)",
       "examples": [
         {
-          "hanzi": "他会做法国菜。",
-          "pinyin": "tā huì zuò fǎ guó cài。",
-          "meaning": "He can cook French food."
+          "hanzi": "法国很漂亮。",
+          "pinyin": "fǎ guó hěn piào liang",
+          "meaning": "France is very beautiful."
         }
       ]
     }

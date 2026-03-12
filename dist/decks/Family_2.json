@@ -10,7 +10,7 @@
       "examples": [
         {
           "hanzi": "她有一个孩子。",
-          "pinyin": "tā yǒu yí gè hái zi。",
+          "pinyin": "tā yǒu yí gè hái zi",
           "meaning": "She has one child."
         }
       ]
@@ -22,7 +22,7 @@
       "examples": [
         {
           "hanzi": "我有两个孩子。",
-          "pinyin": "wǒ yǒu liǎng gè hái zi。",
+          "pinyin": "wǒ yǒu liǎng gè hái zi",
           "meaning": "I have two children."
         }
       ]
@@ -34,7 +34,7 @@
       "examples": [
         {
           "hanzi": "这个孩子很可爱。",
-          "pinyin": "zhè gè hái zi hěn kě ài。",
+          "pinyin": "zhè gè hái zi hěn kě ài",
           "meaning": "This child is very cute."
         }
       ]
@@ -42,11 +42,11 @@
     {
       "hanzi": "子",
       "pinyin": "zi",
-      "meaning": "child; suffix; son",
+      "meaning": "child; suffix",
       "examples": [
         {
           "hanzi": "儿子在学校。",
-          "pinyin": "ér zi zài xué xiào。",
+          "pinyin": "ér zi zài xué xiào",
           "meaning": "The son is at school."
         }
       ]
@@ -58,7 +58,7 @@
       "examples": [
         {
           "hanzi": "我的女儿三岁。",
-          "pinyin": "wǒ de nǚ ér sān suì。",
+          "pinyin": "wǒ de nǚ ér sān suì",
           "meaning": "My daughter is three years old."
         }
       ]
@@ -70,7 +70,7 @@
       "examples": [
         {
           "hanzi": "他的儿子很高。",
-          "pinyin": "tā de ér zi hěn gāo。",
+          "pinyin": "tā de ér zi hěn gāo",
           "meaning": "His son is tall."
         }
       ]
@@ -82,7 +82,7 @@
       "examples": [
         {
           "hanzi": "你几岁？",
-          "pinyin": "nǐ jǐ suì？",
+          "pinyin": "nǐ jǐ suì",
           "meaning": "How old are you?"
         }
       ]
@@ -94,7 +94,7 @@
       "examples": [
         {
           "hanzi": "她是女学生。",
-          "pinyin": "tā shì nǚ xué shēng。",
+          "pinyin": "tā shì nǚ xué shēng",
           "meaning": "She is a female student."
         }
       ]
@@ -102,11 +102,11 @@
     {
       "hanzi": "儿",
       "pinyin": "ér",
-      "meaning": "child; son; suffix",
+      "meaning": "child; son",
       "examples": [
         {
           "hanzi": "女儿很可爱。",
-          "pinyin": "nǚ ér hěn kě ài。",
+          "pinyin": "nǚ ér hěn kě ài",
           "meaning": "The daughter is very cute."
         }
       ]
@@ -118,7 +118,7 @@
       "examples": [
         {
           "hanzi": "他的妻子是老师。",
-          "pinyin": "tā de qī zi shì lǎo shī。",
+          "pinyin": "tā de qī zi shì lǎo shī",
           "meaning": "His wife is a teacher."
         }
       ]
@@ -130,7 +130,7 @@
       "examples": [
         {
           "hanzi": "她的丈夫很忙。",
-          "pinyin": "tā de zhàng fu hěn máng。",
+          "pinyin": "tā de zhàng fu hěn máng",
           "meaning": "Her husband is very busy."
         }
       ]
@@ -142,7 +142,7 @@
       "examples": [
         {
           "hanzi": "他的妻子很好。",
-          "pinyin": "tā de qī zi hěn hǎo。",
+          "pinyin": "tā de qī zi hěn hǎo",
           "meaning": "His wife is very nice."
         }
       ]
@@ -150,11 +150,11 @@
     {
       "hanzi": "丈",
       "pinyin": "zhàng",
-      "meaning": "husband; unit of length",
+      "meaning": "husband; measure word",
       "examples": [
         {
           "hanzi": "丈夫在家。",
-          "pinyin": "zhàng fu zài jiā。",
+          "pinyin": "zhàng fu zài jiā",
           "meaning": "The husband is at home."
         }
       ]
@@ -166,7 +166,7 @@
       "examples": [
         {
           "hanzi": "她的丈夫来了。",
-          "pinyin": "tā de zhàng fu lái le。",
+          "pinyin": "tā de zhàng fu lái le",
           "meaning": "Her husband has come."
         }
       ]
@@ -178,7 +178,7 @@
       "examples": [
         {
           "hanzi": "我家有一只猫。",
-          "pinyin": "wǒ jiā yǒu yì zhī māo。",
+          "pinyin": "wǒ jiā yǒu yì zhī māo",
           "meaning": "My family has a cat."
         }
       ]
@@ -190,7 +190,7 @@
       "examples": [
         {
           "hanzi": "它很可爱。",
-          "pinyin": "tā hěn kě ài。",
+          "pinyin": "tā hěn kě ài",
           "meaning": "It is very cute."
         }
       ]
@@ -202,7 +202,7 @@
       "examples": [
         {
           "hanzi": "他有一只狗。",
-          "pinyin": "tā yǒu yì zhī gǒu。",
+          "pinyin": "tā yǒu yì zhī gǒu",
           "meaning": "He has a dog."
         }
       ]

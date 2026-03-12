@@ -1,0 +1,283 @@
+{
+  "name": "Hobbies 1",
+  "group": "Unit 3",
+  "icon": "🎵",
+  "cards": [
+    {
+      "hanzi": "喜欢",
+      "pinyin": "xǐ huan",
+      "meaning": "to like",
+      "examples": [
+        {
+          "hanzi": "我喜欢看书。",
+          "pinyin": "wǒ xǐ huan kàn shū",
+          "meaning": "I like reading."
+        }
+      ]
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "meaning": "to look; to read; to watch",
+      "examples": [
+        {
+          "hanzi": "我喜欢看书。",
+          "pinyin": "wǒ xǐ huan kàn shū",
+          "meaning": "I like reading."
+        }
+      ]
+    },
+    {
+      "hanzi": "书",
+      "pinyin": "shū",
+      "meaning": "book",
+      "examples": [
+        {
+          "hanzi": "这本书很好。",
+          "pinyin": "zhè běn shū hěn hǎo",
+          "meaning": "This book is very good."
+        }
+      ]
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "meaning": "at; in; on",
+      "examples": [
+        {
+          "hanzi": "我在家看书。",
+          "pinyin": "wǒ zài jiā kàn shū",
+          "meaning": "I read at home."
+        }
+      ]
+    },
+    {
+      "hanzi": "喜",
+      "pinyin": "xǐ",
+      "meaning": "joy; like",
+      "examples": [
+        {
+          "hanzi": "我喜欢音乐。",
+          "pinyin": "wǒ xǐ huan yīn yuè",
+          "meaning": "I like music."
+        }
+      ]
+    },
+    {
+      "hanzi": "欢",
+      "pinyin": "huan",
+      "meaning": "joy; pleased",
+      "examples": [
+        {
+          "hanzi": "我喜欢唱歌。",
+          "pinyin": "wǒ xǐ huan chàng gē",
+          "meaning": "I like singing."
+        }
+      ]
+    },
+    {
+      "hanzi": "玩",
+      "pinyin": "wán",
+      "meaning": "to play",
+      "examples": [
+        {
+          "hanzi": "我喜欢玩游戏。",
+          "pinyin": "wǒ xǐ huan wán yóu xì",
+          "meaning": "I like playing games."
+        }
+      ]
+    },
+    {
+      "hanzi": "电脑",
+      "pinyin": "diàn nǎo",
+      "meaning": "computer",
+      "examples": [
+        {
+          "hanzi": "我有一个电脑。",
+          "pinyin": "wǒ yǒu yí gè diàn nǎo",
+          "meaning": "I have a computer."
+        }
+      ]
+    },
+    {
+      "hanzi": "游戏",
+      "pinyin": "yóu xì",
+      "meaning": "game",
+      "examples": [
+        {
+          "hanzi": "这个游戏很好玩。",
+          "pinyin": "zhè gè yóu xì hěn hǎo wán",
+          "meaning": "This game is fun."
+        }
+      ]
+    },
+    {
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "meaning": "most",
+      "examples": [
+        {
+          "hanzi": "我最喜欢音乐。",
+          "pinyin": "wǒ zuì xǐ huan yīn yuè",
+          "meaning": "I like music the most."
+        }
+      ]
+    },
+    {
+      "hanzi": "脑",
+      "pinyin": "nǎo",
+      "meaning": "brain",
+      "examples": [
+        {
+          "hanzi": "电脑在桌子上。",
+          "pinyin": "diàn nǎo zài zhuō zi shàng",
+          "meaning": "The computer is on the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "游",
+      "pinyin": "yóu",
+      "meaning": "to travel; to swim",
+      "examples": [
+        {
+          "hanzi": "我喜欢旅游。",
+          "pinyin": "wǒ xǐ huan lǚ yóu",
+          "meaning": "I like traveling."
+        }
+      ]
+    },
+    {
+      "hanzi": "戏",
+      "pinyin": "xì",
+      "meaning": "play; drama; game",
+      "examples": [
+        {
+          "hanzi": "我不喜欢这个游戏。",
+          "pinyin": "wǒ bù xǐ huan zhè gè yóu xì",
+          "meaning": "I don't like this game."
+        }
+      ]
+    },
+    {
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "meaning": "to listen",
+      "examples": [
+        {
+          "hanzi": "我喜欢听音乐。",
+          "pinyin": "wǒ xǐ huan tīng yīn yuè",
+          "meaning": "I like listening to music."
+        }
+      ]
+    },
+    {
+      "hanzi": "音乐",
+      "pinyin": "yīn yuè",
+      "meaning": "music",
+      "examples": [
+        {
+          "hanzi": "音乐很好听。",
+          "pinyin": "yīn yuè hěn hǎo tīng",
+          "meaning": "The music sounds nice."
+        }
+      ]
+    },
+    {
+      "hanzi": "歌",
+      "pinyin": "gē",
+      "meaning": "song",
+      "examples": [
+        {
+          "hanzi": "这首歌很好听。",
+          "pinyin": "zhè shǒu gē hěn hǎo tīng",
+          "meaning": "This song is nice."
+        }
+      ]
+    },
+    {
+      "hanzi": "音",
+      "pinyin": "yīn",
+      "meaning": "sound",
+      "examples": [
+        {
+          "hanzi": "这个音乐很大。",
+          "pinyin": "zhè gè yīn yuè hěn dà",
+          "meaning": "This music is loud."
+        }
+      ]
+    },
+    {
+      "hanzi": "乐",
+      "pinyin": "yuè / lè",
+      "meaning": "music; happy",
+      "examples": [
+        {
+          "hanzi": "我喜欢音乐。",
+          "pinyin": "wǒ xǐ huan yīn yuè",
+          "meaning": "I like music."
+        }
+      ]
+    },
+    {
+      "hanzi": "跳舞",
+      "pinyin": "tiào wǔ",
+      "meaning": "to dance",
+      "examples": [
+        {
+          "hanzi": "她喜欢跳舞。",
+          "pinyin": "tā xǐ huan tiào wǔ",
+          "meaning": "She likes dancing."
+        }
+      ]
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì",
+      "meaning": "can; know how to",
+      "examples": [
+        {
+          "hanzi": "我会唱歌。",
+          "pinyin": "wǒ huì chàng gē",
+          "meaning": "I can sing."
+        }
+      ]
+    },
+    {
+      "hanzi": "唱",
+      "pinyin": "chàng",
+      "meaning": "to sing",
+      "examples": [
+        {
+          "hanzi": "我喜欢唱歌。",
+          "pinyin": "wǒ xǐ huan chàng gē",
+          "meaning": "I like singing."
+        }
+      ]
+    },
+    {
+      "hanzi": "跳",
+      "pinyin": "tiào",
+      "meaning": "to jump; to dance",
+      "examples": [
+        {
+          "hanzi": "她会跳舞。",
+          "pinyin": "tā huì tiào wǔ",
+          "meaning": "She can dance."
+        }
+      ]
+    },
+    {
+      "hanzi": "舞",
+      "pinyin": "wǔ",
+      "meaning": "dance",
+      "examples": [
+        {
+          "hanzi": "跳舞很好玩。",
+          "pinyin": "tiào wǔ hěn hǎo wán",
+          "meaning": "Dancing is fun."
+        }
+      ]
+    }
+  ]
+}

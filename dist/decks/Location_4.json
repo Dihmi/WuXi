@@ -1,0 +1,187 @@
+{
+  "name": "Location 4",
+  "group": "Unit 3",
+  "icon": "🪑",
+  "cards": [
+    {
+      "hanzi": "桌",
+      "pinyin": "zhuō",
+      "meaning": "table; desk",
+      "examples": [
+        {
+          "hanzi": "书在桌子上。",
+          "pinyin": "shū zài zhuō zi shàng",
+          "meaning": "The book is on the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "meaning": "to look for",
+      "examples": [
+        {
+          "hanzi": "我在找手机。",
+          "pinyin": "wǒ zài zhǎo shǒu jī",
+          "meaning": "I am looking for my phone."
+        }
+      ]
+    },
+    {
+      "hanzi": "桌子",
+      "pinyin": "zhuō zi",
+      "meaning": "table; desk",
+      "examples": [
+        {
+          "hanzi": "杯子在桌子上。",
+          "pinyin": "bēi zi zài zhuō zi shàng",
+          "meaning": "The cup is on the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "meaning": "on; above",
+      "examples": [
+        {
+          "hanzi": "书在桌子上。",
+          "pinyin": "shū zài zhuō zi shàng",
+          "meaning": "The book is on the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "椅子",
+      "pinyin": "yǐ zi",
+      "meaning": "chair",
+      "examples": [
+        {
+          "hanzi": "椅子在桌子旁边。",
+          "pinyin": "yǐ zi zài zhuō zi páng biān",
+          "meaning": "The chair is beside the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "meaning": "under; below",
+      "examples": [
+        {
+          "hanzi": "猫在桌子下。",
+          "pinyin": "māo zài zhuō zi xià",
+          "meaning": "The cat is under the table."
+        }
+      ]
+    },
+    {
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "meaning": "to see",
+      "examples": [
+        {
+          "hanzi": "我看不见手机。",
+          "pinyin": "wǒ kàn bú jiàn shǒu jī",
+          "meaning": "I can't see the phone."
+        }
+      ]
+    },
+    {
+      "hanzi": "椅",
+      "pinyin": "yǐ",
+      "meaning": "chair (part of 椅子)",
+      "examples": [
+        {
+          "hanzi": "椅子很小。",
+          "pinyin": "yǐ zi hěn xiǎo",
+          "meaning": "The chair is small."
+        }
+      ]
+    },
+    {
+      "hanzi": "房间",
+      "pinyin": "fáng jiān",
+      "meaning": "room",
+      "examples": [
+        {
+          "hanzi": "我在房间里。",
+          "pinyin": "wǒ zài fáng jiān lǐ",
+          "meaning": "I am in the room."
+        }
+      ]
+    },
+    {
+      "hanzi": "冰箱",
+      "pinyin": "bīng xiāng",
+      "meaning": "refrigerator",
+      "examples": [
+        {
+          "hanzi": "牛奶在冰箱里。",
+          "pinyin": "niú nǎi zài bīng xiāng lǐ",
+          "meaning": "The milk is in the refrigerator."
+        }
+      ]
+    },
+    {
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "meaning": "inside",
+      "examples": [
+        {
+          "hanzi": "书在包里。",
+          "pinyin": "shū zài bāo lǐ",
+          "meaning": "The book is inside the bag."
+        }
+      ]
+    },
+    {
+      "hanzi": "外",
+      "pinyin": "wài",
+      "meaning": "outside",
+      "examples": [
+        {
+          "hanzi": "他在房间外。",
+          "pinyin": "tā zài fáng jiān wài",
+          "meaning": "He is outside the room."
+        }
+      ]
+    },
+    {
+      "hanzi": "房",
+      "pinyin": "fáng",
+      "meaning": "house; room",
+      "examples": [
+        {
+          "hanzi": "这个房间很大。",
+          "pinyin": "zhè gè fáng jiān hěn dà",
+          "meaning": "This room is very big."
+        }
+      ]
+    },
+    {
+      "hanzi": "间",
+      "pinyin": "jiān",
+      "meaning": "room; between",
+      "examples": [
+        {
+          "hanzi": "这是我的房间。",
+          "pinyin": "zhè shì wǒ de fáng jiān",
+          "meaning": "This is my room."
+        }
+      ]
+    },
+    {
+      "hanzi": "箱",
+      "pinyin": "xiāng",
+      "meaning": "box; chest",
+      "examples": [
+        {
+          "hanzi": "冰箱在那边。",
+          "pinyin": "bīng xiāng zài nà biān",
+          "meaning": "The refrigerator is over there."
+        }
+      ]
+    }
+  ]
+}
