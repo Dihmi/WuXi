@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 
 export default function NavBar({
   title, subtitle, onBack, actions,
@@ -6,6 +7,7 @@ export default function NavBar({
   currentProfile, onThemeClick, onProfileClick, onLogout, onWall,
 }) {
   const [dropOpen, setDropOpen] = useState(false);
+  const [confirmLogout, setConfirmLogout] = useState(false);
   const dropRef = useRef(null);
 
   // Close dropdown on outside click
@@ -21,6 +23,7 @@ export default function NavBar({
   const isHome = !onBack;
 
   return (
+    <>
     <div className="nav-bar">
       {onBack ? (
         <button className="back-btn" onClick={onBack}>
@@ -98,7 +101,7 @@ export default function NavBar({
                 <div className="profile-dropdown-divider" />
                 <button
                   className="profile-dropdown-item danger"
-                  onClick={() => { setDropOpen(false); onLogout(); }}
+                  onClick={() => { setDropOpen(false); setConfirmLogout(true); }}
                 >
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -114,5 +117,36 @@ export default function NavBar({
         </>
       )}
     </div>
+
+    {/* ── Logout confirmation modal ──────────────────────────── */}
+    {confirmLogout && createPortal(
+      <>
+        <div className="modal-backdrop" onClick={() => setConfirmLogout(false)} />
+        <div className="logout-confirm-dialog">
+          <div className="logout-confirm-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+              <polyline points="16 17 21 12 16 7"/>
+              <line x1="21" y1="12" x2="9" y2="12"/>
+            </svg>
+          </div>
+          <div className="logout-confirm-title">Log out?</div>
+          <div className="logout-confirm-msg">
+            Any unsaved changes will be lost.
+          </div>
+          <div className="logout-confirm-actions">
+            <button className="btn btn-secondary" onClick={() => setConfirmLogout(false)}>
+              Cancel
+            </button>
+            <button className="btn btn-danger" onClick={() => { setConfirmLogout(false); onLogout(); }}>
+              Log Out
+            </button>
+          </div>
+        </div>
+      </>,
+      document.body
+    )}
+    </>
   );
 }
