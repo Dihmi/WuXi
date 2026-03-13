@@ -1,0 +1,295 @@
+{
+  "name": "Health 1",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "作",
+      "pinyin": "zuò",
+      "meaning": "do",
+      "examples": [
+        {
+          "hanzi": "我喜欢作。",
+          "pinyin": "wǒ xǐhuān zuò",
+          "meaning": "I like do"
+        }
+      ]
+    },
+    {
+      "hanzi": "得",
+      "pinyin": "de",
+      "meaning": "particle",
+      "examples": [
+        {
+          "hanzi": "我喜欢得。",
+          "pinyin": "wǒ xǐhuān de",
+          "meaning": "I like particle"
+        }
+      ]
+    },
+    {
+      "hanzi": "觉",
+      "pinyin": "jué",
+      "meaning": "feel",
+      "examples": [
+        {
+          "hanzi": "我喜欢觉。",
+          "pinyin": "wǒ xǐhuān jué",
+          "meaning": "I like feel"
+        }
+      ]
+    },
+    {
+      "hanzi": "工",
+      "pinyin": "gōng",
+      "meaning": "work",
+      "examples": [
+        {
+          "hanzi": "我喜欢工。",
+          "pinyin": "wǒ xǐhuān gōng",
+          "meaning": "I like work"
+        }
+      ]
+    },
+    {
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "meaning": "tired",
+      "examples": [
+        {
+          "hanzi": "我喜欢累。",
+          "pinyin": "wǒ xǐhuān lèi",
+          "meaning": "I like tired"
+        }
+      ]
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "meaning": "work",
+      "examples": [
+        {
+          "hanzi": "我喜欢工作。",
+          "pinyin": "wǒ xǐhuān gōngzuò",
+          "meaning": "I like work"
+        }
+      ]
+    },
+    {
+      "hanzi": "觉得",
+      "pinyin": "juéde",
+      "meaning": "feel; think",
+      "examples": [
+        {
+          "hanzi": "我喜欢觉得。",
+          "pinyin": "wǒ xǐhuān juéde",
+          "meaning": "I like feel; think"
+        }
+      ]
+    },
+    {
+      "hanzi": "有点儿",
+      "pinyin": "yǒudiǎnr",
+      "meaning": "a little",
+      "examples": [
+        {
+          "hanzi": "我喜欢有点儿。",
+          "pinyin": "wǒ xǐhuān yǒudiǎnr",
+          "meaning": "I like a little"
+        }
+      ]
+    },
+    {
+      "hanzi": "胖",
+      "pinyin": "pàng",
+      "meaning": "fat",
+      "examples": [
+        {
+          "hanzi": "我喜欢胖。",
+          "pinyin": "wǒ xǐhuān pàng",
+          "meaning": "I like fat"
+        }
+      ]
+    },
+    {
+      "hanzi": "健康",
+      "pinyin": "jiànkāng",
+      "meaning": "healthy",
+      "examples": [
+        {
+          "hanzi": "我喜欢健康。",
+          "pinyin": "wǒ xǐhuān jiànkāng",
+          "meaning": "I like healthy"
+        }
+      ]
+    },
+    {
+      "hanzi": "不要",
+      "pinyin": "búyào",
+      "meaning": "do not",
+      "examples": [
+        {
+          "hanzi": "我喜欢不要。",
+          "pinyin": "wǒ xǐhuān búyào",
+          "meaning": "I like do not"
+        }
+      ]
+    },
+    {
+      "hanzi": "健",
+      "pinyin": "jiàn",
+      "meaning": "healthy",
+      "examples": [
+        {
+          "hanzi": "我喜欢健。",
+          "pinyin": "wǒ xǐhuān jiàn",
+          "meaning": "I like healthy"
+        }
+      ]
+    },
+    {
+      "hanzi": "康",
+      "pinyin": "kāng",
+      "meaning": "health",
+      "examples": [
+        {
+          "hanzi": "我喜欢康。",
+          "pinyin": "wǒ xǐhuān kāng",
+          "meaning": "I like health"
+        }
+      ]
+    },
+    {
+      "hanzi": "身体",
+      "pinyin": "shēntǐ",
+      "meaning": "body",
+      "examples": [
+        {
+          "hanzi": "我喜欢身体。",
+          "pinyin": "wǒ xǐhuān shēntǐ",
+          "meaning": "I like body"
+        }
+      ]
+    },
+    {
+      "hanzi": "注意",
+      "pinyin": "zhùyì",
+      "meaning": "pay attention",
+      "examples": [
+        {
+          "hanzi": "我喜欢注意。",
+          "pinyin": "wǒ xǐhuān zhùyì",
+          "meaning": "I like pay attention"
+        }
+      ]
+    },
+    {
+      "hanzi": "身",
+      "pinyin": "shēn",
+      "meaning": "body",
+      "examples": [
+        {
+          "hanzi": "我喜欢身。",
+          "pinyin": "wǒ xǐhuān shēn",
+          "meaning": "I like body"
+        }
+      ]
+    },
+    {
+      "hanzi": "注",
+      "pinyin": "zhù",
+      "meaning": "note",
+      "examples": [
+        {
+          "hanzi": "我喜欢注。",
+          "pinyin": "wǒ xǐhuān zhù",
+          "meaning": "I like note"
+        }
+      ]
+    },
+    {
+      "hanzi": "意",
+      "pinyin": "yì",
+      "meaning": "meaning",
+      "examples": [
+        {
+          "hanzi": "我喜欢意。",
+          "pinyin": "wǒ xǐhuān yì",
+          "meaning": "I like meaning"
+        }
+      ]
+    },
+    {
+      "hanzi": "开始",
+      "pinyin": "kāishǐ",
+      "meaning": "begin",
+      "examples": [
+        {
+          "hanzi": "我喜欢开始。",
+          "pinyin": "wǒ xǐhuān kāishǐ",
+          "meaning": "I like begin"
+        }
+      ]
+    },
+    {
+      "hanzi": "锻炼",
+      "pinyin": "duànliàn",
+      "meaning": "exercise",
+      "examples": [
+        {
+          "hanzi": "我喜欢锻炼。",
+          "pinyin": "wǒ xǐhuān duànliàn",
+          "meaning": "I like exercise"
+        }
+      ]
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "meaning": "open/start",
+      "examples": [
+        {
+          "hanzi": "我喜欢开。",
+          "pinyin": "wǒ xǐhuān kāi",
+          "meaning": "I like open/start"
+        }
+      ]
+    },
+    {
+      "hanzi": "锻",
+      "pinyin": "duàn",
+      "meaning": "forge/train",
+      "examples": [
+        {
+          "hanzi": "我喜欢锻。",
+          "pinyin": "wǒ xǐhuān duàn",
+          "meaning": "I like forge/train"
+        }
+      ]
+    },
+    {
+      "hanzi": "始",
+      "pinyin": "shǐ",
+      "meaning": "begin",
+      "examples": [
+        {
+          "hanzi": "我喜欢始。",
+          "pinyin": "wǒ xǐhuān shǐ",
+          "meaning": "I like begin"
+        }
+      ]
+    },
+    {
+      "hanzi": "炼",
+      "pinyin": "liàn",
+      "meaning": "train",
+      "examples": [
+        {
+          "hanzi": "我喜欢炼。",
+          "pinyin": "wǒ xǐhuān liàn",
+          "meaning": "I like train"
+        }
+      ]
+    }
+  ],
+  "icon": "💪"
+}

@@ -5,5 +5,9 @@
 
   "Family_2.json", "Time_2.json", "People_1.json", "Telephone.json", "Celebration.json",
   "Location_3.json", "Hobbies_1.json", "Daily_Routine_1.json", "Payment.json", "Entertainment.json",
-  "Location_4.json", "Restaurant.json", "Supermarket.json", "Hobbies_2.json"
+  "Location_4.json", "Restaurant.json", "Supermarket.json", "Hobbies_2.json",
+
+  "Dining_1.json", "Health_1.json", "Transportation.json", "Shopping_1.json", "Languages.json",
+  "Time_3.json", "Dining_2.json", "Existence.json", "Sports_1.json", "Invitation_1.json",
+  "Health_2.json", "Invitation_2.json", "Dining_3.json", "Shopping_2.json", "Body_Parts.json"
 ]

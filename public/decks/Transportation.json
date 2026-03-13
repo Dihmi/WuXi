@@ -1,0 +1,259 @@
+{
+  "name": "Transportation",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "铁",
+      "pinyin": "tiě",
+      "meaning": "iron",
+      "examples": [
+        {
+          "hanzi": "我喜欢铁。",
+          "pinyin": "wǒ xǐhuān tiě",
+          "meaning": "I like iron"
+        }
+      ]
+    },
+    {
+      "hanzi": "店",
+      "pinyin": "diàn",
+      "meaning": "shop",
+      "examples": [
+        {
+          "hanzi": "我喜欢店。",
+          "pinyin": "wǒ xǐhuān diàn",
+          "meaning": "I like shop"
+        }
+      ]
+    },
+    {
+      "hanzi": "地",
+      "pinyin": "dì",
+      "meaning": "ground",
+      "examples": [
+        {
+          "hanzi": "我喜欢地。",
+          "pinyin": "wǒ xǐhuān dì",
+          "meaning": "I like ground"
+        }
+      ]
+    },
+    {
+      "hanzi": "酒",
+      "pinyin": "jiǔ",
+      "meaning": "alcohol",
+      "examples": [
+        {
+          "hanzi": "我喜欢酒。",
+          "pinyin": "wǒ xǐhuān jiǔ",
+          "meaning": "I like alcohol"
+        }
+      ]
+    },
+    {
+      "hanzi": "酒店",
+      "pinyin": "jiǔdiàn",
+      "meaning": "hotel",
+      "examples": [
+        {
+          "hanzi": "我喜欢酒店。",
+          "pinyin": "wǒ xǐhuān jiǔdiàn",
+          "meaning": "I like hotel"
+        }
+      ]
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "meaning": "subway",
+      "examples": [
+        {
+          "hanzi": "我喜欢地铁。",
+          "pinyin": "wǒ xǐhuān dìtiě",
+          "meaning": "I like subway"
+        }
+      ]
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "meaning": "sit/take transport",
+      "examples": [
+        {
+          "hanzi": "我喜欢坐。",
+          "pinyin": "wǒ xǐhuān zuò",
+          "meaning": "I like sit/take transport"
+        }
+      ]
+    },
+    {
+      "hanzi": "不准",
+      "pinyin": "bùzhǔn",
+      "meaning": "not allowed",
+      "examples": [
+        {
+          "hanzi": "我喜欢不准。",
+          "pinyin": "wǒ xǐhuān bùzhǔn",
+          "meaning": "I like not allowed"
+        }
+      ]
+    },
+    {
+      "hanzi": "准",
+      "pinyin": "zhǔn",
+      "meaning": "accurate",
+      "examples": [
+        {
+          "hanzi": "我喜欢准。",
+          "pinyin": "wǒ xǐhuān zhǔn",
+          "meaning": "I like accurate"
+        }
+      ]
+    },
+    {
+      "hanzi": "出租车",
+      "pinyin": "chūzūchē",
+      "meaning": "taxi",
+      "examples": [
+        {
+          "hanzi": "我喜欢出租车。",
+          "pinyin": "wǒ xǐhuān chūzūchē",
+          "meaning": "I like taxi"
+        }
+      ]
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "meaning": "station",
+      "examples": [
+        {
+          "hanzi": "我喜欢站。",
+          "pinyin": "wǒ xǐhuān zhàn",
+          "meaning": "I like station"
+        }
+      ]
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "meaning": "down",
+      "examples": [
+        {
+          "hanzi": "我喜欢下。",
+          "pinyin": "wǒ xǐhuān xià",
+          "meaning": "I like down"
+        }
+      ]
+    },
+    {
+      "hanzi": "车",
+      "pinyin": "chē",
+      "meaning": "vehicle",
+      "examples": [
+        {
+          "hanzi": "我喜欢车。",
+          "pinyin": "wǒ xǐhuān chē",
+          "meaning": "I like vehicle"
+        }
+      ]
+    },
+    {
+      "hanzi": "出",
+      "pinyin": "chū",
+      "meaning": "exit",
+      "examples": [
+        {
+          "hanzi": "我喜欢出。",
+          "pinyin": "wǒ xǐhuān chū",
+          "meaning": "I like exit"
+        }
+      ]
+    },
+    {
+      "hanzi": "租",
+      "pinyin": "zū",
+      "meaning": "rent",
+      "examples": [
+        {
+          "hanzi": "我喜欢租。",
+          "pinyin": "wǒ xǐhuān zū",
+          "meaning": "I like rent"
+        }
+      ]
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "meaning": "can/may",
+      "examples": [
+        {
+          "hanzi": "我喜欢可以。",
+          "pinyin": "wǒ xǐhuān kěyǐ",
+          "meaning": "I like can/may"
+        }
+      ]
+    },
+    {
+      "hanzi": "汽车",
+      "pinyin": "qìchē",
+      "meaning": "car",
+      "examples": [
+        {
+          "hanzi": "我喜欢汽车。",
+          "pinyin": "wǒ xǐhuān qìchē",
+          "meaning": "I like car"
+        }
+      ]
+    },
+    {
+      "hanzi": "公共",
+      "pinyin": "gōnggòng",
+      "meaning": "public",
+      "examples": [
+        {
+          "hanzi": "我喜欢公共。",
+          "pinyin": "wǒ xǐhuān gōnggòng",
+          "meaning": "I like public"
+        }
+      ]
+    },
+    {
+      "hanzi": "船",
+      "pinyin": "chuán",
+      "meaning": "boat",
+      "examples": [
+        {
+          "hanzi": "我喜欢船。",
+          "pinyin": "wǒ xǐhuān chuán",
+          "meaning": "I like boat"
+        }
+      ]
+    },
+    {
+      "hanzi": "公",
+      "pinyin": "gōng",
+      "meaning": "public",
+      "examples": [
+        {
+          "hanzi": "我喜欢公。",
+          "pinyin": "wǒ xǐhuān gōng",
+          "meaning": "I like public"
+        }
+      ]
+    },
+    {
+      "hanzi": "汽",
+      "pinyin": "qì",
+      "meaning": "steam",
+      "examples": [
+        {
+          "hanzi": "我喜欢汽。",
+          "pinyin": "wǒ xǐhuān qì",
+          "meaning": "I like steam"
+        }
+      ]
+    }
+  ],
+  "icon": "🚇"
+}

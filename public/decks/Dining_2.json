@@ -1,0 +1,283 @@
+{
+  "name": "Dining 2",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "meaning": "cup",
+      "examples": [
+        {
+          "hanzi": "我喜欢杯。",
+          "pinyin": "wǒ xǐhuān bēi",
+          "meaning": "I like cup"
+        }
+      ]
+    },
+    {
+      "hanzi": "啤",
+      "pinyin": "pí",
+      "meaning": "beer (phonetic)",
+      "examples": [
+        {
+          "hanzi": "我喜欢啤。",
+          "pinyin": "wǒ xǐhuān pí",
+          "meaning": "I like beer (phonetic)"
+        }
+      ]
+    },
+    {
+      "hanzi": "德",
+      "pinyin": "dé",
+      "meaning": "virtue",
+      "examples": [
+        {
+          "hanzi": "我喜欢德。",
+          "pinyin": "wǒ xǐhuān dé",
+          "meaning": "I like virtue"
+        }
+      ]
+    },
+    {
+      "hanzi": "德国",
+      "pinyin": "Déguó",
+      "meaning": "Germany",
+      "examples": [
+        {
+          "hanzi": "我喜欢德国。",
+          "pinyin": "wǒ xǐhuān Déguó",
+          "meaning": "I like Germany"
+        }
+      ]
+    },
+    {
+      "hanzi": "啤酒",
+      "pinyin": "píjiǔ",
+      "meaning": "beer",
+      "examples": [
+        {
+          "hanzi": "我喜欢啤酒。",
+          "pinyin": "wǒ xǐhuān píjiǔ",
+          "meaning": "I like beer"
+        }
+      ]
+    },
+    {
+      "hanzi": "果汁",
+      "pinyin": "guǒzhī",
+      "meaning": "juice",
+      "examples": [
+        {
+          "hanzi": "我喜欢果汁。",
+          "pinyin": "wǒ xǐhuān guǒzhī",
+          "meaning": "I like juice"
+        }
+      ]
+    },
+    {
+      "hanzi": "汁",
+      "pinyin": "zhī",
+      "meaning": "juice",
+      "examples": [
+        {
+          "hanzi": "我喜欢汁。",
+          "pinyin": "wǒ xǐhuān zhī",
+          "meaning": "I like juice"
+        }
+      ]
+    },
+    {
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "meaning": "banana",
+      "examples": [
+        {
+          "hanzi": "我喜欢香蕉。",
+          "pinyin": "wǒ xǐhuān xiāngjiāo",
+          "meaning": "I like banana"
+        }
+      ]
+    },
+    {
+      "hanzi": "蛋糕",
+      "pinyin": "dàngāo",
+      "meaning": "cake",
+      "examples": [
+        {
+          "hanzi": "我喜欢蛋糕。",
+          "pinyin": "wǒ xǐhuān dàngāo",
+          "meaning": "I like cake"
+        }
+      ]
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "piece",
+      "examples": [
+        {
+          "hanzi": "我喜欢块。",
+          "pinyin": "wǒ xǐhuān kuài",
+          "meaning": "I like piece"
+        }
+      ]
+    },
+    {
+      "hanzi": "香",
+      "pinyin": "xiāng",
+      "meaning": "fragrant",
+      "examples": [
+        {
+          "hanzi": "我喜欢香。",
+          "pinyin": "wǒ xǐhuān xiāng",
+          "meaning": "I like fragrant"
+        }
+      ]
+    },
+    {
+      "hanzi": "蕉",
+      "pinyin": "jiāo",
+      "meaning": "banana char",
+      "examples": [
+        {
+          "hanzi": "我喜欢蕉。",
+          "pinyin": "wǒ xǐhuān jiāo",
+          "meaning": "I like banana char"
+        }
+      ]
+    },
+    {
+      "hanzi": "糕",
+      "pinyin": "gāo",
+      "meaning": "cake",
+      "examples": [
+        {
+          "hanzi": "我喜欢糕。",
+          "pinyin": "wǒ xǐhuān gāo",
+          "meaning": "I like cake"
+        }
+      ]
+    },
+    {
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "meaning": "bowl",
+      "examples": [
+        {
+          "hanzi": "我喜欢碗。",
+          "pinyin": "wǒ xǐhuān wǎn",
+          "meaning": "I like bowl"
+        }
+      ]
+    },
+    {
+      "hanzi": "杯子",
+      "pinyin": "bēizi",
+      "meaning": "cup",
+      "examples": [
+        {
+          "hanzi": "我喜欢杯子。",
+          "pinyin": "wǒ xǐhuān bēizi",
+          "meaning": "I like cup"
+        }
+      ]
+    },
+    {
+      "hanzi": "盘子",
+      "pinyin": "pánzi",
+      "meaning": "plate",
+      "examples": [
+        {
+          "hanzi": "我喜欢盘子。",
+          "pinyin": "wǒ xǐhuān pánzi",
+          "meaning": "I like plate"
+        }
+      ]
+    },
+    {
+      "hanzi": "盘",
+      "pinyin": "pán",
+      "meaning": "plate",
+      "examples": [
+        {
+          "hanzi": "我喜欢盘。",
+          "pinyin": "wǒ xǐhuān pán",
+          "meaning": "I like plate"
+        }
+      ]
+    },
+    {
+      "hanzi": "筷子",
+      "pinyin": "kuàizi",
+      "meaning": "chopsticks",
+      "examples": [
+        {
+          "hanzi": "我喜欢筷子。",
+          "pinyin": "wǒ xǐhuān kuàizi",
+          "meaning": "I like chopsticks"
+        }
+      ]
+    },
+    {
+      "hanzi": "刀",
+      "pinyin": "dāo",
+      "meaning": "knife",
+      "examples": [
+        {
+          "hanzi": "我喜欢刀。",
+          "pinyin": "wǒ xǐhuān dāo",
+          "meaning": "I like knife"
+        }
+      ]
+    },
+    {
+      "hanzi": "叉",
+      "pinyin": "chā",
+      "meaning": "fork",
+      "examples": [
+        {
+          "hanzi": "我喜欢叉。",
+          "pinyin": "wǒ xǐhuān chā",
+          "meaning": "I like fork"
+        }
+      ]
+    },
+    {
+      "hanzi": "筷",
+      "pinyin": "kuài",
+      "meaning": "chopstick char",
+      "examples": [
+        {
+          "hanzi": "我喜欢筷。",
+          "pinyin": "wǒ xǐhuān kuài",
+          "meaning": "I like chopstick char"
+        }
+      ]
+    },
+    {
+      "hanzi": "勺子",
+      "pinyin": "sháozi",
+      "meaning": "spoon",
+      "examples": [
+        {
+          "hanzi": "我喜欢勺子。",
+          "pinyin": "wǒ xǐhuān sháozi",
+          "meaning": "I like spoon"
+        }
+      ]
+    },
+    {
+      "hanzi": "勺",
+      "pinyin": "sháo",
+      "meaning": "spoon",
+      "examples": [
+        {
+          "hanzi": "我喜欢勺。",
+          "pinyin": "wǒ xǐhuān sháo",
+          "meaning": "I like spoon"
+        }
+      ]
+    }
+  ],
+  "icon": "🍺"
+}

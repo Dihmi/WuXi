@@ -1,0 +1,295 @@
+{
+  "name": "Shopping 2",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "试",
+      "pinyin": "shì",
+      "meaning": "try",
+      "examples": [
+        {
+          "hanzi": "我喜欢试。",
+          "pinyin": "wǒ xǐhuān shì",
+          "meaning": "I like try"
+        }
+      ]
+    },
+    {
+      "hanzi": "蓝",
+      "pinyin": "lán",
+      "meaning": "blue",
+      "examples": [
+        {
+          "hanzi": "我喜欢蓝。",
+          "pinyin": "wǒ xǐhuān lán",
+          "meaning": "I like blue"
+        }
+      ]
+    },
+    {
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "meaning": "strip",
+      "examples": [
+        {
+          "hanzi": "我喜欢条。",
+          "pinyin": "wǒ xǐhuān tiáo",
+          "meaning": "I like strip"
+        }
+      ]
+    },
+    {
+      "hanzi": "裙",
+      "pinyin": "qún",
+      "meaning": "skirt",
+      "examples": [
+        {
+          "hanzi": "我喜欢裙。",
+          "pinyin": "wǒ xǐhuān qún",
+          "meaning": "I like skirt"
+        }
+      ]
+    },
+    {
+      "hanzi": "裙子",
+      "pinyin": "qúnzi",
+      "meaning": "skirt",
+      "examples": [
+        {
+          "hanzi": "我喜欢裙子。",
+          "pinyin": "wǒ xǐhuān qúnzi",
+          "meaning": "I like skirt"
+        }
+      ]
+    },
+    {
+      "hanzi": "双",
+      "pinyin": "shuāng",
+      "meaning": "pair",
+      "examples": [
+        {
+          "hanzi": "我喜欢双。",
+          "pinyin": "wǒ xǐhuān shuāng",
+          "meaning": "I like pair"
+        }
+      ]
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "hái",
+      "meaning": "still",
+      "examples": [
+        {
+          "hanzi": "我喜欢还。",
+          "pinyin": "wǒ xǐhuān hái",
+          "meaning": "I like still"
+        }
+      ]
+    },
+    {
+      "hanzi": "鞋子",
+      "pinyin": "xiézi",
+      "meaning": "shoes",
+      "examples": [
+        {
+          "hanzi": "我喜欢鞋子。",
+          "pinyin": "wǒ xǐhuān xiézi",
+          "meaning": "I like shoes"
+        }
+      ]
+    },
+    {
+      "hanzi": "意大利",
+      "pinyin": "Yìdàlì",
+      "meaning": "Italy",
+      "examples": [
+        {
+          "hanzi": "我喜欢意大利。",
+          "pinyin": "wǒ xǐhuān Yìdàlì",
+          "meaning": "I like Italy"
+        }
+      ]
+    },
+    {
+      "hanzi": "色",
+      "pinyin": "sè",
+      "meaning": "color",
+      "examples": [
+        {
+          "hanzi": "我喜欢色。",
+          "pinyin": "wǒ xǐhuān sè",
+          "meaning": "I like color"
+        }
+      ]
+    },
+    {
+      "hanzi": "鞋",
+      "pinyin": "xié",
+      "meaning": "shoe",
+      "examples": [
+        {
+          "hanzi": "我喜欢鞋。",
+          "pinyin": "wǒ xǐhuān xié",
+          "meaning": "I like shoe"
+        }
+      ]
+    },
+    {
+      "hanzi": "利",
+      "pinyin": "lì",
+      "meaning": "benefit",
+      "examples": [
+        {
+          "hanzi": "我喜欢利。",
+          "pinyin": "wǒ xǐhuān lì",
+          "meaning": "I like benefit"
+        }
+      ]
+    },
+    {
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "meaning": "small",
+      "examples": [
+        {
+          "hanzi": "我喜欢小。",
+          "pinyin": "wǒ xǐhuān xiǎo",
+          "meaning": "I like small"
+        }
+      ]
+    },
+    {
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "meaning": "compare",
+      "examples": [
+        {
+          "hanzi": "我喜欢比。",
+          "pinyin": "wǒ xǐhuān bǐ",
+          "meaning": "I like compare"
+        }
+      ]
+    },
+    {
+      "hanzi": "衬衫",
+      "pinyin": "chènshān",
+      "meaning": "shirt",
+      "examples": [
+        {
+          "hanzi": "我喜欢衬衫。",
+          "pinyin": "wǒ xǐhuān chènshān",
+          "meaning": "I like shirt"
+        }
+      ]
+    },
+    {
+      "hanzi": "衬",
+      "pinyin": "chèn",
+      "meaning": "lining",
+      "examples": [
+        {
+          "hanzi": "我喜欢衬。",
+          "pinyin": "wǒ xǐhuān chèn",
+          "meaning": "I like lining"
+        }
+      ]
+    },
+    {
+      "hanzi": "衫",
+      "pinyin": "shān",
+      "meaning": "shirt",
+      "examples": [
+        {
+          "hanzi": "我喜欢衫。",
+          "pinyin": "wǒ xǐhuān shān",
+          "meaning": "I like shirt"
+        }
+      ]
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "meaning": "big",
+      "examples": [
+        {
+          "hanzi": "我喜欢大。",
+          "pinyin": "wǒ xǐhuān dà",
+          "meaning": "I like big"
+        }
+      ]
+    },
+    {
+      "hanzi": "裤子",
+      "pinyin": "kùzi",
+      "meaning": "pants",
+      "examples": [
+        {
+          "hanzi": "我喜欢裤子。",
+          "pinyin": "wǒ xǐhuān kùzi",
+          "meaning": "I like pants"
+        }
+      ]
+    },
+    {
+      "hanzi": "好看",
+      "pinyin": "hǎokàn",
+      "meaning": "good-looking",
+      "examples": [
+        {
+          "hanzi": "我喜欢好看。",
+          "pinyin": "wǒ xǐhuān hǎokàn",
+          "meaning": "I like good-looking"
+        }
+      ]
+    },
+    {
+      "hanzi": "裤",
+      "pinyin": "kù",
+      "meaning": "pants",
+      "examples": [
+        {
+          "hanzi": "我喜欢裤。",
+          "pinyin": "wǒ xǐhuān kù",
+          "meaning": "I like pants"
+        }
+      ]
+    },
+    {
+      "hanzi": "质",
+      "pinyin": "zhì",
+      "meaning": "quality",
+      "examples": [
+        {
+          "hanzi": "我喜欢质。",
+          "pinyin": "wǒ xǐhuān zhì",
+          "meaning": "I like quality"
+        }
+      ]
+    },
+    {
+      "hanzi": "量",
+      "pinyin": "liàng",
+      "meaning": "quantity",
+      "examples": [
+        {
+          "hanzi": "我喜欢量。",
+          "pinyin": "wǒ xǐhuān liàng",
+          "meaning": "I like quantity"
+        }
+      ]
+    },
+    {
+      "hanzi": "质量",
+      "pinyin": "zhìliàng",
+      "meaning": "quality",
+      "examples": [
+        {
+          "hanzi": "我喜欢质量。",
+          "pinyin": "wǒ xǐhuān zhìliàng",
+          "meaning": "I like quality"
+        }
+      ]
+    }
+  ],
+  "icon": "👗"
+}
