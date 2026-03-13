@@ -1,0 +1,271 @@
+{
+  "name": "Dining 3",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "费",
+      "pinyin": "fèi",
+      "meaning": "fee",
+      "examples": [
+        {
+          "hanzi": "我喜欢费。",
+          "pinyin": "wǒ xǐhuān fèi",
+          "meaning": "I like fee"
+        }
+      ]
+    },
+    {
+      "hanzi": "完",
+      "pinyin": "wán",
+      "meaning": "finish",
+      "examples": [
+        {
+          "hanzi": "我喜欢完。",
+          "pinyin": "wǒ xǐhuān wán",
+          "meaning": "I like finish"
+        }
+      ]
+    },
+    {
+      "hanzi": "经",
+      "pinyin": "jīng",
+      "meaning": "pass through",
+      "examples": [
+        {
+          "hanzi": "我喜欢经。",
+          "pinyin": "wǒ xǐhuān jīng",
+          "meaning": "I like pass through"
+        }
+      ]
+    },
+    {
+      "hanzi": "已",
+      "pinyin": "yǐ",
+      "meaning": "already",
+      "examples": [
+        {
+          "hanzi": "我喜欢已。",
+          "pinyin": "wǒ xǐhuān yǐ",
+          "meaning": "I like already"
+        }
+      ]
+    },
+    {
+      "hanzi": "已经",
+      "pinyin": "yǐjīng",
+      "meaning": "already",
+      "examples": [
+        {
+          "hanzi": "我喜欢已经。",
+          "pinyin": "wǒ xǐhuān yǐjīng",
+          "meaning": "I like already"
+        }
+      ]
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "meaning": "please",
+      "examples": [
+        {
+          "hanzi": "我喜欢请。",
+          "pinyin": "wǒ xǐhuān qǐng",
+          "meaning": "I like please"
+        }
+      ]
+    },
+    {
+      "hanzi": "小费",
+      "pinyin": "xiǎofèi",
+      "meaning": "tip",
+      "examples": [
+        {
+          "hanzi": "我喜欢小费。",
+          "pinyin": "wǒ xǐhuān xiǎofèi",
+          "meaning": "I like tip"
+        }
+      ]
+    },
+    {
+      "hanzi": "饱",
+      "pinyin": "bǎo",
+      "meaning": "full",
+      "examples": [
+        {
+          "hanzi": "我喜欢饱。",
+          "pinyin": "wǒ xǐhuān bǎo",
+          "meaning": "I like full"
+        }
+      ]
+    },
+    {
+      "hanzi": "好吃",
+      "pinyin": "hǎochī",
+      "meaning": "delicious",
+      "examples": [
+        {
+          "hanzi": "我喜欢好吃。",
+          "pinyin": "wǒ xǐhuān hǎochī",
+          "meaning": "I like delicious"
+        }
+      ]
+    },
+    {
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "meaning": "really",
+      "examples": [
+        {
+          "hanzi": "我喜欢真。",
+          "pinyin": "wǒ xǐhuān zhēn",
+          "meaning": "I like really"
+        }
+      ]
+    },
+    {
+      "hanzi": "饿",
+      "pinyin": "è",
+      "meaning": "hungry",
+      "examples": [
+        {
+          "hanzi": "我喜欢饿。",
+          "pinyin": "wǒ xǐhuān è",
+          "meaning": "I like hungry"
+        }
+      ]
+    },
+    {
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "meaning": "few",
+      "examples": [
+        {
+          "hanzi": "我喜欢少。",
+          "pinyin": "wǒ xǐhuān shǎo",
+          "meaning": "I like few"
+        }
+      ]
+    },
+    {
+      "hanzi": "好喝",
+      "pinyin": "hǎohē",
+      "meaning": "tasty (drink)",
+      "examples": [
+        {
+          "hanzi": "我喜欢好喝。",
+          "pinyin": "wǒ xǐhuān hǎohē",
+          "meaning": "I like tasty (drink)"
+        }
+      ]
+    },
+    {
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "meaning": "thirsty",
+      "examples": [
+        {
+          "hanzi": "我喜欢渴。",
+          "pinyin": "wǒ xǐhuān kě",
+          "meaning": "I like thirsty"
+        }
+      ]
+    },
+    {
+      "hanzi": "酒",
+      "pinyin": "jiǔ",
+      "meaning": "alcohol",
+      "examples": [
+        {
+          "hanzi": "我喜欢酒。",
+          "pinyin": "wǒ xǐhuān jiǔ",
+          "meaning": "I like alcohol"
+        }
+      ]
+    },
+    {
+      "hanzi": "巧克力",
+      "pinyin": "qiǎokèlì",
+      "meaning": "chocolate",
+      "examples": [
+        {
+          "hanzi": "我喜欢巧克力。",
+          "pinyin": "wǒ xǐhuān qiǎokèlì",
+          "meaning": "I like chocolate"
+        }
+      ]
+    },
+    {
+      "hanzi": "味道",
+      "pinyin": "wèidào",
+      "meaning": "taste",
+      "examples": [
+        {
+          "hanzi": "我喜欢味道。",
+          "pinyin": "wǒ xǐhuān wèidào",
+          "meaning": "I like taste"
+        }
+      ]
+    },
+    {
+      "hanzi": "甜点",
+      "pinyin": "tiándiǎn",
+      "meaning": "dessert",
+      "examples": [
+        {
+          "hanzi": "我喜欢甜点。",
+          "pinyin": "wǒ xǐhuān tiándiǎn",
+          "meaning": "I like dessert"
+        }
+      ]
+    },
+    {
+      "hanzi": "甜",
+      "pinyin": "tián",
+      "meaning": "sweet",
+      "examples": [
+        {
+          "hanzi": "我喜欢甜。",
+          "pinyin": "wǒ xǐhuān tián",
+          "meaning": "I like sweet"
+        }
+      ]
+    },
+    {
+      "hanzi": "巧",
+      "pinyin": "qiǎo",
+      "meaning": "skillful",
+      "examples": [
+        {
+          "hanzi": "我喜欢巧。",
+          "pinyin": "wǒ xǐhuān qiǎo",
+          "meaning": "I like skillful"
+        }
+      ]
+    },
+    {
+      "hanzi": "克",
+      "pinyin": "kè",
+      "meaning": "gram",
+      "examples": [
+        {
+          "hanzi": "我喜欢克。",
+          "pinyin": "wǒ xǐhuān kè",
+          "meaning": "I like gram"
+        }
+      ]
+    },
+    {
+      "hanzi": "力",
+      "pinyin": "lì",
+      "meaning": "power",
+      "examples": [
+        {
+          "hanzi": "我喜欢力。",
+          "pinyin": "wǒ xǐhuān lì",
+          "meaning": "I like power"
+        }
+      ]
+    }
+  ],
+  "icon": "🍫"
+}

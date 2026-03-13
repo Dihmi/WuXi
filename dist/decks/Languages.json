@@ -1,0 +1,103 @@
+{
+  "name": "Languages",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "字",
+      "pinyin": "zì",
+      "meaning": "character",
+      "examples": [
+        {
+          "hanzi": "我喜欢字。",
+          "pinyin": "wǒ xǐhuān zì",
+          "meaning": "I like character"
+        }
+      ]
+    },
+    {
+      "hanzi": "读",
+      "pinyin": "dú",
+      "meaning": "read",
+      "examples": [
+        {
+          "hanzi": "我喜欢读。",
+          "pinyin": "wǒ xǐhuān dú",
+          "meaning": "I like read"
+        }
+      ]
+    },
+    {
+      "hanzi": "一点儿",
+      "pinyin": "yìdiǎnr",
+      "meaning": "a little",
+      "examples": [
+        {
+          "hanzi": "我喜欢一点儿。",
+          "pinyin": "wǒ xǐhuān yìdiǎnr",
+          "meaning": "I like a little"
+        }
+      ]
+    },
+    {
+      "hanzi": "意思",
+      "pinyin": "yìsi",
+      "meaning": "meaning",
+      "examples": [
+        {
+          "hanzi": "我喜欢意思。",
+          "pinyin": "wǒ xǐhuān yìsi",
+          "meaning": "I like meaning"
+        }
+      ]
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "meaning": "write",
+      "examples": [
+        {
+          "hanzi": "我喜欢写。",
+          "pinyin": "wǒ xǐhuān xiě",
+          "meaning": "I like write"
+        }
+      ]
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "meaning": "wrong",
+      "examples": [
+        {
+          "hanzi": "我喜欢错。",
+          "pinyin": "wǒ xǐhuān cuò",
+          "meaning": "I like wrong"
+        }
+      ]
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "meaning": "difficult",
+      "examples": [
+        {
+          "hanzi": "我喜欢难。",
+          "pinyin": "wǒ xǐhuān nán",
+          "meaning": "I like difficult"
+        }
+      ]
+    },
+    {
+      "hanzi": "思",
+      "pinyin": "sī",
+      "meaning": "think",
+      "examples": [
+        {
+          "hanzi": "我喜欢思。",
+          "pinyin": "wǒ xǐhuān sī",
+          "meaning": "I like think"
+        }
+      ]
+    }
+  ],
+  "icon": "🈶"
+}

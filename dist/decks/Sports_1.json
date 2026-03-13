@@ -1,0 +1,223 @@
+{
+  "name": "Sports 1",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "步",
+      "pinyin": "bù",
+      "meaning": "step",
+      "examples": [
+        {
+          "hanzi": "我喜欢步。",
+          "pinyin": "wǒ xǐhuān bù",
+          "meaning": "I like step"
+        }
+      ]
+    },
+    {
+      "hanzi": "跑",
+      "pinyin": "pǎo",
+      "meaning": "run",
+      "examples": [
+        {
+          "hanzi": "我喜欢跑。",
+          "pinyin": "wǒ xǐhuān pǎo",
+          "meaning": "I like run"
+        }
+      ]
+    },
+    {
+      "hanzi": "泳",
+      "pinyin": "yǒng",
+      "meaning": "swim",
+      "examples": [
+        {
+          "hanzi": "我喜欢泳。",
+          "pinyin": "wǒ xǐhuān yǒng",
+          "meaning": "I like swim"
+        }
+      ]
+    },
+    {
+      "hanzi": "游",
+      "pinyin": "yóu",
+      "meaning": "swim",
+      "examples": [
+        {
+          "hanzi": "我喜欢游。",
+          "pinyin": "wǒ xǐhuān yóu",
+          "meaning": "I like swim"
+        }
+      ]
+    },
+    {
+      "hanzi": "游泳",
+      "pinyin": "yóuyǒng",
+      "meaning": "swimming",
+      "examples": [
+        {
+          "hanzi": "我喜欢游泳。",
+          "pinyin": "wǒ xǐhuān yóuyǒng",
+          "meaning": "I like swimming"
+        }
+      ]
+    },
+    {
+      "hanzi": "跑步",
+      "pinyin": "pǎobù",
+      "meaning": "running",
+      "examples": [
+        {
+          "hanzi": "我喜欢跑步。",
+          "pinyin": "wǒ xǐhuān pǎobù",
+          "meaning": "I like running"
+        }
+      ]
+    },
+    {
+      "hanzi": "踢",
+      "pinyin": "tī",
+      "meaning": "kick",
+      "examples": [
+        {
+          "hanzi": "我喜欢踢。",
+          "pinyin": "wǒ xǐhuān tī",
+          "meaning": "I like kick"
+        }
+      ]
+    },
+    {
+      "hanzi": "足球",
+      "pinyin": "zúqiú",
+      "meaning": "soccer",
+      "examples": [
+        {
+          "hanzi": "我喜欢足球。",
+          "pinyin": "wǒ xǐhuān zúqiú",
+          "meaning": "I like soccer"
+        }
+      ]
+    },
+    {
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "meaning": "play",
+      "examples": [
+        {
+          "hanzi": "我喜欢打。",
+          "pinyin": "wǒ xǐhuān dǎ",
+          "meaning": "I like play"
+        }
+      ]
+    },
+    {
+      "hanzi": "篮球",
+      "pinyin": "lánqiú",
+      "meaning": "basketball",
+      "examples": [
+        {
+          "hanzi": "我喜欢篮球。",
+          "pinyin": "wǒ xǐhuān lánqiú",
+          "meaning": "I like basketball"
+        }
+      ]
+    },
+    {
+      "hanzi": "足",
+      "pinyin": "zú",
+      "meaning": "foot",
+      "examples": [
+        {
+          "hanzi": "我喜欢足。",
+          "pinyin": "wǒ xǐhuān zú",
+          "meaning": "I like foot"
+        }
+      ]
+    },
+    {
+      "hanzi": "篮",
+      "pinyin": "lán",
+      "meaning": "basket",
+      "examples": [
+        {
+          "hanzi": "我喜欢篮。",
+          "pinyin": "wǒ xǐhuān lán",
+          "meaning": "I like basket"
+        }
+      ]
+    },
+    {
+      "hanzi": "球",
+      "pinyin": "qiú",
+      "meaning": "ball",
+      "examples": [
+        {
+          "hanzi": "我喜欢球。",
+          "pinyin": "wǒ xǐhuān qiú",
+          "meaning": "I like ball"
+        }
+      ]
+    },
+    {
+      "hanzi": "运动",
+      "pinyin": "yùndòng",
+      "meaning": "exercise",
+      "examples": [
+        {
+          "hanzi": "我喜欢运动。",
+          "pinyin": "wǒ xǐhuān yùndòng",
+          "meaning": "I like exercise"
+        }
+      ]
+    },
+    {
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "meaning": "horse",
+      "examples": [
+        {
+          "hanzi": "我喜欢马。",
+          "pinyin": "wǒ xǐhuān mǎ",
+          "meaning": "I like horse"
+        }
+      ]
+    },
+    {
+      "hanzi": "骑",
+      "pinyin": "qí",
+      "meaning": "ride",
+      "examples": [
+        {
+          "hanzi": "我喜欢骑。",
+          "pinyin": "wǒ xǐhuān qí",
+          "meaning": "I like ride"
+        }
+      ]
+    },
+    {
+      "hanzi": "运",
+      "pinyin": "yùn",
+      "meaning": "move",
+      "examples": [
+        {
+          "hanzi": "我喜欢运。",
+          "pinyin": "wǒ xǐhuān yùn",
+          "meaning": "I like move"
+        }
+      ]
+    },
+    {
+      "hanzi": "动",
+      "pinyin": "dòng",
+      "meaning": "move",
+      "examples": [
+        {
+          "hanzi": "我喜欢动。",
+          "pinyin": "wǒ xǐhuān dòng",
+          "meaning": "I like move"
+        }
+      ]
+    }
+  ],
+  "icon": "⚽"
+}

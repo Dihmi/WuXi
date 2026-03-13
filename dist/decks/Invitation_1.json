@@ -1,0 +1,247 @@
+{
+  "name": "Invitation 1",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "吧",
+      "pinyin": "ba",
+      "meaning": "suggestion particle",
+      "examples": [
+        {
+          "hanzi": "我喜欢吧。",
+          "pinyin": "wǒ xǐhuān ba",
+          "meaning": "I like suggestion particle"
+        }
+      ]
+    },
+    {
+      "hanzi": "出去",
+      "pinyin": "chūqù",
+      "meaning": "go out",
+      "examples": [
+        {
+          "hanzi": "我喜欢出去。",
+          "pinyin": "wǒ xǐhuān chūqù",
+          "meaning": "I like go out"
+        }
+      ]
+    },
+    {
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "meaning": "time",
+      "examples": [
+        {
+          "hanzi": "我喜欢时间。",
+          "pinyin": "wǒ xǐhuān shíjiān",
+          "meaning": "I like time"
+        }
+      ]
+    },
+    {
+      "hanzi": "时候",
+      "pinyin": "shíhou",
+      "meaning": "moment",
+      "examples": [
+        {
+          "hanzi": "我喜欢时候。",
+          "pinyin": "wǒ xǐhuān shíhou",
+          "meaning": "I like moment"
+        }
+      ]
+    },
+    {
+      "hanzi": "空",
+      "pinyin": "kòng",
+      "meaning": "free",
+      "examples": [
+        {
+          "hanzi": "我喜欢空。",
+          "pinyin": "wǒ xǐhuān kòng",
+          "meaning": "I like free"
+        }
+      ]
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "meaning": "please/invite",
+      "examples": [
+        {
+          "hanzi": "我喜欢请。",
+          "pinyin": "wǒ xǐhuān qǐng",
+          "meaning": "I like please/invite"
+        }
+      ]
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "meaning": "come",
+      "examples": [
+        {
+          "hanzi": "我喜欢来。",
+          "pinyin": "wǒ xǐhuān lái",
+          "meaning": "I like come"
+        }
+      ]
+    },
+    {
+      "hanzi": "候",
+      "pinyin": "hòu",
+      "meaning": "wait",
+      "examples": [
+        {
+          "hanzi": "我喜欢候。",
+          "pinyin": "wǒ xǐhuān hòu",
+          "meaning": "I like wait"
+        }
+      ]
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guò",
+      "meaning": "pass",
+      "examples": [
+        {
+          "hanzi": "我喜欢过。",
+          "pinyin": "wǒ xǐhuān guò",
+          "meaning": "I like pass"
+        }
+      ]
+    },
+    {
+      "hanzi": "一起",
+      "pinyin": "yìqǐ",
+      "meaning": "together",
+      "examples": [
+        {
+          "hanzi": "我喜欢一起。",
+          "pinyin": "wǒ xǐhuān yìqǐ",
+          "meaning": "I like together"
+        }
+      ]
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "meaning": "home",
+      "examples": [
+        {
+          "hanzi": "我喜欢家。",
+          "pinyin": "wǒ xǐhuān jiā",
+          "meaning": "I like home"
+        }
+      ]
+    },
+    {
+      "hanzi": "不好意思",
+      "pinyin": "bùhǎoyìsi",
+      "meaning": "sorry",
+      "examples": [
+        {
+          "hanzi": "我喜欢不好意思。",
+          "pinyin": "wǒ xǐhuān bùhǎoyìsi",
+          "meaning": "I like sorry"
+        }
+      ]
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "meaning": "give",
+      "examples": [
+        {
+          "hanzi": "我喜欢给。",
+          "pinyin": "wǒ xǐhuān gěi",
+          "meaning": "I like give"
+        }
+      ]
+    },
+    {
+      "hanzi": "告诉",
+      "pinyin": "gàosu",
+      "meaning": "tell",
+      "examples": [
+        {
+          "hanzi": "我喜欢告诉。",
+          "pinyin": "wǒ xǐhuān gàosu",
+          "meaning": "I like tell"
+        }
+      ]
+    },
+    {
+      "hanzi": "告",
+      "pinyin": "gào",
+      "meaning": "tell",
+      "examples": [
+        {
+          "hanzi": "我喜欢告。",
+          "pinyin": "wǒ xǐhuān gào",
+          "meaning": "I like tell"
+        }
+      ]
+    },
+    {
+      "hanzi": "诉",
+      "pinyin": "sù",
+      "meaning": "tell",
+      "examples": [
+        {
+          "hanzi": "我喜欢诉。",
+          "pinyin": "wǒ xǐhuān sù",
+          "meaning": "I like tell"
+        }
+      ]
+    },
+    {
+      "hanzi": "约会",
+      "pinyin": "yuēhuì",
+      "meaning": "date",
+      "examples": [
+        {
+          "hanzi": "我喜欢约会。",
+          "pinyin": "wǒ xǐhuān yuēhuì",
+          "meaning": "I like date"
+        }
+      ]
+    },
+    {
+      "hanzi": "浪漫",
+      "pinyin": "làngmàn",
+      "meaning": "romantic",
+      "examples": [
+        {
+          "hanzi": "我喜欢浪漫。",
+          "pinyin": "wǒ xǐhuān làngmàn",
+          "meaning": "I like romantic"
+        }
+      ]
+    },
+    {
+      "hanzi": "浪",
+      "pinyin": "làng",
+      "meaning": "wave",
+      "examples": [
+        {
+          "hanzi": "我喜欢浪。",
+          "pinyin": "wǒ xǐhuān làng",
+          "meaning": "I like wave"
+        }
+      ]
+    },
+    {
+      "hanzi": "漫",
+      "pinyin": "màn",
+      "meaning": "overflow",
+      "examples": [
+        {
+          "hanzi": "我喜欢漫。",
+          "pinyin": "wǒ xǐhuān màn",
+          "meaning": "I like overflow"
+        }
+      ]
+    }
+  ],
+  "icon": "💌"
+}

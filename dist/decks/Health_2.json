@@ -1,0 +1,343 @@
+{
+  "name": "Health 2",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "该",
+      "pinyin": "gāi",
+      "meaning": "should",
+      "examples": [
+        {
+          "hanzi": "我喜欢该。",
+          "pinyin": "wǒ xǐhuān gāi",
+          "meaning": "I like should"
+        }
+      ]
+    },
+    {
+      "hanzi": "病",
+      "pinyin": "bìng",
+      "meaning": "illness",
+      "examples": [
+        {
+          "hanzi": "我喜欢病。",
+          "pinyin": "wǒ xǐhuān bìng",
+          "meaning": "I like illness"
+        }
+      ]
+    },
+    {
+      "hanzi": "舒",
+      "pinyin": "shū",
+      "meaning": "comfortable",
+      "examples": [
+        {
+          "hanzi": "我喜欢舒。",
+          "pinyin": "wǒ xǐhuān shū",
+          "meaning": "I like comfortable"
+        }
+      ]
+    },
+    {
+      "hanzi": "应",
+      "pinyin": "yīng",
+      "meaning": "should",
+      "examples": [
+        {
+          "hanzi": "我喜欢应。",
+          "pinyin": "wǒ xǐhuān yīng",
+          "meaning": "I like should"
+        }
+      ]
+    },
+    {
+      "hanzi": "生病",
+      "pinyin": "shēngbìng",
+      "meaning": "get sick",
+      "examples": [
+        {
+          "hanzi": "我喜欢生病。",
+          "pinyin": "wǒ xǐhuān shēngbìng",
+          "meaning": "I like get sick"
+        }
+      ]
+    },
+    {
+      "hanzi": "应该",
+      "pinyin": "yīnggāi",
+      "meaning": "should",
+      "examples": [
+        {
+          "hanzi": "我喜欢应该。",
+          "pinyin": "wǒ xǐhuān yīnggāi",
+          "meaning": "I like should"
+        }
+      ]
+    },
+    {
+      "hanzi": "舒服",
+      "pinyin": "shūfu",
+      "meaning": "comfortable",
+      "examples": [
+        {
+          "hanzi": "我喜欢舒服。",
+          "pinyin": "wǒ xǐhuān shūfu",
+          "meaning": "I like comfortable"
+        }
+      ]
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "meaning": "completed action",
+      "examples": [
+        {
+          "hanzi": "我喜欢了。",
+          "pinyin": "wǒ xǐhuān le",
+          "meaning": "I like completed action"
+        }
+      ]
+    },
+    {
+      "hanzi": "疼",
+      "pinyin": "téng",
+      "meaning": "pain",
+      "examples": [
+        {
+          "hanzi": "我喜欢疼。",
+          "pinyin": "wǒ xǐhuān téng",
+          "meaning": "I like pain"
+        }
+      ]
+    },
+    {
+      "hanzi": "头",
+      "pinyin": "tóu",
+      "meaning": "head",
+      "examples": [
+        {
+          "hanzi": "我喜欢头。",
+          "pinyin": "wǒ xǐhuān tóu",
+          "meaning": "I like head"
+        }
+      ]
+    },
+    {
+      "hanzi": "休息",
+      "pinyin": "xiūxi",
+      "meaning": "rest",
+      "examples": [
+        {
+          "hanzi": "我喜欢休息。",
+          "pinyin": "wǒ xǐhuān xiūxi",
+          "meaning": "I like rest"
+        }
+      ]
+    },
+    {
+      "hanzi": "休",
+      "pinyin": "xiū",
+      "meaning": "rest",
+      "examples": [
+        {
+          "hanzi": "我喜欢休。",
+          "pinyin": "wǒ xǐhuān xiū",
+          "meaning": "I like rest"
+        }
+      ]
+    },
+    {
+      "hanzi": "息",
+      "pinyin": "xī",
+      "meaning": "breath",
+      "examples": [
+        {
+          "hanzi": "我喜欢息。",
+          "pinyin": "wǒ xǐhuān xī",
+          "meaning": "I like breath"
+        }
+      ]
+    },
+    {
+      "hanzi": "肚子",
+      "pinyin": "dùzi",
+      "meaning": "stomach",
+      "examples": [
+        {
+          "hanzi": "我喜欢肚子。",
+          "pinyin": "wǒ xǐhuān dùzi",
+          "meaning": "I like stomach"
+        }
+      ]
+    },
+    {
+      "hanzi": "肚",
+      "pinyin": "dù",
+      "meaning": "belly",
+      "examples": [
+        {
+          "hanzi": "我喜欢肚。",
+          "pinyin": "wǒ xǐhuān dù",
+          "meaning": "I like belly"
+        }
+      ]
+    },
+    {
+      "hanzi": "药",
+      "pinyin": "yào",
+      "meaning": "medicine",
+      "examples": [
+        {
+          "hanzi": "我喜欢药。",
+          "pinyin": "wǒ xǐhuān yào",
+          "meaning": "I like medicine"
+        }
+      ]
+    },
+    {
+      "hanzi": "一定",
+      "pinyin": "yídìng",
+      "meaning": "definitely",
+      "examples": [
+        {
+          "hanzi": "我喜欢一定。",
+          "pinyin": "wǒ xǐhuān yídìng",
+          "meaning": "I like definitely"
+        }
+      ]
+    },
+    {
+      "hanzi": "感冒",
+      "pinyin": "gǎnmào",
+      "meaning": "cold",
+      "examples": [
+        {
+          "hanzi": "我喜欢感冒。",
+          "pinyin": "wǒ xǐhuān gǎnmào",
+          "meaning": "I like cold"
+        }
+      ]
+    },
+    {
+      "hanzi": "感",
+      "pinyin": "gǎn",
+      "meaning": "feel",
+      "examples": [
+        {
+          "hanzi": "我喜欢感。",
+          "pinyin": "wǒ xǐhuān gǎn",
+          "meaning": "I like feel"
+        }
+      ]
+    },
+    {
+      "hanzi": "定",
+      "pinyin": "dìng",
+      "meaning": "decide",
+      "examples": [
+        {
+          "hanzi": "我喜欢定。",
+          "pinyin": "wǒ xǐhuān dìng",
+          "meaning": "I like decide"
+        }
+      ]
+    },
+    {
+      "hanzi": "冒",
+      "pinyin": "mào",
+      "meaning": "emit",
+      "examples": [
+        {
+          "hanzi": "我喜欢冒。",
+          "pinyin": "wǒ xǐhuān mào",
+          "meaning": "I like emit"
+        }
+      ]
+    },
+    {
+      "hanzi": "留",
+      "pinyin": "liú",
+      "meaning": "stay",
+      "examples": [
+        {
+          "hanzi": "我喜欢留。",
+          "pinyin": "wǒ xǐhuān liú",
+          "meaning": "I like stay"
+        }
+      ]
+    },
+    {
+      "hanzi": "请假",
+      "pinyin": "qǐngjià",
+      "meaning": "take leave",
+      "examples": [
+        {
+          "hanzi": "我喜欢请假。",
+          "pinyin": "wǒ xǐhuān qǐngjià",
+          "meaning": "I like take leave"
+        }
+      ]
+    },
+    {
+      "hanzi": "发烧",
+      "pinyin": "fāshāo",
+      "meaning": "fever",
+      "examples": [
+        {
+          "hanzi": "我喜欢发烧。",
+          "pinyin": "wǒ xǐhuān fāshāo",
+          "meaning": "I like fever"
+        }
+      ]
+    },
+    {
+      "hanzi": "别",
+      "pinyin": "bié",
+      "meaning": "don't",
+      "examples": [
+        {
+          "hanzi": "我喜欢别。",
+          "pinyin": "wǒ xǐhuān bié",
+          "meaning": "I like don't"
+        }
+      ]
+    },
+    {
+      "hanzi": "发",
+      "pinyin": "fā",
+      "meaning": "emit",
+      "examples": [
+        {
+          "hanzi": "我喜欢发。",
+          "pinyin": "wǒ xǐhuān fā",
+          "meaning": "I like emit"
+        }
+      ]
+    },
+    {
+      "hanzi": "假",
+      "pinyin": "jià",
+      "meaning": "holiday",
+      "examples": [
+        {
+          "hanzi": "我喜欢假。",
+          "pinyin": "wǒ xǐhuān jià",
+          "meaning": "I like holiday"
+        }
+      ]
+    },
+    {
+      "hanzi": "烧",
+      "pinyin": "shāo",
+      "meaning": "burn",
+      "examples": [
+        {
+          "hanzi": "我喜欢烧。",
+          "pinyin": "wǒ xǐhuān shāo",
+          "meaning": "I like burn"
+        }
+      ]
+    }
+  ],
+  "icon": "🤒"
+}

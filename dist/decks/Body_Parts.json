@@ -1,0 +1,235 @@
+{
+  "name": "Body Parts",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "朵",
+      "pinyin": "duǒ",
+      "meaning": "classifier for flowers",
+      "examples": [
+        {
+          "hanzi": "我喜欢朵。",
+          "pinyin": "wǒ xǐhuān duǒ",
+          "meaning": "I like classifier for flowers"
+        }
+      ]
+    },
+    {
+      "hanzi": "睛",
+      "pinyin": "jīng",
+      "meaning": "eye char",
+      "examples": [
+        {
+          "hanzi": "我喜欢睛。",
+          "pinyin": "wǒ xǐhuān jīng",
+          "meaning": "I like eye char"
+        }
+      ]
+    },
+    {
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "meaning": "green",
+      "examples": [
+        {
+          "hanzi": "我喜欢绿。",
+          "pinyin": "wǒ xǐhuān lǜ",
+          "meaning": "I like green"
+        }
+      ]
+    },
+    {
+      "hanzi": "耳",
+      "pinyin": "ěr",
+      "meaning": "ear",
+      "examples": [
+        {
+          "hanzi": "我喜欢耳。",
+          "pinyin": "wǒ xǐhuān ěr",
+          "meaning": "I like ear"
+        }
+      ]
+    },
+    {
+      "hanzi": "眼",
+      "pinyin": "yǎn",
+      "meaning": "eye",
+      "examples": [
+        {
+          "hanzi": "我喜欢眼。",
+          "pinyin": "wǒ xǐhuān yǎn",
+          "meaning": "I like eye"
+        }
+      ]
+    },
+    {
+      "hanzi": "耳朵",
+      "pinyin": "ěrduo",
+      "meaning": "ear",
+      "examples": [
+        {
+          "hanzi": "我喜欢耳朵。",
+          "pinyin": "wǒ xǐhuān ěrduo",
+          "meaning": "I like ear"
+        }
+      ]
+    },
+    {
+      "hanzi": "眼睛",
+      "pinyin": "yǎnjing",
+      "meaning": "eye",
+      "examples": [
+        {
+          "hanzi": "我喜欢眼睛。",
+          "pinyin": "wǒ xǐhuān yǎnjing",
+          "meaning": "I like eye"
+        }
+      ]
+    },
+    {
+      "hanzi": "头发",
+      "pinyin": "tóufa",
+      "meaning": "hair",
+      "examples": [
+        {
+          "hanzi": "我喜欢头发。",
+          "pinyin": "wǒ xǐhuān tóufa",
+          "meaning": "I like hair"
+        }
+      ]
+    },
+    {
+      "hanzi": "脸",
+      "pinyin": "liǎn",
+      "meaning": "face",
+      "examples": [
+        {
+          "hanzi": "我喜欢脸。",
+          "pinyin": "wǒ xǐhuān liǎn",
+          "meaning": "I like face"
+        }
+      ]
+    },
+    {
+      "hanzi": "又",
+      "pinyin": "yòu",
+      "meaning": "again",
+      "examples": [
+        {
+          "hanzi": "我喜欢又。",
+          "pinyin": "wǒ xǐhuān yòu",
+          "meaning": "I like again"
+        }
+      ]
+    },
+    {
+      "hanzi": "黑",
+      "pinyin": "hēi",
+      "meaning": "black",
+      "examples": [
+        {
+          "hanzi": "我喜欢黑。",
+          "pinyin": "wǒ xǐhuān hēi",
+          "meaning": "I like black"
+        }
+      ]
+    },
+    {
+      "hanzi": "发",
+      "pinyin": "fā",
+      "meaning": "hair/emit",
+      "examples": [
+        {
+          "hanzi": "我喜欢发。",
+          "pinyin": "wǒ xǐhuān fā",
+          "meaning": "I like hair/emit"
+        }
+      ]
+    },
+    {
+      "hanzi": "嘴巴",
+      "pinyin": "zuǐba",
+      "meaning": "mouth",
+      "examples": [
+        {
+          "hanzi": "我喜欢嘴巴。",
+          "pinyin": "wǒ xǐhuān zuǐba",
+          "meaning": "I like mouth"
+        }
+      ]
+    },
+    {
+      "hanzi": "鼻子",
+      "pinyin": "bízi",
+      "meaning": "nose",
+      "examples": [
+        {
+          "hanzi": "我喜欢鼻子。",
+          "pinyin": "wǒ xǐhuān bízi",
+          "meaning": "I like nose"
+        }
+      ]
+    },
+    {
+      "hanzi": "脚",
+      "pinyin": "jiǎo",
+      "meaning": "foot",
+      "examples": [
+        {
+          "hanzi": "我喜欢脚。",
+          "pinyin": "wǒ xǐhuān jiǎo",
+          "meaning": "I like foot"
+        }
+      ]
+    },
+    {
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "meaning": "hand",
+      "examples": [
+        {
+          "hanzi": "我喜欢手。",
+          "pinyin": "wǒ xǐhuān shǒu",
+          "meaning": "I like hand"
+        }
+      ]
+    },
+    {
+      "hanzi": "嘴",
+      "pinyin": "zuǐ",
+      "meaning": "mouth",
+      "examples": [
+        {
+          "hanzi": "我喜欢嘴。",
+          "pinyin": "wǒ xǐhuān zuǐ",
+          "meaning": "I like mouth"
+        }
+      ]
+    },
+    {
+      "hanzi": "鼻",
+      "pinyin": "bí",
+      "meaning": "nose",
+      "examples": [
+        {
+          "hanzi": "我喜欢鼻。",
+          "pinyin": "wǒ xǐhuān bí",
+          "meaning": "I like nose"
+        }
+      ]
+    },
+    {
+      "hanzi": "巴",
+      "pinyin": "bā",
+      "meaning": "suffix",
+      "examples": [
+        {
+          "hanzi": "我喜欢巴。",
+          "pinyin": "wǒ xǐhuān bā",
+          "meaning": "I like suffix"
+        }
+      ]
+    }
+  ],
+  "icon": "👂"
+}

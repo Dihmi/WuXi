@@ -1,0 +1,139 @@
+{
+  "name": "Time 3",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "秒",
+      "pinyin": "miǎo",
+      "meaning": "second",
+      "examples": [
+        {
+          "hanzi": "我喜欢秒。",
+          "pinyin": "wǒ xǐhuān miǎo",
+          "meaning": "I like second"
+        }
+      ]
+    },
+    {
+      "hanzi": "刻",
+      "pinyin": "kè",
+      "meaning": "quarter",
+      "examples": [
+        {
+          "hanzi": "我喜欢刻。",
+          "pinyin": "wǒ xǐhuān kè",
+          "meaning": "I like quarter"
+        }
+      ]
+    },
+    {
+      "hanzi": "差",
+      "pinyin": "chà",
+      "meaning": "difference",
+      "examples": [
+        {
+          "hanzi": "我喜欢差。",
+          "pinyin": "wǒ xǐhuān chà",
+          "meaning": "I like difference"
+        }
+      ]
+    },
+    {
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "meaning": "hour",
+      "examples": [
+        {
+          "hanzi": "我喜欢小时。",
+          "pinyin": "wǒ xǐhuān xiǎoshí",
+          "meaning": "I like hour"
+        }
+      ]
+    },
+    {
+      "hanzi": "分钟",
+      "pinyin": "fēnzhōng",
+      "meaning": "minute",
+      "examples": [
+        {
+          "hanzi": "我喜欢分钟。",
+          "pinyin": "wǒ xǐhuān fēnzhōng",
+          "meaning": "I like minute"
+        }
+      ]
+    },
+    {
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "meaning": "small",
+      "examples": [
+        {
+          "hanzi": "我喜欢小。",
+          "pinyin": "wǒ xǐhuān xiǎo",
+          "meaning": "I like small"
+        }
+      ]
+    },
+    {
+      "hanzi": "时",
+      "pinyin": "shí",
+      "meaning": "time",
+      "examples": [
+        {
+          "hanzi": "我喜欢时。",
+          "pinyin": "wǒ xǐhuān shí",
+          "meaning": "I like time"
+        }
+      ]
+    },
+    {
+      "hanzi": "钟",
+      "pinyin": "zhōng",
+      "meaning": "clock",
+      "examples": [
+        {
+          "hanzi": "我喜欢钟。",
+          "pinyin": "wǒ xǐhuān zhōng",
+          "meaning": "I like clock"
+        }
+      ]
+    },
+    {
+      "hanzi": "整",
+      "pinyin": "zhěng",
+      "meaning": "exactly",
+      "examples": [
+        {
+          "hanzi": "我喜欢整。",
+          "pinyin": "wǒ xǐhuān zhěng",
+          "meaning": "I like exactly"
+        }
+      ]
+    },
+    {
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "meaning": "morning",
+      "examples": [
+        {
+          "hanzi": "我喜欢早。",
+          "pinyin": "wǒ xǐhuān zǎo",
+          "meaning": "I like morning"
+        }
+      ]
+    },
+    {
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "meaning": "evening",
+      "examples": [
+        {
+          "hanzi": "我喜欢晚。",
+          "pinyin": "wǒ xǐhuān wǎn",
+          "meaning": "I like evening"
+        }
+      ]
+    }
+  ],
+  "icon": "⏱️"
+}

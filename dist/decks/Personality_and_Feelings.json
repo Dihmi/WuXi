@@ -1,235 +1,223 @@
 {
-  "name": "Celebration",
-  "group": "Unit 5",
+  "name": "Personality and Feelings",
+  "group": "Unit 6",
   "cards": [
     {
-      "hanzi": "春",
+      "hanzi": "看起来",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到春。",
+          "hanzi": "我看到看起来。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "乐",
+      "hanzi": "奇怪",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到乐。",
+          "hanzi": "我看到奇怪。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "快乐",
+      "hanzi": "生气",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到快乐。",
+          "hanzi": "我看到生气。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "节日",
+      "hanzi": "紧张",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到节日。",
+          "hanzi": "我看到紧张。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "春节",
+      "hanzi": "奇",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到春节。",
+          "hanzi": "我看到奇。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "礼物",
+      "hanzi": "怪",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到礼物。",
+          "hanzi": "我看到怪。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "送",
+      "hanzi": "紧",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到送。",
+          "hanzi": "我看到紧。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "新年",
+      "hanzi": "难过",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到新年。",
+          "hanzi": "我看到难过。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "瓶",
+      "hanzi": "地",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到瓶。",
+          "hanzi": "我看到地。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "白酒",
+      "hanzi": "想",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到白酒。",
+          "hanzi": "我看到想。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "礼",
+      "hanzi": "哭",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到礼。",
+          "hanzi": "我看到哭。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "物",
+      "hanzi": "可怕",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到物。",
+          "hanzi": "我看到可怕。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "过",
+      "hanzi": "热情",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到过。",
+          "hanzi": "我看到热情。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "干杯",
+      "hanzi": "关心",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到干杯。",
+          "hanzi": "我看到关心。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "祝",
+      "hanzi": "经常",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到祝。",
+          "hanzi": "我看到经常。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "法国",
+      "hanzi": "遇到",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到法国。",
+          "hanzi": "我看到遇到。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "红酒",
+      "hanzi": "好笑",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到红酒。",
+          "hanzi": "我看到好笑。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "干",
+      "hanzi": "遇",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到干。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "法",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到法。",
+          "hanzi": "我看到遇。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     }
   ],
-  "icon": "🎉"
+  "icon": "📘"
 }

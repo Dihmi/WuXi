@@ -1,235 +1,199 @@
 {
-  "name": "Celebration",
+  "name": "Food 3",
   "group": "Unit 5",
   "cards": [
     {
-      "hanzi": "春",
+      "hanzi": "除",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到春。",
+          "hanzi": "我看到除。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "乐",
+      "hanzi": "其",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到乐。",
+          "hanzi": "我看到其。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "快乐",
+      "hanzi": "饺",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到快乐。",
+          "hanzi": "我看到饺。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "节日",
+      "hanzi": "北方",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到节日。",
+          "hanzi": "我看到北方。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "春节",
+      "hanzi": "除了",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到春节。",
+          "hanzi": "我看到除了。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "礼物",
+      "hanzi": "其他",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到礼物。",
+          "hanzi": "我看到其他。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "送",
+      "hanzi": "饺子",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到送。",
+          "hanzi": "我看到饺子。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "新年",
+      "hanzi": "辣",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到新年。",
+          "hanzi": "我看到辣。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "瓶",
+      "hanzi": "极",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到瓶。",
+          "hanzi": "我看到极。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "白酒",
+      "hanzi": "苦",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到白酒。",
+          "hanzi": "我看到苦。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "礼",
+      "hanzi": "盐",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到礼。",
+          "hanzi": "我看到盐。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "物",
+      "hanzi": "咸",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到物。",
+          "hanzi": "我看到咸。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "过",
+      "hanzi": "南",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到过。",
+          "hanzi": "我看到南。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "干杯",
+      "hanzi": "甜",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到干杯。",
+          "hanzi": "我看到甜。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "祝",
+      "hanzi": "南方",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到祝。",
+          "hanzi": "我看到南方。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     },
     {
-      "hanzi": "法国",
+      "hanzi": "难吃",
       "pinyin": "",
       "meaning": "",
       "examples": [
         {
-          "hanzi": "我看到法国。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "红酒",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到红酒。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "干",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到干。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "法",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到法。",
+          "hanzi": "我看到难吃。",
           "pinyin": "",
           "meaning": ""
         }
       ]
     }
   ],
-  "icon": "🎉"
+  "icon": "🌶️"
 }

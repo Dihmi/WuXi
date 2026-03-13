@@ -1,0 +1,163 @@
+{
+  "name": "Existence",
+  "group": "Unit 4",
+  "cards": [
+    {
+      "hanzi": "室",
+      "pinyin": "shì",
+      "meaning": "room",
+      "examples": [
+        {
+          "hanzi": "我喜欢室。",
+          "pinyin": "wǒ xǐhuān shì",
+          "meaning": "I like room"
+        }
+      ]
+    },
+    {
+      "hanzi": "办",
+      "pinyin": "bàn",
+      "meaning": "do/handle",
+      "examples": [
+        {
+          "hanzi": "我喜欢办。",
+          "pinyin": "wǒ xǐhuān bàn",
+          "meaning": "I like do/handle"
+        }
+      ]
+    },
+    {
+      "hanzi": "辆",
+      "pinyin": "liàng",
+      "meaning": "vehicle classifier",
+      "examples": [
+        {
+          "hanzi": "我喜欢辆。",
+          "pinyin": "wǒ xǐhuān liàng",
+          "meaning": "I like vehicle classifier"
+        }
+      ]
+    },
+    {
+      "hanzi": "办公室",
+      "pinyin": "bàngōngshì",
+      "meaning": "office",
+      "examples": [
+        {
+          "hanzi": "我喜欢办公室。",
+          "pinyin": "wǒ xǐhuān bàngōngshì",
+          "meaning": "I like office"
+        }
+      ]
+    },
+    {
+      "hanzi": "本",
+      "pinyin": "běn",
+      "meaning": "classifier",
+      "examples": [
+        {
+          "hanzi": "我喜欢本。",
+          "pinyin": "wǒ xǐhuān běn",
+          "meaning": "I like classifier"
+        }
+      ]
+    },
+    {
+      "hanzi": "瓶子",
+      "pinyin": "píngzi",
+      "meaning": "bottle",
+      "examples": [
+        {
+          "hanzi": "我喜欢瓶子。",
+          "pinyin": "wǒ xǐhuān píngzi",
+          "meaning": "I like bottle"
+        }
+      ]
+    },
+    {
+      "hanzi": "张",
+      "pinyin": "zhāng",
+      "meaning": "flat classifier",
+      "examples": [
+        {
+          "hanzi": "我喜欢张。",
+          "pinyin": "wǒ xǐhuān zhāng",
+          "meaning": "I like flat classifier"
+        }
+      ]
+    },
+    {
+      "hanzi": "照片",
+      "pinyin": "zhàopiàn",
+      "meaning": "photo",
+      "examples": [
+        {
+          "hanzi": "我喜欢照片。",
+          "pinyin": "wǒ xǐhuān zhàopiàn",
+          "meaning": "I like photo"
+        }
+      ]
+    },
+    {
+      "hanzi": "瓶",
+      "pinyin": "píng",
+      "meaning": "bottle",
+      "examples": [
+        {
+          "hanzi": "我喜欢瓶。",
+          "pinyin": "wǒ xǐhuān píng",
+          "meaning": "I like bottle"
+        }
+      ]
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "meaning": "slice",
+      "examples": [
+        {
+          "hanzi": "我喜欢片。",
+          "pinyin": "wǒ xǐhuān piàn",
+          "meaning": "I like slice"
+        }
+      ]
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhī",
+      "meaning": "animal classifier",
+      "examples": [
+        {
+          "hanzi": "我喜欢只。",
+          "pinyin": "wǒ xǐhuān zhī",
+          "meaning": "I like animal classifier"
+        }
+      ]
+    },
+    {
+      "hanzi": "鸟",
+      "pinyin": "niǎo",
+      "meaning": "bird",
+      "examples": [
+        {
+          "hanzi": "我喜欢鸟。",
+          "pinyin": "wǒ xǐhuān niǎo",
+          "meaning": "I like bird"
+        }
+      ]
+    },
+    {
+      "hanzi": "树",
+      "pinyin": "shù",
+      "meaning": "tree",
+      "examples": [
+        {
+          "hanzi": "我喜欢树。",
+          "pinyin": "wǒ xǐhuān shù",
+          "meaning": "I like tree"
+        }
+      ]
+    }
+  ],
+  "icon": "🧾"
+}
