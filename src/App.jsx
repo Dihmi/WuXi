@@ -37,6 +37,12 @@ export default function App() {
   const { masteryData, updateMastery, setWordLevel, resetMastery, getWordMastery, getLessonProgress, syncError } =
     useMastery(currentProfile?.id);
 
+  const daysLearning = useMemo(() => {
+    const timestamps = Object.values(masteryData).map(m => m.lastReviewed).filter(Boolean);
+    if (!timestamps.length) return 0;
+    return Math.floor((Date.now() - Math.min(...timestamps)) / 86400000) + 1;
+  }, [masteryData]);
+
   const { importedLessons, deckStatus, deckErrors } = useDecks();
 
   const allLessons = useMemo(() => importedLessons, [importedLessons]);
@@ -143,6 +149,7 @@ export default function App() {
           deckErrors={deckErrors}
           navigate={navigate}
           getLessonProgress={getLessonProgress}
+          daysLearning={daysLearning}
           currentProfile={currentProfile}
           onThemeClick={() => setShowTheme(true)}
           onProfileClick={() => {}}

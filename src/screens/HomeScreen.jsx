@@ -101,7 +101,7 @@ function LessonDonut({ counts, pct, size = 54 }) {
 }
 
 export default function HomeScreen({
-  lessons, deckStatus, deckErrors, navigate, getLessonProgress,
+  lessons, deckStatus, deckErrors, navigate, getLessonProgress, daysLearning,
   currentProfile, onThemeClick, onProfileClick, onLogout,
   onExport, onImport, onWall,
 }) {
@@ -109,18 +109,17 @@ export default function HomeScreen({
 
   const allWords = useMemo(() => lessons.reduce((s, l) => s + l.words.length, 0), [lessons]);
 
-  const { allSeen, allMastered, overallPct, levelCounts } = useMemo(() => {
-    let seen = 0, mastered = 0, weightedScore = 0;
+  const { allSeen, overallPct, levelCounts } = useMemo(() => {
+    let seen = 0, weightedScore = 0;
     const levelCounts = [0, 0, 0, 0, 0];
     lessons.forEach(l => {
       const { counts } = getLessonProgress(l);
-      seen     += counts[1] + counts[2] + counts[3] + counts[4];
-      mastered += counts[4];
+      seen += counts[1] + counts[2] + counts[3] + counts[4];
       weightedScore += counts[1]*1 + counts[2]*2 + counts[3]*3 + counts[4]*4;
       counts.forEach((c, i) => { levelCounts[i] += c; });
     });
     const pct = allWords > 0 ? Math.round(weightedScore / (allWords * 4) * 100) : 0;
-    return { allSeen: seen, allMastered: mastered, overallPct: pct, levelCounts };
+    return { allSeen: seen, overallPct: pct, levelCounts };
   }, [lessons, getLessonProgress, allWords]);
 
   const groups = useMemo(() => {
@@ -169,37 +168,13 @@ export default function HomeScreen({
                 <span className="hero-stat-num">{allSeen}</span>
                 <span className="hero-stat-lbl">Seen</span>
               </div>
-              <div className="hero-stat hero-stat-success">
-                <span className="hero-stat-num">{allMastered}</span>
-                <span className="hero-stat-lbl">Mastered</span>
+              <div className="hero-stat hero-stat-gold">
+                <span className="hero-stat-num">{daysLearning}</span>
+                <span className="hero-stat-lbl">Days</span>
               </div>
             </div>
           </div>
 
-          {/* Mastery breakdown */}
-          <div className="hero-breakdown">
-            <div className="hero-bar">
-              {MASTERY_LEVELS.map(ml =>
-                levelCounts[ml.id] > 0 && (
-                  <div key={ml.id} className="hero-bar-seg"
-                    style={{ flex: levelCounts[ml.id], background: ml.color }}
-                    title={`${ml.name}: ${levelCounts[ml.id]}`}
-                  />
-                )
-              )}
-            </div>
-            <div className="hero-legend">
-              {MASTERY_LEVELS.map(ml => (
-                <div key={ml.id} className="hero-legend-item">
-                  <span className="hero-legend-dot" style={{ background: ml.color }} />
-                  <span className="hero-legend-name">{ml.name}</span>
-                  <span className="hero-legend-count" style={{ color: ml.color }}>
-                    {levelCounts[ml.id]}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* ── Deck errors ───────────────────────────────────────── */}
