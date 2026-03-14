@@ -1,19 +1,39 @@
 import { useState, useCallback, useEffect } from 'react';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { wordKey } from '../utils/helpers';
+import { db } from '../firebase';
 
-export default function useMastery(profileId) {
-  const storageKey = profileId ? `wuxi_mastery_${profileId}` : 'wuxi_mastery';
+export default function useMastery(uid) {
+  const storageKey = uid ? `wuxi_mastery_${uid}` : null;
 
-  const [masteryData, setMasteryData] = useState(() => {
-    try { return JSON.parse(localStorage.getItem(storageKey)) || {}; }
-    catch { return {}; }
-  });
+  const [masteryData, setMasteryData] = useState({});
 
-  // Reload data when profile switches
+  // Load mastery when uid changes: local first, then Firestore as source of truth
   useEffect(() => {
-    try { setMasteryData(JSON.parse(localStorage.getItem(storageKey)) || {}); }
-    catch { setMasteryData({}); }
-  }, [storageKey]);
+    if (!uid) { setMasteryData({}); return; }
+
+    // Instant: hydrate from localStorage
+    let local = {};
+    try { local = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch {}
+    setMasteryData(local);
+
+    // Authoritative: fetch from Firestore
+    getDoc(doc(db, 'users', uid)).then(snap => {
+      if (snap.exists()) {
+        const cloud = snap.data().mastery || {};
+        setMasteryData(cloud);
+        localStorage.setItem(storageKey, JSON.stringify(cloud));
+      } else if (Object.keys(local).length > 0) {
+        // First cloud login — migrate existing local data up
+        setDoc(doc(db, 'users', uid), { mastery: local }, { merge: true });
+      }
+    }).catch(console.error);
+  }, [uid, storageKey]);
+
+  const syncToFirestore = useCallback((data) => {
+    if (!uid) return;
+    setDoc(doc(db, 'users', uid), { mastery: data }, { merge: true }).catch(console.error);
+  }, [uid]);
 
   const updateMastery = useCallback((key, correct) => {
     setMasteryData(prev => {
@@ -27,15 +47,17 @@ export default function useMastery(profileId) {
         if (level > 0) level--;
       }
       const next = { ...prev, [key]: { level, streak, correct: c, wrong: w } };
-      localStorage.setItem(storageKey, JSON.stringify(next));
+      if (storageKey) localStorage.setItem(storageKey, JSON.stringify(next));
+      syncToFirestore(next);
       return next;
     });
-  }, [storageKey]);
+  }, [storageKey, syncToFirestore]);
 
   const resetMastery = useCallback((data) => {
-    localStorage.setItem(storageKey, JSON.stringify(data));
+    if (storageKey) localStorage.setItem(storageKey, JSON.stringify(data));
+    syncToFirestore(data);
     setMasteryData(data);
-  }, [storageKey]);
+  }, [storageKey, syncToFirestore]);
 
   const getWordMastery = useCallback((key) =>
     masteryData[key] || { level: 0, streak: 0, correct: 0, wrong: 0 },
