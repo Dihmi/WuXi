@@ -16,19 +16,23 @@ function LessonDonut({ counts, pct, size = 54 }) {
   MASTERY_LEVELS.forEach((ml, i) => {
     const rawLen = total > 0 ? (counts[i] / total) * circ : 0;
     if (rawLen < 1) { cum += rawLen; return; }
-    segs.push({
-      color: ml.color,
-      drawnLen: Math.max(rawLen - gap, sw),
-      offset: circ - (cum + gap / 2),
-    });
+    segs.push({ color: ml.color, rawLen, start: cum });
     cum += rawLen;
   });
+
+  // Only apply gaps when there are multiple segments
+  const useGap = segs.length > 1;
+  const drawnSegs = segs.map(s => ({
+    color: s.color,
+    drawnLen: useGap ? Math.max(s.rawLen - gap, sw) : circ,
+    offset:   useGap ? circ - (s.start + gap / 2) : 0,
+  }));
 
   const fs = Math.round(size * 0.20);
   return (
     <svg width={size} height={size} style={{ transform: 'rotate(-90deg)', flexShrink: 0 }}>
       <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--surface3)" strokeWidth={sw} />
-      {segs.map((seg, i) => (
+      {drawnSegs.map((seg, i) => (
         <circle
           key={i}
           cx={cx} cy={cy} r={r}
