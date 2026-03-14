@@ -4,7 +4,39 @@ import { MASTERY_LEVELS } from '../data/lessons';
 import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 import MasteryBadge from '../components/MasteryBadge';
-import ProgressBar from '../components/ProgressBar';
+
+function MasteryHistogram({ counts, total }) {
+  return (
+    <div className="mastery-histogram">
+      <div className="histogram-bar">
+        {total === 0
+          ? <div style={{ flex: 1, background: 'var(--surface3)' }} />
+          : MASTERY_LEVELS.map((ml, i) => {
+              const w = (counts[i] / total) * 100;
+              if (w === 0) return null;
+              return (
+                <div
+                  key={ml.id}
+                  className="histogram-segment"
+                  style={{ width: `${w}%`, background: ml.color }}
+                  title={`${ml.name}: ${counts[i]}`}
+                />
+              );
+            })
+        }
+      </div>
+      <div className="histogram-legend">
+        {MASTERY_LEVELS.map((ml, i) => (
+          <div key={ml.id} className="histogram-item">
+            <span className="histogram-dot" style={{ background: ml.color }} />
+            <span className="histogram-count">{counts[i]}</span>
+            <span className="histogram-label">{ml.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 const FILTER_OPTIONS = ['All', 'New', 'Learning', 'Familiar', 'Practiced', 'Mastered'];
 
@@ -128,11 +160,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
               <div className="lesson-header-desc">{lesson.description}</div>
             </div>
           </div>
-          <div className="lesson-progress-labels">
-            <span>{counts[4]} of {lesson.words.length} words mastered</span>
-            <span className="lesson-progress-pct">{pct}%</span>
-          </div>
-          <ProgressBar pct={pct} />
+          <MasteryHistogram counts={counts} total={lesson.words.length} />
         </div>
 
         {/* ── Word grid ─────────────────────────────────────────── */}

@@ -3,6 +3,53 @@ import { MASTERY_LEVELS } from '../data/lessons';
 import NavBar      from '../components/NavBar';
 import ProgressBar from '../components/ProgressBar';
 
+function LessonDonut({ counts, pct, size = 52 }) {
+  const total = counts.reduce((s, c) => s + c, 0);
+  const cx = size / 2, cy = size / 2;
+  const sw = 5;
+  const r = (size - sw) / 2;
+  const circ = 2 * Math.PI * r;
+
+  let cum = 0;
+  const segs = MASTERY_LEVELS.map((ml, i) => {
+    const start = cum;
+    const len = total > 0 ? (counts[i] / total) * circ : 0;
+    cum += len;
+    return { color: ml.color, len, start };
+  }).filter(s => s.len > 0.5);
+
+  const fs = Math.round(size * 0.21);
+  return (
+    <svg width={size} height={size} style={{ transform: 'rotate(-90deg)', flexShrink: 0 }}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--surface3)" strokeWidth={sw} />
+      {segs.map((seg, i) => (
+        <circle
+          key={i}
+          cx={cx} cy={cy} r={r}
+          fill="none"
+          stroke={seg.color}
+          strokeWidth={sw}
+          strokeLinecap="butt"
+          strokeDasharray={`${seg.len} ${circ}`}
+          strokeDashoffset={circ - seg.start}
+        />
+      ))}
+      <text
+        x={cx} y={cy}
+        transform={`rotate(90, ${cx}, ${cy})`}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontSize={fs}
+        fontWeight="800"
+        fill={pct > 0 ? 'var(--accent)' : 'var(--text3)'}
+        fontFamily="inherit"
+      >
+        {pct}%
+      </text>
+    </svg>
+  );
+}
+
 export default function HomeScreen({
   lessons, deckStatus, deckErrors, navigate, getLessonProgress,
   currentProfile, onThemeClick, onProfileClick, onLogout,
@@ -152,6 +199,7 @@ export default function HomeScreen({
         {/* ── Lesson groups ──────────────────────────────────────── */}
         {groups.map(([groupName, groupLessons]) => {
           const collapsed = !!collapsedGroups[groupName];
+          const groupCards = groupLessons.reduce((s, l) => s + l.words.length, 0);
           return (
             <div key={groupName} className="lesson-group">
               <button
@@ -159,7 +207,9 @@ export default function HomeScreen({
                 onClick={() => toggleGroup(groupName)}
               >
                 <span className="lesson-group-name">{groupName}</span>
-                <span className="lesson-group-count">{groupLessons.length} decks</span>
+                <span className="lesson-group-count">
+                  {groupLessons.length} decks · {groupCards} cards
+                </span>
                 <span className="lesson-group-sep" />
                 <span className="lesson-group-toggle">
                   <svg
@@ -210,9 +260,8 @@ export default function HomeScreen({
                               }
                             </div>
                           </div>
-                          <span className="lesson-pct">{pct}%</span>
+                          <LessonDonut counts={counts} pct={pct} />
                         </div>
-                        <ProgressBar pct={pct} />
                       </div>
                     );
                   })}
