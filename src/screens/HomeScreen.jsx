@@ -22,11 +22,13 @@ function LessonDonut({ counts, pct, size = 54 }) {
 
   // Only apply gaps when there are multiple segments
   const useGap = segs.length > 1;
-  const drawnSegs = segs.map(s => ({
-    color: s.color,
-    drawnLen: useGap ? Math.max(s.rawLen - gap, sw) : circ,
-    offset:   useGap ? circ - (s.start + gap / 2) : 0,
-  }));
+  const drawnSegs = segs.map(s => {
+    const drawnLen = useGap ? Math.max(s.rawLen - gap, sw) : circ;
+    const start    = useGap ? s.start + gap / 2 : 0;
+    // Correct dashoffset: period = drawnLen + circ, dash must start at `start`
+    const offset   = drawnLen + circ - start;
+    return { color: s.color, drawnLen, offset };
+  });
 
   const fs = Math.round(size * 0.20);
   return (
