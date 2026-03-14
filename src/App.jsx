@@ -33,7 +33,7 @@ export default function App() {
     };
   }, [user]);
 
-  const { masteryData, updateMastery, resetMastery, getWordMastery, getLessonProgress } =
+  const { masteryData, updateMastery, resetMastery, getWordMastery, getLessonProgress, syncError } =
     useMastery(currentProfile?.id);
 
   const { importedLessons, deckStatus, deckErrors } = useDecks();
@@ -115,6 +115,15 @@ export default function App() {
 
   return (
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg)' }}>
+
+      {syncError && (
+        <div style={{
+          background: 'var(--danger-bg)', borderBottom: '1px solid var(--danger)',
+          color: 'var(--danger)', fontSize: '12px', padding: '6px 16px', textAlign: 'center',
+        }}>
+          Cloud sync error: {syncError} — progress is saved locally only.
+        </div>
+      )}
 
       {showTheme && (
         <ThemeSelector

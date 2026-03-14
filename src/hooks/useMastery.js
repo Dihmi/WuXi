@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { wordKey } from '../utils/helpers';
 import { db } from '../firebase';
@@ -7,57 +7,75 @@ export default function useMastery(uid) {
   const storageKey = uid ? `wuxi_mastery_${uid}` : null;
 
   const [masteryData, setMasteryData] = useState({});
+  const [syncError,   setSyncError]   = useState(null);
 
-  // Load mastery when uid changes: local first, then Firestore as source of truth
+  // Track whether the current masteryData came from a local edit (needs sync)
+  // vs. a load from Firestore (no sync needed)
+  const pendingSync = useRef(false);
+
+  // ── Load from Firestore on login ───────────────────────────────
   useEffect(() => {
     if (!uid) { setMasteryData({}); return; }
 
-    // Instant: hydrate from localStorage
+    // Instant: hydrate from localStorage while we wait for Firestore
     let local = {};
     try { local = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch {}
     setMasteryData(local);
+    pendingSync.current = false;
 
-    // Authoritative: fetch from Firestore
-    getDoc(doc(db, 'users', uid)).then(snap => {
-      if (snap.exists()) {
-        const cloud = snap.data().mastery || {};
-        setMasteryData(cloud);
-        localStorage.setItem(storageKey, JSON.stringify(cloud));
-      } else if (Object.keys(local).length > 0) {
-        // First cloud login — migrate existing local data up
-        setDoc(doc(db, 'users', uid), { mastery: local }, { merge: true });
-      }
-    }).catch(console.error);
-  }, [uid, storageKey]);
-
-  const syncToFirestore = useCallback((data) => {
-    if (!uid) return;
-    setDoc(doc(db, 'users', uid), { mastery: data }, { merge: true }).catch(console.error);
+    getDoc(doc(db, 'users', uid))
+      .then(snap => {
+        if (snap.exists()) {
+          const cloud = snap.data().mastery || {};
+          pendingSync.current = false;
+          setMasteryData(cloud);
+          localStorage.setItem(storageKey, JSON.stringify(cloud));
+        } else if (Object.keys(local).length > 0) {
+          // First cloud login — push local data up
+          pendingSync.current = true;
+        }
+        setSyncError(null);
+      })
+      .catch(err => {
+        console.error('Firestore load error:', err);
+        setSyncError(err.code || err.message);
+      });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [uid]);
 
+  // ── Sync to Firestore whenever masteryData changes locally ─────
+  useEffect(() => {
+    if (!uid || !pendingSync.current) return;
+    pendingSync.current = false;
+
+    setDoc(doc(db, 'users', uid), { mastery: masteryData }, { merge: true })
+      .then(() => setSyncError(null))
+      .catch(err => {
+        console.error('Firestore save error:', err);
+        setSyncError(err.code || err.message);
+      });
+  }, [uid, masteryData]);
+
+  // ── Update a single word's mastery ────────────────────────────
   const updateMastery = useCallback((key, correct) => {
     setMasteryData(prev => {
       const cur = prev[key] || { level: 0, streak: 0, correct: 0, wrong: 0 };
       let { level, streak, correct: c, wrong: w } = cur;
-      if (correct) {
-        streak++; c++;
-        if (level < 4) level++;
-      } else {
-        streak = 0; w++;
-        if (level > 0) level--;
-      }
+      if (correct) { streak++; c++; if (level < 4) level++; }
+      else         { streak = 0; w++; if (level > 0) level--; }
       const next = { ...prev, [key]: { level, streak, correct: c, wrong: w } };
       if (storageKey) localStorage.setItem(storageKey, JSON.stringify(next));
-      syncToFirestore(next);
+      pendingSync.current = true;
       return next;
     });
-  }, [storageKey, syncToFirestore]);
+  }, [storageKey]);
 
+  // ── Bulk replace (import) ─────────────────────────────────────
   const resetMastery = useCallback((data) => {
     if (storageKey) localStorage.setItem(storageKey, JSON.stringify(data));
-    syncToFirestore(data);
+    pendingSync.current = true;
     setMasteryData(data);
-  }, [storageKey, syncToFirestore]);
+  }, [storageKey]);
 
   const getWordMastery = useCallback((key) =>
     masteryData[key] || { level: 0, streak: 0, correct: 0, wrong: 0 },
@@ -76,5 +94,5 @@ export default function useMastery(uid) {
     return { pct, counts };
   }, [getWordMastery]);
 
-  return { masteryData, updateMastery, resetMastery, getWordMastery, getLessonProgress };
+  return { masteryData, updateMastery, resetMastery, getWordMastery, getLessonProgress, syncError };
 }
