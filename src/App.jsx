@@ -17,6 +17,7 @@ export default function App() {
   const [selectedWord,   setSelectedWord]   = useState(null);
   const [wordOrigin,     setWordOrigin]     = useState('lesson');
   const [showTheme,      setShowTheme]      = useState(false);
+  const [quizCount,      setQuizCount]      = useState(10);
 
   const { user, signInWithGoogle, logout } = useAuth();
   const { theme, applyTheme, themes }      = useTheme();
@@ -43,8 +44,9 @@ export default function App() {
   const navigate = useCallback((nextScreen, data = {}) => {
     if (nextScreen === 'word') setWordOrigin(data.from ?? 'lesson');
     setScreen(nextScreen);
-    if (data.lesson !== undefined) setSelectedLesson(data.lesson);
-    if (data.word   !== undefined) setSelectedWord(data.word);
+    if (data.lesson     !== undefined) setSelectedLesson(data.lesson);
+    if (data.word       !== undefined) setSelectedWord(data.word);
+    if (data.quizCount  !== undefined) setQuizCount(data.quizCount);
     setTimeout(() => {
       const s = document.querySelector('.screen');
       if (s) s.scrollTop = 0;
@@ -174,6 +176,7 @@ export default function App() {
           navigate={navigate}
           updateMastery={updateMastery}
           getWordMastery={getWordMastery}
+          quizCount={quizCount}
         />
       )}
       {screen === 'wall' && (

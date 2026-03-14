@@ -3,9 +3,7 @@ import { QUIZ_MODES } from '../data/lessons';
 import { wordKey, shuffle } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 
-const QUIZ_LENGTH = 10;
-
-function buildQuiz(lesson, getWordMastery) {
+function buildQuiz(lesson, getWordMastery, quizLength) {
   const weighted = [];
   lesson.words.forEach(w => {
     const m = getWordMastery(wordKey(lesson.id, w.hanzi));
@@ -19,7 +17,7 @@ function buildQuiz(lesson, getWordMastery) {
 
   for (const word of pool) {
     if (used.has(word.hanzi)) continue;
-    if (questions.length >= QUIZ_LENGTH) break;
+    if (questions.length >= quizLength) break;
     used.add(word.hanzi);
 
     const modeIdx = questions.length % QUIZ_MODES.length;
@@ -29,7 +27,7 @@ function buildQuiz(lesson, getWordMastery) {
     questions.push({ word, mode, options: allOpts });
   }
 
-  while (questions.length < Math.min(QUIZ_LENGTH, lesson.words.length)) {
+  while (questions.length < Math.min(quizLength, lesson.words.length)) {
     const word = lesson.words[questions.length % lesson.words.length];
     const modeIdx = questions.length % QUIZ_MODES.length;
     const mode = QUIZ_MODES[modeIdx];
@@ -41,8 +39,8 @@ function buildQuiz(lesson, getWordMastery) {
   return questions;
 }
 
-export default function QuizScreen({ lesson, navigate, updateMastery, getWordMastery }) {
-  const questions = useMemo(() => buildQuiz(lesson, getWordMastery), [lesson]);
+export default function QuizScreen({ lesson, navigate, updateMastery, getWordMastery, quizCount = 10 }) {
+  const questions = useMemo(() => buildQuiz(lesson, getWordMastery, quizCount), [lesson, quizCount]);
   const [qIdx,     setQIdx]     = useState(0);
   const [selected, setSelected] = useState(null);
   const [results,  setResults]  = useState([]);

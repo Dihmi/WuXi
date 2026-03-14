@@ -662,7 +662,7 @@ html, body {
 }
 .histogram-bar-area {
   display: flex; flex-direction: column; align-items: center;
-  justify-content: flex-end; height: 80px; width: 100%; gap: 4px;
+  justify-content: flex-end; height: 72px; width: 100%; gap: 4px;
 }
 .histogram-vbar {
   width: 100%; border-radius: 5px 5px 3px 3px;
@@ -674,6 +674,25 @@ html, body {
 .histogram-col-label {
   font-size: 10px; font-weight: 700; text-align: center; white-space: nowrap;
 }
+
+/* Stats + quiz action row */
+.lesson-info-row {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin-top: 16px; flex-wrap: wrap;
+}
+.lesson-stats {
+  display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 0;
+}
+.lesson-stat {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--text3); font-weight: 500;
+}
+.lesson-stat svg { flex-shrink: 0; opacity: 0.7; }
+.lesson-quiz-actions {
+  display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+}
+/* Compact count-picker dropdown */
+.quiz-count-menu { min-width: 130px !important; }
 
 .filter-row { display: flex; gap: 6px; padding: 0 20px 20px; flex-wrap: wrap; }
 .filter-chip {

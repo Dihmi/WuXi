@@ -63,7 +63,7 @@ export default function useMastery(uid) {
       let { level, streak, correct: c, wrong: w } = cur;
       if (correct) { streak++; c++; if (level < 4) level++; }
       else         { streak = 0; w++; if (level > 0) level--; }
-      const next = { ...prev, [key]: { level, streak, correct: c, wrong: w } };
+      const next = { ...prev, [key]: { level, streak, correct: c, wrong: w, lastReviewed: Date.now() } };
       if (storageKey) localStorage.setItem(storageKey, JSON.stringify(next));
       pendingSync.current = true;
       return next;
@@ -83,15 +83,19 @@ export default function useMastery(uid) {
 
   const getLessonProgress = useCallback((lesson) => {
     const words = lesson.words;
-    if (!words.length) return { pct: 0, counts: [0, 0, 0, 0, 0] };
+    if (!words.length) return { pct: 0, counts: [0, 0, 0, 0, 0], totalReviews: 0, lastReviewed: null };
     const counts = [0, 0, 0, 0, 0];
+    let totalReviews = 0;
+    let lastReviewed = null;
     words.forEach(w => {
       const m = getWordMastery(wordKey(lesson.id, w.hanzi));
       counts[m.level]++;
+      totalReviews += (m.correct || 0) + (m.wrong || 0);
+      if (m.lastReviewed && (!lastReviewed || m.lastReviewed > lastReviewed)) lastReviewed = m.lastReviewed;
     });
     const weighted = counts[1]*1 + counts[2]*2 + counts[3]*3 + counts[4]*4;
     const pct = Math.round(weighted / (words.length * 4) * 100);
-    return { pct, counts };
+    return { pct, counts, totalReviews, lastReviewed };
   }, [getWordMastery]);
 
   return { masteryData, updateMastery, resetMastery, getWordMastery, getLessonProgress, syncError };

@@ -7,7 +7,7 @@ import MasteryBadge from '../components/MasteryBadge';
 
 function MasteryHistogram({ counts }) {
   const maxCount = Math.max(...counts, 1);
-  const CHART_H = 80;
+  const CHART_H = 72;
   return (
     <div className="mastery-histogram">
       <div className="histogram-bars">
@@ -46,32 +46,57 @@ function MasteryHistogram({ counts }) {
   );
 }
 
+function daysSince(ts) {
+  if (!ts) return null;
+  const diff = Date.now() - ts;
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  if (days === 0) return 'today';
+  if (days === 1) return 'yesterday';
+  return `${days} days ago`;
+}
+
 const FILTER_OPTIONS = ['All', 'New', 'Learning', 'Familiar', 'Practiced', 'Mastered'];
+const QUIZ_COUNT_OPTIONS = [5, 10, 20, 'All'];
 
 export default function LessonScreen({ lesson, navigate, getWordMastery, getLessonProgress }) {
-  const [filter, setFilter] = useState('All');
-  const [dropOpen, setDropOpen] = useState(false);
-  const [menuPos, setMenuPos] = useState(null);
-  const dropWrapRef = useRef(null);
-  const btnRef = useRef(null);
-  const { pct, counts } = getLessonProgress(lesson);
+  const [filter,    setFilter]    = useState('All');
+  const [dropOpen,  setDropOpen]  = useState(false);
+  const [menuPos,   setMenuPos]   = useState(null);
+  const [countOpen, setCountOpen] = useState(false);
+  const [countPos,  setCountPos]  = useState(null);
+  const [quizCount, setQuizCount] = useState(10);
 
-  // Close on outside click
+  const dropWrapRef  = useRef(null);
+  const btnRef       = useRef(null);
+  const countWrapRef = useRef(null);
+  const countBtnRef  = useRef(null);
+
+  const { pct, counts, totalReviews, lastReviewed } = getLessonProgress(lesson);
+
+  /* ── Close dropdowns on outside click ──────────────────────── */
   useEffect(() => {
-    if (!dropOpen) return;
+    if (!dropOpen && !countOpen) return;
     const h = (e) => {
       if (dropWrapRef.current && !dropWrapRef.current.contains(e.target)) setDropOpen(false);
+      if (countWrapRef.current && !countWrapRef.current.contains(e.target)) setCountOpen(false);
     };
     document.addEventListener('mousedown', h);
     return () => document.removeEventListener('mousedown', h);
-  }, [dropOpen]);
+  }, [dropOpen, countOpen]);
 
-  // Anchor menu below button using fixed positioning
+  /* ── Anchor filter menu ─────────────────────────────────────── */
   useLayoutEffect(() => {
     if (!dropOpen || !btnRef.current) { setMenuPos(null); return; }
     const r = btnRef.current.getBoundingClientRect();
     setMenuPos({ top: r.bottom + 6, left: r.left });
   }, [dropOpen]);
+
+  /* ── Anchor count menu ──────────────────────────────────────── */
+  useLayoutEffect(() => {
+    if (!countOpen || !countBtnRef.current) { setCountPos(null); return; }
+    const r = countBtnRef.current.getBoundingClientRect();
+    setCountPos({ top: r.bottom + 6, left: r.left });
+  }, [countOpen]);
 
   const filteredWords = useMemo(() => {
     if (filter === 'All') return lesson.words;
@@ -87,25 +112,26 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
 
   const activeLevel = filter !== 'All' ? MASTERY_LEVELS.find(m => m.name === filter) : null;
 
+  const effectiveQuizCount = quizCount === 'All' ? lesson.words.length : quizCount;
+  const lastReviewedStr = daysSince(lastReviewed);
+
+  function startQuiz() {
+    navigate('quiz', { lesson, quizCount: effectiveQuizCount });
+  }
+
   return (
     <>
       <NavBar
         onBack={() => navigate('home')}
         title={lesson.title}
         subtitle={`${lesson.words.length} words · ${pct}% mastered`}
-        actions={
-          <button className="btn btn-primary" onClick={() => navigate('quiz', { lesson })}>
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-            Quick
-          </button>
-        }
       />
       <div className="screen">
 
         {/* ── Lesson header ─────────────────────────────────────── */}
         <div className="lesson-header">
+
+          {/* Top row: icon + title + filter */}
           <div className="lesson-header-top">
             <div className="lesson-header-icon">{lesson.icon}</div>
             <div style={{ flex: 1, minWidth: 0 }}>
@@ -113,7 +139,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
                 <div className="lesson-header-title" style={{ marginBottom: 0 }}>{lesson.title}</div>
 
                 {/* ── Filter dropdown ──────────────────────────── */}
-                <div ref={dropWrapRef} className="wall-dd-wrap" style={{ flexShrink: 0 }}>
+                <div ref={dropWrapRef} className="wall-dd-wrap" style={{ flexShrink: 0, marginLeft: 'auto' }}>
                   <button
                     ref={btnRef}
                     className={`wall-dd-btn${filter !== 'All' ? ' filtered' : ''}${dropOpen ? ' open' : ''}`}
@@ -168,7 +194,85 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
               <div className="lesson-header-desc">{lesson.description}</div>
             </div>
           </div>
+
+          {/* Histogram */}
           <MasteryHistogram counts={counts} />
+
+          {/* Stats + Quiz action row */}
+          <div className="lesson-info-row">
+            {/* Stats */}
+            <div className="lesson-stats">
+              <div className="lesson-stat">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                <span>{lastReviewedStr ? `Last reviewed ${lastReviewedStr}` : 'Not reviewed yet'}</span>
+              </div>
+              <div className="lesson-stat">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+                <span>{totalReviews === 0 ? 'No reviews yet' : `${totalReviews} answer${totalReviews === 1 ? '' : 's'} given`}</span>
+              </div>
+            </div>
+
+            {/* Quiz button + count dropdown */}
+            <div className="lesson-quiz-actions">
+              <div ref={countWrapRef} className="wall-dd-wrap">
+                <button
+                  ref={countBtnRef}
+                  className={`wall-dd-btn${countOpen ? ' open' : ''}`}
+                  onClick={() => setCountOpen(v => !v)}
+                  title="Number of cards"
+                >
+                  <span>{quizCount === 'All' ? 'All' : quizCount}</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                    style={{ transform: countOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s' }}>
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </button>
+
+                {countOpen && countPos && createPortal(
+                  <div
+                    className="wall-dd-menu quiz-count-menu"
+                    style={{ position: 'fixed', top: countPos.top, left: countPos.left, zIndex: 9999 }}
+                    onMouseDown={e => e.stopPropagation()}
+                  >
+                    {QUIZ_COUNT_OPTIONS.map(opt => (
+                      <button
+                        key={opt}
+                        className={`wall-dd-item${quizCount === opt ? ' checked' : ''}`}
+                        onClick={() => { setQuizCount(opt); setCountOpen(false); }}
+                      >
+                        <span className="wall-dd-check">
+                          {quizCount === opt && (
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                          )}
+                        </span>
+                        <span style={{ flex: 1 }}>{opt === 'All' ? 'All cards' : `${opt} cards`}</span>
+                      </button>
+                    ))}
+                  </div>,
+                  document.body
+                )}
+              </div>
+
+              <button className="btn btn-primary" onClick={startQuiz}>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+                Quiz
+              </button>
+            </div>
+          </div>
+
         </div>
 
         {/* ── Word grid ─────────────────────────────────────────── */}
