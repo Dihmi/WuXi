@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth';
+import { onAuthStateChanged, signInWithRedirect, getRedirectResult, signOut } from 'firebase/auth';
 import { auth, googleProvider } from '../firebase';
 
 export default function useAuth() {
@@ -7,11 +7,14 @@ export default function useAuth() {
   const [user, setUser] = useState(undefined);
 
   useEffect(() => {
+    // Pick up the result if we just returned from a Google redirect
+    getRedirectResult(auth).catch(console.error);
+
     const unsubscribe = onAuthStateChanged(auth, setUser);
     return unsubscribe;
   }, []);
 
-  const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
+  const signInWithGoogle = () => signInWithRedirect(auth, googleProvider);
   const logout           = () => signOut(auth);
 
   return { user, signInWithGoogle, logout };
