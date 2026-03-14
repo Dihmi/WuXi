@@ -41,12 +41,6 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
                 <polyline points="9 18 15 12 9 6" />
               </svg>
             </button>
-            <button className="btn btn-primary" onClick={() => navigate('quiz', { lesson })}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <polygon points="5 3 19 12 5 21 5 3" />
-              </svg>
-              Quick
-            </button>
           </div>
         }
       />
