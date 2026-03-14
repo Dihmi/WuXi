@@ -1,7 +1,58 @@
 import { useMemo, useState } from 'react';
 import { MASTERY_LEVELS } from '../data/lessons';
 import NavBar      from '../components/NavBar';
-import ProgressBar from '../components/ProgressBar';
+
+function OverallRing({ counts, pct, size = 96 }) {
+  const cx = size / 2, cy = size / 2;
+  const sw = 7;
+  const r  = (size - sw) / 2;
+  const circ = 2 * Math.PI * r;
+  const gap  = sw + 2;
+
+  let cum = 0;
+  const segs = [];
+  MASTERY_LEVELS.forEach((ml, i) => {
+    const rawLen = counts.reduce((s, c) => s + c, 0) > 0
+      ? (counts[i] / counts.reduce((s, c) => s + c, 0)) * circ : 0;
+    if (rawLen < 1) { cum += rawLen; return; }
+    segs.push({ color: ml.color, rawLen, start: cum });
+    cum += rawLen;
+  });
+
+  const useGap = segs.length > 1;
+  const drawnSegs = segs.map(s => {
+    const drawnLen = useGap ? Math.max(s.rawLen - gap, sw) : circ;
+    const start    = useGap ? s.start + gap / 2 : 0;
+    return { color: s.color, drawnLen, offset: drawnLen + circ - start };
+  });
+
+  return (
+    <svg width={size} height={size} style={{ transform: 'rotate(-90deg)', flexShrink: 0 }}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--surface3)" strokeWidth={sw} />
+      {drawnSegs.map((seg, i) => (
+        <circle key={i} cx={cx} cy={cy} r={r} fill="none"
+          stroke={seg.color} strokeWidth={sw} strokeLinecap="round"
+          strokeDasharray={`${seg.drawnLen} ${circ}`}
+          strokeDashoffset={seg.offset}
+        />
+      ))}
+      <text x={cx} y={cy - 6}
+        transform={`rotate(90, ${cx}, ${cy})`}
+        textAnchor="middle" dominantBaseline="central"
+        fontSize={Math.round(size * 0.22)} fontWeight="800"
+        fill={pct > 0 ? 'var(--accent)' : 'var(--text3)'}
+        fontFamily="inherit"
+      >{pct}%</text>
+      <text x={cx} y={cy + 10}
+        transform={`rotate(90, ${cx}, ${cy})`}
+        textAnchor="middle" dominantBaseline="central"
+        fontSize={Math.round(size * 0.095)} fontWeight="700"
+        fill="var(--text3)" fontFamily="inherit"
+        style={{ textTransform: 'uppercase', letterSpacing: '0.08em' }}
+      >overall</text>
+    </svg>
+  );
+}
 
 function LessonDonut({ counts, pct, size = 54 }) {
   const total = counts.reduce((s, c) => s + c, 0);
@@ -9,7 +60,7 @@ function LessonDonut({ counts, pct, size = 54 }) {
   const sw = 5.5;
   const r = (size - sw) / 2;
   const circ = 2 * Math.PI * r;
-  const gap = sw + 2; // circumference gap between arc segments
+  const gap = sw + 2;
 
   let cum = 0;
   const segs = [];
@@ -20,12 +71,10 @@ function LessonDonut({ counts, pct, size = 54 }) {
     cum += rawLen;
   });
 
-  // Only apply gaps when there are multiple segments
   const useGap = segs.length > 1;
   const drawnSegs = segs.map(s => {
     const drawnLen = useGap ? Math.max(s.rawLen - gap, sw) : circ;
     const start    = useGap ? s.start + gap / 2 : 0;
-    // Correct dashoffset: period = drawnLen + circ, dash must start at `start`
     const offset   = drawnLen + circ - start;
     return { color: s.color, drawnLen, offset };
   });
@@ -35,29 +84,18 @@ function LessonDonut({ counts, pct, size = 54 }) {
     <svg width={size} height={size} style={{ transform: 'rotate(-90deg)', flexShrink: 0 }}>
       <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--surface3)" strokeWidth={sw} />
       {drawnSegs.map((seg, i) => (
-        <circle
-          key={i}
-          cx={cx} cy={cy} r={r}
-          fill="none"
-          stroke={seg.color}
-          strokeWidth={sw}
-          strokeLinecap="round"
+        <circle key={i} cx={cx} cy={cy} r={r} fill="none"
+          stroke={seg.color} strokeWidth={sw} strokeLinecap="round"
           strokeDasharray={`${seg.drawnLen} ${circ}`}
           strokeDashoffset={seg.offset}
         />
       ))}
-      <text
-        x={cx} y={cy}
-        transform={`rotate(90, ${cx}, ${cy})`}
-        textAnchor="middle"
-        dominantBaseline="central"
-        fontSize={fs}
-        fontWeight="800"
+      <text x={cx} y={cy} transform={`rotate(90, ${cx}, ${cy})`}
+        textAnchor="middle" dominantBaseline="central"
+        fontSize={fs} fontWeight="800"
         fill={pct > 0 ? 'var(--accent)' : 'var(--text3)'}
         fontFamily="inherit"
-      >
-        {pct}%
-      </text>
+      >{pct}%</text>
     </svg>
   );
 }
@@ -71,19 +109,20 @@ export default function HomeScreen({
 
   const allWords = useMemo(() => lessons.reduce((s, l) => s + l.words.length, 0), [lessons]);
 
-  const { allSeen, allMastered, overallPct } = useMemo(() => {
+  const { allSeen, allMastered, overallPct, levelCounts } = useMemo(() => {
     let seen = 0, mastered = 0, weightedScore = 0;
+    const levelCounts = [0, 0, 0, 0, 0];
     lessons.forEach(l => {
       const { counts } = getLessonProgress(l);
-      seen          += counts[1] + counts[2] + counts[3] + counts[4];
-      mastered      += counts[4];
+      seen     += counts[1] + counts[2] + counts[3] + counts[4];
+      mastered += counts[4];
       weightedScore += counts[1]*1 + counts[2]*2 + counts[3]*3 + counts[4]*4;
+      counts.forEach((c, i) => { levelCounts[i] += c; });
     });
     const pct = allWords > 0 ? Math.round(weightedScore / (allWords * 4) * 100) : 0;
-    return { allSeen: seen, allMastered: mastered, overallPct: pct };
+    return { allSeen: seen, allMastered: mastered, overallPct: pct, levelCounts };
   }, [lessons, getLessonProgress, allWords]);
 
-  // Group lessons preserving insertion order
   const groups = useMemo(() => {
     const map = new Map();
     for (const l of lessons) {
@@ -91,11 +130,14 @@ export default function HomeScreen({
       if (!map.has(g)) map.set(g, []);
       map.get(g).push(l);
     }
-    return [...map.entries()]; // [[groupName, lessons[]], …]
+    return [...map.entries()];
   }, [lessons]);
 
-  const toggleGroup = (name) =>
-    setCollapsedGroups(prev => ({ ...prev, [name]: !prev[name] }));
+  const toggleGroup  = (name) => setCollapsedGroups(prev => ({ ...prev, [name]: !prev[name] }));
+  const expandAll    = () => setCollapsedGroups(Object.fromEntries(groups.map(([n]) => [n, false])));
+  const collapseAll  = () => setCollapsedGroups(Object.fromEntries(groups.map(([n]) => [n, true])));
+  const allCollapsed = groups.every(([n]) => collapsedGroups[n]);
+  const allExpanded  = groups.every(([n]) => !collapsedGroups[n]);
 
   return (
     <>
@@ -110,39 +152,59 @@ export default function HomeScreen({
       />
       <div className="screen">
 
-        {/* ── Hero progress strip ───────────────────────────────── */}
-        <div className="hero-strip">
-          <div className="hero-pct-block">
-            <div className="hero-pct">
-              {overallPct}<span className="hero-pct-sign">%</span>
+        {/* ── Hero card ─────────────────────────────────────────── */}
+        <div className="hero-card">
+          <div className="hero-card-top">
+            <OverallRing counts={levelCounts} pct={overallPct} size={96} />
+            <div className="hero-stats-grid">
+              <div className="hero-stat">
+                <span className="hero-stat-num">{allWords}</span>
+                <span className="hero-stat-lbl">Words</span>
+              </div>
+              <div className="hero-stat">
+                <span className="hero-stat-num">{lessons.length}</span>
+                <span className="hero-stat-lbl">Lessons</span>
+              </div>
+              <div className="hero-stat hero-stat-accent">
+                <span className="hero-stat-num">{allSeen}</span>
+                <span className="hero-stat-lbl">Seen</span>
+              </div>
+              <div className="hero-stat hero-stat-success">
+                <span className="hero-stat-num">{allMastered}</span>
+                <span className="hero-stat-lbl">Mastered</span>
+              </div>
             </div>
-            <div className="hero-pct-label">overall</div>
           </div>
-          <div className="hero-right">
-            <ProgressBar pct={overallPct} />
-            <div className="hero-meta">
-              <span className="hero-meta-item">
-                <span className="hero-meta-num">{lessons.length}</span> lessons
-              </span>
-              <span className="hero-sep">·</span>
-              <span className="hero-meta-item">
-                <span className="hero-meta-num">{allWords}</span> words
-              </span>
-              <span className="hero-sep">·</span>
-              <span className="hero-meta-item clr-accent">
-                <span className="hero-meta-num">{allSeen}</span> seen
-              </span>
-              <span className="hero-sep">·</span>
-              <span className="hero-meta-item clr-success">
-                <span className="hero-meta-num">{allMastered}</span> mastered
-              </span>
+
+          {/* Mastery breakdown */}
+          <div className="hero-breakdown">
+            <div className="hero-bar">
+              {MASTERY_LEVELS.map(ml =>
+                levelCounts[ml.id] > 0 && (
+                  <div key={ml.id} className="hero-bar-seg"
+                    style={{ flex: levelCounts[ml.id], background: ml.color }}
+                    title={`${ml.name}: ${levelCounts[ml.id]}`}
+                  />
+                )
+              )}
+            </div>
+            <div className="hero-legend">
+              {MASTERY_LEVELS.map(ml => (
+                <div key={ml.id} className="hero-legend-item">
+                  <span className="hero-legend-dot" style={{ background: ml.color }} />
+                  <span className="hero-legend-name">{ml.name}</span>
+                  <span className="hero-legend-count" style={{ color: ml.color }}>
+                    {levelCounts[ml.id]}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
         {/* ── Deck errors ───────────────────────────────────────── */}
         {deckErrors.length > 0 && (
-          <div className="deck-errors" style={{ margin: '12px 20px' }}>
+          <div className="deck-errors" style={{ margin: '12px 16px' }}>
             <div className="deck-errors-title">
               ⚠ Failed to load {deckErrors.length} deck{deckErrors.length > 1 ? 's' : ''}
             </div>
@@ -171,7 +233,21 @@ export default function HomeScreen({
               </span>
             )}
           </span>
-
+          {groups.length > 0 && (
+            <div className="home-toolbar-actions">
+              <button
+                className="toolbar-toggle-btn"
+                onClick={allCollapsed ? expandAll : collapseAll}
+              >
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                  style={{ transform: allCollapsed ? 'none' : 'rotate(180deg)', transition: 'transform 0.2s' }}>
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+                {allCollapsed ? 'Expand all' : 'Collapse all'}
+              </button>
+            </div>
+          )}
         </div>
 
         {/* ── Lesson groups ──────────────────────────────────────── */}
