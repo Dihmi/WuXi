@@ -3,22 +3,28 @@ import { MASTERY_LEVELS } from '../data/lessons';
 import NavBar      from '../components/NavBar';
 import ProgressBar from '../components/ProgressBar';
 
-function LessonDonut({ counts, pct, size = 52 }) {
+function LessonDonut({ counts, pct, size = 54 }) {
   const total = counts.reduce((s, c) => s + c, 0);
   const cx = size / 2, cy = size / 2;
-  const sw = 5;
+  const sw = 5.5;
   const r = (size - sw) / 2;
   const circ = 2 * Math.PI * r;
+  const gap = sw + 2; // circumference gap between arc segments
 
   let cum = 0;
-  const segs = MASTERY_LEVELS.map((ml, i) => {
-    const start = cum;
-    const len = total > 0 ? (counts[i] / total) * circ : 0;
-    cum += len;
-    return { color: ml.color, len, start };
-  }).filter(s => s.len > 0.5);
+  const segs = [];
+  MASTERY_LEVELS.forEach((ml, i) => {
+    const rawLen = total > 0 ? (counts[i] / total) * circ : 0;
+    if (rawLen < 1) { cum += rawLen; return; }
+    segs.push({
+      color: ml.color,
+      drawnLen: Math.max(rawLen - gap, sw),
+      offset: circ - (cum + gap / 2),
+    });
+    cum += rawLen;
+  });
 
-  const fs = Math.round(size * 0.21);
+  const fs = Math.round(size * 0.20);
   return (
     <svg width={size} height={size} style={{ transform: 'rotate(-90deg)', flexShrink: 0 }}>
       <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--surface3)" strokeWidth={sw} />
@@ -29,9 +35,9 @@ function LessonDonut({ counts, pct, size = 52 }) {
           fill="none"
           stroke={seg.color}
           strokeWidth={sw}
-          strokeLinecap="butt"
-          strokeDasharray={`${seg.len} ${circ}`}
-          strokeDashoffset={circ - seg.start}
+          strokeLinecap="round"
+          strokeDasharray={`${seg.drawnLen} ${circ}`}
+          strokeDashoffset={seg.offset}
         />
       ))}
       <text

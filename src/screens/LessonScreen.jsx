@@ -5,34 +5,42 @@ import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 import MasteryBadge from '../components/MasteryBadge';
 
-function MasteryHistogram({ counts, total }) {
+function MasteryHistogram({ counts }) {
+  const maxCount = Math.max(...counts, 1);
+  const CHART_H = 80;
   return (
     <div className="mastery-histogram">
-      <div className="histogram-bar">
-        {total === 0
-          ? <div style={{ flex: 1, background: 'var(--surface3)' }} />
-          : MASTERY_LEVELS.map((ml, i) => {
-              const w = (counts[i] / total) * 100;
-              if (w === 0) return null;
-              return (
+      <div className="histogram-bars">
+        {MASTERY_LEVELS.map((ml, i) => {
+          const barH = counts[i] > 0
+            ? Math.max((counts[i] / maxCount) * CHART_H, 8)
+            : 4;
+          return (
+            <div key={ml.id} className="histogram-col">
+              <div className="histogram-bar-area">
+                {counts[i] > 0 && (
+                  <span className="histogram-count-above" style={{ color: ml.color }}>
+                    {counts[i]}
+                  </span>
+                )}
                 <div
-                  key={ml.id}
-                  className="histogram-segment"
-                  style={{ width: `${w}%`, background: ml.color }}
-                  title={`${ml.name}: ${counts[i]}`}
+                  className="histogram-vbar"
+                  style={{
+                    height: barH,
+                    background: counts[i] > 0 ? ml.color : 'var(--surface3)',
+                    opacity: counts[i] === 0 ? 0.35 : 1,
+                  }}
                 />
-              );
-            })
-        }
-      </div>
-      <div className="histogram-legend">
-        {MASTERY_LEVELS.map((ml, i) => (
-          <div key={ml.id} className="histogram-item">
-            <span className="histogram-dot" style={{ background: ml.color }} />
-            <span className="histogram-count">{counts[i]}</span>
-            <span className="histogram-label">{ml.name}</span>
-          </div>
-        ))}
+              </div>
+              <span
+                className="histogram-col-label"
+                style={{ color: counts[i] > 0 ? ml.color : 'var(--text3)' }}
+              >
+                {ml.name}
+              </span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -160,7 +168,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
               <div className="lesson-header-desc">{lesson.description}</div>
             </div>
           </div>
-          <MasteryHistogram counts={counts} total={lesson.words.length} />
+          <MasteryHistogram counts={counts} />
         </div>
 
         {/* ── Word grid ─────────────────────────────────────────── */}
