@@ -10,8 +10,14 @@ export default function LoginScreen({ onSignIn }) {
     try {
       await onSignIn();
     } catch (err) {
-      if (err.code !== 'auth/popup-closed-by-user') {
-        setError('Sign-in failed. Please try again.');
+      if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
+        const messages = {
+          'auth/invalid-api-key':        'Invalid Firebase API key — check src/firebase.js config.',
+          'auth/unauthorized-domain':    'This domain is not authorized. Add it in Firebase Console → Authentication → Settings → Authorized Domains.',
+          'auth/operation-not-allowed':  'Google sign-in is not enabled. Enable it in Firebase Console → Authentication → Sign-in method.',
+          'auth/configuration-not-found':'Firebase project not found — check your projectId in src/firebase.js.',
+        };
+        setError(messages[err.code] || `${err.code}: ${err.message}`);
       }
       setLoading(false);
     }
