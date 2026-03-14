@@ -5,12 +5,13 @@ import { getFirestore } from 'firebase/firestore';
 // Replace these values with your Firebase project config
 // Firebase Console → Project Settings → Your apps → Web app → Config
 const firebaseConfig = {
-  apiKey:            "YOUR_API_KEY",
-  authDomain:        "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId:         "YOUR_PROJECT_ID",
-  storageBucket:     "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId:             "YOUR_APP_ID",
+  apiKey: "AIzaSyAKEcS54qjLPaSpvlMk83qjF1Puk0pTqNM",
+  authDomain: "wuxi-app.firebaseapp.com",
+  projectId: "wuxi-app",
+  storageBucket: "wuxi-app.firebasestorage.app",
+  messagingSenderId: "298004822410",
+  appId: "1:298004822410:web:30e2400f1b5c81e4fff073",
+  measurementId: "G-FMYB7VYR1E"
 };
 
 const app = initializeApp(firebaseConfig);
