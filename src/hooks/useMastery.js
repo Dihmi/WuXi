@@ -70,6 +70,16 @@ export default function useMastery(uid) {
     });
   }, [storageKey]);
 
+  // ── Directly set a word's mastery level (manual override) ─────
+  const setWordLevel = useCallback((key, level) => {
+    setMasteryData(prev => {
+      const next = { ...prev, [key]: { level, streak: 0, correct: 0, wrong: 0, lastReviewed: Date.now() } };
+      if (storageKey) localStorage.setItem(storageKey, JSON.stringify(next));
+      pendingSync.current = true;
+      return next;
+    });
+  }, [storageKey]);
+
   // ── Bulk replace (import) ─────────────────────────────────────
   const resetMastery = useCallback((data) => {
     if (storageKey) localStorage.setItem(storageKey, JSON.stringify(data));
@@ -98,5 +108,5 @@ export default function useMastery(uid) {
     return { pct, counts, totalReviews, lastReviewed };
   }, [getWordMastery]);
 
-  return { masteryData, updateMastery, resetMastery, getWordMastery, getLessonProgress, syncError };
+  return { masteryData, updateMastery, setWordLevel, resetMastery, getWordMastery, getLessonProgress, syncError };
 }

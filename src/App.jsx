@@ -34,7 +34,7 @@ export default function App() {
     };
   }, [user]);
 
-  const { masteryData, updateMastery, resetMastery, getWordMastery, getLessonProgress, syncError } =
+  const { masteryData, updateMastery, setWordLevel, resetMastery, getWordMastery, getLessonProgress, syncError } =
     useMastery(currentProfile?.id);
 
   const { importedLessons, deckStatus, deckErrors } = useDecks();
@@ -166,7 +166,7 @@ export default function App() {
           lesson={selectedLesson}
           navigate={navigate}
           getWordMastery={getWordMastery}
-          updateMastery={updateMastery}
+          setWordLevel={setWordLevel}
           wordOrigin={wordOrigin}
         />
       )}

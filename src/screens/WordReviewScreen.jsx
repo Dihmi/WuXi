@@ -1,9 +1,12 @@
+import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { MASTERY_LEVELS } from '../data/lessons';
 import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 import MasteryBadge from '../components/MasteryBadge';
 
-export default function WordReviewScreen({ word, lesson, navigate, getWordMastery, wordOrigin }) {
+export default function WordReviewScreen({ word, lesson, navigate, getWordMastery, setWordLevel, wordOrigin }) {
+  const [pendingLevel, setPendingLevel] = useState(null);
   const m = getWordMastery(wordKey(lesson.id, word.hanzi));
   const ml = MASTERY_LEVELS[m.level];
   const total = m.correct + m.wrong;
@@ -97,7 +100,12 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
             <div className="mastery-ladder-label">Mastery Progress</div>
             <div className="mastery-ladder-steps">
               {MASTERY_LEVELS.map(lvl => (
-                <div key={lvl.id} className="mastery-step">
+                <button
+                  key={lvl.id}
+                  className="mastery-step mastery-step-btn"
+                  onClick={() => lvl.id !== m.level && setPendingLevel(lvl.id)}
+                  title={lvl.id !== m.level ? `Set to ${lvl.name}` : undefined}
+                >
                   <div
                     className="mastery-step-bar"
                     style={{
@@ -111,14 +119,50 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
                   >
                     {lvl.name}
                   </div>
-                </div>
+                </button>
               ))}
             </div>
           </div>
 
-
 </div>
       </div>
+
+      {/* ── Mastery override confirmation modal ─────────────────── */}
+      {pendingLevel !== null && createPortal(
+        <>
+          <div className="modal-backdrop" onClick={() => setPendingLevel(null)} />
+          <div className="logout-confirm-dialog">
+            <div className="logout-confirm-icon" style={{ color: MASTERY_LEVELS[pendingLevel].color }}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
+            </div>
+            <div className="logout-confirm-title">Override Mastery?</div>
+            <div className="logout-confirm-msg">
+              Set <strong>{word.hanzi}</strong> to <strong style={{ color: MASTERY_LEVELS[pendingLevel].color }}>{MASTERY_LEVELS[pendingLevel].name}</strong>?
+              <br />Quiz history for this character will be reset.
+            </div>
+            <div className="logout-confirm-actions">
+              <button className="btn btn-secondary" onClick={() => setPendingLevel(null)}>
+                Cancel
+              </button>
+              <button
+                className="btn btn-primary"
+                style={{ background: MASTERY_LEVELS[pendingLevel].color, borderColor: MASTERY_LEVELS[pendingLevel].color }}
+                onClick={() => {
+                  setWordLevel(wordKey(lesson.id, word.hanzi), pendingLevel);
+                  setPendingLevel(null);
+                }}
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </>,
+        document.body
+      )}
     </>
   );
 }
