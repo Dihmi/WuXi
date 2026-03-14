@@ -5,10 +5,12 @@ export default function NavBar({
   title, subtitle, onBack, actions,
   /* home-screen extras */
   currentProfile, onThemeClick, onProfileClick, onLogout, onWall,
+  onExport, onImport,
 }) {
   const [dropOpen, setDropOpen] = useState(false);
   const [confirmLogout, setConfirmLogout] = useState(false);
   const dropRef = useRef(null);
+  const importRef = useRef(null);
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -92,6 +94,38 @@ export default function NavBar({
                     <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
                   </svg>
                   Change Theme
+                </button>
+                <div className="profile-dropdown-divider" />
+                <input
+                  ref={importRef}
+                  type="file"
+                  accept=".json"
+                  style={{ display: 'none' }}
+                  onChange={(e) => { onImport(e); setDropOpen(false); }}
+                />
+                <button
+                  className="profile-dropdown-item"
+                  onClick={() => importRef.current?.click()}
+                >
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="17 8 12 3 7 8"/>
+                    <line x1="12" y1="3" x2="12" y2="15"/>
+                  </svg>
+                  Import Progress
+                </button>
+                <button
+                  className="profile-dropdown-item"
+                  onClick={() => { setDropOpen(false); onExport(); }}
+                >
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                  </svg>
+                  Export Progress
                 </button>
                 <div className="profile-dropdown-divider" />
                 <button

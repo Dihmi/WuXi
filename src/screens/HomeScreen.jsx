@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { MASTERY_LEVELS } from '../data/lessons';
 import NavBar      from '../components/NavBar';
 import ProgressBar from '../components/ProgressBar';
@@ -67,7 +67,6 @@ export default function HomeScreen({
   currentProfile, onThemeClick, onProfileClick, onLogout,
   onExport, onImport, onWall,
 }) {
-  const importRef = useRef(null);
   const [collapsedGroups, setCollapsedGroups] = useState({});
 
   const allWords = useMemo(() => lessons.reduce((s, l) => s + l.words.length, 0), [lessons]);
@@ -106,6 +105,8 @@ export default function HomeScreen({
         onProfileClick={onProfileClick}
         onLogout={onLogout}
         onWall={onWall}
+        onExport={onExport}
+        onImport={onImport}
       />
       <div className="screen">
 
@@ -171,41 +172,6 @@ export default function HomeScreen({
             )}
           </span>
 
-          <input
-            ref={importRef}
-            type="file"
-            accept=".json"
-            style={{ display: 'none' }}
-            onChange={onImport}
-          />
-          <button
-            className="btn btn-secondary"
-            style={{ fontSize: 12, padding: '5px 11px' }}
-            onClick={() => importRef.current?.click()}
-            title="Import progress from a WuXi JSON file"
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="17 8 12 3 7 8"/>
-              <line x1="12" y1="3" x2="12" y2="15"/>
-            </svg>
-            Import
-          </button>
-          <button
-            className="btn btn-secondary"
-            style={{ fontSize: 12, padding: '5px 11px' }}
-            onClick={onExport}
-            title="Export progress as JSON"
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            Export
-          </button>
         </div>
 
         {/* ── Lesson groups ──────────────────────────────────────── */}

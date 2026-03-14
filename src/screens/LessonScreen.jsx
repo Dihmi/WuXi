@@ -88,7 +88,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
   useLayoutEffect(() => {
     if (!dropOpen || !btnRef.current) { setMenuPos(null); return; }
     const r = btnRef.current.getBoundingClientRect();
-    setMenuPos({ top: r.bottom + 6, left: r.left });
+    setMenuPos({ top: r.bottom + 6, right: window.innerWidth - r.right });
   }, [dropOpen]);
 
   /* ── Anchor count menu ──────────────────────────────────────── */
@@ -158,7 +158,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
                   {dropOpen && menuPos && createPortal(
                     <div
                       className="wall-dd-menu"
-                      style={{ position: 'fixed', top: menuPos.top, left: menuPos.left, zIndex: 9999 }}
+                      style={{ position: 'fixed', top: menuPos.top, right: menuPos.right, zIndex: 9999 }}
                       onMouseDown={e => e.stopPropagation()}
                     >
                       {FILTER_OPTIONS.map(f => {

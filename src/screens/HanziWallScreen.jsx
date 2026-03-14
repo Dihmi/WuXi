@@ -54,8 +54,8 @@ function WallDropdown({ id, label, active, open, onToggle, children, screenRef }
     const btn = btnRef.current.getBoundingClientRect();
     const scr = screenRef.current.getBoundingClientRect();
     setMenuPos({
-      top:   btn.bottom - scr.top + screenRef.current.scrollTop + 6,
-      right: scr.right - btn.right,
+      top:  btn.bottom - scr.top  + screenRef.current.scrollTop  + 6,
+      left: btn.left   - scr.left + screenRef.current.scrollLeft,
     });
   }, [open, screenRef]);
 
@@ -76,7 +76,7 @@ function WallDropdown({ id, label, active, open, onToggle, children, screenRef }
       {open && menuPos && screenRef?.current && createPortal(
         <div
           className="wall-dd-menu"
-          style={{ position: 'absolute', top: menuPos.top, right: menuPos.right }}
+          style={{ position: 'absolute', top: menuPos.top, left: menuPos.left }}
           onMouseDown={e => e.stopPropagation()}
         >
           {children}
