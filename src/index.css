@@ -21,7 +21,7 @@
   --accent-bg:     rgba(139,127,245,0.1);
   --accent-border: rgba(139,127,245,0.25);
 
-  /* Gold / second accent – complements --accent throughout gradients & pinyin */
+  /* Gold / second accent – used for pinyin, days stat, and secondary highlights */
   --gold:          #fbbf24;
   --gold-bg:       rgba(251,191,36,0.08);
   --gold-border:   rgba(251,191,36,0.2);
@@ -537,7 +537,7 @@ html, body {
   letter-spacing: 0.1px;
 }
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent), var(--gold));
+  background: var(--accent);
   color: #fff;
   box-shadow: 0 4px 16px var(--accent-glow);
 }
@@ -626,7 +626,7 @@ html, body {
 }
 .progress-fill {
   height: 100%; border-radius: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--gold));
+  background: var(--accent);
   transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -862,7 +862,7 @@ html, body {
   content: '';
   position: absolute; top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--gold), var(--accent-hover));
+  background: var(--accent);
 }
 .hanzi-main {
   font-family: 'Noto Serif SC', serif;
@@ -949,7 +949,7 @@ html, body {
   content: '';
   position: absolute; top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--gold));
+  background: var(--accent);
 }
 .quiz-q-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; }
 .quiz-hanzi   { font-family: 'Noto Serif SC', serif; font-size: 72px; font-weight: 700; color: var(--text); line-height: 1; text-shadow: 0 0 60px var(--accent-glow); }
@@ -990,7 +990,7 @@ html, body {
 .summary-body { padding: 40px 20px; max-width: 480px; margin: 0 auto; text-align: center; }
 .summary-emoji { font-size: 56px; line-height: 1; margin-bottom: 16px; }
 .summary-score { font-size: 76px; font-weight: 800; line-height: 1; margin-bottom: 4px; letter-spacing: -2px; }
-.summary-score.perfect { background: linear-gradient(135deg, var(--gold), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.summary-score.perfect { color: var(--gold); }
 .summary-score.good    { color: var(--success); }
 .summary-score.okay    { color: var(--warning); }
 .summary-score.bad     { color: var(--danger); }
@@ -1154,9 +1154,7 @@ html, body {
 .profile-panel-logo {
   font-family: 'Noto Serif SC', serif;
   font-size: 30px; font-weight: 700;
-  background: linear-gradient(135deg, var(--gold), var(--accent));
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
   letter-spacing: 3px;
   margin-bottom: 24px;
 }
