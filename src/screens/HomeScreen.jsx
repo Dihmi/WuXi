@@ -2,55 +2,36 @@ import { useMemo, useState } from 'react';
 import { MASTERY_LEVELS } from '../data/lessons';
 import NavBar      from '../components/NavBar';
 
-function OverallRing({ counts, pct, size = 96 }) {
-  const cx = size / 2, cy = size / 2;
-  const sw = 7;
-  const r  = (size - sw) / 2;
-  const circ = 2 * Math.PI * r;
-  const gap  = sw + 2;
+const BUBBLE_MIN = 28, BUBBLE_MAX = 88;
+const BUBBLE_LEVELS = [
+  { name: 'New',       color: '#64748b', bg: 'rgba(100,116,139,0.13)' },
+  { name: 'Learning',  color: '#3b82f6', bg: 'rgba(59,130,246,0.13)'  },
+  { name: 'Familiar',  color: '#eab308', bg: 'rgba(234,179,8,0.13)'   },
+  { name: 'Practiced', color: '#f97316', bg: 'rgba(249,115,22,0.13)'  },
+  { name: 'Mastered',  color: '#22c55e', bg: 'rgba(34,197,94,0.13)'   },
+];
 
-  let cum = 0;
-  const segs = [];
-  MASTERY_LEVELS.forEach((ml, i) => {
-    const rawLen = counts.reduce((s, c) => s + c, 0) > 0
-      ? (counts[i] / counts.reduce((s, c) => s + c, 0)) * circ : 0;
-    if (rawLen < 1) { cum += rawLen; return; }
-    segs.push({ color: ml.color, rawLen, start: cum });
-    cum += rawLen;
-  });
-
-  const useGap = segs.length > 1;
-  const drawnSegs = segs.map(s => {
-    const drawnLen = useGap ? Math.max(s.rawLen - gap, sw) : circ;
-    const start    = useGap ? s.start + gap / 2 : 0;
-    return { color: s.color, drawnLen, offset: drawnLen + circ - start };
-  });
-
+function BubbleMosaic({ counts }) {
+  const maxCount = Math.max(...counts, 1);
   return (
-    <svg width={size} height={size} style={{ transform: 'rotate(-90deg)', flexShrink: 0 }}>
-      <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--surface3)" strokeWidth={sw} />
-      {drawnSegs.map((seg, i) => (
-        <circle key={i} cx={cx} cy={cy} r={r} fill="none"
-          stroke={seg.color} strokeWidth={sw} strokeLinecap="round"
-          strokeDasharray={`${seg.drawnLen} ${circ}`}
-          strokeDashoffset={seg.offset}
-        />
-      ))}
-      <text x={cx} y={cy - 6}
-        transform={`rotate(90, ${cx}, ${cy})`}
-        textAnchor="middle" dominantBaseline="central"
-        fontSize={Math.round(size * 0.22)} fontWeight="800"
-        fill={pct > 0 ? 'var(--accent)' : 'var(--text3)'}
-        fontFamily="inherit"
-      >{pct}%</text>
-      <text x={cx} y={cy + 10}
-        transform={`rotate(90, ${cx}, ${cy})`}
-        textAnchor="middle" dominantBaseline="central"
-        fontSize={Math.round(size * 0.095)} fontWeight="700"
-        fill="var(--text3)" fontFamily="inherit"
-        style={{ textTransform: 'uppercase', letterSpacing: '0.08em' }}
-      >overall</text>
-    </svg>
+    <div className="bubble-mosaic">
+      {BUBBLE_LEVELS.map((lv, i) => {
+        const d = counts[i] === 0
+          ? 15
+          : Math.round(BUBBLE_MIN + Math.sqrt(counts[i] / maxCount) * (BUBBLE_MAX - BUBBLE_MIN));
+        return (
+          <div key={i} className="bubble-item"
+            style={{ '--bd': `${d}px`, '--bc': lv.color, '--bbg': lv.bg, '--bdelay': `${i * 60}ms` }}>
+            <div className="bubble-circle">
+              {counts[i] > 0 && <>
+                <span className="bubble-count">{counts[i]}</span>
+                <span className="bubble-lbl">{lv.name}</span>
+              </>}
+            </div>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
@@ -154,25 +135,35 @@ export default function HomeScreen({
 
         {/* ── Hero card ─────────────────────────────────────────── */}
         <div className="hero-card">
-          <div className="hero-card-top">
-            <OverallRing counts={levelCounts} pct={overallPct} size={96} />
-            <div className="hero-stats-grid">
-              <div className="hero-stat">
-                <span className="hero-stat-num">{allWords}</span>
-                <span className="hero-stat-lbl">Words</span>
-              </div>
-              <div className="hero-stat">
-                <span className="hero-stat-num">{lessons.length}</span>
-                <span className="hero-stat-lbl">Lessons</span>
-              </div>
-              <div className="hero-stat hero-stat-accent">
-                <span className="hero-stat-num">{allSeen}</span>
-                <span className="hero-stat-lbl">Seen</span>
-              </div>
-              <div className="hero-stat hero-stat-gold">
-                <span className="hero-stat-num">{daysLearning}</span>
-                <span className="hero-stat-lbl">Days</span>
-              </div>
+          <div className="hero-pct-row">
+            <span className="hero-pct-num"
+              style={{ color: overallPct > 0 ? 'var(--accent)' : 'var(--text3)' }}>
+              {overallPct}%
+            </span>
+            <span className="hero-pct-lbl">overall mastery</span>
+          </div>
+
+          <BubbleMosaic counts={levelCounts} />
+
+          <div className="hero-stats-row">
+            <div className="hsr-item">
+              <span className="hsr-val">{allWords}</span>
+              <span className="hsr-lbl">Words</span>
+            </div>
+            <span className="hsr-sep">·</span>
+            <div className="hsr-item">
+              <span className="hsr-val">{lessons.length}</span>
+              <span className="hsr-lbl">Lessons</span>
+            </div>
+            <span className="hsr-sep">·</span>
+            <div className="hsr-item">
+              <span className="hsr-val" style={{ color: 'var(--accent)' }}>{allSeen}</span>
+              <span className="hsr-lbl">Seen</span>
+            </div>
+            <span className="hsr-sep">·</span>
+            <div className="hsr-item">
+              <span className="hsr-val" style={{ color: 'var(--gold)' }}>{daysLearning}</span>
+              <span className="hsr-lbl">Days</span>
             </div>
           </div>
 
