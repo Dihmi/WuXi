@@ -202,33 +202,42 @@ export default function QuizScreen({ lesson, navigate, updateMastery, getWordMas
             </div>
           </div>
 
-          {/* Question card */}
-          <div className="quiz-card pop-in" key={qIdx}>
-            {renderQuestion()}
+          {/* Question card with flip reveal */}
+          <div className="quiz-flip-wrap pop-in" key={qIdx}>
+            <div className={`quiz-flip-inner${answered ? ' flipped' : ''}`}>
+
+              {/* Front face — question */}
+              <div className="quiz-face quiz-face-front">
+                {renderQuestion()}
+              </div>
+
+              {/* Back face — full word reveal */}
+              <div className={`quiz-face quiz-face-back${answered ? (selected === correctIdx ? ' reveal-correct' : ' reveal-wrong') : ''}`}>
+                <div className="reveal-verdict">
+                  {selected === correctIdx ? '✓ Correct' : '✗ Wrong'}
+                </div>
+                <div className="reveal-hanzi">{q.word.hanzi}</div>
+                <div className="reveal-pinyin">{q.word.pinyin}</div>
+                <div className="reveal-meaning">{q.word.meaning}</div>
+                {q.word.examples?.length > 0 && (
+                  <div className="reveal-examples">
+                    {q.word.examples.map((ex, i) => (
+                      <div key={i} className="reveal-example">
+                        <div className="reveal-ex-hanzi">{ex.hanzi}</div>
+                        {ex.pinyin  && <div className="reveal-ex-pinyin">{ex.pinyin}</div>}
+                        {ex.meaning && <div className="reveal-ex-meaning">{ex.meaning}</div>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+            </div>
           </div>
 
           {/* Options */}
           <div className="quiz-options pop-in" key={`opts-${qIdx}`}>
             {q.options.map((opt, idx) => renderOption(opt, idx))}
-          </div>
-
-          {/* Feedback */}
-          <div className="feedback-area">
-            {answered && selected === correctIdx && (
-              <div className="feedback-msg correct pop-in">
-                ✓ Correct!
-                <span className="feedback-hint">— {q.word.meaning}</span>
-              </div>
-            )}
-            {answered && selected !== correctIdx && (
-              <div className="feedback-msg wrong pop-in">
-                ✗ Answer:{' '}
-                <span style={{ fontFamily: "'Noto Serif SC', serif", color: 'var(--success)' }}>
-                  {q.word.hanzi}
-                </span>
-                <span className="feedback-hint">— {q.word.meaning}</span>
-              </div>
-            )}
           </div>
 
           {/* Next */}
