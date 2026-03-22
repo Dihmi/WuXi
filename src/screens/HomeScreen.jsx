@@ -103,7 +103,7 @@ function LessonDonut({ counts, pct, size = 54 }) {
 export default function HomeScreen({
   lessons, deckStatus, deckErrors, navigate, getLessonProgress, daysLearning,
   currentProfile, onThemeClick, onProfileClick, onLogout,
-  onExport, onImport, onWall,
+  onExport, onImport, onWall, onLeaderboard,
 }) {
   const [collapsedGroups, setCollapsedGroups] = useState({});
 
@@ -146,6 +146,7 @@ export default function HomeScreen({
         onProfileClick={onProfileClick}
         onLogout={onLogout}
         onWall={onWall}
+        onLeaderboard={onLeaderboard}
         onExport={onExport}
         onImport={onImport}
       />
