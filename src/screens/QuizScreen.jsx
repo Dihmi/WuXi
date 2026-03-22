@@ -221,6 +221,9 @@ export default function QuizScreen({ lesson, navigate, updateMastery, getWordMas
                 <div className="reveal-meaning">{q.word.meaning}</div>
                 {q.word.examples?.length > 0 && (
                   <div className="reveal-examples">
+                    <div className="reveal-ex-label">
+                      {q.word.examples.length === 1 ? 'Example' : 'Examples'}
+                    </div>
                     {q.word.examples.map((ex, i) => (
                       <div key={i} className="reveal-example">
                         <div className="reveal-ex-hanzi">{ex.hanzi}</div>
