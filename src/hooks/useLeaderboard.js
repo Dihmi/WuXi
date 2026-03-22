@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import { collection, getDocs, setDoc, doc } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 
 function computeStats(mastery) {
@@ -23,15 +23,6 @@ export default function useLeaderboard(uid, currentProfile) {
   const [entries,  setEntries]  = useState([]);
   const [loading,  setLoading]  = useState(false);
   const [error,    setError]    = useState(null);
-
-  // Keep current user's public profile info in Firestore so others can read it
-  useEffect(() => {
-    if (!uid || !currentProfile) return;
-    setDoc(doc(db, 'users', uid), {
-      displayName: currentProfile.name,
-      photoURL:    currentProfile.photoURL || null,
-    }, { merge: true }).catch(() => {});
-  }, [uid, currentProfile]);
 
   const fetch = useCallback(() => {
     if (!uid) return;

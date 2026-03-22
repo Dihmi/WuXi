@@ -1,4 +1,6 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from './firebase';
 import useAuth      from './hooks/useAuth';
 import useMastery   from './hooks/useMastery';
 import useDecks     from './hooks/useDecks';
@@ -34,6 +36,15 @@ export default function App() {
       photoURL: user.photoURL || null,
     };
   }, [user]);
+
+  // Keep displayName + photoURL in Firestore so the leaderboard can show real names
+  useEffect(() => {
+    if (!currentProfile) return;
+    setDoc(doc(db, 'users', currentProfile.id), {
+      displayName: currentProfile.name,
+      photoURL:    currentProfile.photoURL || null,
+    }, { merge: true }).catch(() => {});
+  }, [currentProfile]);
 
   const { masteryData, updateMastery, setWordLevel, resetMastery, getWordMastery, getLessonProgress, syncError } =
     useMastery(currentProfile?.id);
