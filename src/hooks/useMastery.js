@@ -26,10 +26,17 @@ export default function useMastery(uid) {
     getDoc(doc(db, 'users', uid))
       .then(snap => {
         if (snap.exists()) {
-          const cloud = snap.data().mastery || {};
-          pendingSync.current = false;
-          setMasteryData(cloud);
-          localStorage.setItem(storageKey, JSON.stringify(cloud));
+          const cloud = snap.data().mastery;
+          if (cloud && Object.keys(cloud).length > 0) {
+            // Cloud has mastery data — use it
+            pendingSync.current = false;
+            setMasteryData(cloud);
+            localStorage.setItem(storageKey, JSON.stringify(cloud));
+          } else if (Object.keys(local).length > 0) {
+            // Doc exists but mastery is absent (e.g. created by profile sync
+            // before mastery was written) — push local data up
+            pendingSync.current = true;
+          }
         } else if (Object.keys(local).length > 0) {
           // First cloud login — push local data up
           pendingSync.current = true;
