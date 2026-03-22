@@ -1565,3 +1565,124 @@ html, body {
 @media (max-width: 540px) {
   .char-grid { gap: 6px; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   LEADERBOARD SCREEN
+   ═══════════════════════════════════════════════════════════════ */
+.lb-container {
+  flex: 1; overflow-y: auto;
+  padding: 16px 16px 40px;
+  max-width: 600px; width: 100%; margin: 0 auto; box-sizing: border-box;
+}
+
+.lb-loading {
+  display: flex; justify-content: center; align-items: center;
+  padding: 64px 0;
+}
+
+.lb-error {
+  text-align: center; color: var(--text3); padding: 48px 24px;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+}
+
+.lb-empty, .lb-not-ranked {
+  text-align: center; color: var(--text3); font-size: 14px;
+  font-weight: 500; padding: 48px 24px;
+}
+
+.lb-list {
+  display: flex; flex-direction: column; gap: 6px;
+}
+
+/* ── Individual row ── */
+.lb-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 14px;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 14px; transition: var(--transition);
+}
+.lb-row:hover { background: var(--surface3); border-color: var(--border2); }
+
+.lb-row-self {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 1px var(--accent-border);
+}
+.lb-row-self:hover { background: var(--accent-bg); }
+
+/* ── Rank column ── */
+.lb-rank {
+  width: 30px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.lb-medal { font-size: 20px; line-height: 1; }
+.lb-rank-num {
+  font-size: 13px; font-weight: 800; color: var(--text3);
+  min-width: 20px; text-align: center;
+}
+
+/* ── Avatar fallback (initials) ── */
+.lb-avatar-fallback {
+  border-radius: 50%; background: var(--surface3);
+  border: 1px solid var(--border2);
+  color: var(--accent); font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Name column ── */
+.lb-name-col {
+  flex: 1; min-width: 0;
+  display: flex; align-items: center; gap: 7px;
+}
+.lb-name {
+  font-size: 14px; font-weight: 700; color: var(--text);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.lb-you-badge {
+  font-size: 10px; font-weight: 800; color: var(--accent);
+  background: var(--accent-bg); border: 1px solid var(--accent-border);
+  border-radius: 6px; padding: 1px 6px; flex-shrink: 0;
+  text-transform: uppercase; letter-spacing: 0.8px;
+}
+
+/* ── Stats column ── */
+.lb-stats {
+  display: flex; gap: 14px; flex-shrink: 0;
+}
+.lb-stat {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 1px;
+}
+.lb-stat-value {
+  font-size: 13px; font-weight: 800; color: var(--text);
+}
+.lb-stat-label {
+  font-size: 9px; font-weight: 700; color: var(--text3);
+  text-transform: uppercase; letter-spacing: 0.9px;
+}
+
+/* ── Ellipsis separator between top10 and current user ── */
+.lb-ellipsis {
+  text-align: center; color: var(--text3); font-size: 18px;
+  letter-spacing: 4px; padding: 4px 0;
+}
+
+/* ── Refresh button ── */
+.lb-refresh-btn {
+  display: flex; align-items: center; gap: 6px;
+  margin: 18px auto 0;
+  padding: 8px 18px; border-radius: 20px;
+  background: none; border: 1px solid var(--border2);
+  color: var(--text3); font-size: 12px; font-weight: 600;
+  cursor: pointer; transition: var(--transition); font-family: inherit;
+}
+.lb-refresh-btn:hover {
+  border-color: var(--accent-border); color: var(--accent);
+  background: var(--accent-bg);
+}
+
+@media (max-width: 420px) {
+  .lb-stats { gap: 10px; }
+  .lb-stat-value { font-size: 12px; }
+  .lb-stat-label { display: none; }
+}

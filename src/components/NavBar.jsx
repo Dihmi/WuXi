@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom';
 export default function NavBar({
   title, subtitle, onBack, actions,
   /* home-screen extras */
-  currentProfile, onThemeClick, onProfileClick, onLogout, onWall,
+  currentProfile, onThemeClick, onProfileClick, onLogout, onWall, onLeaderboard,
   onExport, onImport,
 }) {
   const [dropOpen, setDropOpen] = useState(false);
@@ -50,6 +50,16 @@ export default function NavBar({
       {/* Home-screen right side controls */}
       {isHome && currentProfile && (
         <>
+          {/* Leaderboard */}
+          <button className="nav-icon-btn" onClick={onLeaderboard} title="Leaderboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="2"  y="11" width="5" height="11" rx="1"/>
+              <rect x="9"  y="6"  width="5" height="16" rx="1"/>
+              <rect x="16" y="2"  width="5" height="20" rx="1"/>
+            </svg>
+          </button>
+
           {/* Hanzi Wall */}
           <button className="nav-icon-btn" onClick={onWall} title="Hanzi Wall">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"

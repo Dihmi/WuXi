@@ -8,8 +8,9 @@ import HomeScreen       from './screens/HomeScreen';
 import LessonScreen     from './screens/LessonScreen';
 import WordReviewScreen from './screens/WordReviewScreen';
 import QuizScreen       from './screens/QuizScreen';
-import HanziWallScreen  from './screens/HanziWallScreen';
-import ThemeSelector    from './components/ThemeSelector';
+import HanziWallScreen      from './screens/HanziWallScreen';
+import LeaderboardScreen    from './screens/LeaderboardScreen';
+import ThemeSelector        from './components/ThemeSelector';
 
 export default function App() {
   const [screen,         setScreen]         = useState('home');
@@ -157,6 +158,7 @@ export default function App() {
           onExport={handleExport}
           onImport={handleImport}
           onWall={() => navigate('wall')}
+          onLeaderboard={() => navigate('leaderboard')}
         />
       )}
       {screen === 'lesson' && selectedLesson && (
@@ -191,6 +193,13 @@ export default function App() {
           lessons={allLessons}
           navigate={navigate}
           getWordMastery={getWordMastery}
+        />
+      )}
+      {screen === 'leaderboard' && (
+        <LeaderboardScreen
+          navigate={navigate}
+          currentProfile={currentProfile}
+          currentUid={currentProfile?.id}
         />
       )}
     </div>
