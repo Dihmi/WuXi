@@ -1,6 +1,7 @@
 {
   "name": "Existence",
   "group": "Unit 4",
+  "icon": "📦",
   "cards": [
     {
       "hanzi": "室",
@@ -8,93 +9,93 @@
       "meaning": "room",
       "examples": [
         {
-          "hanzi": "我喜欢室。",
-          "pinyin": "wǒ xǐhuān shì",
-          "meaning": "I like room"
+          "hanzi": "办公室很大。",
+          "pinyin": "bàn gōng shì hěn dà",
+          "meaning": "The office is very big."
         }
       ]
     },
     {
       "hanzi": "办",
       "pinyin": "bàn",
-      "meaning": "do/handle",
+      "meaning": "to do; handle",
       "examples": [
         {
-          "hanzi": "我喜欢办。",
-          "pinyin": "wǒ xǐhuān bàn",
-          "meaning": "I like do/handle"
+          "hanzi": "我在办公室办事。",
+          "pinyin": "wǒ zài bàn gōng shì bàn shì",
+          "meaning": "I handle things in the office."
         }
       ]
     },
     {
       "hanzi": "辆",
       "pinyin": "liàng",
-      "meaning": "vehicle classifier",
+      "meaning": "classifier for vehicles",
       "examples": [
         {
-          "hanzi": "我喜欢辆。",
-          "pinyin": "wǒ xǐhuān liàng",
-          "meaning": "I like vehicle classifier"
+          "hanzi": "外面有一辆车。",
+          "pinyin": "wài miàn yǒu yí liàng chē",
+          "meaning": "There is a car outside."
         }
       ]
     },
     {
       "hanzi": "办公室",
-      "pinyin": "bàngōngshì",
+      "pinyin": "bàn gōng shì",
       "meaning": "office",
       "examples": [
         {
-          "hanzi": "我喜欢办公室。",
-          "pinyin": "wǒ xǐhuān bàngōngshì",
-          "meaning": "I like office"
+          "hanzi": "他现在在办公室。",
+          "pinyin": "tā xiàn zài zài bàn gōng shì",
+          "meaning": "He is in the office now."
         }
       ]
     },
     {
       "hanzi": "本",
       "pinyin": "běn",
-      "meaning": "classifier",
+      "meaning": "classifier for books",
       "examples": [
         {
-          "hanzi": "我喜欢本。",
-          "pinyin": "wǒ xǐhuān běn",
-          "meaning": "I like classifier"
+          "hanzi": "桌子上有一本书。",
+          "pinyin": "zhuō zi shàng yǒu yì běn shū",
+          "meaning": "There is a book on the table."
         }
       ]
     },
     {
       "hanzi": "瓶子",
-      "pinyin": "píngzi",
+      "pinyin": "píng zi",
       "meaning": "bottle",
       "examples": [
         {
-          "hanzi": "我喜欢瓶子。",
-          "pinyin": "wǒ xǐhuān píngzi",
-          "meaning": "I like bottle"
+          "hanzi": "桌子上有一个瓶子。",
+          "pinyin": "zhuō zi shàng yǒu yí ge píng zi",
+          "meaning": "There is a bottle on the table."
         }
       ]
     },
     {
       "hanzi": "张",
       "pinyin": "zhāng",
-      "meaning": "flat classifier",
+      "meaning": "classifier for flat objects",
       "examples": [
         {
-          "hanzi": "我喜欢张。",
-          "pinyin": "wǒ xǐhuān zhāng",
-          "meaning": "I like flat classifier"
+          "hanzi": "墙上有一张照片。",
+          "pinyin": "qiáng shàng yǒu yì zhāng zhào piàn",
+          "meaning": "There is a photo on the wall."
         }
       ]
     },
     {
       "hanzi": "照片",
-      "pinyin": "zhàopiàn",
+      "pinyin": "zhào piàn",
       "meaning": "photo",
       "examples": [
         {
-          "hanzi": "我喜欢照片。",
-          "pinyin": "wǒ xǐhuān zhàopiàn",
-          "meaning": "I like photo"
+          "hanzi": "这张照片很好看。",
+          "pinyin": "zhè zhāng zhào piàn hěn hǎo kàn",
+          "meaning": "This photo looks nice."
         }
       ]
     },
@@ -104,33 +105,33 @@
       "meaning": "bottle",
       "examples": [
         {
-          "hanzi": "我喜欢瓶。",
-          "pinyin": "wǒ xǐhuān píng",
-          "meaning": "I like bottle"
+          "hanzi": "我买了一瓶水。",
+          "pinyin": "wǒ mǎi le yì píng shuǐ",
+          "meaning": "I bought a bottle of water."
         }
       ]
     },
     {
       "hanzi": "片",
       "pinyin": "piàn",
-      "meaning": "slice",
+      "meaning": "slice; piece",
       "examples": [
         {
-          "hanzi": "我喜欢片。",
-          "pinyin": "wǒ xǐhuān piàn",
-          "meaning": "I like slice"
+          "hanzi": "我吃了一片面包。",
+          "pinyin": "wǒ chī le yí piàn miàn bāo",
+          "meaning": "I ate a slice of bread."
         }
       ]
     },
     {
       "hanzi": "只",
       "pinyin": "zhī",
-      "meaning": "animal classifier",
+      "meaning": "classifier for animals",
       "examples": [
         {
-          "hanzi": "我喜欢只。",
-          "pinyin": "wǒ xǐhuān zhī",
-          "meaning": "I like animal classifier"
+          "hanzi": "树上有一只鸟。",
+          "pinyin": "shù shàng yǒu yì zhī niǎo",
+          "meaning": "There is a bird in the tree."
         }
       ]
     },
@@ -140,9 +141,9 @@
       "meaning": "bird",
       "examples": [
         {
-          "hanzi": "我喜欢鸟。",
-          "pinyin": "wǒ xǐhuān niǎo",
-          "meaning": "I like bird"
+          "hanzi": "那只鸟很漂亮。",
+          "pinyin": "nà zhī niǎo hěn piào liang",
+          "meaning": "That bird is beautiful."
         }
       ]
     },
@@ -152,12 +153,11 @@
       "meaning": "tree",
       "examples": [
         {
-          "hanzi": "我喜欢树。",
-          "pinyin": "wǒ xǐhuān shù",
-          "meaning": "I like tree"
+          "hanzi": "公园里有很多树。",
+          "pinyin": "gōng yuán lǐ yǒu hěn duō shù",
+          "meaning": "There are many trees in the park."
         }
       ]
     }
-  ],
-  "icon": "🧾"
+  ]
 }

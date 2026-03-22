@@ -1,235 +1,235 @@
 {
   "name": "Weather",
   "group": "Unit 5",
+  "icon": "🌤️",
   "cards": [
     {
       "hanzi": "冷",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "lěng",
+      "meaning": "cold",
       "examples": [
         {
-          "hanzi": "我看到冷。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天很冷。",
+          "pinyin": "jīntiān hěn lěng",
+          "meaning": "Today is very cold."
         }
       ]
     },
     {
       "hanzi": "晴",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "qíng",
+      "meaning": "sunny",
       "examples": [
         {
-          "hanzi": "我看到晴。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天是晴天。",
+          "pinyin": "jīntiān shì qíngtiān",
+          "meaning": "Today is sunny."
         }
       ]
     },
     {
       "hanzi": "天气",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "tiān qì",
+      "meaning": "weather",
       "examples": [
         {
-          "hanzi": "我看到天气。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天天气很好。",
+          "pinyin": "jīntiān tiānqì hěn hǎo",
+          "meaning": "The weather is good today."
         }
       ]
     },
     {
       "hanzi": "雨",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yǔ",
+      "meaning": "rain",
       "examples": [
         {
-          "hanzi": "我看到雨。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "外面下雨了。",
+          "pinyin": "wàimiàn xià yǔ le",
+          "meaning": "It is raining outside."
         }
       ]
     },
     {
       "hanzi": "雪",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xuě",
+      "meaning": "snow",
       "examples": [
         {
-          "hanzi": "我看到雪。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "冬天会下雪。",
+          "pinyin": "dōngtiān huì xià xuě",
+          "meaning": "It snows in winter."
         }
       ]
     },
     {
       "hanzi": "阴",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yīn",
+      "meaning": "cloudy",
       "examples": [
         {
-          "hanzi": "我看到阴。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天是阴天。",
+          "pinyin": "jīntiān shì yīn tiān",
+          "meaning": "Today is cloudy."
         }
       ]
     },
     {
       "hanzi": "下",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xià",
+      "meaning": "to fall (rain)",
       "examples": [
         {
-          "hanzi": "我看到下。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "明天下雨。",
+          "pinyin": "míngtiān xià yǔ",
+          "meaning": "It will rain tomorrow."
         }
       ]
     },
     {
       "hanzi": "着",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "zhe",
+      "meaning": "continuous particle",
       "examples": [
         {
-          "hanzi": "我看到着。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "外面下着雨。",
+          "pinyin": "wàimiàn xià zhe yǔ",
+          "meaning": "It is raining outside."
         }
       ]
     },
     {
       "hanzi": "伞",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "sǎn",
+      "meaning": "umbrella",
       "examples": [
         {
-          "hanzi": "我看到伞。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "记得带伞。",
+          "pinyin": "jìde dài sǎn",
+          "meaning": "Remember to bring an umbrella."
         }
       ]
     },
     {
       "hanzi": "带",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dài",
+      "meaning": "to bring",
       "examples": [
         {
-          "hanzi": "我看到带。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我带了伞。",
+          "pinyin": "wǒ dài le sǎn",
+          "meaning": "I brought an umbrella."
         }
       ]
     },
     {
       "hanzi": "外面",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "wài miàn",
+      "meaning": "outside",
       "examples": [
         {
-          "hanzi": "我看到外面。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "外面很冷。",
+          "pinyin": "wàimiàn hěn lěng",
+          "meaning": "It is cold outside."
         }
       ]
     },
     {
       "hanzi": "可能",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "kě néng",
+      "meaning": "maybe",
       "examples": [
         {
-          "hanzi": "我看到可能。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "明天可能下雨。",
+          "pinyin": "míngtiān kěnéng xià yǔ",
+          "meaning": "It might rain tomorrow."
         }
       ]
     },
     {
       "hanzi": "刮",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "guā",
+      "meaning": "to blow (wind)",
       "examples": [
         {
-          "hanzi": "我看到刮。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天刮风。",
+          "pinyin": "jīntiān guā fēng",
+          "meaning": "It is windy today."
         }
       ]
     },
     {
       "hanzi": "风",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "fēng",
+      "meaning": "wind",
       "examples": [
         {
-          "hanzi": "我看到风。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "风很大。",
+          "pinyin": "fēng hěn dà",
+          "meaning": "The wind is strong."
         }
       ]
     },
     {
       "hanzi": "如果",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "rú guǒ",
+      "meaning": "if",
       "examples": [
         {
-          "hanzi": "我看到如果。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "如果下雨，我不去。",
+          "pinyin": "rúguǒ xiàyǔ wǒ bú qù",
+          "meaning": "If it rains I won't go."
         }
       ]
     },
     {
       "hanzi": "就",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jiù",
+      "meaning": "then",
       "examples": [
         {
-          "hanzi": "我看到就。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "下雨我们就回家。",
+          "pinyin": "xiàyǔ wǒmen jiù huí jiā",
+          "meaning": "If it rains we go home."
         }
       ]
     },
     {
       "hanzi": "从来",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "cóng lái",
+      "meaning": "never; always (in negation)",
       "examples": [
         {
-          "hanzi": "我看到从来。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我从来不怕冷。",
+          "pinyin": "wǒ cónglái bú pà lěng",
+          "meaning": "I am never afraid of the cold."
         }
       ]
     },
     {
       "hanzi": "如",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "rú",
+      "meaning": "as; like",
       "examples": [
         {
-          "hanzi": "我看到如。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "天气如春天一样。",
+          "pinyin": "tiānqì rú chūntiān yíyàng",
+          "meaning": "The weather is like spring."
         }
       ]
     },
     {
       "hanzi": "里面",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "lǐ miàn",
+      "meaning": "inside",
       "examples": [
         {
-          "hanzi": "我看到里面。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "屋子里面很暖。",
+          "pinyin": "wūzi lǐmiàn hěn nuǎn",
+          "meaning": "It is warm inside the house."
         }
       ]
     }
-  ],
-  "icon": "🌦️"
+  ]
 }

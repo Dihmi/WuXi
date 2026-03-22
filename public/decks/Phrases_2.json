@@ -112,18 +112,6 @@
       ]
     },
     {
-      "hanzi": "汉",
-      "pinyin": "hàn",
-      "meaning": "Han; Chinese",
-      "examples": [
-        {
-          "hanzi": "我学汉字。",
-          "pinyin": "wǒ xué hàn zì。",
-          "meaning": "I study Chinese characters."
-        }
-      ]
-    },
-    {
       "hanzi": "语",
       "pinyin": "yǔ",
       "meaning": "language",
@@ -144,18 +132,6 @@
           "hanzi": "谢谢你的帮助。",
           "pinyin": "xiè xie nǐ de bāng zhù。",
           "meaning": "Thank you for your help."
-        }
-      ]
-    },
-    {
-      "hanzi": "再",
-      "pinyin": "zài",
-      "meaning": "again",
-      "examples": [
-        {
-          "hanzi": "请再说一次。",
-          "pinyin": "qǐng zài shuō yí cì。",
-          "meaning": "Please say it again."
         }
       ]
     },

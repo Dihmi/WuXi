@@ -1,199 +1,115 @@
 {
   "name": "Gourmet 1",
   "group": "Unit 5",
+  "icon": "🥟",
   "cards": [
     {
       "hanzi": "拉面",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "lā miàn",
+      "meaning": "ramen",
       "examples": [
         {
-          "hanzi": "我看到拉面。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我喜欢吃拉面。",
+          "pinyin": "wǒ xǐ huan chī lā miàn",
+          "meaning": "I like eating ramen."
         }
       ]
     },
     {
       "hanzi": "点心",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "diǎn xīn",
+      "meaning": "dim sum",
       "examples": [
         {
-          "hanzi": "我看到点心。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我们去吃点心。",
+          "pinyin": "wǒ men qù chī diǎn xīn",
+          "meaning": "Let's go eat dim sum."
         }
       ]
     },
     {
       "hanzi": "小笼包",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xiǎo lóng bāo",
+      "meaning": "soup dumplings",
       "examples": [
         {
-          "hanzi": "我看到小笼包。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "拉",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到拉。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "笼",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到笼。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "小笼包很好吃。",
+          "pinyin": "xiǎo lóng bāo hěn hǎo chī",
+          "meaning": "Soup dumplings are delicious."
         }
       ]
     },
     {
       "hanzi": "粥",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "zhōu",
+      "meaning": "porridge",
       "examples": [
         {
-          "hanzi": "我看到粥。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "早餐我吃粥。",
+          "pinyin": "zǎo cān wǒ chī zhōu",
+          "meaning": "I eat porridge for breakfast."
         }
       ]
     },
     {
       "hanzi": "油条",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yóu tiáo",
+      "meaning": "fried dough",
       "examples": [
         {
-          "hanzi": "我看到油条。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "油条配豆浆。",
+          "pinyin": "yóu tiáo pèi dòu jiāng",
+          "meaning": "Fried dough with soy milk."
         }
       ]
     },
     {
       "hanzi": "豆浆",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dòu jiāng",
+      "meaning": "soy milk",
       "examples": [
         {
-          "hanzi": "我看到豆浆。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "油",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到油。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "豆",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到豆。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "浆",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到浆。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我喝豆浆。",
+          "pinyin": "wǒ hē dòu jiāng",
+          "meaning": "I drink soy milk."
         }
       ]
     },
     {
       "hanzi": "火锅",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "huǒ guō",
+      "meaning": "hot pot",
       "examples": [
         {
-          "hanzi": "我看到火锅。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "冬天吃火锅很好。",
+          "pinyin": "dōng tiān chī huǒ guō hěn hǎo",
+          "meaning": "Hot pot is great in winter."
         }
       ]
     },
     {
       "hanzi": "包子",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "bāo zi",
+      "meaning": "steamed bun",
       "examples": [
         {
-          "hanzi": "我看到包子。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我买两个包子。",
+          "pinyin": "wǒ mǎi liǎng gè bāo zi",
+          "meaning": "I buy two buns."
         }
       ]
     },
     {
       "hanzi": "炒饭",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "chǎo fàn",
+      "meaning": "fried rice",
       "examples": [
         {
-          "hanzi": "我看到炒饭。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "锅",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到锅。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "炒",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到炒。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "炒饭很好吃。",
+          "pinyin": "chǎo fàn hěn hǎo chī",
+          "meaning": "Fried rice is delicious."
         }
       ]
     }
-  ],
-  "icon": "🥟"
+  ]
 }

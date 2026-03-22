@@ -1,6 +1,7 @@
 {
   "name": "Sports 1",
   "group": "Unit 4",
+  "icon": "⚽",
   "cards": [
     {
       "hanzi": "步",
@@ -8,117 +9,117 @@
       "meaning": "step",
       "examples": [
         {
-          "hanzi": "我喜欢步。",
-          "pinyin": "wǒ xǐhuān bù",
-          "meaning": "I like step"
+          "hanzi": "跑步的时候要小心脚步。",
+          "pinyin": "pǎo bù de shí hou yào xiǎo xīn jiǎo bù",
+          "meaning": "Be careful with your steps when running."
         }
       ]
     },
     {
       "hanzi": "跑",
       "pinyin": "pǎo",
-      "meaning": "run",
+      "meaning": "to run",
       "examples": [
         {
-          "hanzi": "我喜欢跑。",
-          "pinyin": "wǒ xǐhuān pǎo",
-          "meaning": "I like run"
+          "hanzi": "我每天早上跑步。",
+          "pinyin": "wǒ měi tiān zǎo shang pǎo bù",
+          "meaning": "I run every morning."
         }
       ]
     },
     {
       "hanzi": "泳",
       "pinyin": "yǒng",
-      "meaning": "swim",
+      "meaning": "swim (character in 游泳)",
       "examples": [
         {
-          "hanzi": "我喜欢泳。",
-          "pinyin": "wǒ xǐhuān yǒng",
-          "meaning": "I like swim"
+          "hanzi": "他很喜欢游泳。",
+          "pinyin": "tā hěn xǐ huan yóu yǒng",
+          "meaning": "He likes swimming very much."
         }
       ]
     },
     {
       "hanzi": "游",
       "pinyin": "yóu",
-      "meaning": "swim",
+      "meaning": "to swim; to travel",
       "examples": [
         {
-          "hanzi": "我喜欢游。",
-          "pinyin": "wǒ xǐhuān yóu",
-          "meaning": "I like swim"
+          "hanzi": "夏天我常常去游泳。",
+          "pinyin": "xià tiān wǒ cháng cháng qù yóu yǒng",
+          "meaning": "I often go swimming in summer."
         }
       ]
     },
     {
       "hanzi": "游泳",
-      "pinyin": "yóuyǒng",
-      "meaning": "swimming",
+      "pinyin": "yóu yǒng",
+      "meaning": "to swim; swimming",
       "examples": [
         {
-          "hanzi": "我喜欢游泳。",
-          "pinyin": "wǒ xǐhuān yóuyǒng",
-          "meaning": "I like swimming"
+          "hanzi": "游泳对身体很好。",
+          "pinyin": "yóu yǒng duì shēn tǐ hěn hǎo",
+          "meaning": "Swimming is very good for the body."
         }
       ]
     },
     {
       "hanzi": "跑步",
-      "pinyin": "pǎobù",
-      "meaning": "running",
+      "pinyin": "pǎo bù",
+      "meaning": "to run; running",
       "examples": [
         {
-          "hanzi": "我喜欢跑步。",
-          "pinyin": "wǒ xǐhuān pǎobù",
-          "meaning": "I like running"
+          "hanzi": "他喜欢晚上跑步。",
+          "pinyin": "tā xǐ huan wǎn shang pǎo bù",
+          "meaning": "He likes running in the evening."
         }
       ]
     },
     {
       "hanzi": "踢",
       "pinyin": "tī",
-      "meaning": "kick",
+      "meaning": "to kick",
       "examples": [
         {
-          "hanzi": "我喜欢踢。",
-          "pinyin": "wǒ xǐhuān tī",
-          "meaning": "I like kick"
+          "hanzi": "他们在公园踢足球。",
+          "pinyin": "tā men zài gōng yuán tī zú qiú",
+          "meaning": "They are playing soccer in the park."
         }
       ]
     },
     {
       "hanzi": "足球",
-      "pinyin": "zúqiú",
-      "meaning": "soccer",
+      "pinyin": "zú qiú",
+      "meaning": "soccer; football",
       "examples": [
         {
-          "hanzi": "我喜欢足球。",
-          "pinyin": "wǒ xǐhuān zúqiú",
-          "meaning": "I like soccer"
+          "hanzi": "我最喜欢看足球。",
+          "pinyin": "wǒ zuì xǐ huan kàn zú qiú",
+          "meaning": "I like watching soccer the most."
         }
       ]
     },
     {
       "hanzi": "打",
       "pinyin": "dǎ",
-      "meaning": "play",
+      "meaning": "to hit; play (sports)",
       "examples": [
         {
-          "hanzi": "我喜欢打。",
-          "pinyin": "wǒ xǐhuān dǎ",
-          "meaning": "I like play"
+          "hanzi": "我们下午打篮球吧。",
+          "pinyin": "wǒ men xià wǔ dǎ lán qiú ba",
+          "meaning": "Let's play basketball this afternoon."
         }
       ]
     },
     {
       "hanzi": "篮球",
-      "pinyin": "lánqiú",
+      "pinyin": "lán qiú",
       "meaning": "basketball",
       "examples": [
         {
-          "hanzi": "我喜欢篮球。",
-          "pinyin": "wǒ xǐhuān lánqiú",
-          "meaning": "I like basketball"
+          "hanzi": "他打篮球打得很好。",
+          "pinyin": "tā dǎ lán qiú dǎ de hěn hǎo",
+          "meaning": "He plays basketball very well."
         }
       ]
     },
@@ -128,9 +129,9 @@
       "meaning": "foot",
       "examples": [
         {
-          "hanzi": "我喜欢足。",
-          "pinyin": "wǒ xǐhuān zú",
-          "meaning": "I like foot"
+          "hanzi": "踢足球要用足。",
+          "pinyin": "tī zú qiú yào yòng zú",
+          "meaning": "You use your feet to play soccer."
         }
       ]
     },
@@ -140,9 +141,9 @@
       "meaning": "basket",
       "examples": [
         {
-          "hanzi": "我喜欢篮。",
-          "pinyin": "wǒ xǐhuān lán",
-          "meaning": "I like basket"
+          "hanzi": "篮球飞进篮里了。",
+          "pinyin": "lán qiú fēi jìn lán lǐ le",
+          "meaning": "The basketball went into the basket."
         }
       ]
     },
@@ -152,21 +153,21 @@
       "meaning": "ball",
       "examples": [
         {
-          "hanzi": "我喜欢球。",
-          "pinyin": "wǒ xǐhuān qiú",
-          "meaning": "I like ball"
+          "hanzi": "这个球很大。",
+          "pinyin": "zhè ge qiú hěn dà",
+          "meaning": "This ball is big."
         }
       ]
     },
     {
       "hanzi": "运动",
-      "pinyin": "yùndòng",
-      "meaning": "exercise",
+      "pinyin": "yùn dòng",
+      "meaning": "exercise; sports",
       "examples": [
         {
-          "hanzi": "我喜欢运动。",
-          "pinyin": "wǒ xǐhuān yùndòng",
-          "meaning": "I like exercise"
+          "hanzi": "运动以后我觉得很健康。",
+          "pinyin": "yùn dòng yǐ hòu wǒ jué de hěn jiàn kāng",
+          "meaning": "I feel healthy after exercising."
         }
       ]
     },
@@ -176,48 +177,47 @@
       "meaning": "horse",
       "examples": [
         {
-          "hanzi": "我喜欢马。",
-          "pinyin": "wǒ xǐhuān mǎ",
-          "meaning": "I like horse"
+          "hanzi": "他会骑马。",
+          "pinyin": "tā huì qí mǎ",
+          "meaning": "He can ride a horse."
         }
       ]
     },
     {
       "hanzi": "骑",
       "pinyin": "qí",
-      "meaning": "ride",
+      "meaning": "to ride",
       "examples": [
         {
-          "hanzi": "我喜欢骑。",
-          "pinyin": "wǒ xǐhuān qí",
-          "meaning": "I like ride"
+          "hanzi": "我想骑自行车去公园。",
+          "pinyin": "wǒ xiǎng qí zì xíng chē qù gōng yuán",
+          "meaning": "I want to ride a bicycle to the park."
         }
       ]
     },
     {
       "hanzi": "运",
       "pinyin": "yùn",
-      "meaning": "move",
+      "meaning": "to move; transport",
       "examples": [
         {
-          "hanzi": "我喜欢运。",
-          "pinyin": "wǒ xǐhuān yùn",
-          "meaning": "I like move"
+          "hanzi": "运动让身体更好。",
+          "pinyin": "yùn dòng ràng shēn tǐ gèng hǎo",
+          "meaning": "Exercise makes the body better."
         }
       ]
     },
     {
       "hanzi": "动",
       "pinyin": "dòng",
-      "meaning": "move",
+      "meaning": "to move",
       "examples": [
         {
-          "hanzi": "我喜欢动。",
-          "pinyin": "wǒ xǐhuān dòng",
-          "meaning": "I like move"
+          "hanzi": "别动，我给你拍照。",
+          "pinyin": "bié dòng, wǒ gěi nǐ pāi zhào",
+          "meaning": "Do not move, I am taking a picture of you."
         }
       ]
     }
-  ],
-  "icon": "⚽"
+  ]
 }

@@ -86,30 +86,6 @@
           "meaning": "I drink milk in the morning."
         }
       ]
-    },
-    {
-      "hanzi": "咖",
-      "pinyin": "kā",
-      "meaning": "phonetic component used in 咖啡",
-      "examples": [
-        {
-          "hanzi": "我喜欢咖啡。",
-          "pinyin": "wǒ xǐ huān kā fēi。",
-          "meaning": "I like coffee."
-        }
-      ]
-    },
-    {
-      "hanzi": "啡",
-      "pinyin": "fēi",
-      "meaning": "phonetic component used in 咖啡",
-      "examples": [
-        {
-          "hanzi": "这杯咖啡很热。",
-          "pinyin": "zhè bēi kā fēi hěn rè。",
-          "meaning": "This cup of coffee is hot."
-        }
-      ]
     }
   ]
 }

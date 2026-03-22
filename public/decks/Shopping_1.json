@@ -1,28 +1,29 @@
 {
   "name": "Shopping 1",
   "group": "Unit 4",
+  "icon": "🛍️",
   "cards": [
     {
       "hanzi": "件",
       "pinyin": "jiàn",
-      "meaning": "measure word for clothing",
+      "meaning": "measure word for clothes",
       "examples": [
         {
-          "hanzi": "我喜欢件。",
-          "pinyin": "wǒ xǐhuān jiàn",
-          "meaning": "I like measure word for clothing"
+          "hanzi": "我想买一件衣服。",
+          "pinyin": "wǒ xiǎng mǎi yí jiàn yī fu",
+          "meaning": "I want to buy one piece of clothing."
         }
       ]
     },
     {
       "hanzi": "衣",
       "pinyin": "yī",
-      "meaning": "clothing",
+      "meaning": "clothes",
       "examples": [
         {
-          "hanzi": "我喜欢衣。",
-          "pinyin": "wǒ xǐhuān yī",
-          "meaning": "I like clothing"
+          "hanzi": "这件衣很好看。",
+          "pinyin": "zhè jiàn yī hěn hǎo kàn",
+          "meaning": "This piece of clothing looks nice."
         }
       ]
     },
@@ -32,57 +33,57 @@
       "meaning": "commerce",
       "examples": [
         {
-          "hanzi": "我喜欢商。",
-          "pinyin": "wǒ xǐhuān shāng",
-          "meaning": "I like commerce"
+          "hanzi": "这家商店很大。",
+          "pinyin": "zhè jiā shāng diàn hěn dà",
+          "meaning": "This shop is very big."
         }
       ]
     },
     {
       "hanzi": "商店",
-      "pinyin": "shāngdiàn",
+      "pinyin": "shāng diàn",
       "meaning": "shop",
       "examples": [
         {
-          "hanzi": "我喜欢商店。",
-          "pinyin": "wǒ xǐhuān shāngdiàn",
-          "meaning": "I like shop"
+          "hanzi": "商店现在开着。",
+          "pinyin": "shāng diàn xiàn zài kāi zhe",
+          "meaning": "The shop is open now."
         }
       ]
     },
     {
       "hanzi": "衣服",
-      "pinyin": "yīfu",
+      "pinyin": "yī fu",
       "meaning": "clothes",
       "examples": [
         {
-          "hanzi": "我喜欢衣服。",
-          "pinyin": "wǒ xǐhuān yīfu",
-          "meaning": "I like clothes"
+          "hanzi": "我喜欢这件衣服。",
+          "pinyin": "wǒ xǐ huan zhè jiàn yī fu",
+          "meaning": "I like this piece of clothing."
         }
       ]
     },
     {
       "hanzi": "开",
       "pinyin": "kāi",
-      "meaning": "open",
+      "meaning": "to open",
       "examples": [
         {
-          "hanzi": "我喜欢开。",
-          "pinyin": "wǒ xǐhuān kāi",
-          "meaning": "I like open"
+          "hanzi": "商店九点开门。",
+          "pinyin": "shāng diàn jiǔ diǎn kāi mén",
+          "meaning": "The shop opens at nine."
         }
       ]
     },
     {
       "hanzi": "关",
       "pinyin": "guān",
-      "meaning": "close",
+      "meaning": "to close",
       "examples": [
         {
-          "hanzi": "我喜欢关。",
-          "pinyin": "wǒ xǐhuān guān",
-          "meaning": "I like close"
+          "hanzi": "门已经关了。",
+          "pinyin": "mén yǐ jīng guān le",
+          "meaning": "The door is already closed."
         }
       ]
     },
@@ -92,33 +93,33 @@
       "meaning": "door",
       "examples": [
         {
-          "hanzi": "我喜欢门。",
-          "pinyin": "wǒ xǐhuān mén",
-          "meaning": "I like door"
+          "hanzi": "请把门打开。",
+          "pinyin": "qǐng bǎ mén dǎ kāi",
+          "meaning": "Please open the door."
         }
       ]
     },
     {
       "hanzi": "欢迎",
-      "pinyin": "huānyíng",
+      "pinyin": "huān yíng",
       "meaning": "welcome",
       "examples": [
         {
-          "hanzi": "我喜欢欢迎。",
-          "pinyin": "wǒ xǐhuān huānyíng",
-          "meaning": "I like welcome"
+          "hanzi": "欢迎光临。",
+          "pinyin": "huān yíng guāng lín",
+          "meaning": "Welcome."
         }
       ]
     },
     {
       "hanzi": "迎",
       "pinyin": "yíng",
-      "meaning": "greet",
+      "meaning": "to welcome",
       "examples": [
         {
-          "hanzi": "我喜欢迎。",
-          "pinyin": "wǒ xǐhuān yíng",
-          "meaning": "I like greet"
+          "hanzi": "大家欢迎您。",
+          "pinyin": "dà jiā huān yíng nín",
+          "meaning": "Everyone welcomes you."
         }
       ]
     },
@@ -128,33 +129,33 @@
       "meaning": "you (polite)",
       "examples": [
         {
-          "hanzi": "我喜欢您。",
-          "pinyin": "wǒ xǐhuān nín",
-          "meaning": "I like you (polite)"
+          "hanzi": "您好，请进。",
+          "pinyin": "nín hǎo, qǐng jìn",
+          "meaning": "Hello, please come in."
         }
       ]
     },
     {
       "hanzi": "帮忙",
-      "pinyin": "bāngmáng",
+      "pinyin": "bāng máng",
       "meaning": "help",
       "examples": [
         {
-          "hanzi": "我喜欢帮忙。",
-          "pinyin": "wǒ xǐhuān bāngmáng",
-          "meaning": "I like help"
+          "hanzi": "我可以帮忙吗？",
+          "pinyin": "wǒ kě yǐ bāng máng ma",
+          "meaning": "Can I help?"
         }
       ]
     },
     {
       "hanzi": "需要",
-      "pinyin": "xūyào",
+      "pinyin": "xū yào",
       "meaning": "need",
       "examples": [
         {
-          "hanzi": "我喜欢需要。",
-          "pinyin": "wǒ xǐhuān xūyào",
-          "meaning": "I like need"
+          "hanzi": "您需要什么？",
+          "pinyin": "nín xū yào shén me",
+          "meaning": "What do you need?"
         }
       ]
     },
@@ -164,33 +165,33 @@
       "meaning": "need",
       "examples": [
         {
-          "hanzi": "我喜欢需。",
-          "pinyin": "wǒ xǐhuān xū",
-          "meaning": "I like need"
+          "hanzi": "如果需要，请告诉我。",
+          "pinyin": "rú guǒ xū yào, qǐng gào su wǒ",
+          "meaning": "If needed, please tell me."
         }
       ]
     },
     {
       "hanzi": "随便",
-      "pinyin": "suíbiàn",
-      "meaning": "casual",
+      "pinyin": "suí biàn",
+      "meaning": "feel free; casually",
       "examples": [
         {
-          "hanzi": "我喜欢随便。",
-          "pinyin": "wǒ xǐhuān suíbiàn",
-          "meaning": "I like casual"
+          "hanzi": "您可以随便看看。",
+          "pinyin": "nín kě yǐ suí biàn kàn kan",
+          "meaning": "You can feel free to look around."
         }
       ]
     },
     {
       "hanzi": "随",
       "pinyin": "suí",
-      "meaning": "follow",
+      "meaning": "to follow",
       "examples": [
         {
-          "hanzi": "我喜欢随。",
-          "pinyin": "wǒ xǐhuān suí",
-          "meaning": "I like follow"
+          "hanzi": "请随我来。",
+          "pinyin": "qǐng suí wǒ lái",
+          "meaning": "Please follow me."
         }
       ]
     },
@@ -200,12 +201,11 @@
       "meaning": "convenient",
       "examples": [
         {
-          "hanzi": "我喜欢便。",
-          "pinyin": "wǒ xǐhuān biàn",
-          "meaning": "I like convenient"
+          "hanzi": "这里买东西很方便。",
+          "pinyin": "zhè lǐ mǎi dōng xi hěn fāng biàn",
+          "meaning": "It is very convenient to shop here."
         }
       ]
     }
-  ],
-  "icon": "🛍️"
+  ]
 }

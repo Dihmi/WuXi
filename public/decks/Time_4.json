@@ -1,247 +1,187 @@
 {
   "name": "Time 4",
   "group": "Unit 5",
+  "icon": "📅",
   "cards": [
     {
       "hanzi": "夏",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xià",
+      "meaning": "summer",
       "examples": [
         {
-          "hanzi": "我看到夏。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "夏天很热。",
+          "pinyin": "xià tiān hěn rè",
+          "meaning": "Summer is hot."
         }
       ]
     },
     {
       "hanzi": "冬",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dōng",
+      "meaning": "winter",
       "examples": [
         {
-          "hanzi": "我看到冬。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "冬天很冷。",
+          "pinyin": "dōng tiān hěn lěng",
+          "meaning": "Winter is cold."
         }
       ]
     },
     {
       "hanzi": "秋",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "qiū",
+      "meaning": "autumn",
       "examples": [
         {
-          "hanzi": "我看到秋。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "秋天很凉快。",
+          "pinyin": "qiū tiān hěn liáng kuai",
+          "meaning": "Autumn is cool."
         }
       ]
     },
     {
       "hanzi": "春",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "chūn",
+      "meaning": "spring",
       "examples": [
         {
-          "hanzi": "我看到春。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "春天花开。",
+          "pinyin": "chūn tiān huā kāi",
+          "meaning": "Flowers bloom in spring."
         }
       ]
     },
     {
       "hanzi": "后",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "hòu",
+      "meaning": "after",
       "examples": [
         {
-          "hanzi": "我看到后。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "饭后散步。",
+          "pinyin": "fàn hòu sàn bù",
+          "meaning": "Walk after meals."
         }
       ]
     },
     {
       "hanzi": "前",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "qián",
+      "meaning": "before",
       "examples": [
         {
-          "hanzi": "我看到前。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "季",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到季。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "澳",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到澳。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "亚",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到亚。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "课前准备。",
+          "pinyin": "kè qián zhǔn bèi",
+          "meaning": "Prepare before class."
         }
       ]
     },
     {
       "hanzi": "季节",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jì jié",
+      "meaning": "season",
       "examples": [
         {
-          "hanzi": "我看到季节。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "中国有四个季节。",
+          "pinyin": "Zhōngguó yǒu sì gè jì jié",
+          "meaning": "China has four seasons."
         }
       ]
     },
     {
       "hanzi": "澳大利亚",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "Ào dà lì yà",
+      "meaning": "Australia",
       "examples": [
         {
-          "hanzi": "我看到澳大利亚。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我想去澳大利亚。",
+          "pinyin": "wǒ xiǎng qù Ào dà lì yà",
+          "meaning": "I want to go to Australia."
         }
       ]
     },
     {
       "hanzi": "越来越",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yuè lái yuè",
+      "meaning": "more and more",
       "examples": [
         {
-          "hanzi": "我看到越来越。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "天气越来越热。",
+          "pinyin": "tiān qì yuè lái yuè rè",
+          "meaning": "The weather is getting hotter."
         }
       ]
     },
     {
       "hanzi": "前天",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "qián tiān",
+      "meaning": "the day before yesterday",
       "examples": [
         {
-          "hanzi": "我看到前天。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "前天我很忙。",
+          "pinyin": "qián tiān wǒ hěn máng",
+          "meaning": "I was busy the day before yesterday."
         }
       ]
     },
     {
       "hanzi": "后天",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "hòu tiān",
+      "meaning": "the day after tomorrow",
       "examples": [
         {
-          "hanzi": "我看到后天。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "后天见。",
+          "pinyin": "hòu tiān jiàn",
+          "meaning": "See you the day after tomorrow."
         }
       ]
     },
     {
       "hanzi": "堵车",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dǔ chē",
+      "meaning": "traffic jam",
       "examples": [
         {
-          "hanzi": "我看到堵车。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天路上堵车。",
+          "pinyin": "jīn tiān lù shàng dǔ chē",
+          "meaning": "There is traffic today."
         }
       ]
     },
     {
       "hanzi": "大概",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dà gài",
+      "meaning": "probably",
       "examples": [
         {
-          "hanzi": "我看到大概。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "大概五点到。",
+          "pinyin": "dà gài wǔ diǎn dào",
+          "meaning": "Arrive around five."
         }
       ]
     },
     {
       "hanzi": "准时",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "zhǔn shí",
+      "meaning": "on time",
       "examples": [
         {
-          "hanzi": "我看到准时。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "请准时到。",
+          "pinyin": "qǐng zhǔn shí dào",
+          "meaning": "Please arrive on time."
         }
       ]
     },
     {
       "hanzi": "刚",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "gāng",
+      "meaning": "just now",
       "examples": [
         {
-          "hanzi": "我看到刚。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "堵",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到堵。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "概",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到概。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我刚到。",
+          "pinyin": "wǒ gāng dào",
+          "meaning": "I just arrived."
         }
       ]
     }
-  ],
-  "icon": "⏰"
+  ]
 }

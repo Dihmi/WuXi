@@ -1,6 +1,7 @@
 {
   "name": "Time 3",
   "group": "Unit 4",
+  "icon": "⏰",
   "cards": [
     {
       "hanzi": "秒",
@@ -8,57 +9,57 @@
       "meaning": "second",
       "examples": [
         {
-          "hanzi": "我喜欢秒。",
-          "pinyin": "wǒ xǐhuān miǎo",
-          "meaning": "I like second"
+          "hanzi": "一分钟有六十秒。",
+          "pinyin": "yì fēn zhōng yǒu liù shí miǎo",
+          "meaning": "One minute has sixty seconds."
         }
       ]
     },
     {
       "hanzi": "刻",
       "pinyin": "kè",
-      "meaning": "quarter",
+      "meaning": "quarter of an hour; moment",
       "examples": [
         {
-          "hanzi": "我喜欢刻。",
-          "pinyin": "wǒ xǐhuān kè",
-          "meaning": "I like quarter"
+          "hanzi": "现在三点一刻。",
+          "pinyin": "xiàn zài sān diǎn yí kè",
+          "meaning": "It is 3:15 now."
         }
       ]
     },
     {
       "hanzi": "差",
       "pinyin": "chà",
-      "meaning": "difference",
+      "meaning": "to lack; to be short of",
       "examples": [
         {
-          "hanzi": "我喜欢差。",
-          "pinyin": "wǒ xǐhuān chà",
-          "meaning": "I like difference"
+          "hanzi": "现在差五分三点。",
+          "pinyin": "xiàn zài chà wǔ fēn sān diǎn",
+          "meaning": "It is five to three now."
         }
       ]
     },
     {
       "hanzi": "小时",
-      "pinyin": "xiǎoshí",
+      "pinyin": "xiǎo shí",
       "meaning": "hour",
       "examples": [
         {
-          "hanzi": "我喜欢小时。",
-          "pinyin": "wǒ xǐhuān xiǎoshí",
-          "meaning": "I like hour"
+          "hanzi": "我等了两个小时。",
+          "pinyin": "wǒ děng le liǎng gè xiǎo shí",
+          "meaning": "I waited for two hours."
         }
       ]
     },
     {
       "hanzi": "分钟",
-      "pinyin": "fēnzhōng",
+      "pinyin": "fēn zhōng",
       "meaning": "minute",
       "examples": [
         {
-          "hanzi": "我喜欢分钟。",
-          "pinyin": "wǒ xǐhuān fēnzhōng",
-          "meaning": "I like minute"
+          "hanzi": "请等五分钟。",
+          "pinyin": "qǐng děng wǔ fēn zhōng",
+          "meaning": "Please wait five minutes."
         }
       ]
     },
@@ -68,21 +69,21 @@
       "meaning": "small",
       "examples": [
         {
-          "hanzi": "我喜欢小。",
-          "pinyin": "wǒ xǐhuān xiǎo",
-          "meaning": "I like small"
+          "hanzi": "这个钟很小。",
+          "pinyin": "zhè ge zhōng hěn xiǎo",
+          "meaning": "This clock is small."
         }
       ]
     },
     {
       "hanzi": "时",
       "pinyin": "shí",
-      "meaning": "time",
+      "meaning": "time; hour",
       "examples": [
         {
-          "hanzi": "我喜欢时。",
-          "pinyin": "wǒ xǐhuān shí",
-          "meaning": "I like time"
+          "hanzi": "现在几点几分？",
+          "pinyin": "xiàn zài jǐ diǎn jǐ fēn",
+          "meaning": "What time is it now?"
         }
       ]
     },
@@ -92,48 +93,47 @@
       "meaning": "clock",
       "examples": [
         {
-          "hanzi": "我喜欢钟。",
-          "pinyin": "wǒ xǐhuān zhōng",
-          "meaning": "I like clock"
+          "hanzi": "墙上有一个钟。",
+          "pinyin": "qiáng shàng yǒu yí gè zhōng",
+          "meaning": "There is a clock on the wall."
         }
       ]
     },
     {
       "hanzi": "整",
       "pinyin": "zhěng",
-      "meaning": "exactly",
+      "meaning": "exactly; whole",
       "examples": [
         {
-          "hanzi": "我喜欢整。",
-          "pinyin": "wǒ xǐhuān zhěng",
-          "meaning": "I like exactly"
+          "hanzi": "现在八点整。",
+          "pinyin": "xiàn zài bā diǎn zhěng",
+          "meaning": "It is exactly eight o'clock now."
         }
       ]
     },
     {
       "hanzi": "早",
       "pinyin": "zǎo",
-      "meaning": "morning",
+      "meaning": "early; morning",
       "examples": [
         {
-          "hanzi": "我喜欢早。",
-          "pinyin": "wǒ xǐhuān zǎo",
-          "meaning": "I like morning"
+          "hanzi": "你今天来得很早。",
+          "pinyin": "nǐ jīn tiān lái de hěn zǎo",
+          "meaning": "You came very early today."
         }
       ]
     },
     {
       "hanzi": "晚",
       "pinyin": "wǎn",
-      "meaning": "evening",
+      "meaning": "late; evening",
       "examples": [
         {
-          "hanzi": "我喜欢晚。",
-          "pinyin": "wǒ xǐhuān wǎn",
-          "meaning": "I like evening"
+          "hanzi": "他昨天回来很晚。",
+          "pinyin": "tā zuó tiān huí lái hěn wǎn",
+          "meaning": "He came back very late yesterday."
         }
       ]
     }
-  ],
-  "icon": "⏱️"
+  ]
 }

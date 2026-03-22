@@ -1,28 +1,29 @@
 {
   "name": "Body Parts",
   "group": "Unit 4",
+  "icon": "👂",
   "cards": [
     {
       "hanzi": "朵",
       "pinyin": "duǒ",
-      "meaning": "classifier for flowers",
+      "meaning": "classifier for flowers; part of 耳朵",
       "examples": [
         {
-          "hanzi": "我喜欢朵。",
-          "pinyin": "wǒ xǐhuān duǒ",
-          "meaning": "I like classifier for flowers"
+          "hanzi": "我有两只耳朵。",
+          "pinyin": "wǒ yǒu liǎng zhī ěr duo",
+          "meaning": "I have two ears."
         }
       ]
     },
     {
       "hanzi": "睛",
       "pinyin": "jīng",
-      "meaning": "eye char",
+      "meaning": "eyeball; part of 眼睛",
       "examples": [
         {
-          "hanzi": "我喜欢睛。",
-          "pinyin": "wǒ xǐhuān jīng",
-          "meaning": "I like eye char"
+          "hanzi": "她的眼睛很大。",
+          "pinyin": "tā de yǎn jing hěn dà",
+          "meaning": "Her eyes are big."
         }
       ]
     },
@@ -32,9 +33,9 @@
       "meaning": "green",
       "examples": [
         {
-          "hanzi": "我喜欢绿。",
-          "pinyin": "wǒ xǐhuān lǜ",
-          "meaning": "I like green"
+          "hanzi": "她的眼睛是绿色的。",
+          "pinyin": "tā de yǎn jing shì lǜ sè de",
+          "meaning": "Her eyes are green."
         }
       ]
     },
@@ -44,9 +45,9 @@
       "meaning": "ear",
       "examples": [
         {
-          "hanzi": "我喜欢耳。",
-          "pinyin": "wǒ xǐhuān ěr",
-          "meaning": "I like ear"
+          "hanzi": "我的耳有一点儿疼。",
+          "pinyin": "wǒ de ěr yǒu yì diǎn er téng",
+          "meaning": "My ear hurts a little."
         }
       ]
     },
@@ -56,45 +57,45 @@
       "meaning": "eye",
       "examples": [
         {
-          "hanzi": "我喜欢眼。",
-          "pinyin": "wǒ xǐhuān yǎn",
-          "meaning": "I like eye"
+          "hanzi": "他的眼很大。",
+          "pinyin": "tā de yǎn hěn dà",
+          "meaning": "His eye is big."
         }
       ]
     },
     {
       "hanzi": "耳朵",
-      "pinyin": "ěrduo",
+      "pinyin": "ěr duo",
       "meaning": "ear",
       "examples": [
         {
-          "hanzi": "我喜欢耳朵。",
-          "pinyin": "wǒ xǐhuān ěrduo",
-          "meaning": "I like ear"
+          "hanzi": "我的耳朵很小。",
+          "pinyin": "wǒ de ěr duo hěn xiǎo",
+          "meaning": "My ears are small."
         }
       ]
     },
     {
       "hanzi": "眼睛",
-      "pinyin": "yǎnjing",
+      "pinyin": "yǎn jing",
       "meaning": "eye",
       "examples": [
         {
-          "hanzi": "我喜欢眼睛。",
-          "pinyin": "wǒ xǐhuān yǎnjing",
-          "meaning": "I like eye"
+          "hanzi": "她的眼睛很漂亮。",
+          "pinyin": "tā de yǎn jing hěn piào liang",
+          "meaning": "Her eyes are beautiful."
         }
       ]
     },
     {
       "hanzi": "头发",
-      "pinyin": "tóufa",
+      "pinyin": "tóu fa",
       "meaning": "hair",
       "examples": [
         {
-          "hanzi": "我喜欢头发。",
-          "pinyin": "wǒ xǐhuān tóufa",
-          "meaning": "I like hair"
+          "hanzi": "她的头发很长。",
+          "pinyin": "tā de tóu fa hěn cháng",
+          "meaning": "Her hair is long."
         }
       ]
     },
@@ -104,21 +105,21 @@
       "meaning": "face",
       "examples": [
         {
-          "hanzi": "我喜欢脸。",
-          "pinyin": "wǒ xǐhuān liǎn",
-          "meaning": "I like face"
+          "hanzi": "他的脸很圆。",
+          "pinyin": "tā de liǎn hěn yuán",
+          "meaning": "His face is round."
         }
       ]
     },
     {
       "hanzi": "又",
       "pinyin": "yòu",
-      "meaning": "again",
+      "meaning": "again; both...and...",
       "examples": [
         {
-          "hanzi": "我喜欢又。",
-          "pinyin": "wǒ xǐhuān yòu",
-          "meaning": "I like again"
+          "hanzi": "她又高又漂亮。",
+          "pinyin": "tā yòu gāo yòu piào liang",
+          "meaning": "She is both tall and pretty."
         }
       ]
     },
@@ -128,45 +129,45 @@
       "meaning": "black",
       "examples": [
         {
-          "hanzi": "我喜欢黑。",
-          "pinyin": "wǒ xǐhuān hēi",
-          "meaning": "I like black"
+          "hanzi": "他的头发很黑。",
+          "pinyin": "tā de tóu fa hěn hēi",
+          "meaning": "His hair is very black."
         }
       ]
     },
     {
       "hanzi": "发",
-      "pinyin": "fā",
-      "meaning": "hair/emit",
+      "pinyin": "fà",
+      "meaning": "hair",
       "examples": [
         {
-          "hanzi": "我喜欢发。",
-          "pinyin": "wǒ xǐhuān fā",
-          "meaning": "I like hair/emit"
+          "hanzi": "她的头发很漂亮。",
+          "pinyin": "tā de tóu fa hěn piào liang",
+          "meaning": "Her hair is beautiful."
         }
       ]
     },
     {
       "hanzi": "嘴巴",
-      "pinyin": "zuǐba",
+      "pinyin": "zuǐ ba",
       "meaning": "mouth",
       "examples": [
         {
-          "hanzi": "我喜欢嘴巴。",
-          "pinyin": "wǒ xǐhuān zuǐba",
-          "meaning": "I like mouth"
+          "hanzi": "孩子的嘴巴很小。",
+          "pinyin": "hái zi de zuǐ ba hěn xiǎo",
+          "meaning": "The child's mouth is small."
         }
       ]
     },
     {
       "hanzi": "鼻子",
-      "pinyin": "bízi",
+      "pinyin": "bí zi",
       "meaning": "nose",
       "examples": [
         {
-          "hanzi": "我喜欢鼻子。",
-          "pinyin": "wǒ xǐhuān bízi",
-          "meaning": "I like nose"
+          "hanzi": "我的鼻子有一点儿疼。",
+          "pinyin": "wǒ de bí zi yǒu yì diǎn er téng",
+          "meaning": "My nose hurts a little."
         }
       ]
     },
@@ -176,9 +177,9 @@
       "meaning": "foot",
       "examples": [
         {
-          "hanzi": "我喜欢脚。",
-          "pinyin": "wǒ xǐhuān jiǎo",
-          "meaning": "I like foot"
+          "hanzi": "今天我走路很多，脚很累。",
+          "pinyin": "jīn tiān wǒ zǒu lù hěn duō, jiǎo hěn lèi",
+          "meaning": "I walked a lot today, so my feet are tired."
         }
       ]
     },
@@ -188,9 +189,9 @@
       "meaning": "hand",
       "examples": [
         {
-          "hanzi": "我喜欢手。",
-          "pinyin": "wǒ xǐhuān shǒu",
-          "meaning": "I like hand"
+          "hanzi": "吃饭以前要洗手。",
+          "pinyin": "chī fàn yǐ qián yào xǐ shǒu",
+          "meaning": "You need to wash your hands before eating."
         }
       ]
     },
@@ -200,9 +201,9 @@
       "meaning": "mouth",
       "examples": [
         {
-          "hanzi": "我喜欢嘴。",
-          "pinyin": "wǒ xǐhuān zuǐ",
-          "meaning": "I like mouth"
+          "hanzi": "他的嘴很小。",
+          "pinyin": "tā de zuǐ hěn xiǎo",
+          "meaning": "His mouth is small."
         }
       ]
     },
@@ -212,24 +213,23 @@
       "meaning": "nose",
       "examples": [
         {
-          "hanzi": "我喜欢鼻。",
-          "pinyin": "wǒ xǐhuān bí",
-          "meaning": "I like nose"
+          "hanzi": "她的鼻很高。",
+          "pinyin": "tā de bí hěn gāo",
+          "meaning": "Her nose is high."
         }
       ]
     },
     {
       "hanzi": "巴",
-      "pinyin": "bā",
-      "meaning": "suffix",
+      "pinyin": "ba",
+      "meaning": "part of 嘴巴",
       "examples": [
         {
-          "hanzi": "我喜欢巴。",
-          "pinyin": "wǒ xǐhuān bā",
-          "meaning": "I like suffix"
+          "hanzi": "张开嘴巴。",
+          "pinyin": "zhāng kāi zuǐ ba",
+          "meaning": "Open your mouth."
         }
       ]
     }
-  ],
-  "icon": "👂"
+  ]
 }

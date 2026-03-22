@@ -1,283 +1,283 @@
 {
   "name": "School",
   "group": "Unit 5",
+  "icon": "🏫",
   "cards": [
     {
       "hanzi": "同",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "tóng",
+      "meaning": "same; together",
       "examples": [
         {
-          "hanzi": "我看到同。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我们是同学。",
+          "pinyin": "wǒ men shì tóng xué",
+          "meaning": "We are classmates."
         }
       ]
     },
     {
       "hanzi": "课",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "kè",
+      "meaning": "class",
       "examples": [
         {
-          "hanzi": "我看到课。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天有中文课。",
+          "pinyin": "jīn tiān yǒu zhōng wén kè",
+          "meaning": "There is Chinese class today."
         }
       ]
     },
     {
       "hanzi": "室",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shì",
+      "meaning": "room",
       "examples": [
         {
-          "hanzi": "我看到室。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "教室很大。",
+          "pinyin": "jiào shì hěn dà",
+          "meaning": "The classroom is big."
         }
       ]
     },
     {
       "hanzi": "教",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jiāo",
+      "meaning": "to teach",
       "examples": [
         {
-          "hanzi": "我看到教。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "老师教汉语。",
+          "pinyin": "lǎo shī jiāo hàn yǔ",
+          "meaning": "The teacher teaches Chinese."
         }
       ]
     },
     {
       "hanzi": "教室",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jiào shì",
+      "meaning": "classroom",
       "examples": [
         {
-          "hanzi": "我看到教室。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "学生在教室学习。",
+          "pinyin": "xué shēng zài jiào shì xué xí",
+          "meaning": "Students study in the classroom."
         }
       ]
     },
     {
       "hanzi": "同学",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "tóng xué",
+      "meaning": "classmate",
       "examples": [
         {
-          "hanzi": "我看到同学。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他是我的同学。",
+          "pinyin": "tā shì wǒ de tóng xué",
+          "meaning": "He is my classmate."
         }
       ]
     },
     {
       "hanzi": "地理",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dì lǐ",
+      "meaning": "geography",
       "examples": [
         {
-          "hanzi": "我看到地理。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我喜欢地理。",
+          "pinyin": "wǒ xǐ huan dì lǐ",
+          "meaning": "I like geography."
         }
       ]
     },
     {
       "hanzi": "理",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "lǐ",
+      "meaning": "logic; reason",
       "examples": [
         {
-          "hanzi": "我看到理。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这个问题很有道理。",
+          "pinyin": "zhè gè wèn tí hěn yǒu dào lǐ",
+          "meaning": "This question makes sense."
         }
       ]
     },
     {
       "hanzi": "懂",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dǒng",
+      "meaning": "to understand",
       "examples": [
         {
-          "hanzi": "我看到懂。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我懂一点汉语。",
+          "pinyin": "wǒ dǒng yì diǎn hàn yǔ",
+          "meaning": "I understand a little Chinese."
         }
       ]
     },
     {
       "hanzi": "问题",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "wèn tí",
+      "meaning": "question",
       "examples": [
         {
-          "hanzi": "我看到问题。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "老师问问题。",
+          "pinyin": "lǎo shī wèn wèn tí",
+          "meaning": "The teacher asks questions."
         }
       ]
     },
     {
       "hanzi": "笔",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "bǐ",
+      "meaning": "pen",
       "examples": [
         {
-          "hanzi": "我看到笔。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我有一支笔。",
+          "pinyin": "wǒ yǒu yì zhī bǐ",
+          "meaning": "I have a pen."
         }
       ]
     },
     {
       "hanzi": "题",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "tí",
+      "meaning": "topic; problem",
       "examples": [
         {
-          "hanzi": "我看到题。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这道题很难。",
+          "pinyin": "zhè dào tí hěn nán",
+          "meaning": "This question is difficult."
         }
       ]
     },
     {
       "hanzi": "美术",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "měi shù",
+      "meaning": "art",
       "examples": [
         {
-          "hanzi": "我看到美术。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "她学习美术。",
+          "pinyin": "tā xué xí měi shù",
+          "meaning": "She studies art."
         }
       ]
     },
     {
       "hanzi": "术",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shù",
+      "meaning": "skill",
       "examples": [
         {
-          "hanzi": "我看到术。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "艺术很有意思。",
+          "pinyin": "yì shù hěn yǒu yì si",
+          "meaning": "Art is interesting."
         }
       ]
     },
     {
       "hanzi": "上",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shàng",
+      "meaning": "to attend",
       "examples": [
         {
-          "hanzi": "我看到上。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我上中文课。",
+          "pinyin": "wǒ shàng zhōng wén kè",
+          "meaning": "I attend Chinese class."
         }
       ]
     },
     {
       "hanzi": "考试",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "kǎo shì",
+      "meaning": "exam",
       "examples": [
         {
-          "hanzi": "我看到考试。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "明天有考试。",
+          "pinyin": "míng tiān yǒu kǎo shì",
+          "meaning": "There is an exam tomorrow."
         }
       ]
     },
     {
       "hanzi": "准备",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "zhǔn bèi",
+      "meaning": "prepare",
       "examples": [
         {
-          "hanzi": "我看到准备。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我准备考试。",
+          "pinyin": "wǒ zhǔn bèi kǎo shì",
+          "meaning": "I prepare for the exam."
         }
       ]
     },
     {
       "hanzi": "考",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "kǎo",
+      "meaning": "to test",
       "examples": [
         {
-          "hanzi": "我看到考。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "老师要考试。",
+          "pinyin": "lǎo shī yào kǎo shì",
+          "meaning": "The teacher will test us."
         }
       ]
     },
     {
       "hanzi": "准",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "zhǔn",
+      "meaning": "accurate",
       "examples": [
         {
-          "hanzi": "我看到准。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "时间很准。",
+          "pinyin": "shí jiān hěn zhǔn",
+          "meaning": "The time is accurate."
         }
       ]
     },
     {
       "hanzi": "备",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "bèi",
+      "meaning": "prepare",
       "examples": [
         {
-          "hanzi": "我看到备。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "准备好了。",
+          "pinyin": "zhǔn bèi hǎo le",
+          "meaning": "Preparation is done."
         }
       ]
     },
     {
       "hanzi": "科学",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "kē xué",
+      "meaning": "science",
       "examples": [
         {
-          "hanzi": "我看到科学。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他喜欢科学。",
+          "pinyin": "tā xǐ huan kē xué",
+          "meaning": "He likes science."
         }
       ]
     },
     {
       "hanzi": "科",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "kē",
+      "meaning": "subject",
       "examples": [
         {
-          "hanzi": "我看到科。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "数学是一门科。",
+          "pinyin": "shù xué shì yì mén kē",
+          "meaning": "Math is a subject."
         }
       ]
     },
     {
       "hanzi": "下课",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xià kè",
+      "meaning": "class is over",
       "examples": [
         {
-          "hanzi": "我看到下课。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "现在下课了。",
+          "pinyin": "xiàn zài xià kè le",
+          "meaning": "Class is over now."
         }
       ]
     }
-  ],
-  "icon": "🏫"
+  ]
 }

@@ -1,6 +1,7 @@
 {
   "name": "Invitation 1",
   "group": "Unit 4",
+  "icon": "💌",
   "cards": [
     {
       "hanzi": "吧",
@@ -8,117 +9,117 @@
       "meaning": "suggestion particle",
       "examples": [
         {
-          "hanzi": "我喜欢吧。",
-          "pinyin": "wǒ xǐhuān ba",
-          "meaning": "I like suggestion particle"
+          "hanzi": "我们一起出去吧。",
+          "pinyin": "wǒ men yì qǐ chū qù ba",
+          "meaning": "Let's go out together."
         }
       ]
     },
     {
       "hanzi": "出去",
-      "pinyin": "chūqù",
-      "meaning": "go out",
+      "pinyin": "chū qù",
+      "meaning": "to go out",
       "examples": [
         {
-          "hanzi": "我喜欢出去。",
-          "pinyin": "wǒ xǐhuān chūqù",
-          "meaning": "I like go out"
+          "hanzi": "今天晚上我们出去吃饭。",
+          "pinyin": "jīn tiān wǎn shang wǒ men chū qù chī fàn",
+          "meaning": "Tonight we are going out to eat."
         }
       ]
     },
     {
       "hanzi": "时间",
-      "pinyin": "shíjiān",
+      "pinyin": "shí jiān",
       "meaning": "time",
       "examples": [
         {
-          "hanzi": "我喜欢时间。",
-          "pinyin": "wǒ xǐhuān shíjiān",
-          "meaning": "I like time"
+          "hanzi": "你明天有时间吗？",
+          "pinyin": "nǐ míng tiān yǒu shí jiān ma",
+          "meaning": "Do you have time tomorrow?"
         }
       ]
     },
     {
       "hanzi": "时候",
-      "pinyin": "shíhou",
-      "meaning": "moment",
+      "pinyin": "shí hou",
+      "meaning": "time; moment",
       "examples": [
         {
-          "hanzi": "我喜欢时候。",
-          "pinyin": "wǒ xǐhuān shíhou",
-          "meaning": "I like moment"
+          "hanzi": "你什么时候来我家？",
+          "pinyin": "nǐ shén me shí hou lái wǒ jiā",
+          "meaning": "When are you coming to my house?"
         }
       ]
     },
     {
       "hanzi": "空",
       "pinyin": "kòng",
-      "meaning": "free",
+      "meaning": "free; empty",
       "examples": [
         {
-          "hanzi": "我喜欢空。",
-          "pinyin": "wǒ xǐhuān kòng",
-          "meaning": "I like free"
+          "hanzi": "我今天晚上有空。",
+          "pinyin": "wǒ jīn tiān wǎn shang yǒu kòng",
+          "meaning": "I am free tonight."
         }
       ]
     },
     {
       "hanzi": "请",
       "pinyin": "qǐng",
-      "meaning": "please/invite",
+      "meaning": "please; invite",
       "examples": [
         {
-          "hanzi": "我喜欢请。",
-          "pinyin": "wǒ xǐhuān qǐng",
-          "meaning": "I like please/invite"
+          "hanzi": "我想请你喝茶。",
+          "pinyin": "wǒ xiǎng qǐng nǐ hē chá",
+          "meaning": "I want to invite you for tea."
         }
       ]
     },
     {
       "hanzi": "来",
       "pinyin": "lái",
-      "meaning": "come",
+      "meaning": "to come",
       "examples": [
         {
-          "hanzi": "我喜欢来。",
-          "pinyin": "wǒ xǐhuān lái",
-          "meaning": "I like come"
+          "hanzi": "明天你来吗？",
+          "pinyin": "míng tiān nǐ lái ma",
+          "meaning": "Are you coming tomorrow?"
         }
       ]
     },
     {
       "hanzi": "候",
       "pinyin": "hòu",
-      "meaning": "wait",
+      "meaning": "to wait; time (character in 时候)",
       "examples": [
         {
-          "hanzi": "我喜欢候。",
-          "pinyin": "wǒ xǐhuān hòu",
-          "meaning": "I like wait"
+          "hanzi": "请等候一下。",
+          "pinyin": "qǐng děng hòu yí xià",
+          "meaning": "Please wait a moment."
         }
       ]
     },
     {
       "hanzi": "过",
       "pinyin": "guò",
-      "meaning": "pass",
+      "meaning": "to spend; celebrate",
       "examples": [
         {
-          "hanzi": "我喜欢过。",
-          "pinyin": "wǒ xǐhuān guò",
-          "meaning": "I like pass"
+          "hanzi": "我们一起过生日吧。",
+          "pinyin": "wǒ men yì qǐ guò shēng rì ba",
+          "meaning": "Let's celebrate the birthday together."
         }
       ]
     },
     {
       "hanzi": "一起",
-      "pinyin": "yìqǐ",
+      "pinyin": "yì qǐ",
       "meaning": "together",
       "examples": [
         {
-          "hanzi": "我喜欢一起。",
-          "pinyin": "wǒ xǐhuān yìqǐ",
-          "meaning": "I like together"
+          "hanzi": "我们一起去吧。",
+          "pinyin": "wǒ men yì qǐ qù ba",
+          "meaning": "Let's go together."
         }
       ]
     },
@@ -128,93 +129,93 @@
       "meaning": "home",
       "examples": [
         {
-          "hanzi": "我喜欢家。",
-          "pinyin": "wǒ xǐhuān jiā",
-          "meaning": "I like home"
+          "hanzi": "欢迎来我家。",
+          "pinyin": "huān yíng lái wǒ jiā",
+          "meaning": "Welcome to my home."
         }
       ]
     },
     {
       "hanzi": "不好意思",
-      "pinyin": "bùhǎoyìsi",
-      "meaning": "sorry",
+      "pinyin": "bù hǎo yì si",
+      "meaning": "sorry; embarrassed",
       "examples": [
         {
-          "hanzi": "我喜欢不好意思。",
-          "pinyin": "wǒ xǐhuān bùhǎoyìsi",
-          "meaning": "I like sorry"
+          "hanzi": "不好意思，我今天没空。",
+          "pinyin": "bù hǎo yì si, wǒ jīn tiān méi kòng",
+          "meaning": "Sorry, I am not free today."
         }
       ]
     },
     {
       "hanzi": "给",
       "pinyin": "gěi",
-      "meaning": "give",
+      "meaning": "to give; for",
       "examples": [
         {
-          "hanzi": "我喜欢给。",
-          "pinyin": "wǒ xǐhuān gěi",
-          "meaning": "I like give"
+          "hanzi": "我给你打电话。",
+          "pinyin": "wǒ gěi nǐ dǎ diàn huà",
+          "meaning": "I will call you."
         }
       ]
     },
     {
       "hanzi": "告诉",
-      "pinyin": "gàosu",
-      "meaning": "tell",
+      "pinyin": "gào su",
+      "meaning": "to tell",
       "examples": [
         {
-          "hanzi": "我喜欢告诉。",
-          "pinyin": "wǒ xǐhuān gàosu",
-          "meaning": "I like tell"
+          "hanzi": "请告诉我时间。",
+          "pinyin": "qǐng gào su wǒ shí jiān",
+          "meaning": "Please tell me the time."
         }
       ]
     },
     {
       "hanzi": "告",
       "pinyin": "gào",
-      "meaning": "tell",
+      "meaning": "to tell; announce",
       "examples": [
         {
-          "hanzi": "我喜欢告。",
-          "pinyin": "wǒ xǐhuān gào",
-          "meaning": "I like tell"
+          "hanzi": "我已经告诉他了。",
+          "pinyin": "wǒ yǐ jīng gào su tā le",
+          "meaning": "I already told him."
         }
       ]
     },
     {
       "hanzi": "诉",
       "pinyin": "sù",
-      "meaning": "tell",
+      "meaning": "to tell; sue",
       "examples": [
         {
-          "hanzi": "我喜欢诉。",
-          "pinyin": "wǒ xǐhuān sù",
-          "meaning": "I like tell"
+          "hanzi": "你可以告诉我。",
+          "pinyin": "nǐ kě yǐ gào su wǒ",
+          "meaning": "You can tell me."
         }
       ]
     },
     {
       "hanzi": "约会",
-      "pinyin": "yuēhuì",
-      "meaning": "date",
+      "pinyin": "yuē huì",
+      "meaning": "date; appointment",
       "examples": [
         {
-          "hanzi": "我喜欢约会。",
-          "pinyin": "wǒ xǐhuān yuēhuì",
-          "meaning": "I like date"
+          "hanzi": "他们晚上去约会。",
+          "pinyin": "tā men wǎn shang qù yuē huì",
+          "meaning": "They are going on a date in the evening."
         }
       ]
     },
     {
       "hanzi": "浪漫",
-      "pinyin": "làngmàn",
+      "pinyin": "làng màn",
       "meaning": "romantic",
       "examples": [
         {
-          "hanzi": "我喜欢浪漫。",
-          "pinyin": "wǒ xǐhuān làngmàn",
-          "meaning": "I like romantic"
+          "hanzi": "这个饭馆很浪漫。",
+          "pinyin": "zhè ge fàn guǎn hěn làng màn",
+          "meaning": "This restaurant is very romantic."
         }
       ]
     },
@@ -224,24 +225,23 @@
       "meaning": "wave",
       "examples": [
         {
-          "hanzi": "我喜欢浪。",
-          "pinyin": "wǒ xǐhuān làng",
-          "meaning": "I like wave"
+          "hanzi": "海边有很多浪。",
+          "pinyin": "hǎi biān yǒu hěn duō làng",
+          "meaning": "There are many waves by the sea."
         }
       ]
     },
     {
       "hanzi": "漫",
       "pinyin": "màn",
-      "meaning": "overflow",
+      "meaning": "romantic; widespread (character in 浪漫)",
       "examples": [
         {
-          "hanzi": "我喜欢漫。",
-          "pinyin": "wǒ xǐhuān màn",
-          "meaning": "I like overflow"
+          "hanzi": "这个地方有一点儿浪漫。",
+          "pinyin": "zhè ge dì fang yǒu yì diǎn er làng màn",
+          "meaning": "This place is a little romantic."
         }
       ]
     }
-  ],
-  "icon": "💌"
+  ]
 }

@@ -1,235 +1,235 @@
 {
   "name": "Family 3",
   "group": "Unit 5",
+  "icon": "👪",
   "cards": [
     {
       "hanzi": "爷爷",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yé ye",
+      "meaning": "grandfather",
       "examples": [
         {
-          "hanzi": "我看到爷爷。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我爷爷今年八十岁。",
+          "pinyin": "wǒ yé ye jīn nián bā shí suì",
+          "meaning": "My grandfather is eighty years old."
         }
       ]
     },
     {
       "hanzi": "奶奶",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "nǎi nai",
+      "meaning": "grandmother",
       "examples": [
         {
-          "hanzi": "我看到奶奶。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "奶奶喜欢做饭。",
+          "pinyin": "nǎi nai xǐ huan zuò fàn",
+          "meaning": "Grandma likes cooking."
         }
       ]
     },
     {
       "hanzi": "阿姨",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "ā yí",
+      "meaning": "aunt",
       "examples": [
         {
-          "hanzi": "我看到阿姨。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我阿姨住在北京。",
+          "pinyin": "wǒ ā yí zhù zài Běijīng",
+          "meaning": "My aunt lives in Beijing."
         }
       ]
     },
     {
       "hanzi": "爷",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yé",
+      "meaning": "grandfather (part)",
       "examples": [
         {
-          "hanzi": "我看到爷。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "爷爷在看电视。",
+          "pinyin": "yé ye zài kàn diàn shì",
+          "meaning": "Grandpa is watching TV."
         }
       ]
     },
     {
       "hanzi": "阿",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "ā",
+      "meaning": "prefix for names",
       "examples": [
         {
-          "hanzi": "我看到阿。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "阿姨来了。",
+          "pinyin": "ā yí lái le",
+          "meaning": "Aunt arrived."
         }
       ]
     },
     {
       "hanzi": "姨",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yí",
+      "meaning": "aunt",
       "examples": [
         {
-          "hanzi": "我看到姨。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我去看姨。",
+          "pinyin": "wǒ qù kàn yí",
+          "meaning": "I visit my aunt."
         }
       ]
     },
     {
       "hanzi": "兄弟姐妹",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xiōng dì jiě mèi",
+      "meaning": "siblings",
       "examples": [
         {
-          "hanzi": "我看到兄弟姐妹。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我有两个兄弟姐妹。",
+          "pinyin": "wǒ yǒu liǎng gè xiōng dì jiě mèi",
+          "meaning": "I have two siblings."
         }
       ]
     },
     {
       "hanzi": "关系",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "guān xì",
+      "meaning": "relationship",
       "examples": [
         {
-          "hanzi": "我看到关系。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他们关系很好。",
+          "pinyin": "tā men guān xì hěn hǎo",
+          "meaning": "They have a good relationship."
         }
       ]
     },
     {
       "hanzi": "叔叔",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shū shu",
+      "meaning": "uncle",
       "examples": [
         {
-          "hanzi": "我看到叔叔。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "叔叔开车来。",
+          "pinyin": "shū shu kāi chē lái",
+          "meaning": "Uncle drives here."
         }
       ]
     },
     {
       "hanzi": "父母",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "fù mǔ",
+      "meaning": "parents",
       "examples": [
         {
-          "hanzi": "我看到父母。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我父母很忙。",
+          "pinyin": "wǒ fù mǔ hěn máng",
+          "meaning": "My parents are busy."
         }
       ]
     },
     {
       "hanzi": "兄",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xiōng",
+      "meaning": "elder brother",
       "examples": [
         {
-          "hanzi": "我看到兄。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他是我兄。",
+          "pinyin": "tā shì wǒ xiōng",
+          "meaning": "He is my elder brother."
         }
       ]
     },
     {
       "hanzi": "叔",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shū",
+      "meaning": "uncle",
       "examples": [
         {
-          "hanzi": "我看到叔。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "叔叔来了。",
+          "pinyin": "shū shu lái le",
+          "meaning": "Uncle came."
         }
       ]
     },
     {
       "hanzi": "父",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "fù",
+      "meaning": "father",
       "examples": [
         {
-          "hanzi": "我看到父。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "父母爱孩子。",
+          "pinyin": "fù mǔ ài hái zi",
+          "meaning": "Parents love children."
         }
       ]
     },
     {
       "hanzi": "母",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "mǔ",
+      "meaning": "mother",
       "examples": [
         {
-          "hanzi": "我看到母。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "母亲很辛苦。",
+          "pinyin": "mǔ qīn hěn xīn kǔ",
+          "meaning": "Mother works hard."
         }
       ]
     },
     {
       "hanzi": "像",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xiàng",
+      "meaning": "to resemble",
       "examples": [
         {
-          "hanzi": "我看到像。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我像我爸爸。",
+          "pinyin": "wǒ xiàng wǒ bà ba",
+          "meaning": "I look like my father."
         }
       ]
     },
     {
       "hanzi": "一样",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yí yàng",
+      "meaning": "same",
       "examples": [
         {
-          "hanzi": "我看到一样。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他们一样高。",
+          "pinyin": "tā men yí yàng gāo",
+          "meaning": "They are the same height."
         }
       ]
     },
     {
       "hanzi": "亲戚",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "qīn qi",
+      "meaning": "relatives",
       "examples": [
         {
-          "hanzi": "我看到亲戚。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "很多亲戚来了。",
+          "pinyin": "hěn duō qīn qi lái le",
+          "meaning": "Many relatives came."
         }
       ]
     },
     {
       "hanzi": "戚",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "qī",
+      "meaning": "relative",
       "examples": [
         {
-          "hanzi": "我看到戚。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "亲戚很多。",
+          "pinyin": "qīn qi hěn duō",
+          "meaning": "There are many relatives."
         }
       ]
     },
     {
       "hanzi": "亲",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "qīn",
+      "meaning": "close; dear",
       "examples": [
         {
-          "hanzi": "我看到亲。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他们很亲。",
+          "pinyin": "tā men hěn qīn",
+          "meaning": "They are close."
         }
       ]
     }
-  ],
-  "icon": "👪"
+  ]
 }

@@ -1,283 +1,283 @@
 {
   "name": "Sports 2",
   "group": "Unit 5",
+  "icon": "🏓",
   "cards": [
     {
       "hanzi": "赛",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "sài",
+      "meaning": "match; competition",
       "examples": [
         {
-          "hanzi": "我看到赛。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天有一场比赛。",
+          "pinyin": "jīn tiān yǒu yì chǎng bǐ sài",
+          "meaning": "There is a match today."
         }
       ]
     },
     {
       "hanzi": "练",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "liàn",
+      "meaning": "to practice",
       "examples": [
         {
-          "hanzi": "我看到练。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他每天练球。",
+          "pinyin": "tā měi tiān liàn qiú",
+          "meaning": "He practices ball sports every day."
         }
       ]
     },
     {
       "hanzi": "练习",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "liàn xí",
+      "meaning": "to practice",
       "examples": [
         {
-          "hanzi": "我看到练习。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我们一起练习吧。",
+          "pinyin": "wǒ men yì qǐ liàn xí ba",
+          "meaning": "Let's practice together."
         }
       ]
     },
     {
       "hanzi": "比赛",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "bǐ sài",
+      "meaning": "competition; match",
       "examples": [
         {
-          "hanzi": "我看到比赛。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这场比赛很精彩。",
+          "pinyin": "zhè chǎng bǐ sài hěn jīng cǎi",
+          "meaning": "This match is exciting."
         }
       ]
     },
     {
       "hanzi": "好在",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "hǎo zài",
+      "meaning": "fortunately",
       "examples": [
         {
-          "hanzi": "我看到好在。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "好在我们赢了。",
+          "pinyin": "hǎo zài wǒ men yíng le",
+          "meaning": "Fortunately we won."
         }
       ]
     },
     {
       "hanzi": "乒乓球",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "pīng pāng qiú",
+      "meaning": "table tennis",
       "examples": [
         {
-          "hanzi": "我看到乒乓球。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他喜欢打乒乓球。",
+          "pinyin": "tā xǐ huan dǎ pīng pāng qiú",
+          "meaning": "He likes playing table tennis."
         }
       ]
     },
     {
       "hanzi": "乒",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "pīng",
+      "meaning": "ping (sound)",
       "examples": [
         {
-          "hanzi": "我看到乒。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "乒乓球很快。",
+          "pinyin": "pīng pāng qiú hěn kuài",
+          "meaning": "Table tennis is fast."
         }
       ]
     },
     {
       "hanzi": "乓",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "pāng",
+      "meaning": "pong (sound)",
       "examples": [
         {
-          "hanzi": "我看到乓。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "乒乓的声音很好听。",
+          "pinyin": "pīng pāng de shēng yīn hěn hǎo tīng",
+          "meaning": "The ping‑pong sound is nice."
         }
       ]
     },
     {
       "hanzi": "参加",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "cān jiā",
+      "meaning": "to participate",
       "examples": [
         {
-          "hanzi": "我看到参加。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我参加比赛。",
+          "pinyin": "wǒ cān jiā bǐ sài",
+          "meaning": "I participate in the competition."
         }
       ]
     },
     {
       "hanzi": "第",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dì",
+      "meaning": "ordinal prefix",
       "examples": [
         {
-          "hanzi": "我看到第。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他是第一名。",
+          "pinyin": "tā shì dì yī míng",
+          "meaning": "He is first place."
         }
       ]
     },
     {
       "hanzi": "参",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "cān",
+      "meaning": "to join",
       "examples": [
         {
-          "hanzi": "我看到参。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "很多人参加活动。",
+          "pinyin": "hěn duō rén cān jiā huó dòng",
+          "meaning": "Many people join the activity."
         }
       ]
     },
     {
       "hanzi": "网球",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "wǎng qiú",
+      "meaning": "tennis",
       "examples": [
         {
-          "hanzi": "我看到网球。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我喜欢打网球。",
+          "pinyin": "wǒ xǐ huan dǎ wǎng qiú",
+          "meaning": "I like playing tennis."
         }
       ]
     },
     {
       "hanzi": "排球",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "pái qiú",
+      "meaning": "volleyball",
       "examples": [
         {
-          "hanzi": "我看到排球。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他们在打排球。",
+          "pinyin": "tā men zài dǎ pái qiú",
+          "meaning": "They are playing volleyball."
         }
       ]
     },
     {
       "hanzi": "加油",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jiā yóu",
+      "meaning": "come on; go for it",
       "examples": [
         {
-          "hanzi": "我看到加油。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "比赛的时候大家都喊加油。",
+          "pinyin": "bǐ sài de shí hou dà jiā dōu hǎn jiā yóu",
+          "meaning": "Everyone shouts 'come on' during the match."
         }
       ]
     },
     {
       "hanzi": "排",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "pái",
+      "meaning": "row; line",
       "examples": [
         {
-          "hanzi": "我看到排。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "大家排好队。",
+          "pinyin": "dà jiā pái hǎo duì",
+          "meaning": "Everyone line up."
         }
       ]
     },
     {
       "hanzi": "油",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yóu",
+      "meaning": "oil",
       "examples": [
         {
-          "hanzi": "我看到油。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "车需要油。",
+          "pinyin": "chē xū yào yóu",
+          "meaning": "Cars need oil."
         }
       ]
     },
     {
       "hanzi": "输",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shū",
+      "meaning": "to lose",
       "examples": [
         {
-          "hanzi": "我看到输。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我们没有输。",
+          "pinyin": "wǒ men méi yǒu shū",
+          "meaning": "We did not lose."
         }
       ]
     },
     {
       "hanzi": "赢",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yíng",
+      "meaning": "to win",
       "examples": [
         {
-          "hanzi": "我看到赢。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他们赢了比赛。",
+          "pinyin": "tā men yíng le bǐ sài",
+          "meaning": "They won the match."
         }
       ]
     },
     {
       "hanzi": "失望",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shī wàng",
+      "meaning": "disappointed",
       "examples": [
         {
-          "hanzi": "我看到失望。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "输了比赛他很失望。",
+          "pinyin": "shū le bǐ sài tā hěn shī wàng",
+          "meaning": "He is disappointed after losing."
         }
       ]
     },
     {
       "hanzi": "信心",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xìn xīn",
+      "meaning": "confidence",
       "examples": [
         {
-          "hanzi": "我看到信心。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "她对比赛很有信心。",
+          "pinyin": "tā duì bǐ sài hěn yǒu xìn xīn",
+          "meaning": "She is confident about the match."
         }
       ]
     },
     {
       "hanzi": "失",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shī",
+      "meaning": "to lose",
       "examples": [
         {
-          "hanzi": "我看到失。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "不要失去信心。",
+          "pinyin": "bú yào shī qù xìn xīn",
+          "meaning": "Do not lose confidence."
         }
       ]
     },
     {
       "hanzi": "信",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xìn",
+      "meaning": "to believe",
       "examples": [
         {
-          "hanzi": "我看到信。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我相信你。",
+          "pinyin": "wǒ xiāng xìn nǐ",
+          "meaning": "I believe you."
         }
       ]
     },
     {
       "hanzi": "心",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xīn",
+      "meaning": "heart",
       "examples": [
         {
-          "hanzi": "我看到心。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他很开心。",
+          "pinyin": "tā hěn kāi xīn",
+          "meaning": "He is happy."
         }
       ]
     }
-  ],
-  "icon": "🏓"
+  ]
 }

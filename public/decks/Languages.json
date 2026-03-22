@@ -1,6 +1,7 @@
 {
   "name": "Languages",
   "group": "Unit 4",
+  "icon": "🈶",
   "cards": [
     {
       "hanzi": "字",
@@ -8,57 +9,57 @@
       "meaning": "character",
       "examples": [
         {
-          "hanzi": "我喜欢字。",
-          "pinyin": "wǒ xǐhuān zì",
-          "meaning": "I like character"
+          "hanzi": "这个字很难。",
+          "pinyin": "zhè ge zì hěn nán",
+          "meaning": "This character is difficult."
         }
       ]
     },
     {
       "hanzi": "读",
       "pinyin": "dú",
-      "meaning": "read",
+      "meaning": "to read",
       "examples": [
         {
-          "hanzi": "我喜欢读。",
-          "pinyin": "wǒ xǐhuān dú",
-          "meaning": "I like read"
+          "hanzi": "我会读这个字。",
+          "pinyin": "wǒ huì dú zhè ge zì",
+          "meaning": "I can read this character."
         }
       ]
     },
     {
       "hanzi": "一点儿",
-      "pinyin": "yìdiǎnr",
+      "pinyin": "yì diǎn er",
       "meaning": "a little",
       "examples": [
         {
-          "hanzi": "我喜欢一点儿。",
-          "pinyin": "wǒ xǐhuān yìdiǎnr",
-          "meaning": "I like a little"
+          "hanzi": "我会说一点儿汉语。",
+          "pinyin": "wǒ huì shuō yì diǎn er Hàn yǔ",
+          "meaning": "I can speak a little Chinese."
         }
       ]
     },
     {
       "hanzi": "意思",
-      "pinyin": "yìsi",
+      "pinyin": "yì si",
       "meaning": "meaning",
       "examples": [
         {
-          "hanzi": "我喜欢意思。",
-          "pinyin": "wǒ xǐhuān yìsi",
-          "meaning": "I like meaning"
+          "hanzi": "这个字是什么意思？",
+          "pinyin": "zhè ge zì shì shén me yì si",
+          "meaning": "What does this character mean?"
         }
       ]
     },
     {
       "hanzi": "写",
       "pinyin": "xiě",
-      "meaning": "write",
+      "meaning": "to write",
       "examples": [
         {
-          "hanzi": "我喜欢写。",
-          "pinyin": "wǒ xǐhuān xiě",
-          "meaning": "I like write"
+          "hanzi": "请写你的名字。",
+          "pinyin": "qǐng xiě nǐ de míng zi",
+          "meaning": "Please write your name."
         }
       ]
     },
@@ -68,9 +69,9 @@
       "meaning": "wrong",
       "examples": [
         {
-          "hanzi": "我喜欢错。",
-          "pinyin": "wǒ xǐhuān cuò",
-          "meaning": "I like wrong"
+          "hanzi": "这个字写错了。",
+          "pinyin": "zhè ge zì xiě cuò le",
+          "meaning": "This character was written wrong."
         }
       ]
     },
@@ -80,24 +81,23 @@
       "meaning": "difficult",
       "examples": [
         {
-          "hanzi": "我喜欢难。",
-          "pinyin": "wǒ xǐhuān nán",
-          "meaning": "I like difficult"
+          "hanzi": "这个问题不太难。",
+          "pinyin": "zhè ge wèn tí bú tài nán",
+          "meaning": "This question is not too difficult."
         }
       ]
     },
     {
       "hanzi": "思",
       "pinyin": "sī",
-      "meaning": "think",
+      "meaning": "to think",
       "examples": [
         {
-          "hanzi": "我喜欢思。",
-          "pinyin": "wǒ xǐhuān sī",
-          "meaning": "I like think"
+          "hanzi": "让我想一想。",
+          "pinyin": "ràng wǒ xiǎng yì xiǎng",
+          "meaning": "Let me think for a moment."
         }
       ]
     }
-  ],
-  "icon": "🈶"
+  ]
 }

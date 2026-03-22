@@ -52,30 +52,6 @@
       ]
     },
     {
-      "hanzi": "爸",
-      "pinyin": "bà",
-      "meaning": "dad; father",
-      "examples": [
-        {
-          "hanzi": "我爸在家。",
-          "pinyin": "wǒ bà zài jiā。",
-          "meaning": "My dad is at home."
-        }
-      ]
-    },
-    {
-      "hanzi": "妈",
-      "pinyin": "mā",
-      "meaning": "mom; mother",
-      "examples": [
-        {
-          "hanzi": "我妈很好。",
-          "pinyin": "wǒ mā hěn hǎo。",
-          "meaning": "My mom is very nice."
-        }
-      ]
-    },
-    {
       "hanzi": "谁",
       "pinyin": "shéi",
       "meaning": "who",
@@ -160,30 +136,6 @@
       ]
     },
     {
-      "hanzi": "哥",
-      "pinyin": "gē",
-      "meaning": "older brother",
-      "examples": [
-        {
-          "hanzi": "我哥很忙。",
-          "pinyin": "wǒ gē hěn máng。",
-          "meaning": "My older brother is busy."
-        }
-      ]
-    },
-    {
-      "hanzi": "姐",
-      "pinyin": "jiě",
-      "meaning": "older sister",
-      "examples": [
-        {
-          "hanzi": "我姐在家。",
-          "pinyin": "wǒ jiě zài jiā。",
-          "meaning": "My older sister is at home."
-        }
-      ]
-    },
-    {
       "hanzi": "弟弟",
       "pinyin": "dì di",
       "meaning": "younger brother",
@@ -216,42 +168,6 @@
           "hanzi": "我妹妹很小。",
           "pinyin": "wǒ mèi mei hěn xiǎo。",
           "meaning": "My younger sister is very young."
-        }
-      ]
-    },
-    {
-      "hanzi": "没",
-      "pinyin": "méi",
-      "meaning": "not have; not",
-      "examples": [
-        {
-          "hanzi": "我没有弟弟。",
-          "pinyin": "wǒ méi yǒu dì di。",
-          "meaning": "I don't have a younger brother."
-        }
-      ]
-    },
-    {
-      "hanzi": "弟",
-      "pinyin": "dì",
-      "meaning": "younger brother; junior",
-      "examples": [
-        {
-          "hanzi": "我弟很高。",
-          "pinyin": "wǒ dì hěn gāo。",
-          "meaning": "My younger brother is tall."
-        }
-      ]
-    },
-    {
-      "hanzi": "妹",
-      "pinyin": "mèi",
-      "meaning": "younger sister",
-      "examples": [
-        {
-          "hanzi": "我妹在学校。",
-          "pinyin": "wǒ mèi zài xué xiào。",
-          "meaning": "My younger sister is at school."
         }
       ]
     }

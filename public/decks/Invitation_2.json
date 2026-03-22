@@ -1,100 +1,101 @@
 {
   "name": "Invitation 2",
   "group": "Unit 4",
+  "icon": "🎂",
   "cards": [
     {
       "hanzi": "派",
       "pinyin": "pài",
-      "meaning": "send",
+      "meaning": "to send;派",
       "examples": [
         {
-          "hanzi": "我喜欢派。",
-          "pinyin": "wǒ xǐhuān pài",
-          "meaning": "I like send"
+          "hanzi": "我们晚上有生日派对。",
+          "pinyin": "wǒ men wǎn shang yǒu shēng rì pài duì",
+          "meaning": "We have a birthday party tonight."
         }
       ]
     },
     {
       "hanzi": "能",
       "pinyin": "néng",
-      "meaning": "can",
+      "meaning": "can; be able to",
       "examples": [
         {
-          "hanzi": "我喜欢能。",
-          "pinyin": "wǒ xǐhuān néng",
-          "meaning": "I like can"
+          "hanzi": "你明天能来吗？",
+          "pinyin": "nǐ míng tiān néng lái ma",
+          "meaning": "Can you come tomorrow?"
         }
       ]
     },
     {
       "hanzi": "生日",
-      "pinyin": "shēngrì",
+      "pinyin": "shēng rì",
       "meaning": "birthday",
       "examples": [
         {
-          "hanzi": "我喜欢生日。",
-          "pinyin": "wǒ xǐhuān shēngrì",
-          "meaning": "I like birthday"
+          "hanzi": "今天是我的生日。",
+          "pinyin": "jīn tiān shì wǒ de shēng rì",
+          "meaning": "Today is my birthday."
         }
       ]
     },
     {
       "hanzi": "派对",
-      "pinyin": "pàiduì",
+      "pinyin": "pài duì",
       "meaning": "party",
       "examples": [
         {
-          "hanzi": "我喜欢派对。",
-          "pinyin": "wǒ xǐhuān pàiduì",
-          "meaning": "I like party"
+          "hanzi": "这个派对很热闹。",
+          "pinyin": "zhè ge pài duì hěn rè nào",
+          "meaning": "This party is lively."
         }
       ]
     },
     {
       "hanzi": "打扮",
-      "pinyin": "dǎban",
-      "meaning": "dress up",
+      "pinyin": "dǎ ban",
+      "meaning": "to dress up",
       "examples": [
         {
-          "hanzi": "我喜欢打扮。",
-          "pinyin": "wǒ xǐhuān dǎban",
-          "meaning": "I like dress up"
+          "hanzi": "她今天晚上要打扮一下。",
+          "pinyin": "tā jīn tiān wǎn shang yào dǎ ban yí xià",
+          "meaning": "She is going to dress up a bit tonight."
         }
       ]
     },
     {
       "hanzi": "扮",
       "pinyin": "bàn",
-      "meaning": "dress",
+      "meaning": "to dress up; play a role",
       "examples": [
         {
-          "hanzi": "我喜欢扮。",
-          "pinyin": "wǒ xǐhuān bàn",
-          "meaning": "I like dress"
+          "hanzi": "她喜欢打扮。",
+          "pinyin": "tā xǐ huan dǎ ban",
+          "meaning": "She likes dressing up."
         }
       ]
     },
     {
       "hanzi": "希望",
-      "pinyin": "xīwàng",
-      "meaning": "hope",
+      "pinyin": "xī wàng",
+      "meaning": "to hope; hope",
       "examples": [
         {
-          "hanzi": "我喜欢希望。",
-          "pinyin": "wǒ xǐhuān xīwàng",
-          "meaning": "I like hope"
+          "hanzi": "我希望你能来。",
+          "pinyin": "wǒ xī wàng nǐ néng lái",
+          "meaning": "I hope you can come."
         }
       ]
     },
     {
       "hanzi": "跟",
       "pinyin": "gēn",
-      "meaning": "with",
+      "meaning": "with; follow",
       "examples": [
         {
-          "hanzi": "我喜欢跟。",
-          "pinyin": "wǒ xǐhuān gēn",
-          "meaning": "I like with"
+          "hanzi": "你可以跟我们一起去。",
+          "pinyin": "nǐ kě yǐ gēn wǒ men yì qǐ qù",
+          "meaning": "You can go with us."
         }
       ]
     },
@@ -104,144 +105,143 @@
       "meaning": "hope",
       "examples": [
         {
-          "hanzi": "我喜欢希。",
-          "pinyin": "wǒ xǐhuān xī",
-          "meaning": "I like hope"
+          "hanzi": "我希望明天见到你。",
+          "pinyin": "wǒ xī wàng míng tiān jiàn dào nǐ",
+          "meaning": "I hope to see you tomorrow."
         }
       ]
     },
     {
       "hanzi": "望",
       "pinyin": "wàng",
-      "meaning": "hope",
+      "meaning": "to hope; look into distance",
       "examples": [
         {
-          "hanzi": "我喜欢望。",
-          "pinyin": "wǒ xǐhuān wàng",
-          "meaning": "I like hope"
+          "hanzi": "希望大家都来。",
+          "pinyin": "xī wàng dà jiā dōu lái",
+          "meaning": "I hope everyone comes."
         }
       ]
     },
     {
       "hanzi": "大家",
-      "pinyin": "dàjiā",
+      "pinyin": "dà jiā",
       "meaning": "everyone",
       "examples": [
         {
-          "hanzi": "我喜欢大家。",
-          "pinyin": "wǒ xǐhuān dàjiā",
-          "meaning": "I like everyone"
+          "hanzi": "欢迎大家来参加。",
+          "pinyin": "huān yíng dà jiā lái cān jiā",
+          "meaning": "Everyone is welcome to come join."
         }
       ]
     },
     {
       "hanzi": "公司",
-      "pinyin": "gōngsī",
+      "pinyin": "gōng sī",
       "meaning": "company",
       "examples": [
         {
-          "hanzi": "我喜欢公司。",
-          "pinyin": "wǒ xǐhuān gōngsī",
-          "meaning": "I like company"
+          "hanzi": "公司今天晚上有派对。",
+          "pinyin": "gōng sī jīn tiān wǎn shang yǒu pài duì",
+          "meaning": "The company has a party tonight."
         }
       ]
     },
     {
       "hanzi": "正在",
-      "pinyin": "zhèngzài",
-      "meaning": "currently",
+      "pinyin": "zhèng zài",
+      "meaning": "in the middle of; currently",
       "examples": [
         {
-          "hanzi": "我喜欢正在。",
-          "pinyin": "wǒ xǐhuān zhèngzài",
-          "meaning": "I like currently"
+          "hanzi": "我正在准备生日派对。",
+          "pinyin": "wǒ zhèng zài zhǔn bèi shēng rì pài duì",
+          "meaning": "I am preparing the birthday party right now."
         }
       ]
     },
     {
       "hanzi": "正",
       "pinyin": "zhèng",
-      "meaning": "correct",
+      "meaning": "exactly; currently",
       "examples": [
         {
-          "hanzi": "我喜欢正。",
-          "pinyin": "wǒ xǐhuān zhèng",
-          "meaning": "I like correct"
+          "hanzi": "我正要出门。",
+          "pinyin": "wǒ zhèng yào chū mén",
+          "meaning": "I am just about to go out."
         }
       ]
     },
     {
       "hanzi": "司",
       "pinyin": "sī",
-      "meaning": "company",
+      "meaning": "manage; company (in 公司)",
       "examples": [
         {
-          "hanzi": "我喜欢司。",
-          "pinyin": "wǒ xǐhuān sī",
-          "meaning": "I like company"
+          "hanzi": "这家公司很大。",
+          "pinyin": "zhè jiā gōng sī hěn dà",
+          "meaning": "This company is very big."
         }
       ]
     },
     {
       "hanzi": "事情",
-      "pinyin": "shìqing",
-      "meaning": "matter",
+      "pinyin": "shì qing",
+      "meaning": "matter; thing",
       "examples": [
         {
-          "hanzi": "我喜欢事情。",
-          "pinyin": "wǒ xǐhuān shìqing",
-          "meaning": "I like matter"
+          "hanzi": "我今天晚上有一点儿事情。",
+          "pinyin": "wǒ jīn tiān wǎn shang yǒu yì diǎn er shì qing",
+          "meaning": "I have something to do tonight."
         }
       ]
     },
     {
       "hanzi": "才",
       "pinyin": "cái",
-      "meaning": "only then",
+      "meaning": "only then; just",
       "examples": [
         {
-          "hanzi": "我喜欢才。",
-          "pinyin": "wǒ xǐhuān cái",
-          "meaning": "I like only then"
+          "hanzi": "我八点才下班。",
+          "pinyin": "wǒ bā diǎn cái xià bān",
+          "meaning": "I only get off work at eight."
         }
       ]
     },
     {
       "hanzi": "多",
       "pinyin": "duō",
-      "meaning": "many",
+      "meaning": "many; much",
       "examples": [
         {
-          "hanzi": "我喜欢多。",
-          "pinyin": "wǒ xǐhuān duō",
-          "meaning": "I like many"
+          "hanzi": "今天晚上来的人很多。",
+          "pinyin": "jīn tiān wǎn shang lái de rén hěn duō",
+          "meaning": "Many people are coming tonight."
         }
       ]
     },
     {
       "hanzi": "事",
       "pinyin": "shì",
-      "meaning": "matter",
+      "meaning": "matter; affair",
       "examples": [
         {
-          "hanzi": "我喜欢事。",
-          "pinyin": "wǒ xǐhuān shì",
-          "meaning": "I like matter"
+          "hanzi": "这件事很重要。",
+          "pinyin": "zhè jiàn shì hěn zhòng yào",
+          "meaning": "This matter is important."
         }
       ]
     },
     {
       "hanzi": "情",
       "pinyin": "qíng",
-      "meaning": "feeling",
+      "meaning": "feeling; situation",
       "examples": [
         {
-          "hanzi": "我喜欢情。",
-          "pinyin": "wǒ xǐhuān qíng",
-          "meaning": "I like feeling"
+          "hanzi": "事情没有那么难。",
+          "pinyin": "shì qing méi yǒu nà me nán",
+          "meaning": "The matter is not that difficult."
         }
       ]
     }
-  ],
-  "icon": "🎂"
+  ]
 }

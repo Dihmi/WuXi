@@ -1,16 +1,17 @@
 {
   "name": "Shopping 2",
   "group": "Unit 4",
+  "icon": "👗",
   "cards": [
     {
       "hanzi": "试",
       "pinyin": "shì",
-      "meaning": "try",
+      "meaning": "to try",
       "examples": [
         {
-          "hanzi": "我喜欢试。",
-          "pinyin": "wǒ xǐhuān shì",
-          "meaning": "I like try"
+          "hanzi": "我想试一下这条裙子。",
+          "pinyin": "wǒ xiǎng shì yí xià zhè tiáo qún zi",
+          "meaning": "I want to try on this skirt."
         }
       ]
     },
@@ -20,21 +21,21 @@
       "meaning": "blue",
       "examples": [
         {
-          "hanzi": "我喜欢蓝。",
-          "pinyin": "wǒ xǐhuān lán",
-          "meaning": "I like blue"
+          "hanzi": "我喜欢蓝色。",
+          "pinyin": "wǒ xǐ huan lán sè",
+          "meaning": "I like blue."
         }
       ]
     },
     {
       "hanzi": "条",
       "pinyin": "tiáo",
-      "meaning": "strip",
+      "meaning": "classifier for long things",
       "examples": [
         {
-          "hanzi": "我喜欢条。",
-          "pinyin": "wǒ xǐhuān tiáo",
-          "meaning": "I like strip"
+          "hanzi": "这条裤子很好看。",
+          "pinyin": "zhè tiáo kù zi hěn hǎo kàn",
+          "meaning": "These pants look nice."
         }
       ]
     },
@@ -44,21 +45,21 @@
       "meaning": "skirt",
       "examples": [
         {
-          "hanzi": "我喜欢裙。",
-          "pinyin": "wǒ xǐhuān qún",
-          "meaning": "I like skirt"
+          "hanzi": "这条裙很长。",
+          "pinyin": "zhè tiáo qún hěn cháng",
+          "meaning": "This skirt is long."
         }
       ]
     },
     {
       "hanzi": "裙子",
-      "pinyin": "qúnzi",
+      "pinyin": "qún zi",
       "meaning": "skirt",
       "examples": [
         {
-          "hanzi": "我喜欢裙子。",
-          "pinyin": "wǒ xǐhuān qúnzi",
-          "meaning": "I like skirt"
+          "hanzi": "我想买这条裙子。",
+          "pinyin": "wǒ xiǎng mǎi zhè tiáo qún zi",
+          "meaning": "I want to buy this skirt."
         }
       ]
     },
@@ -68,45 +69,45 @@
       "meaning": "pair",
       "examples": [
         {
-          "hanzi": "我喜欢双。",
-          "pinyin": "wǒ xǐhuān shuāng",
-          "meaning": "I like pair"
+          "hanzi": "我想买一双鞋子。",
+          "pinyin": "wǒ xiǎng mǎi yì shuāng xié zi",
+          "meaning": "I want to buy a pair of shoes."
         }
       ]
     },
     {
       "hanzi": "还",
       "pinyin": "hái",
-      "meaning": "still",
+      "meaning": "still; also",
       "examples": [
         {
-          "hanzi": "我喜欢还。",
-          "pinyin": "wǒ xǐhuān hái",
-          "meaning": "I like still"
+          "hanzi": "你还想看别的吗？",
+          "pinyin": "nǐ hái xiǎng kàn bié de ma",
+          "meaning": "Do you still want to see anything else?"
         }
       ]
     },
     {
       "hanzi": "鞋子",
-      "pinyin": "xiézi",
+      "pinyin": "xié zi",
       "meaning": "shoes",
       "examples": [
         {
-          "hanzi": "我喜欢鞋子。",
-          "pinyin": "wǒ xǐhuān xiézi",
-          "meaning": "I like shoes"
+          "hanzi": "这双鞋子很舒服。",
+          "pinyin": "zhè shuāng xié zi hěn shū fu",
+          "meaning": "These shoes are very comfortable."
         }
       ]
     },
     {
       "hanzi": "意大利",
-      "pinyin": "Yìdàlì",
+      "pinyin": "Yì dà lì",
       "meaning": "Italy",
       "examples": [
         {
-          "hanzi": "我喜欢意大利。",
-          "pinyin": "wǒ xǐhuān Yìdàlì",
-          "meaning": "I like Italy"
+          "hanzi": "这双鞋是意大利的。",
+          "pinyin": "zhè shuāng xié shì Yì dà lì de",
+          "meaning": "These shoes are from Italy."
         }
       ]
     },
@@ -116,9 +117,9 @@
       "meaning": "color",
       "examples": [
         {
-          "hanzi": "我喜欢色。",
-          "pinyin": "wǒ xǐhuān sè",
-          "meaning": "I like color"
+          "hanzi": "你喜欢什么颜色？",
+          "pinyin": "nǐ xǐ huan shén me yán sè",
+          "meaning": "What color do you like?"
         }
       ]
     },
@@ -128,21 +129,21 @@
       "meaning": "shoe",
       "examples": [
         {
-          "hanzi": "我喜欢鞋。",
-          "pinyin": "wǒ xǐhuān xié",
-          "meaning": "I like shoe"
+          "hanzi": "这只鞋有一点儿小。",
+          "pinyin": "zhè zhī xié yǒu yì diǎn er xiǎo",
+          "meaning": "This shoe is a little small."
         }
       ]
     },
     {
       "hanzi": "利",
       "pinyin": "lì",
-      "meaning": "benefit",
+      "meaning": "benefit; sharp",
       "examples": [
         {
-          "hanzi": "我喜欢利。",
-          "pinyin": "wǒ xǐhuān lì",
-          "meaning": "I like benefit"
+          "hanzi": "这把刀很利。",
+          "pinyin": "zhè bǎ dāo hěn lì",
+          "meaning": "This knife is sharp."
         }
       ]
     },
@@ -152,57 +153,57 @@
       "meaning": "small",
       "examples": [
         {
-          "hanzi": "我喜欢小。",
-          "pinyin": "wǒ xǐhuān xiǎo",
-          "meaning": "I like small"
+          "hanzi": "这件衬衫有一点儿小。",
+          "pinyin": "zhè jiàn chèn shān yǒu yì diǎn er xiǎo",
+          "meaning": "This shirt is a little small."
         }
       ]
     },
     {
       "hanzi": "比",
       "pinyin": "bǐ",
-      "meaning": "compare",
+      "meaning": "than; compare",
       "examples": [
         {
-          "hanzi": "我喜欢比。",
-          "pinyin": "wǒ xǐhuān bǐ",
-          "meaning": "I like compare"
+          "hanzi": "这个比那个好看。",
+          "pinyin": "zhè ge bǐ nà ge hǎo kàn",
+          "meaning": "This one looks better than that one."
         }
       ]
     },
     {
       "hanzi": "衬衫",
-      "pinyin": "chènshān",
+      "pinyin": "chèn shān",
       "meaning": "shirt",
       "examples": [
         {
-          "hanzi": "我喜欢衬衫。",
-          "pinyin": "wǒ xǐhuān chènshān",
-          "meaning": "I like shirt"
+          "hanzi": "这件衬衫很好看。",
+          "pinyin": "zhè jiàn chèn shān hěn hǎo kàn",
+          "meaning": "This shirt looks nice."
         }
       ]
     },
     {
       "hanzi": "衬",
       "pinyin": "chèn",
-      "meaning": "lining",
+      "meaning": "lining; set off",
       "examples": [
         {
-          "hanzi": "我喜欢衬。",
-          "pinyin": "wǒ xǐhuān chèn",
-          "meaning": "I like lining"
+          "hanzi": "这件衬衫很适合你。",
+          "pinyin": "zhè jiàn chèn shān hěn shì hé nǐ",
+          "meaning": "This shirt suits you very well."
         }
       ]
     },
     {
       "hanzi": "衫",
       "pinyin": "shān",
-      "meaning": "shirt",
+      "meaning": "shirt (character in 衬衫)",
       "examples": [
         {
-          "hanzi": "我喜欢衫。",
-          "pinyin": "wǒ xǐhuān shān",
-          "meaning": "I like shirt"
+          "hanzi": "我喜欢这件衫。",
+          "pinyin": "wǒ xǐ huan zhè jiàn shān",
+          "meaning": "I like this shirt."
         }
       ]
     },
@@ -212,45 +213,45 @@
       "meaning": "big",
       "examples": [
         {
-          "hanzi": "我喜欢大。",
-          "pinyin": "wǒ xǐhuān dà",
-          "meaning": "I like big"
+          "hanzi": "这条裤子太大了。",
+          "pinyin": "zhè tiáo kù zi tài dà le",
+          "meaning": "These pants are too big."
         }
       ]
     },
     {
       "hanzi": "裤子",
-      "pinyin": "kùzi",
+      "pinyin": "kù zi",
       "meaning": "pants",
       "examples": [
         {
-          "hanzi": "我喜欢裤子。",
-          "pinyin": "wǒ xǐhuān kùzi",
-          "meaning": "I like pants"
+          "hanzi": "这条裤子很舒服。",
+          "pinyin": "zhè tiáo kù zi hěn shū fu",
+          "meaning": "These pants are very comfortable."
         }
       ]
     },
     {
       "hanzi": "好看",
-      "pinyin": "hǎokàn",
-      "meaning": "good-looking",
+      "pinyin": "hǎo kàn",
+      "meaning": "good-looking; pretty",
       "examples": [
         {
-          "hanzi": "我喜欢好看。",
-          "pinyin": "wǒ xǐhuān hǎokàn",
-          "meaning": "I like good-looking"
+          "hanzi": "这条裙子很好看。",
+          "pinyin": "zhè tiáo qún zi hěn hǎo kàn",
+          "meaning": "This skirt looks very nice."
         }
       ]
     },
     {
       "hanzi": "裤",
       "pinyin": "kù",
-      "meaning": "pants",
+      "meaning": "pants (character in 裤子)",
       "examples": [
         {
-          "hanzi": "我喜欢裤。",
-          "pinyin": "wǒ xǐhuān kù",
-          "meaning": "I like pants"
+          "hanzi": "我想试这条裤。",
+          "pinyin": "wǒ xiǎng shì zhè tiáo kù",
+          "meaning": "I want to try these pants."
         }
       ]
     },
@@ -260,36 +261,35 @@
       "meaning": "quality",
       "examples": [
         {
-          "hanzi": "我喜欢质。",
-          "pinyin": "wǒ xǐhuān zhì",
-          "meaning": "I like quality"
+          "hanzi": "这件衣服的质量很好。",
+          "pinyin": "zhè jiàn yī fu de zhì liàng hěn hǎo",
+          "meaning": "The quality of this clothing is very good."
         }
       ]
     },
     {
       "hanzi": "量",
       "pinyin": "liàng",
-      "meaning": "quantity",
+      "meaning": "quantity; measure",
       "examples": [
         {
-          "hanzi": "我喜欢量。",
-          "pinyin": "wǒ xǐhuān liàng",
-          "meaning": "I like quantity"
+          "hanzi": "这个分量很多。",
+          "pinyin": "zhè ge fèn liàng hěn duō",
+          "meaning": "This portion is large."
         }
       ]
     },
     {
       "hanzi": "质量",
-      "pinyin": "zhìliàng",
+      "pinyin": "zhì liàng",
       "meaning": "quality",
       "examples": [
         {
-          "hanzi": "我喜欢质量。",
-          "pinyin": "wǒ xǐhuān zhìliàng",
-          "meaning": "I like quality"
+          "hanzi": "这双鞋子的质量不错。",
+          "pinyin": "zhè shuāng xié zi de zhì liàng bú cuò",
+          "meaning": "The quality of these shoes is good."
         }
       ]
     }
-  ],
-  "icon": "👗"
+  ]
 }

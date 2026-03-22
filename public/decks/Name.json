@@ -27,42 +27,6 @@
       ]
     },
     {
-      "hanzi": "张",
-      "pinyin": "zhāng",
-      "meaning": "Zhang (surname)",
-      "examples": [
-        {
-          "hanzi": "他姓张。",
-          "pinyin": "tā xìng zhāng",
-          "meaning": "His surname is Zhang."
-        }
-      ]
-    },
-    {
-      "hanzi": "李",
-      "pinyin": "lǐ",
-      "meaning": "Li (surname)",
-      "examples": [
-        {
-          "hanzi": "她姓李。",
-          "pinyin": "tā xìng lǐ",
-          "meaning": "Her surname is Li."
-        }
-      ]
-    },
-    {
-      "hanzi": "华",
-      "pinyin": "huá",
-      "meaning": "Chinese / splendid",
-      "examples": [
-        {
-          "hanzi": "李华是学生。",
-          "pinyin": "lǐ huá shì xué shēng",
-          "meaning": "Li Hua is a student."
-        }
-      ]
-    },
-    {
       "hanzi": "明",
       "pinyin": "míng",
       "meaning": "bright",
@@ -119,30 +83,6 @@
           "hanzi": "这个字很难。",
           "pinyin": "zhè gè zì hěn nán",
           "meaning": "This character is difficult."
-        }
-      ]
-    },
-    {
-      "hanzi": "姓",
-      "pinyin": "xìng",
-      "meaning": "surname",
-      "examples": [
-        {
-          "hanzi": "你姓什么？",
-          "pinyin": "nǐ xìng shén me",
-          "meaning": "What is your surname?"
-        }
-      ]
-    },
-    {
-      "hanzi": "王",
-      "pinyin": "wáng",
-      "meaning": "Wang (surname)",
-      "examples": [
-        {
-          "hanzi": "我姓王。",
-          "pinyin": "wǒ xìng wáng",
-          "meaning": "My surname is Wang."
         }
       ]
     },

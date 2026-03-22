@@ -1,40 +1,41 @@
 {
   "name": "Dining 3",
   "group": "Unit 4",
+  "icon": "🍫",
   "cards": [
     {
       "hanzi": "费",
       "pinyin": "fèi",
-      "meaning": "fee",
+      "meaning": "fee; expense",
       "examples": [
         {
-          "hanzi": "我喜欢费。",
-          "pinyin": "wǒ xǐhuān fèi",
-          "meaning": "I like fee"
+          "hanzi": "这里的服务费很高。",
+          "pinyin": "zhè lǐ de fú wù fèi hěn gāo",
+          "meaning": "The service fee here is high."
         }
       ]
     },
     {
       "hanzi": "完",
       "pinyin": "wán",
-      "meaning": "finish",
+      "meaning": "to finish",
       "examples": [
         {
-          "hanzi": "我喜欢完。",
-          "pinyin": "wǒ xǐhuān wán",
-          "meaning": "I like finish"
+          "hanzi": "我已经吃完了。",
+          "pinyin": "wǒ yǐ jīng chī wán le",
+          "meaning": "I have already finished eating."
         }
       ]
     },
     {
       "hanzi": "经",
       "pinyin": "jīng",
-      "meaning": "pass through",
+      "meaning": "already; pass through",
       "examples": [
         {
-          "hanzi": "我喜欢经。",
-          "pinyin": "wǒ xǐhuān jīng",
-          "meaning": "I like pass through"
+          "hanzi": "我已经吃过了。",
+          "pinyin": "wǒ yǐ jīng chī guò le",
+          "meaning": "I have already eaten."
         }
       ]
     },
@@ -44,45 +45,45 @@
       "meaning": "already",
       "examples": [
         {
-          "hanzi": "我喜欢已。",
-          "pinyin": "wǒ xǐhuān yǐ",
-          "meaning": "I like already"
+          "hanzi": "他已经来了。",
+          "pinyin": "tā yǐ jīng lái le",
+          "meaning": "He has already arrived."
         }
       ]
     },
     {
       "hanzi": "已经",
-      "pinyin": "yǐjīng",
+      "pinyin": "yǐ jīng",
       "meaning": "already",
       "examples": [
         {
-          "hanzi": "我喜欢已经。",
-          "pinyin": "wǒ xǐhuān yǐjīng",
-          "meaning": "I like already"
+          "hanzi": "我们已经买单了。",
+          "pinyin": "wǒ men yǐ jīng mǎi dān le",
+          "meaning": "We have already paid the bill."
         }
       ]
     },
     {
       "hanzi": "请",
       "pinyin": "qǐng",
-      "meaning": "please",
+      "meaning": "please; invite",
       "examples": [
         {
-          "hanzi": "我喜欢请。",
-          "pinyin": "wǒ xǐhuān qǐng",
-          "meaning": "I like please"
+          "hanzi": "请给我菜单。",
+          "pinyin": "qǐng gěi wǒ cài dān",
+          "meaning": "Please give me the menu."
         }
       ]
     },
     {
       "hanzi": "小费",
-      "pinyin": "xiǎofèi",
+      "pinyin": "xiǎo fèi",
       "meaning": "tip",
       "examples": [
         {
-          "hanzi": "我喜欢小费。",
-          "pinyin": "wǒ xǐhuān xiǎofèi",
-          "meaning": "I like tip"
+          "hanzi": "在这里要给小费吗？",
+          "pinyin": "zài zhè lǐ yào gěi xiǎo fèi ma",
+          "meaning": "Do we need to leave a tip here?"
         }
       ]
     },
@@ -92,33 +93,33 @@
       "meaning": "full",
       "examples": [
         {
-          "hanzi": "我喜欢饱。",
-          "pinyin": "wǒ xǐhuān bǎo",
-          "meaning": "I like full"
+          "hanzi": "我吃饱了。",
+          "pinyin": "wǒ chī bǎo le",
+          "meaning": "I am full."
         }
       ]
     },
     {
       "hanzi": "好吃",
-      "pinyin": "hǎochī",
+      "pinyin": "hǎo chī",
       "meaning": "delicious",
       "examples": [
         {
-          "hanzi": "我喜欢好吃。",
-          "pinyin": "wǒ xǐhuān hǎochī",
-          "meaning": "I like delicious"
+          "hanzi": "这个菜真好吃。",
+          "pinyin": "zhè ge cài zhēn hǎo chī",
+          "meaning": "This dish is really delicious."
         }
       ]
     },
     {
       "hanzi": "真",
       "pinyin": "zhēn",
-      "meaning": "really",
+      "meaning": "really; truly",
       "examples": [
         {
-          "hanzi": "我喜欢真。",
-          "pinyin": "wǒ xǐhuān zhēn",
-          "meaning": "I like really"
+          "hanzi": "这个蛋糕真好吃。",
+          "pinyin": "zhè ge dàn gāo zhēn hǎo chī",
+          "meaning": "This cake is really delicious."
         }
       ]
     },
@@ -128,33 +129,33 @@
       "meaning": "hungry",
       "examples": [
         {
-          "hanzi": "我喜欢饿。",
-          "pinyin": "wǒ xǐhuān è",
-          "meaning": "I like hungry"
+          "hanzi": "我现在很饿。",
+          "pinyin": "wǒ xiàn zài hěn è",
+          "meaning": "I am very hungry now."
         }
       ]
     },
     {
       "hanzi": "少",
       "pinyin": "shǎo",
-      "meaning": "few",
+      "meaning": "few; less",
       "examples": [
         {
-          "hanzi": "我喜欢少。",
-          "pinyin": "wǒ xǐhuān shǎo",
-          "meaning": "I like few"
+          "hanzi": "请少放一点儿糖。",
+          "pinyin": "qǐng shǎo fàng yì diǎn er táng",
+          "meaning": "Please put in a little less sugar."
         }
       ]
     },
     {
       "hanzi": "好喝",
-      "pinyin": "hǎohē",
-      "meaning": "tasty (drink)",
+      "pinyin": "hǎo hē",
+      "meaning": "tasty to drink",
       "examples": [
         {
-          "hanzi": "我喜欢好喝。",
-          "pinyin": "wǒ xǐhuān hǎohē",
-          "meaning": "I like tasty (drink)"
+          "hanzi": "这个果汁很好喝。",
+          "pinyin": "zhè ge guǒ zhī hěn hǎo hē",
+          "meaning": "This juice is very tasty."
         }
       ]
     },
@@ -164,9 +165,9 @@
       "meaning": "thirsty",
       "examples": [
         {
-          "hanzi": "我喜欢渴。",
-          "pinyin": "wǒ xǐhuān kě",
-          "meaning": "I like thirsty"
+          "hanzi": "我有一点儿渴。",
+          "pinyin": "wǒ yǒu yì diǎn er kě",
+          "meaning": "I am a little thirsty."
         }
       ]
     },
@@ -176,45 +177,45 @@
       "meaning": "alcohol",
       "examples": [
         {
-          "hanzi": "我喜欢酒。",
-          "pinyin": "wǒ xǐhuān jiǔ",
-          "meaning": "I like alcohol"
+          "hanzi": "他不喝酒。",
+          "pinyin": "tā bù hē jiǔ",
+          "meaning": "He does not drink alcohol."
         }
       ]
     },
     {
       "hanzi": "巧克力",
-      "pinyin": "qiǎokèlì",
+      "pinyin": "qiǎo kè lì",
       "meaning": "chocolate",
       "examples": [
         {
-          "hanzi": "我喜欢巧克力。",
-          "pinyin": "wǒ xǐhuān qiǎokèlì",
-          "meaning": "I like chocolate"
+          "hanzi": "我很喜欢吃巧克力。",
+          "pinyin": "wǒ hěn xǐ huan chī qiǎo kè lì",
+          "meaning": "I really like eating chocolate."
         }
       ]
     },
     {
       "hanzi": "味道",
-      "pinyin": "wèidào",
-      "meaning": "taste",
+      "pinyin": "wèi dào",
+      "meaning": "taste; flavor",
       "examples": [
         {
-          "hanzi": "我喜欢味道。",
-          "pinyin": "wǒ xǐhuān wèidào",
-          "meaning": "I like taste"
+          "hanzi": "这个菜的味道很好。",
+          "pinyin": "zhè ge cài de wèi dào hěn hǎo",
+          "meaning": "This dish tastes very good."
         }
       ]
     },
     {
       "hanzi": "甜点",
-      "pinyin": "tiándiǎn",
+      "pinyin": "tián diǎn",
       "meaning": "dessert",
       "examples": [
         {
-          "hanzi": "我喜欢甜点。",
-          "pinyin": "wǒ xǐhuān tiándiǎn",
-          "meaning": "I like dessert"
+          "hanzi": "吃完饭以后我想点甜点。",
+          "pinyin": "chī wán fàn yǐ hòu wǒ xiǎng diǎn tián diǎn",
+          "meaning": "After the meal I want to order dessert."
         }
       ]
     },
@@ -224,21 +225,21 @@
       "meaning": "sweet",
       "examples": [
         {
-          "hanzi": "我喜欢甜。",
-          "pinyin": "wǒ xǐhuān tián",
-          "meaning": "I like sweet"
+          "hanzi": "这个果汁太甜了。",
+          "pinyin": "zhè ge guǒ zhī tài tián le",
+          "meaning": "This juice is too sweet."
         }
       ]
     },
     {
       "hanzi": "巧",
       "pinyin": "qiǎo",
-      "meaning": "skillful",
+      "meaning": "clever;巧 in chocolate",
       "examples": [
         {
-          "hanzi": "我喜欢巧。",
-          "pinyin": "wǒ xǐhuān qiǎo",
-          "meaning": "I like skillful"
+          "hanzi": "我喜欢巧克力。",
+          "pinyin": "wǒ xǐ huan qiǎo kè lì",
+          "meaning": "I like chocolate."
         }
       ]
     },
@@ -248,24 +249,23 @@
       "meaning": "gram",
       "examples": [
         {
-          "hanzi": "我喜欢克。",
-          "pinyin": "wǒ xǐhuān kè",
-          "meaning": "I like gram"
+          "hanzi": "这个一百克。",
+          "pinyin": "zhè ge yì bǎi kè",
+          "meaning": "This is 100 grams."
         }
       ]
     },
     {
       "hanzi": "力",
       "pinyin": "lì",
-      "meaning": "power",
+      "meaning": "strength; power",
       "examples": [
         {
-          "hanzi": "我喜欢力。",
-          "pinyin": "wǒ xǐhuān lì",
-          "meaning": "I like power"
+          "hanzi": "我今天没有力气。",
+          "pinyin": "wǒ jīn tiān méi yǒu lì qi",
+          "meaning": "I do not have energy today."
         }
       ]
     }
-  ],
-  "icon": "🍫"
+  ]
 }

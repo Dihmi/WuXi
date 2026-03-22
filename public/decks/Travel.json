@@ -1,283 +1,283 @@
 {
   "name": "Travel",
   "group": "Unit 5",
+  "icon": "✈️",
   "cards": [
     {
       "hanzi": "远",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yuǎn",
+      "meaning": "far",
       "examples": [
         {
-          "hanzi": "我看到远。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "北京离上海很远。",
+          "pinyin": "Běijīng lí Shànghǎi hěn yuǎn",
+          "meaning": "Beijing is far from Shanghai."
         }
       ]
     },
     {
       "hanzi": "离",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "lí",
+      "meaning": "from; distance from",
       "examples": [
         {
-          "hanzi": "我看到离。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "学校离我家很近。",
+          "pinyin": "xuéxiào lí wǒ jiā hěn jìn",
+          "meaning": "The school is close to my home."
         }
       ]
     },
     {
       "hanzi": "路",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "lù",
+      "meaning": "road",
       "examples": [
         {
-          "hanzi": "我看到路。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这条路很长。",
+          "pinyin": "zhè tiáo lù hěn cháng",
+          "meaning": "This road is very long."
         }
       ]
     },
     {
       "hanzi": "走路",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "zǒu lù",
+      "meaning": "to walk",
       "examples": [
         {
-          "hanzi": "我看到走路。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我每天走路去学校。",
+          "pinyin": "wǒ měi tiān zǒu lù qù xuéxiào",
+          "meaning": "I walk to school every day."
         }
       ]
     },
     {
       "hanzi": "近",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jìn",
+      "meaning": "near",
       "examples": [
         {
-          "hanzi": "我看到近。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "车站很近。",
+          "pinyin": "chē zhàn hěn jìn",
+          "meaning": "The station is very close."
         }
       ]
     },
     {
       "hanzi": "开车",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "kāi chē",
+      "meaning": "to drive",
       "examples": [
         {
-          "hanzi": "我看到开车。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他开车去机场。",
+          "pinyin": "tā kāi chē qù jīchǎng",
+          "meaning": "He drives to the airport."
         }
       ]
     },
     {
       "hanzi": "飞机",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "fēi jī",
+      "meaning": "airplane",
       "examples": [
         {
-          "hanzi": "我看到飞机。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我们坐飞机去日本。",
+          "pinyin": "wǒmen zuò fēijī qù Rìběn",
+          "meaning": "We fly to Japan."
         }
       ]
     },
     {
       "hanzi": "机场",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jī chǎng",
+      "meaning": "airport",
       "examples": [
         {
-          "hanzi": "我看到机场。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "机场很大。",
+          "pinyin": "jīchǎng hěn dà",
+          "meaning": "The airport is very big."
         }
       ]
     },
     {
       "hanzi": "飞",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "fēi",
+      "meaning": "to fly",
       "examples": [
         {
-          "hanzi": "我看到飞。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "飞机飞得很高。",
+          "pinyin": "fēijī fēi de hěn gāo",
+          "meaning": "The airplane flies very high."
         }
       ]
     },
     {
       "hanzi": "场",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "chǎng",
+      "meaning": "place; field",
       "examples": [
         {
-          "hanzi": "我看到场。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "机场在城外。",
+          "pinyin": "jīchǎng zài chéng wài",
+          "meaning": "The airport is outside the city."
         }
       ]
     },
     {
       "hanzi": "靠",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "kào",
+      "meaning": "near; rely on",
       "examples": [
         {
-          "hanzi": "我看到靠。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我喜欢靠窗坐。",
+          "pinyin": "wǒ xǐhuan kào chuāng zuò",
+          "meaning": "I like sitting near the window."
         }
       ]
     },
     {
       "hanzi": "停",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "tíng",
+      "meaning": "to stop",
       "examples": [
         {
-          "hanzi": "我看到停。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "火车停在车站。",
+          "pinyin": "huǒchē tíng zài chēzhàn",
+          "meaning": "The train stops at the station."
         }
       ]
     },
     {
       "hanzi": "火车",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "huǒ chē",
+      "meaning": "train",
       "examples": [
         {
-          "hanzi": "我看到火车。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我们坐火车去北京。",
+          "pinyin": "wǒmen zuò huǒchē qù Běijīng",
+          "meaning": "We take the train to Beijing."
         }
       ]
     },
     {
       "hanzi": "得",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "de",
+      "meaning": "structural particle",
       "examples": [
         {
-          "hanzi": "我看到得。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他说得很快。",
+          "pinyin": "tā shuō de hěn kuài",
+          "meaning": "He speaks very fast."
         }
       ]
     },
     {
       "hanzi": "票",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "piào",
+      "meaning": "ticket",
       "examples": [
         {
-          "hanzi": "我看到票。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我买了一张票。",
+          "pinyin": "wǒ mǎi le yì zhāng piào",
+          "meaning": "I bought a ticket."
         }
       ]
     },
     {
       "hanzi": "机票",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jī piào",
+      "meaning": "plane ticket",
       "examples": [
         {
-          "hanzi": "我看到机票。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "机票很贵。",
+          "pinyin": "jīpiào hěn guì",
+          "meaning": "Plane tickets are expensive."
         }
       ]
     },
     {
       "hanzi": "火",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "huǒ",
+      "meaning": "fire",
       "examples": [
         {
-          "hanzi": "我看到火。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "火车很快。",
+          "pinyin": "huǒchē hěn kuài",
+          "meaning": "The train is fast."
         }
       ]
     },
     {
       "hanzi": "迟到",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "chí dào",
+      "meaning": "to be late",
       "examples": [
         {
-          "hanzi": "我看到迟到。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他今天迟到了。",
+          "pinyin": "tā jīntiān chídào le",
+          "meaning": "He was late today."
         }
       ]
     },
     {
       "hanzi": "让",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "ràng",
+      "meaning": "to let",
       "examples": [
         {
-          "hanzi": "我看到让。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "让我看看。",
+          "pinyin": "ràng wǒ kànkan",
+          "meaning": "Let me see."
         }
       ]
     },
     {
       "hanzi": "上",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shàng",
+      "meaning": "up; get on",
       "examples": [
         {
-          "hanzi": "我看到上。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我们上火车吧。",
+          "pinyin": "wǒmen shàng huǒchē ba",
+          "meaning": "Let's get on the train."
         }
       ]
     },
     {
       "hanzi": "怎么办",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "zěnme bàn",
+      "meaning": "what to do",
       "examples": [
         {
-          "hanzi": "我看到怎么办。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "飞机晚点了，怎么办？",
+          "pinyin": "fēijī wǎndiǎn le, zěnme bàn",
+          "meaning": "The flight is delayed, what should we do?"
         }
       ]
     },
     {
       "hanzi": "迟",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "chí",
+      "meaning": "late",
       "examples": [
         {
-          "hanzi": "我看到迟。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "今天有点迟。",
+          "pinyin": "jīntiān yǒudiǎn chí",
+          "meaning": "Today is a bit late."
         }
       ]
     },
     {
       "hanzi": "办",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "bàn",
+      "meaning": "to handle; do",
       "examples": [
         {
-          "hanzi": "我看到办。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我去办签证。",
+          "pinyin": "wǒ qù bàn qiānzhèng",
+          "meaning": "I go handle the visa."
         }
       ]
     }
-  ],
-  "icon": "✈️"
+  ]
 }

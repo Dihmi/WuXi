@@ -1,6 +1,7 @@
 {
   "name": "Health 2",
   "group": "Unit 4",
+  "icon": "🤒",
   "cards": [
     {
       "hanzi": "该",
@@ -8,21 +9,21 @@
       "meaning": "should",
       "examples": [
         {
-          "hanzi": "我喜欢该。",
-          "pinyin": "wǒ xǐhuān gāi",
-          "meaning": "I like should"
+          "hanzi": "你该休息了。",
+          "pinyin": "nǐ gāi xiū xi le",
+          "meaning": "You should rest."
         }
       ]
     },
     {
       "hanzi": "病",
       "pinyin": "bìng",
-      "meaning": "illness",
+      "meaning": "illness; sickness",
       "examples": [
         {
-          "hanzi": "我喜欢病。",
-          "pinyin": "wǒ xǐhuān bìng",
-          "meaning": "I like illness"
+          "hanzi": "他生病了。",
+          "pinyin": "tā shēng bìng le",
+          "meaning": "He got sick."
         }
       ]
     },
@@ -32,81 +33,81 @@
       "meaning": "comfortable",
       "examples": [
         {
-          "hanzi": "我喜欢舒。",
-          "pinyin": "wǒ xǐhuān shū",
-          "meaning": "I like comfortable"
+          "hanzi": "现在舒服一点儿了。",
+          "pinyin": "xiàn zài shū fu yì diǎn er le",
+          "meaning": "I feel a little more comfortable now."
         }
       ]
     },
     {
       "hanzi": "应",
       "pinyin": "yīng",
-      "meaning": "should",
+      "meaning": "should; ought to",
       "examples": [
         {
-          "hanzi": "我喜欢应。",
-          "pinyin": "wǒ xǐhuān yīng",
-          "meaning": "I like should"
+          "hanzi": "你应该多休息。",
+          "pinyin": "nǐ yīng gāi duō xiū xi",
+          "meaning": "You should rest more."
         }
       ]
     },
     {
       "hanzi": "生病",
-      "pinyin": "shēngbìng",
-      "meaning": "get sick",
+      "pinyin": "shēng bìng",
+      "meaning": "to get sick",
       "examples": [
         {
-          "hanzi": "我喜欢生病。",
-          "pinyin": "wǒ xǐhuān shēngbìng",
-          "meaning": "I like get sick"
+          "hanzi": "我昨天生病了。",
+          "pinyin": "wǒ zuó tiān shēng bìng le",
+          "meaning": "I got sick yesterday."
         }
       ]
     },
     {
       "hanzi": "应该",
-      "pinyin": "yīnggāi",
-      "meaning": "should",
+      "pinyin": "yīng gāi",
+      "meaning": "should; ought to",
       "examples": [
         {
-          "hanzi": "我喜欢应该。",
-          "pinyin": "wǒ xǐhuān yīnggāi",
-          "meaning": "I like should"
+          "hanzi": "你应该去看医生。",
+          "pinyin": "nǐ yīng gāi qù kàn yī shēng",
+          "meaning": "You should go see a doctor."
         }
       ]
     },
     {
       "hanzi": "舒服",
-      "pinyin": "shūfu",
-      "meaning": "comfortable",
+      "pinyin": "shū fu",
+      "meaning": "comfortable; to feel well",
       "examples": [
         {
-          "hanzi": "我喜欢舒服。",
-          "pinyin": "wǒ xǐhuān shūfu",
-          "meaning": "I like comfortable"
+          "hanzi": "我今天不太舒服。",
+          "pinyin": "wǒ jīn tiān bù tài shū fu",
+          "meaning": "I do not feel very well today."
         }
       ]
     },
     {
       "hanzi": "了",
       "pinyin": "le",
-      "meaning": "completed action",
+      "meaning": "completed-action particle",
       "examples": [
         {
-          "hanzi": "我喜欢了。",
-          "pinyin": "wǒ xǐhuān le",
-          "meaning": "I like completed action"
+          "hanzi": "吃药以后好多了。",
+          "pinyin": "chī yào yǐ hòu hǎo duō le",
+          "meaning": "I felt much better after taking medicine."
         }
       ]
     },
     {
       "hanzi": "疼",
       "pinyin": "téng",
-      "meaning": "pain",
+      "meaning": "to hurt; ache",
       "examples": [
         {
-          "hanzi": "我喜欢疼。",
-          "pinyin": "wǒ xǐhuān téng",
-          "meaning": "I like pain"
+          "hanzi": "我的头很疼。",
+          "pinyin": "wǒ de tóu hěn téng",
+          "meaning": "My head really hurts."
         }
       ]
     },
@@ -116,57 +117,57 @@
       "meaning": "head",
       "examples": [
         {
-          "hanzi": "我喜欢头。",
-          "pinyin": "wǒ xǐhuān tóu",
-          "meaning": "I like head"
+          "hanzi": "他的头有一点儿疼。",
+          "pinyin": "tā de tóu yǒu yì diǎn er téng",
+          "meaning": "His head hurts a little."
         }
       ]
     },
     {
       "hanzi": "休息",
-      "pinyin": "xiūxi",
-      "meaning": "rest",
+      "pinyin": "xiū xi",
+      "meaning": "to rest",
       "examples": [
         {
-          "hanzi": "我喜欢休息。",
-          "pinyin": "wǒ xǐhuān xiūxi",
-          "meaning": "I like rest"
+          "hanzi": "你要多休息。",
+          "pinyin": "nǐ yào duō xiū xi",
+          "meaning": "You need to rest more."
         }
       ]
     },
     {
       "hanzi": "休",
       "pinyin": "xiū",
-      "meaning": "rest",
+      "meaning": "to rest",
       "examples": [
         {
-          "hanzi": "我喜欢休。",
-          "pinyin": "wǒ xǐhuān xiū",
-          "meaning": "I like rest"
+          "hanzi": "今天我在家休一天。",
+          "pinyin": "jīn tiān wǒ zài jiā xiū yì tiān",
+          "meaning": "Today I am resting at home for a day."
         }
       ]
     },
     {
       "hanzi": "息",
       "pinyin": "xī",
-      "meaning": "breath",
+      "meaning": "breath; rest",
       "examples": [
         {
-          "hanzi": "我喜欢息。",
-          "pinyin": "wǒ xǐhuān xī",
-          "meaning": "I like breath"
+          "hanzi": "请休息一下。",
+          "pinyin": "qǐng xiū xi yí xià",
+          "meaning": "Please rest for a moment."
         }
       ]
     },
     {
       "hanzi": "肚子",
-      "pinyin": "dùzi",
-      "meaning": "stomach",
+      "pinyin": "dù zi",
+      "meaning": "stomach; belly",
       "examples": [
         {
-          "hanzi": "我喜欢肚子。",
-          "pinyin": "wǒ xǐhuān dùzi",
-          "meaning": "I like stomach"
+          "hanzi": "我肚子疼。",
+          "pinyin": "wǒ dù zi téng",
+          "meaning": "My stomach hurts."
         }
       ]
     },
@@ -176,9 +177,9 @@
       "meaning": "belly",
       "examples": [
         {
-          "hanzi": "我喜欢肚。",
-          "pinyin": "wǒ xǐhuān dù",
-          "meaning": "I like belly"
+          "hanzi": "他的肚有一点儿不舒服。",
+          "pinyin": "tā de dù yǒu yì diǎn er bù shū fu",
+          "meaning": "His belly feels a little uncomfortable."
         }
       ]
     },
@@ -188,105 +189,105 @@
       "meaning": "medicine",
       "examples": [
         {
-          "hanzi": "我喜欢药。",
-          "pinyin": "wǒ xǐhuān yào",
-          "meaning": "I like medicine"
+          "hanzi": "你吃药了吗？",
+          "pinyin": "nǐ chī yào le ma",
+          "meaning": "Did you take medicine?"
         }
       ]
     },
     {
       "hanzi": "一定",
-      "pinyin": "yídìng",
-      "meaning": "definitely",
+      "pinyin": "yí dìng",
+      "meaning": "certainly; definitely",
       "examples": [
         {
-          "hanzi": "我喜欢一定。",
-          "pinyin": "wǒ xǐhuān yídìng",
-          "meaning": "I like definitely"
+          "hanzi": "你一定要多喝水。",
+          "pinyin": "nǐ yí dìng yào duō hē shuǐ",
+          "meaning": "You definitely need to drink more water."
         }
       ]
     },
     {
       "hanzi": "感冒",
-      "pinyin": "gǎnmào",
-      "meaning": "cold",
+      "pinyin": "gǎn mào",
+      "meaning": "to catch a cold; cold",
       "examples": [
         {
-          "hanzi": "我喜欢感冒。",
-          "pinyin": "wǒ xǐhuān gǎnmào",
-          "meaning": "I like cold"
+          "hanzi": "我有一点儿感冒。",
+          "pinyin": "wǒ yǒu yì diǎn er gǎn mào",
+          "meaning": "I have a slight cold."
         }
       ]
     },
     {
       "hanzi": "感",
       "pinyin": "gǎn",
-      "meaning": "feel",
+      "meaning": "to feel",
       "examples": [
         {
-          "hanzi": "我喜欢感。",
-          "pinyin": "wǒ xǐhuān gǎn",
-          "meaning": "I like feel"
+          "hanzi": "我感觉不太好。",
+          "pinyin": "wǒ gǎn jué bù tài hǎo",
+          "meaning": "I do not feel very well."
         }
       ]
     },
     {
       "hanzi": "定",
       "pinyin": "dìng",
-      "meaning": "decide",
+      "meaning": "to decide; fixed",
       "examples": [
         {
-          "hanzi": "我喜欢定。",
-          "pinyin": "wǒ xǐhuān dìng",
-          "meaning": "I like decide"
+          "hanzi": "时间定了吗？",
+          "pinyin": "shí jiān dìng le ma",
+          "meaning": "Has the time been set?"
         }
       ]
     },
     {
       "hanzi": "冒",
       "pinyin": "mào",
-      "meaning": "emit",
+      "meaning": "to emit; to冒",
       "examples": [
         {
-          "hanzi": "我喜欢冒。",
-          "pinyin": "wǒ xǐhuān mào",
-          "meaning": "I like emit"
+          "hanzi": "我怕自己又感冒。",
+          "pinyin": "wǒ pà zì jǐ yòu gǎn mào",
+          "meaning": "I am afraid I will catch a cold again."
         }
       ]
     },
     {
       "hanzi": "留",
       "pinyin": "liú",
-      "meaning": "stay",
+      "meaning": "to stay; remain",
       "examples": [
         {
-          "hanzi": "我喜欢留。",
-          "pinyin": "wǒ xǐhuān liú",
-          "meaning": "I like stay"
+          "hanzi": "你今天留在家里休息吧。",
+          "pinyin": "nǐ jīn tiān liú zài jiā lǐ xiū xi ba",
+          "meaning": "Stay home and rest today."
         }
       ]
     },
     {
       "hanzi": "请假",
-      "pinyin": "qǐngjià",
-      "meaning": "take leave",
+      "pinyin": "qǐng jià",
+      "meaning": "to ask for leave",
       "examples": [
         {
-          "hanzi": "我喜欢请假。",
-          "pinyin": "wǒ xǐhuān qǐngjià",
-          "meaning": "I like take leave"
+          "hanzi": "我今天要请假。",
+          "pinyin": "wǒ jīn tiān yào qǐng jià",
+          "meaning": "I need to take leave today."
         }
       ]
     },
     {
       "hanzi": "发烧",
-      "pinyin": "fāshāo",
-      "meaning": "fever",
+      "pinyin": "fā shāo",
+      "meaning": "to have a fever",
       "examples": [
         {
-          "hanzi": "我喜欢发烧。",
-          "pinyin": "wǒ xǐhuān fāshāo",
-          "meaning": "I like fever"
+          "hanzi": "他昨天晚上发烧了。",
+          "pinyin": "tā zuó tiān wǎn shang fā shāo le",
+          "meaning": "He had a fever last night."
         }
       ]
     },
@@ -296,48 +297,47 @@
       "meaning": "don't",
       "examples": [
         {
-          "hanzi": "我喜欢别。",
-          "pinyin": "wǒ xǐhuān bié",
-          "meaning": "I like don't"
+          "hanzi": "别出去，先休息。",
+          "pinyin": "bié chū qù, xiān xiū xi",
+          "meaning": "Do not go out; rest first."
         }
       ]
     },
     {
       "hanzi": "发",
       "pinyin": "fā",
-      "meaning": "emit",
+      "meaning": "to emit; send",
       "examples": [
         {
-          "hanzi": "我喜欢发。",
-          "pinyin": "wǒ xǐhuān fā",
-          "meaning": "I like emit"
+          "hanzi": "他一发烧就很累。",
+          "pinyin": "tā yì fā shāo jiù hěn lèi",
+          "meaning": "Whenever he gets a fever, he becomes very tired."
         }
       ]
     },
     {
       "hanzi": "假",
       "pinyin": "jià",
-      "meaning": "holiday",
+      "meaning": "vacation; leave",
       "examples": [
         {
-          "hanzi": "我喜欢假。",
-          "pinyin": "wǒ xǐhuān jià",
-          "meaning": "I like holiday"
+          "hanzi": "我今天请了一天假。",
+          "pinyin": "wǒ jīn tiān qǐng le yì tiān jià",
+          "meaning": "I took one day off today."
         }
       ]
     },
     {
       "hanzi": "烧",
       "pinyin": "shāo",
-      "meaning": "burn",
+      "meaning": "to burn",
       "examples": [
         {
-          "hanzi": "我喜欢烧。",
-          "pinyin": "wǒ xǐhuān shāo",
-          "meaning": "I like burn"
+          "hanzi": "发烧的时候不要去上班。",
+          "pinyin": "fā shāo de shí hou bú yào qù shàng bān",
+          "meaning": "Do not go to work when you have a fever."
         }
       ]
     }
-  ],
-  "icon": "🤒"
+  ]
 }

@@ -112,54 +112,6 @@
       ]
     },
     {
-      "hanzi": "纽",
-      "pinyin": "niǔ",
-      "meaning": "button; knob (used in transliteration)",
-      "examples": [
-        {
-          "hanzi": "纽约很大。",
-          "pinyin": "niǔ yuē hěn dà。",
-          "meaning": "New York is very big."
-        }
-      ]
-    },
-    {
-      "hanzi": "约",
-      "pinyin": "yuē",
-      "meaning": "about; approximately; appointment",
-      "examples": [
-        {
-          "hanzi": "我们约三点见。",
-          "pinyin": "wǒ men yuē sān diǎn jiàn。",
-          "meaning": "Let's meet at about three."
-        }
-      ]
-    },
-    {
-      "hanzi": "香",
-      "pinyin": "xiāng",
-      "meaning": "fragrant; good-smelling",
-      "examples": [
-        {
-          "hanzi": "这个茶很香。",
-          "pinyin": "zhè ge chá hěn xiāng。",
-          "meaning": "This tea smells nice."
-        }
-      ]
-    },
-    {
-      "hanzi": "港",
-      "pinyin": "gǎng",
-      "meaning": "harbor; port",
-      "examples": [
-        {
-          "hanzi": "香港是一个港口城市。",
-          "pinyin": "xiāng gǎng shì yí ge gǎng kǒu chéng shì。",
-          "meaning": "Hong Kong is a port city."
-        }
-      ]
-    },
-    {
       "hanzi": "住",
       "pinyin": "zhù",
       "meaning": "to live; to reside",
@@ -196,30 +148,6 @@
       ]
     },
     {
-      "hanzi": "伦",
-      "pinyin": "lún",
-      "meaning": "human relations; order (used in transliteration)",
-      "examples": [
-        {
-          "hanzi": "伦敦很有名。",
-          "pinyin": "lún dūn hěn yǒu míng。",
-          "meaning": "London is very famous."
-        }
-      ]
-    },
-    {
-      "hanzi": "敦",
-      "pinyin": "dūn",
-      "meaning": "honest; sincere (used in transliteration)",
-      "examples": [
-        {
-          "hanzi": "我想去伦敦。",
-          "pinyin": "wǒ xiǎng qù lún dūn。",
-          "meaning": "I want to go to London."
-        }
-      ]
-    },
-    {
       "hanzi": "台",
       "pinyin": "tái",
       "meaning": "platform; Taiwan (short form)",
@@ -228,18 +156,6 @@
           "hanzi": "他在台湾学习。",
           "pinyin": "tā zài tái wān xué xí。",
           "meaning": "He studies in Taiwan."
-        }
-      ]
-    },
-    {
-      "hanzi": "湾",
-      "pinyin": "wān",
-      "meaning": "bay; gulf",
-      "examples": [
-        {
-          "hanzi": "台湾是一个岛。",
-          "pinyin": "tái wān shì yí ge dǎo。",
-          "meaning": "Taiwan is an island."
         }
       ]
     }

@@ -1,271 +1,259 @@
 {
   "name": "Shopping 3",
   "group": "Unit 5",
+  "icon": "🧢",
   "cards": [
     {
       "hanzi": "然",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "rán",
+      "meaning": "so; however",
       "examples": [
         {
-          "hanzi": "我看到然。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "虽然很贵，但是很好。",
+          "pinyin": "suīrán hěn guì dànshì hěn hǎo",
+          "meaning": "Although expensive it is very good."
         }
       ]
     },
     {
       "hanzi": "但",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dàn",
+      "meaning": "but",
       "examples": [
         {
-          "hanzi": "我看到但。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我想买，但太贵。",
+          "pinyin": "wǒ xiǎng mǎi dàn tài guì",
+          "meaning": "I want to buy it but it is too expensive."
         }
       ]
     },
     {
       "hanzi": "虽",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "suī",
+      "meaning": "although",
       "examples": [
         {
-          "hanzi": "我看到虽。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "虽然贵，我还是喜欢。",
+          "pinyin": "suīrán guì wǒ háishì xǐhuan",
+          "meaning": "Although expensive I still like it."
         }
       ]
     },
     {
       "hanzi": "短",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "duǎn",
+      "meaning": "short",
       "examples": [
         {
-          "hanzi": "我看到短。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这条裤子太短。",
+          "pinyin": "zhè tiáo kùzi tài duǎn",
+          "meaning": "These pants are too short."
         }
       ]
     },
     {
       "hanzi": "长",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "cháng",
+      "meaning": "long",
       "examples": [
         {
-          "hanzi": "我看到长。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这件衣服很长。",
+          "pinyin": "zhè jiàn yīfu hěn cháng",
+          "meaning": "This clothing is long."
         }
       ]
     },
     {
       "hanzi": "虽然",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "suī rán",
+      "meaning": "although",
       "examples": [
         {
-          "hanzi": "我看到虽然。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "虽然贵，但质量好。",
+          "pinyin": "suīrán guì dàn zhìliàng hǎo",
+          "meaning": "Although expensive the quality is good."
         }
       ]
     },
     {
       "hanzi": "但是",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "dàn shì",
+      "meaning": "but",
       "examples": [
         {
-          "hanzi": "我看到但是。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "很好看，但是太贵。",
+          "pinyin": "hěn hǎokàn dànshì tài guì",
+          "meaning": "Looks nice but too expensive."
         }
       ]
     },
     {
       "hanzi": "红",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "hóng",
+      "meaning": "red",
       "examples": [
         {
-          "hanzi": "我看到红。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我喜欢红色。",
+          "pinyin": "wǒ xǐhuan hóngsè",
+          "meaning": "I like red."
         }
       ]
     },
     {
       "hanzi": "颜色",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yán sè",
+      "meaning": "color",
       "examples": [
         {
-          "hanzi": "我看到颜色。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这个颜色很好看。",
+          "pinyin": "zhège yánsè hěn hǎokàn",
+          "meaning": "This color looks nice."
         }
       ]
     },
     {
       "hanzi": "穿",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "chuān",
+      "meaning": "to wear",
       "examples": [
         {
-          "hanzi": "我看到穿。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "她穿红衣服。",
+          "pinyin": "tā chuān hóng yīfu",
+          "meaning": "She wears red clothes."
         }
       ]
     },
     {
       "hanzi": "颜",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "yán",
+      "meaning": "color (component)",
       "examples": [
         {
-          "hanzi": "我看到颜。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这个颜色很特别。",
+          "pinyin": "zhège yánsè hěn tèbié",
+          "meaning": "This color is special."
         }
       ]
     },
     {
       "hanzi": "色",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "sè",
+      "meaning": "color",
       "examples": [
         {
-          "hanzi": "我看到色。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "蓝色很好看。",
+          "pinyin": "lánsè hěn hǎokàn",
+          "meaning": "Blue looks nice."
         }
       ]
     },
     {
       "hanzi": "洗",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xǐ",
+      "meaning": "to wash",
       "examples": [
         {
-          "hanzi": "我看到洗。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我洗衣服。",
+          "pinyin": "wǒ xǐ yīfu",
+          "meaning": "I wash clothes."
         }
       ]
     },
     {
       "hanzi": "黄",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "huáng",
+      "meaning": "yellow",
       "examples": [
         {
-          "hanzi": "我看到黄。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这件衣服是黄色的。",
+          "pinyin": "zhè jiàn yīfu shì huángsè de",
+          "meaning": "This clothing is yellow."
         }
       ]
     },
     {
       "hanzi": "白",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "bái",
+      "meaning": "white",
       "examples": [
         {
-          "hanzi": "我看到白。",
-          "pinyin": "",
-          "meaning": ""
-        }
-      ]
-    },
-    {
-      "hanzi": "黃",
-      "pinyin": "",
-      "meaning": "",
-      "examples": [
-        {
-          "hanzi": "我看到黃。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "白衬衫很好看。",
+          "pinyin": "bái chènshān hěn hǎokàn",
+          "meaning": "White shirts look nice."
         }
       ]
     },
     {
       "hanzi": "手表",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shǒu biǎo",
+      "meaning": "watch",
       "examples": [
         {
-          "hanzi": "我看到手表。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我买了一块手表。",
+          "pinyin": "wǒ mǎi le yí kuài shǒubiǎo",
+          "meaning": "I bought a watch."
         }
       ]
     },
     {
       "hanzi": "卖",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "mài",
+      "meaning": "to sell",
       "examples": [
         {
-          "hanzi": "我看到卖。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这家店卖衣服。",
+          "pinyin": "zhè jiā diàn mài yīfu",
+          "meaning": "This shop sells clothes."
         }
       ]
     },
     {
       "hanzi": "帽子",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "mào zi",
+      "meaning": "hat",
       "examples": [
         {
-          "hanzi": "我看到帽子。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我买了一顶帽子。",
+          "pinyin": "wǒ mǎi le yì dǐng màozi",
+          "meaning": "I bought a hat."
         }
       ]
     },
     {
       "hanzi": "帽",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "mào",
+      "meaning": "hat",
       "examples": [
         {
-          "hanzi": "我看到帽。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这顶帽很好看。",
+          "pinyin": "zhè dǐng mào hěn hǎokàn",
+          "meaning": "This hat looks nice."
         }
       ]
     },
     {
       "hanzi": "表",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "biǎo",
+      "meaning": "watch; surface",
       "examples": [
         {
-          "hanzi": "我看到表。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这块表很贵。",
+          "pinyin": "zhè kuài biǎo hěn guì",
+          "meaning": "This watch is expensive."
         }
       ]
     },
     {
       "hanzi": "紫",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "zǐ",
+      "meaning": "purple",
       "examples": [
         {
-          "hanzi": "我看到紫。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "紫色很好看。",
+          "pinyin": "zǐsè hěn hǎokàn",
+          "meaning": "Purple looks nice."
         }
       ]
     }
-  ],
-  "icon": "🛍️"
+  ]
 }

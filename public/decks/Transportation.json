@@ -1,6 +1,7 @@
 {
   "name": "Transportation",
   "group": "Unit 4",
+  "icon": "🚇",
   "cards": [
     {
       "hanzi": "铁",
@@ -8,9 +9,9 @@
       "meaning": "iron",
       "examples": [
         {
-          "hanzi": "我喜欢铁。",
-          "pinyin": "wǒ xǐhuān tiě",
-          "meaning": "I like iron"
+          "hanzi": "地铁里有很多铁。",
+          "pinyin": "dì tiě lǐ yǒu hěn duō tiě",
+          "meaning": "There is a lot of metal in the subway."
         }
       ]
     },
@@ -20,9 +21,9 @@
       "meaning": "shop",
       "examples": [
         {
-          "hanzi": "我喜欢店。",
-          "pinyin": "wǒ xǐhuān diàn",
-          "meaning": "I like shop"
+          "hanzi": "酒店旁边有一家店。",
+          "pinyin": "jiǔ diàn páng biān yǒu yì jiā diàn",
+          "meaning": "There is a shop next to the hotel."
         }
       ]
     },
@@ -32,9 +33,9 @@
       "meaning": "ground",
       "examples": [
         {
-          "hanzi": "我喜欢地。",
-          "pinyin": "wǒ xǐhuān dì",
-          "meaning": "I like ground"
+          "hanzi": "书在地上。",
+          "pinyin": "shū zài dì shàng",
+          "meaning": "The book is on the ground."
         }
       ]
     },
@@ -44,105 +45,105 @@
       "meaning": "alcohol",
       "examples": [
         {
-          "hanzi": "我喜欢酒。",
-          "pinyin": "wǒ xǐhuān jiǔ",
-          "meaning": "I like alcohol"
+          "hanzi": "我不喝酒。",
+          "pinyin": "wǒ bù hē jiǔ",
+          "meaning": "I do not drink alcohol."
         }
       ]
     },
     {
       "hanzi": "酒店",
-      "pinyin": "jiǔdiàn",
+      "pinyin": "jiǔ diàn",
       "meaning": "hotel",
       "examples": [
         {
-          "hanzi": "我喜欢酒店。",
-          "pinyin": "wǒ xǐhuān jiǔdiàn",
-          "meaning": "I like hotel"
+          "hanzi": "我们住在酒店。",
+          "pinyin": "wǒ men zhù zài jiǔ diàn",
+          "meaning": "We stay at a hotel."
         }
       ]
     },
     {
       "hanzi": "地铁",
-      "pinyin": "dìtiě",
+      "pinyin": "dì tiě",
       "meaning": "subway",
       "examples": [
         {
-          "hanzi": "我喜欢地铁。",
-          "pinyin": "wǒ xǐhuān dìtiě",
-          "meaning": "I like subway"
+          "hanzi": "我坐地铁上班。",
+          "pinyin": "wǒ zuò dì tiě shàng bān",
+          "meaning": "I take the subway to work."
         }
       ]
     },
     {
       "hanzi": "坐",
       "pinyin": "zuò",
-      "meaning": "sit/take transport",
+      "meaning": "to sit; ride",
       "examples": [
         {
-          "hanzi": "我喜欢坐。",
-          "pinyin": "wǒ xǐhuān zuò",
-          "meaning": "I like sit/take transport"
+          "hanzi": "我们坐出租车去。",
+          "pinyin": "wǒ men zuò chū zū chē qù",
+          "meaning": "We are taking a taxi there."
         }
       ]
     },
     {
       "hanzi": "不准",
-      "pinyin": "bùzhǔn",
+      "pinyin": "bù zhǔn",
       "meaning": "not allowed",
       "examples": [
         {
-          "hanzi": "我喜欢不准。",
-          "pinyin": "wǒ xǐhuān bùzhǔn",
-          "meaning": "I like not allowed"
+          "hanzi": "这里不准停车。",
+          "pinyin": "zhè lǐ bù zhǔn tíng chē",
+          "meaning": "Parking is not allowed here."
         }
       ]
     },
     {
       "hanzi": "准",
       "pinyin": "zhǔn",
-      "meaning": "accurate",
+      "meaning": "accurate; on time",
       "examples": [
         {
-          "hanzi": "我喜欢准。",
-          "pinyin": "wǒ xǐhuān zhǔn",
-          "meaning": "I like accurate"
+          "hanzi": "他每天都很准。",
+          "pinyin": "tā měi tiān dōu hěn zhǔn",
+          "meaning": "He is punctual every day."
         }
       ]
     },
     {
       "hanzi": "出租车",
-      "pinyin": "chūzūchē",
+      "pinyin": "chū zū chē",
       "meaning": "taxi",
       "examples": [
         {
-          "hanzi": "我喜欢出租车。",
-          "pinyin": "wǒ xǐhuān chūzūchē",
-          "meaning": "I like taxi"
+          "hanzi": "出租车站在那边。",
+          "pinyin": "chū zū chē zhàn zài nà biān",
+          "meaning": "The taxi stand is over there."
         }
       ]
     },
     {
       "hanzi": "站",
       "pinyin": "zhàn",
-      "meaning": "station",
+      "meaning": "station; to stand",
       "examples": [
         {
-          "hanzi": "我喜欢站。",
-          "pinyin": "wǒ xǐhuān zhàn",
-          "meaning": "I like station"
+          "hanzi": "下一站是机场。",
+          "pinyin": "xià yí zhàn shì jī chǎng",
+          "meaning": "The next stop is the airport."
         }
       ]
     },
     {
       "hanzi": "下",
       "pinyin": "xià",
-      "meaning": "down",
+      "meaning": "down; get off",
       "examples": [
         {
-          "hanzi": "我喜欢下。",
-          "pinyin": "wǒ xǐhuān xià",
-          "meaning": "I like down"
+          "hanzi": "我在下一站下车。",
+          "pinyin": "wǒ zài xià yí zhàn xià chē",
+          "meaning": "I get off at the next stop."
         }
       ]
     },
@@ -152,69 +153,69 @@
       "meaning": "vehicle",
       "examples": [
         {
-          "hanzi": "我喜欢车。",
-          "pinyin": "wǒ xǐhuān chē",
-          "meaning": "I like vehicle"
+          "hanzi": "这辆车很新。",
+          "pinyin": "zhè liàng chē hěn xīn",
+          "meaning": "This car is very new."
         }
       ]
     },
     {
       "hanzi": "出",
       "pinyin": "chū",
-      "meaning": "exit",
+      "meaning": "to go out",
       "examples": [
         {
-          "hanzi": "我喜欢出。",
-          "pinyin": "wǒ xǐhuān chū",
-          "meaning": "I like exit"
+          "hanzi": "我们现在出去吧。",
+          "pinyin": "wǒ men xiàn zài chū qù ba",
+          "meaning": "Let's go out now."
         }
       ]
     },
     {
       "hanzi": "租",
       "pinyin": "zū",
-      "meaning": "rent",
+      "meaning": "to rent",
       "examples": [
         {
-          "hanzi": "我喜欢租。",
-          "pinyin": "wǒ xǐhuān zū",
-          "meaning": "I like rent"
+          "hanzi": "我想租一辆车。",
+          "pinyin": "wǒ xiǎng zū yí liàng chē",
+          "meaning": "I want to rent a car."
         }
       ]
     },
     {
       "hanzi": "可以",
-      "pinyin": "kěyǐ",
-      "meaning": "can/may",
+      "pinyin": "kě yǐ",
+      "meaning": "can; may",
       "examples": [
         {
-          "hanzi": "我喜欢可以。",
-          "pinyin": "wǒ xǐhuān kěyǐ",
-          "meaning": "I like can/may"
+          "hanzi": "这里可以坐吗？",
+          "pinyin": "zhè lǐ kě yǐ zuò ma",
+          "meaning": "May I sit here?"
         }
       ]
     },
     {
       "hanzi": "汽车",
-      "pinyin": "qìchē",
+      "pinyin": "qì chē",
       "meaning": "car",
       "examples": [
         {
-          "hanzi": "我喜欢汽车。",
-          "pinyin": "wǒ xǐhuān qìchē",
-          "meaning": "I like car"
+          "hanzi": "他开汽车去上班。",
+          "pinyin": "tā kāi qì chē qù shàng bān",
+          "meaning": "He drives a car to work."
         }
       ]
     },
     {
       "hanzi": "公共",
-      "pinyin": "gōnggòng",
+      "pinyin": "gōng gòng",
       "meaning": "public",
       "examples": [
         {
-          "hanzi": "我喜欢公共。",
-          "pinyin": "wǒ xǐhuān gōnggòng",
-          "meaning": "I like public"
+          "hanzi": "这是公共汽车站。",
+          "pinyin": "zhè shì gōng gòng qì chē zhàn",
+          "meaning": "This is the bus stop."
         }
       ]
     },
@@ -224,9 +225,9 @@
       "meaning": "boat",
       "examples": [
         {
-          "hanzi": "我喜欢船。",
-          "pinyin": "wǒ xǐhuān chuán",
-          "meaning": "I like boat"
+          "hanzi": "我们坐船去岛上。",
+          "pinyin": "wǒ men zuò chuán qù dǎo shàng",
+          "meaning": "We go to the island by boat."
         }
       ]
     },
@@ -236,24 +237,23 @@
       "meaning": "public",
       "examples": [
         {
-          "hanzi": "我喜欢公。",
-          "pinyin": "wǒ xǐhuān gōng",
-          "meaning": "I like public"
+          "hanzi": "这个地方是公共的。",
+          "pinyin": "zhè ge dì fang shì gōng gòng de",
+          "meaning": "This place is public."
         }
       ]
     },
     {
       "hanzi": "汽",
       "pinyin": "qì",
-      "meaning": "steam",
+      "meaning": "steam; gas",
       "examples": [
         {
-          "hanzi": "我喜欢汽。",
-          "pinyin": "wǒ xǐhuān qì",
-          "meaning": "I like steam"
+          "hanzi": "汽车用汽油。",
+          "pinyin": "qì chē yòng qì yóu",
+          "meaning": "Cars use gasoline."
         }
       ]
     }
-  ],
-  "icon": "🚇"
+  ]
 }

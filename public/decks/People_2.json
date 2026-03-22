@@ -1,175 +1,175 @@
 {
   "name": "People 2",
   "group": "Unit 5",
+  "icon": "🙂",
   "cards": [
     {
       "hanzi": "绍",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shào",
+      "meaning": "introduce (part)",
       "examples": [
         {
-          "hanzi": "我看到绍。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我给你介绍朋友。",
+          "pinyin": "wǒ gěi nǐ jièshào péngyou",
+          "meaning": "I introduce a friend to you."
         }
       ]
     },
     {
       "hanzi": "介",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jiè",
+      "meaning": "introduce (part)",
       "examples": [
         {
-          "hanzi": "我看到介。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "让我介绍一下。",
+          "pinyin": "ràng wǒ jièshào yíxià",
+          "meaning": "Let me introduce."
         }
       ]
     },
     {
       "hanzi": "介绍",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "jiè shào",
+      "meaning": "to introduce",
       "examples": [
         {
-          "hanzi": "我看到介绍。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "我介绍他给你。",
+          "pinyin": "wǒ jièshào tā gěi nǐ",
+          "meaning": "I introduce him to you."
         }
       ]
     },
     {
       "hanzi": "帅",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shuài",
+      "meaning": "handsome",
       "examples": [
         {
-          "hanzi": "我看到帅。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他很帅。",
+          "pinyin": "tā hěn shuài",
+          "meaning": "He is handsome."
         }
       ]
     },
     {
       "hanzi": "笑",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "xiào",
+      "meaning": "to smile",
       "examples": [
         {
-          "hanzi": "我看到笑。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "她笑得很开心。",
+          "pinyin": "tā xiào de hěn kāixīn",
+          "meaning": "She smiles happily."
         }
       ]
     },
     {
       "hanzi": "说话",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "shuō huà",
+      "meaning": "to speak",
       "examples": [
         {
-          "hanzi": "我看到说话。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他说话很慢。",
+          "pinyin": "tā shuōhuà hěn màn",
+          "meaning": "He speaks slowly."
         }
       ]
     },
     {
       "hanzi": "话",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "huà",
+      "meaning": "speech; words",
       "examples": [
         {
-          "hanzi": "我看到话。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他说很多话。",
+          "pinyin": "tā shuō hěn duō huà",
+          "meaning": "He says many words."
         }
       ]
     },
     {
       "hanzi": "聪明",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "cōng míng",
+      "meaning": "smart",
       "examples": [
         {
-          "hanzi": "我看到聪明。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "这个学生很聪明。",
+          "pinyin": "zhège xuéshēng hěn cōngmíng",
+          "meaning": "This student is smart."
         }
       ]
     },
     {
       "hanzi": "别人",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "bié rén",
+      "meaning": "other people",
       "examples": [
         {
-          "hanzi": "我看到别人。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "不要说别人坏话。",
+          "pinyin": "búyào shuō biérén huà",
+          "meaning": "Do not speak badly about others."
         }
       ]
     },
     {
       "hanzi": "不但",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "bù dàn",
+      "meaning": "not only",
       "examples": [
         {
-          "hanzi": "我看到不但。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他不但聪明，还很努力。",
+          "pinyin": "tā bùdàn cōngmíng hái hěn nǔlì",
+          "meaning": "He is not only smart but hardworking."
         }
       ]
     },
     {
       "hanzi": "而且",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "ér qiě",
+      "meaning": "and also",
       "examples": [
         {
-          "hanzi": "我看到而且。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "她漂亮而且善良。",
+          "pinyin": "tā piàoliang érqiě shànliáng",
+          "meaning": "She is pretty and kind."
         }
       ]
     },
     {
       "hanzi": "聪",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "cōng",
+      "meaning": "clever",
       "examples": [
         {
-          "hanzi": "我看到聪。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "他很聪。",
+          "pinyin": "tā hěn cōng",
+          "meaning": "He is clever."
         }
       ]
     },
     {
       "hanzi": "而",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "ér",
+      "meaning": "and; but",
       "examples": [
         {
-          "hanzi": "我看到而。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "聪明而努力。",
+          "pinyin": "cōngmíng ér nǔlì",
+          "meaning": "Smart and hardworking."
         }
       ]
     },
     {
       "hanzi": "且",
-      "pinyin": "",
-      "meaning": "",
+      "pinyin": "qiě",
+      "meaning": "and; moreover",
       "examples": [
         {
-          "hanzi": "我看到且。",
-          "pinyin": "",
-          "meaning": ""
+          "hanzi": "而且他很高。",
+          "pinyin": "érqiě tā hěn gāo",
+          "meaning": "Moreover he is tall."
         }
       ]
     }
-  ],
-  "icon": "👤"
+  ]
 }

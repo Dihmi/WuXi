@@ -1,6 +1,7 @@
 {
   "name": "Dining 1",
   "group": "Unit 4",
+  "icon": "🍜",
   "cards": [
     {
       "hanzi": "海",
@@ -8,9 +9,9 @@
       "meaning": "sea",
       "examples": [
         {
-          "hanzi": "我喜欢海。",
-          "pinyin": "wǒ xǐhuān hǎi",
-          "meaning": "I like sea"
+          "hanzi": "上海在海边。",
+          "pinyin": "Shànghǎi zài hǎi biān",
+          "meaning": "Shanghai is by the sea."
         }
       ]
     },
@@ -20,9 +21,9 @@
       "meaning": "classifier for books",
       "examples": [
         {
-          "hanzi": "我喜欢本。",
-          "pinyin": "wǒ xǐhuān běn",
-          "meaning": "I like classifier for books"
+          "hanzi": "这本菜单很好看。",
+          "pinyin": "zhè běn cài dān hěn hǎo kàn",
+          "meaning": "This menu looks nice."
         }
       ]
     },
@@ -32,9 +33,9 @@
       "meaning": "still; also",
       "examples": [
         {
-          "hanzi": "我喜欢还。",
-          "pinyin": "wǒ xǐhuān hái",
-          "meaning": "I like still; also"
+          "hanzi": "我还要一杯饮料。",
+          "pinyin": "wǒ hái yào yì bēi yǐn liào",
+          "meaning": "I still want another drink."
         }
       ]
     },
@@ -44,9 +45,9 @@
       "meaning": "Shanghai",
       "examples": [
         {
-          "hanzi": "我喜欢上海。",
-          "pinyin": "wǒ xǐhuān Shànghǎi",
-          "meaning": "I like Shanghai"
+          "hanzi": "我想去上海吃上海菜。",
+          "pinyin": "wǒ xiǎng qù Shànghǎi chī Shànghǎi cài",
+          "meaning": "I want to go to Shanghai to eat Shanghai cuisine."
         }
       ]
     },
@@ -56,9 +57,9 @@
       "meaning": "dish; cuisine",
       "examples": [
         {
-          "hanzi": "我喜欢菜。",
-          "pinyin": "wǒ xǐhuān cài",
-          "meaning": "I like dish; cuisine"
+          "hanzi": "这个菜很好吃。",
+          "pinyin": "zhè ge cài hěn hǎo chī",
+          "meaning": "This dish is delicious."
         }
       ]
     },
@@ -68,9 +69,9 @@
       "meaning": "or",
       "examples": [
         {
-          "hanzi": "我喜欢还是。",
-          "pinyin": "wǒ xǐhuān háishì",
-          "meaning": "I like or"
+          "hanzi": "你要米饭还是面条？",
+          "pinyin": "nǐ yào mǐ fàn hái shì miàn tiáo",
+          "meaning": "Do you want rice or noodles?"
         }
       ]
     },
@@ -80,9 +81,9 @@
       "meaning": "Japan",
       "examples": [
         {
-          "hanzi": "我喜欢日本。",
-          "pinyin": "wǒ xǐhuān Rìběn",
-          "meaning": "I like Japan"
+          "hanzi": "他喜欢日本菜。",
+          "pinyin": "tā xǐ huan Rìběn cài",
+          "meaning": "He likes Japanese food."
         }
       ]
     },
@@ -92,93 +93,93 @@
       "meaning": "meat",
       "examples": [
         {
-          "hanzi": "我喜欢肉。",
-          "pinyin": "wǒ xǐhuān ròu",
-          "meaning": "I like meat"
+          "hanzi": "我今天不想吃肉。",
+          "pinyin": "wǒ jīn tiān bù xiǎng chī ròu",
+          "meaning": "I do not want to eat meat today."
         }
       ]
     },
     {
       "hanzi": "米饭",
-      "pinyin": "mǐfàn",
+      "pinyin": "mǐ fàn",
       "meaning": "rice",
       "examples": [
         {
-          "hanzi": "我喜欢米饭。",
-          "pinyin": "wǒ xǐhuān mǐfàn",
-          "meaning": "I like rice"
+          "hanzi": "请给我一碗米饭。",
+          "pinyin": "qǐng gěi wǒ yì wǎn mǐ fàn",
+          "meaning": "Please give me a bowl of rice."
         }
       ]
     },
     {
       "hanzi": "面条",
-      "pinyin": "miàntiáo",
+      "pinyin": "miàn tiáo",
       "meaning": "noodles",
       "examples": [
         {
-          "hanzi": "我喜欢面条。",
-          "pinyin": "wǒ xǐhuān miàntiáo",
-          "meaning": "I like noodles"
+          "hanzi": "这家的面条很有名。",
+          "pinyin": "zhè jiā de miàn tiáo hěn yǒu míng",
+          "meaning": "The noodles here are very famous."
         }
       ]
     },
     {
       "hanzi": "鸡肉",
-      "pinyin": "jīròu",
+      "pinyin": "jī ròu",
       "meaning": "chicken",
       "examples": [
         {
-          "hanzi": "我喜欢鸡肉。",
-          "pinyin": "wǒ xǐhuān jīròu",
-          "meaning": "I like chicken"
+          "hanzi": "我想点鸡肉。",
+          "pinyin": "wǒ xiǎng diǎn jī ròu",
+          "meaning": "I want to order chicken."
         }
       ]
     },
     {
       "hanzi": "牛肉",
-      "pinyin": "niúròu",
+      "pinyin": "niú ròu",
       "meaning": "beef",
       "examples": [
         {
-          "hanzi": "我喜欢牛肉。",
-          "pinyin": "wǒ xǐhuān niúròu",
-          "meaning": "I like beef"
+          "hanzi": "牛肉面很好吃。",
+          "pinyin": "niú ròu miàn hěn hǎo chī",
+          "meaning": "Beef noodles are delicious."
         }
       ]
     },
     {
       "hanzi": "猪肉",
-      "pinyin": "zhūròu",
+      "pinyin": "zhū ròu",
       "meaning": "pork",
       "examples": [
         {
-          "hanzi": "我喜欢猪肉。",
-          "pinyin": "wǒ xǐhuān zhūròu",
-          "meaning": "I like pork"
+          "hanzi": "他不吃猪肉。",
+          "pinyin": "tā bù chī zhū ròu",
+          "meaning": "He does not eat pork."
         }
       ]
     },
     {
       "hanzi": "羊肉",
-      "pinyin": "yángròu",
-      "meaning": "lamb",
+      "pinyin": "yáng ròu",
+      "meaning": "lamb; mutton",
       "examples": [
         {
-          "hanzi": "我喜欢羊肉。",
-          "pinyin": "wǒ xǐhuān yángròu",
-          "meaning": "I like lamb"
+          "hanzi": "冬天吃羊肉很好。",
+          "pinyin": "dōng tiān chī yáng ròu hěn hǎo",
+          "meaning": "Eating lamb in winter is great."
         }
       ]
     },
     {
       "hanzi": "饮料",
-      "pinyin": "yǐnliào",
-      "meaning": "drink",
+      "pinyin": "yǐn liào",
+      "meaning": "drink; beverage",
       "examples": [
         {
-          "hanzi": "我喜欢饮料。",
-          "pinyin": "wǒ xǐhuān yǐnliào",
-          "meaning": "I like drink"
+          "hanzi": "你要什么饮料？",
+          "pinyin": "nǐ yào shén me yǐn liào",
+          "meaning": "What drink would you like?"
         }
       ]
     },
@@ -188,9 +189,9 @@
       "meaning": "pig",
       "examples": [
         {
-          "hanzi": "我喜欢猪。",
-          "pinyin": "wǒ xǐhuān zhū",
-          "meaning": "I like pig"
+          "hanzi": "猪肉是猪的肉。",
+          "pinyin": "zhū ròu shì zhū de ròu",
+          "meaning": "Pork is meat from a pig."
         }
       ]
     },
@@ -200,36 +201,35 @@
       "meaning": "sheep",
       "examples": [
         {
-          "hanzi": "我喜欢羊。",
-          "pinyin": "wǒ xǐhuān yáng",
-          "meaning": "I like sheep"
+          "hanzi": "羊肉来自羊。",
+          "pinyin": "yáng ròu lái zì yáng",
+          "meaning": "Lamb comes from sheep."
         }
       ]
     },
     {
       "hanzi": "饮",
       "pinyin": "yǐn",
-      "meaning": "drink (formal)",
+      "meaning": "to drink",
       "examples": [
         {
-          "hanzi": "我喜欢饮。",
-          "pinyin": "wǒ xǐhuān yǐn",
-          "meaning": "I like drink (formal)"
+          "hanzi": "多饮水对身体好。",
+          "pinyin": "duō yǐn shuǐ duì shēn tǐ hǎo",
+          "meaning": "Drinking more water is good for the body."
         }
       ]
     },
     {
       "hanzi": "料",
       "pinyin": "liào",
-      "meaning": "ingredient",
+      "meaning": "ingredient; material",
       "examples": [
         {
-          "hanzi": "我喜欢料。",
-          "pinyin": "wǒ xǐhuān liào",
-          "meaning": "I like ingredient"
+          "hanzi": "这个菜的料很多。",
+          "pinyin": "zhè ge cài de liào hěn duō",
+          "meaning": "This dish has many ingredients."
         }
       ]
     }
-  ],
-  "icon": "🍚"
+  ]
 }
