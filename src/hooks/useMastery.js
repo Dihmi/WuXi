@@ -70,7 +70,9 @@ export default function useMastery(uid) {
       let { level, streak, correct: c, wrong: w } = cur;
       if (correct) { streak++; c++; if (level < 4) level++; }
       else         { streak = 0; w++; if (level > 0) level--; }
-      const next = { ...prev, [key]: { level, streak, correct: c, wrong: w, lastReviewed: Date.now() } };
+      const now = Date.now();
+      const prevLog = cur.log ?? [];
+      const next = { ...prev, [key]: { level, streak, correct: c, wrong: w, lastReviewed: now, log: [...prevLog, { t: now, c: correct ? 1 : 0 }] } };
       if (storageKey) localStorage.setItem(storageKey, JSON.stringify(next));
       pendingSync.current = true;
       return next;
