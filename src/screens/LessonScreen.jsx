@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef, useEffect, useLayoutEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { MASTERY_LEVELS } from '../data/lessons';
+import { MASTERY_LEVELS, QUIZ_TYPE_OPTIONS } from '../data/lessons';
 import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 import MasteryBadge from '../components/MasteryBadge';
@@ -58,31 +58,37 @@ function daysSince(ts) {
 const FILTER_OPTIONS = ['All', 'New', 'Learning', 'Familiar', 'Practiced', 'Mastered'];
 const QUIZ_COUNT_OPTIONS = [5, 10, 20, 'All'];
 
-export default function LessonScreen({ lesson, navigate, getWordMastery, getLessonProgress }) {
+export default function LessonScreen({ lesson, navigate, getWordMastery, getLessonProgress, setWordFlag }) {
   const [filter,    setFilter]    = useState('All');
   const [dropOpen,  setDropOpen]  = useState(false);
   const [menuPos,   setMenuPos]   = useState(null);
   const [countOpen, setCountOpen] = useState(false);
   const [countPos,  setCountPos]  = useState(null);
   const [quizCount, setQuizCount] = useState(10);
+  const [typeOpen,  setTypeOpen]  = useState(false);
+  const [typePos,   setTypePos]   = useState(null);
+  const [quizType,  setQuizType]  = useState('mix');
 
   const dropWrapRef  = useRef(null);
   const btnRef       = useRef(null);
   const countWrapRef = useRef(null);
   const countBtnRef  = useRef(null);
+  const typeWrapRef  = useRef(null);
+  const typeBtnRef   = useRef(null);
 
   const { pct, counts, totalReviews, lastReviewed } = getLessonProgress(lesson);
 
   /* ── Close dropdowns on outside click ──────────────────────── */
   useEffect(() => {
-    if (!dropOpen && !countOpen) return;
+    if (!dropOpen && !countOpen && !typeOpen) return;
     const h = (e) => {
       if (dropWrapRef.current && !dropWrapRef.current.contains(e.target)) setDropOpen(false);
       if (countWrapRef.current && !countWrapRef.current.contains(e.target)) setCountOpen(false);
+      if (typeWrapRef.current && !typeWrapRef.current.contains(e.target)) setTypeOpen(false);
     };
     document.addEventListener('mousedown', h);
     return () => document.removeEventListener('mousedown', h);
-  }, [dropOpen, countOpen]);
+  }, [dropOpen, countOpen, typeOpen]);
 
   /* ── Anchor filter menu ─────────────────────────────────────── */
   useLayoutEffect(() => {
@@ -97,6 +103,13 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
     const r = countBtnRef.current.getBoundingClientRect();
     setCountPos({ top: r.bottom + 6, left: r.left });
   }, [countOpen]);
+
+  /* ── Anchor type menu ───────────────────────────────────────── */
+  useLayoutEffect(() => {
+    if (!typeOpen || !typeBtnRef.current) { setTypePos(null); return; }
+    const r = typeBtnRef.current.getBoundingClientRect();
+    setTypePos({ top: r.bottom + 6, left: r.left });
+  }, [typeOpen]);
 
   const filteredWords = useMemo(() => {
     if (filter === 'All') return lesson.words;
@@ -116,7 +129,7 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
   const lastReviewedStr = daysSince(lastReviewed);
 
   function startQuiz() {
-    navigate('quiz', { lesson, quizCount: effectiveQuizCount });
+    navigate('quiz', { lesson, quizCount: effectiveQuizCount, quizType });
   }
 
   return (
@@ -219,8 +232,51 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
               </div>
             </div>
 
-            {/* Quiz button + count dropdown */}
+            {/* Quiz button + type + count dropdowns */}
             <div className="lesson-quiz-actions">
+              <div ref={typeWrapRef} className="wall-dd-wrap">
+                <button
+                  ref={typeBtnRef}
+                  className={`wall-dd-btn${typeOpen ? ' open' : ''}`}
+                  onClick={() => setTypeOpen(v => !v)}
+                  title="Quiz type"
+                >
+                  <span>{QUIZ_TYPE_OPTIONS.find(o => o.id === quizType)?.short ?? 'Mix'}</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                    style={{ transform: typeOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s' }}>
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </button>
+
+                {typeOpen && typePos && createPortal(
+                  <div
+                    className="wall-dd-menu quiz-type-menu"
+                    style={{ position: 'fixed', top: typePos.top, left: typePos.left, zIndex: 9999 }}
+                    onMouseDown={e => e.stopPropagation()}
+                  >
+                    {QUIZ_TYPE_OPTIONS.map(opt => (
+                      <button
+                        key={opt.id}
+                        className={`wall-dd-item${quizType === opt.id ? ' checked' : ''}`}
+                        onClick={() => { setQuizType(opt.id); setTypeOpen(false); }}
+                      >
+                        <span className="wall-dd-check">
+                          {quizType === opt.id && (
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                          )}
+                        </span>
+                        <span style={{ flex: 1 }}>{opt.label}</span>
+                      </button>
+                    ))}
+                  </div>,
+                  document.body
+                )}
+              </div>
+
               <div ref={countWrapRef} className="wall-dd-wrap">
                 <button
                   ref={countBtnRef}
@@ -284,21 +340,40 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
         ) : (
           <div className="word-grid">
             {filteredWords.map(w => {
-              const m = getWordMastery(wordKey(lesson.id, w.hanzi));
-              const ml = MASTERY_LEVELS[m.level];
+              const key = wordKey(lesson.id, w.hanzi);
+              const m   = getWordMastery(key);
+              const ml  = MASTERY_LEVELS[m.level];
+              const isFavorite = !!m.favorite;
+              const isReported = !!m.reported;
               return (
-                <div
-                  key={w.hanzi}
-                  className="card word-card"
-                  style={{ borderColor: `${ml.color}28` }}
-                  onClick={() => navigate('word', { lesson, word: w })}
-                >
-                  <div className="word-card-hanzi">{w.hanzi}</div>
-                  <div className="word-card-pinyin">{w.pinyin}</div>
-                  <div className="word-card-meaning">{w.meaning}</div>
-                  <div className="word-card-footer">
-                    <MasteryBadge level={m.level} />
+                <div key={w.hanzi} className="word-card-wrap">
+                  <div
+                    className={`card word-card${isReported ? ' word-card-reported' : ''}`}
+                    style={{ borderColor: isReported ? undefined : `${ml.color}28` }}
+                    onClick={() => navigate('word', { lesson, word: w })}
+                  >
+                    <div className="word-card-hanzi">{w.hanzi}</div>
+                    <div className="word-card-pinyin">{w.pinyin}</div>
+                    <div className="word-card-meaning">{w.meaning}</div>
+                    <div className="word-card-footer">
+                      <MasteryBadge level={m.level} />
+                    </div>
                   </div>
+
+                  {setWordFlag && (
+                    <div className="word-card-flags">
+                      <button
+                        className={`word-flag-icon-btn${isFavorite ? ' active-fav' : ''}`}
+                        onClick={e => { e.stopPropagation(); setWordFlag(key, 'favorite', !isFavorite); }}
+                        title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                      >★</button>
+                      <button
+                        className={`word-flag-icon-btn${isReported ? ' active-report' : ''}`}
+                        onClick={e => { e.stopPropagation(); setWordFlag(key, 'reported', !isReported); }}
+                        title={isReported ? 'Remove report' : 'Report card issue'}
+                      >⚑</button>
+                    </div>
+                  )}
                 </div>
               );
             })}

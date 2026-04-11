@@ -155,17 +155,18 @@ function popupHanziFontSize(hanzi) {
 }
 
 // ── Main component ───────────────────────────────────────────────────────────
-export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
+export default function HanziWallScreen({ lessons, navigate, getWordMastery, setWordFlag }) {
   const [search,        setSearch]        = usePersisted('search',        '');
   const [levelFilter,   setLevelFilter]   = usePersisted('levelFilter',   null);
   const [lessonFilters, setLessonFilters] = usePersisted('lessonFilters', null);
   const [groupFilter,   setGroupFilter]   = usePersisted('groupFilter',   null);
+  const [flagFilter,    setFlagFilter]    = usePersisted('flagFilter',    null);  // null | 'favorites' | 'reported'
   const [sort,          setSort]          = usePersisted('sort',          'lesson');
   const [showPinyin,    setShowPinyin]    = usePersisted('showPinyin',    true);
   const [showMeaning,   setShowMeaning]   = usePersisted('showMeaning',   true);
   const [tileSize,      setTileSize]      = usePersisted('tileSize',      'md');
   const [hoverAnim,     setHoverAnim]     = usePersisted('hoverAnim',     false);
-  const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'group'|'lesson'|'sort'|'display'|null
+  const [openDrop,      setOpenDrop]      = useState(null);   // 'level'|'group'|'lesson'|'sort'|'display'|'flag'|null
   const screenRef = useRef(null);
   const barRef = useRef(null);
 
@@ -215,10 +216,12 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
         if (lessonFilters.length === 0) return false;
         if (!lessonFilters.includes(lesson.id)) return false;
       }
+      if (flagFilter === 'favorites' && !mastery.favorite) return false;
+      if (flagFilter === 'reported'  && !mastery.reported) return false;
       if (q && !word.hanzi.includes(q) && !word.pinyin.toLowerCase().includes(q) && !word.meaning.toLowerCase().includes(q)) return false;
       return true;
     });
-  }, [allWords, groupFilter, levelFilter, lessonFilters, search]);
+  }, [allWords, groupFilter, levelFilter, lessonFilters, flagFilter, search]);
 
   // Sort
   const sorted = useMemo(() => {
@@ -334,6 +337,21 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
             })}
           </WallDropdown>
 
+          {/* Flags */}
+          <WallDropdown
+            id="flag"
+            label={flagFilter === 'favorites' ? '★ Favorites' : flagFilter === 'reported' ? '⚑ Reported' : 'Flags'}
+            active={flagFilter !== null}
+            open={openDrop === 'flag'}
+            onToggle={toggleDrop}
+            screenRef={screenRef}
+          >
+            <DDItem checked={flagFilter === null}        onClick={() => setFlagFilter(null)}>All</DDItem>
+            <DDDivider />
+            <DDItem checked={flagFilter === 'favorites'} onClick={() => setFlagFilter(prev => prev === 'favorites' ? null : 'favorites')}>★ Favorites</DDItem>
+            <DDItem checked={flagFilter === 'reported'}  onClick={() => setFlagFilter(prev => prev === 'reported'  ? null : 'reported')}>⚑ Reported</DDItem>
+          </WallDropdown>
+
           {/* Sort */}
           <WallDropdown
             id="sort"
@@ -379,16 +397,19 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
         ) : (
           <div className={`char-grid char-grid-${tileSize}`}>
             {sorted.map(({ word, lesson, mastery }) => {
-              const ml  = MASTERY_LEVELS[mastery.level];
-              const fs  = hanziFontSize(word.hanzi, tileSize);
-              const pfs = popupHanziFontSize(word.hanzi);
+              const ml         = MASTERY_LEVELS[mastery.level];
+              const fs         = hanziFontSize(word.hanzi, tileSize);
+              const pfs        = popupHanziFontSize(word.hanzi);
+              const key        = wordKey(lesson.id, word.hanzi);
+              const isFavorite = !!mastery.favorite;
+              const isReported = !!mastery.reported;
               return (
                 <div
                   key={`${lesson.id}-${word.hanzi}`}
                   className={`char-card-wrap${hoverAnim ? ' char-card-anim' : ''}`}
                 >
                   <button
-                    className={`char-card char-card-${tileSize}${!showPinyin && !showMeaning ? ' char-card-hanzi-only' : ''}`}
+                    className={`char-card char-card-${tileSize}${!showPinyin && !showMeaning ? ' char-card-hanzi-only' : ''}${isReported ? ' char-card-reported' : ''}`}
                     onClick={() => navigate('word', { lesson, word, from: 'wall' })}
                     title={`${word.hanzi} · ${word.pinyin} · ${word.meaning}`}
                   >
@@ -397,6 +418,17 @@ export default function HanziWallScreen({ lessons, navigate, getWordMastery }) {
                     {showMeaning && <div className="char-meaning">{word.meaning}</div>}
                     <div className="char-level-bar" style={{ background: ml.color }} />
                   </button>
+
+                  {/* Favorite toggle button */}
+                  {setWordFlag && (
+                    <button
+                      className={`char-fav-btn${isFavorite ? ' active' : ''}`}
+                      onClick={e => { e.stopPropagation(); setWordFlag(key, 'favorite', !isFavorite); }}
+                      title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                    >
+                      ★
+                    </button>
+                  )}
 
                   {hoverAnim && (
                     <div

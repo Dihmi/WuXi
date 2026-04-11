@@ -89,6 +89,17 @@ export default function useMastery(uid) {
     });
   }, [storageKey]);
 
+  // ── Toggle a boolean flag on a word (reported / favorite) ────
+  const setWordFlag = useCallback((key, flag, value) => {
+    setMasteryData(prev => {
+      const cur = prev[key] || { level: 0, streak: 0, correct: 0, wrong: 0 };
+      const next = { ...prev, [key]: { ...cur, [flag]: value } };
+      if (storageKey) localStorage.setItem(storageKey, JSON.stringify(next));
+      pendingSync.current = true;
+      return next;
+    });
+  }, [storageKey]);
+
   // ── Bulk replace (import) ─────────────────────────────────────
   const resetMastery = useCallback((data) => {
     if (storageKey) localStorage.setItem(storageKey, JSON.stringify(data));
@@ -117,5 +128,5 @@ export default function useMastery(uid) {
     return { pct, counts, totalReviews, lastReviewed };
   }, [getWordMastery]);
 
-  return { masteryData, updateMastery, setWordLevel, resetMastery, getWordMastery, getLessonProgress, syncError };
+  return { masteryData, updateMastery, setWordLevel, setWordFlag, resetMastery, getWordMastery, getLessonProgress, syncError };
 }

@@ -10,4 +10,13 @@ export const QUIZ_MODES = [
   { id: 0, label: 'Hanzi → Meaning', question: 'What does this mean?',         show: 'hanzi',   answer: 'meaning' },
   { id: 1, label: 'Meaning → Hanzi', question: 'Which character is this?',     show: 'meaning', answer: 'hanzi'   },
   { id: 2, label: 'Pinyin → Hanzi',  question: 'Which character matches?',     show: 'pinyin',  answer: 'hanzi'   },
+  { id: 3, label: 'Hanzi → Pinyin',  question: 'What is the pinyin?',          show: 'hanzi',   answer: 'pinyin'  },
+];
+
+export const QUIZ_TYPE_OPTIONS = [
+  { id: 'mix', label: 'Mix',             short: 'Mix'   },
+  { id: '0',   label: 'Hanzi → Meaning', short: 'H→M'   },
+  { id: '3',   label: 'Hanzi → Pinyin',  short: 'H→Pin' },
+  { id: '1',   label: 'Meaning → Hanzi', short: 'M→H'   },
+  { id: '2',   label: 'Pinyin → Hanzi',  short: 'Pin→H' },
 ];

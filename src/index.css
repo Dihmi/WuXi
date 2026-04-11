@@ -857,7 +857,10 @@ html, body {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px; padding: 0 20px;
 }
-.word-card { cursor: pointer; padding: 16px; border-radius: 14px; }
+/* ── Word card wrapper (for flag overlays) ── */
+.word-card-wrap { position: relative; }
+.word-card { cursor: pointer; padding: 16px; border-radius: 14px; width: 100%; }
+.word-card.word-card-reported { border-color: var(--danger) !important; box-shadow: 0 0 0 1px var(--danger); }
 .word-card-hanzi {
   font-family: 'Noto Serif SC', serif;
   font-size: 32px; font-weight: 700;
@@ -866,6 +869,29 @@ html, body {
 .word-card-pinyin  { font-size: 11px; color: var(--gold); margin-bottom: 5px; font-weight: 600; letter-spacing: 0.3px; }
 .word-card-meaning { font-size: 11px; color: var(--text3); line-height: 1.4; }
 .word-card-footer  { margin-top: 11px; }
+
+/* ── Flag icon buttons overlaid on word cards ── */
+.word-card-flags {
+  position: absolute; top: 6px; right: 6px;
+  display: flex; flex-direction: column; gap: 4px;
+  opacity: 0; transition: opacity 0.15s;
+}
+.word-card-wrap:hover .word-card-flags { opacity: 1; }
+.word-flag-icon-btn {
+  width: 22px; height: 22px;
+  border-radius: 50%; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text3);
+  font-size: 11px; cursor: pointer; line-height: 1;
+  display: flex; align-items: center; justify-content: center; padding: 0;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
+}
+.word-flag-icon-btn:hover     { color: var(--text); background: var(--surface3); }
+.word-flag-icon-btn.active-fav    { opacity: 1 !important; color: #eab308; background: rgba(234,179,8,0.15); border-color: #eab308; }
+.word-flag-icon-btn.active-report { opacity: 1 !important; color: var(--danger); background: var(--danger-bg); border-color: var(--danger); }
+/* Keep active buttons visible even without hover */
+.word-card-wrap .word-flag-icon-btn.active-fav,
+.word-card-wrap .word-flag-icon-btn.active-report { opacity: 1; }
+.word-card-wrap:not(:hover) .word-card-flags:has(.active-fav, .active-report) { opacity: 1; }
 
 /* ═══════════════════════════════════════════════════════════════
    WORD REVIEW SCREEN
@@ -907,6 +933,21 @@ html, body {
 .example-hanzi   { font-family: 'Noto Sans SC', 'Noto Serif SC', sans-serif; font-size: 19px; color: var(--text); margin-bottom: 5px; line-height: 1.4; }
 .example-pinyin  { font-size: 13px; color: var(--gold); margin-bottom: 5px; font-weight: 500; }
 .example-meaning { font-size: 13px; color: var(--text3); font-style: italic; line-height: 1.5; }
+
+/* ── Word viewer: favorite / report action row ── */
+.word-flag-row {
+  display: flex; gap: 8px; margin-bottom: 12px;
+}
+.word-flag-btn {
+  flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 9px 14px; border-radius: 12px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text2);
+  font-size: 12px; font-weight: 600; cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.word-flag-btn:hover { background: var(--surface3); color: var(--text); }
+.word-flag-btn.active-fav    { background: rgba(234,179,8,0.15); color: #eab308; border-color: #eab308; }
+.word-flag-btn.active-report { background: var(--danger-bg); color: var(--danger); border-color: var(--danger); }
 
 .stats-row {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px;
@@ -1054,6 +1095,44 @@ html, body {
 
 
 .quiz-nav { display: flex; justify-content: flex-end; }
+
+/* ── Card + side action column ────────────────────────── */
+.quiz-card-row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.quiz-card-row .quiz-flip-wrap {
+  flex: 1;
+  margin-bottom: 0;
+}
+.quiz-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 62px;
+  flex-shrink: 0;
+  animation: fade-in 0.18s ease;
+}
+@keyframes fade-in { from { opacity: 0; transform: translateX(6px); } to { opacity: 1; transform: none; } }
+.quiz-action-btn {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; padding: 10px 4px;
+  border-radius: 14px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text2);
+  font-size: 10px; font-weight: 600; cursor: pointer; width: 100%;
+  transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.1s;
+}
+.quiz-action-btn:hover { background: var(--surface3); color: var(--text); transform: scale(1.04); }
+.quiz-action-btn.active-fav    { background: rgba(234,179,8,0.15); color: #eab308; border-color: #eab308; }
+.quiz-action-btn.active-report { background: var(--danger-bg); color: var(--danger); border-color: var(--danger); }
+.quiz-action-next {
+  margin-top: auto;
+  background: var(--accent); color: #fff; border-color: var(--accent);
+  padding: 14px 4px;
+}
+.quiz-action-next:hover { background: var(--accent); filter: brightness(1.1); transform: scale(1.04); }
 
 /* ═══════════════════════════════════════════════════════════════
    QUIZ SUMMARY
@@ -1531,6 +1610,28 @@ html, body {
   position: absolute; bottom: 0; left: 0; right: 0;
   height: 3px; border-radius: 0 0 12px 12px;
 }
+
+/* ── Reported card indicator ── */
+.char-card.char-card-reported {
+  border-color: var(--danger) !important;
+  box-shadow: 0 0 0 1px var(--danger);
+}
+
+/* ── Favorite star button ── */
+.char-fav-btn {
+  position: absolute; top: 4px; right: 4px; z-index: 10;
+  width: 20px; height: 20px;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 50%; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; line-height: 1;
+  color: var(--text3); opacity: 0;
+  transition: opacity 0.15s, color 0.15s, background 0.15s;
+  padding: 0;
+}
+.char-card-wrap:hover .char-fav-btn { opacity: 1; }
+.char-fav-btn.active { opacity: 1; color: #eab308; background: rgba(234,179,8,0.15); border-color: #eab308; }
+.char-fav-btn:hover  { opacity: 1; color: #eab308; }
 
 /* ── Hover pop-up overlay ── */
 .char-card-wrap { position: relative; width: 100%; box-sizing: border-box; }

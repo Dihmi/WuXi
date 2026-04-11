@@ -5,10 +5,13 @@ import { wordKey } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 import MasteryBadge from '../components/MasteryBadge';
 
-export default function WordReviewScreen({ word, lesson, navigate, getWordMastery, setWordLevel, wordOrigin }) {
+export default function WordReviewScreen({ word, lesson, navigate, getWordMastery, setWordLevel, setWordFlag, wordOrigin }) {
   const [pendingLevel, setPendingLevel] = useState(null);
-  const m = getWordMastery(wordKey(lesson.id, word.hanzi));
+  const key = wordKey(lesson.id, word.hanzi);
+  const m = getWordMastery(key);
   const ml = MASTERY_LEVELS[m.level];
+  const isFavorite = !!m.favorite;
+  const isReported = !!m.reported;
   const total = m.correct + m.wrong;
   const accuracy = total > 0 ? Math.round(m.correct / total * 100) : 0;
 
@@ -74,6 +77,35 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
               </>
             )}
           </div>
+
+          {/* ── Favorite / Report actions ───────────────────────── */}
+          {setWordFlag && (
+            <div className="word-flag-row slide-up" style={{ animationDelay: '0.03s' }}>
+              <button
+                className={`word-flag-btn${isFavorite ? ' active-fav' : ''}`}
+                onClick={() => setWordFlag(key, 'favorite', !isFavorite)}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24"
+                  fill={isFavorite ? 'currentColor' : 'none'}
+                  stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                {isFavorite ? 'Saved to favorites' : 'Add to favorites'}
+              </button>
+              <button
+                className={`word-flag-btn${isReported ? ' active-report' : ''}`}
+                onClick={() => setWordFlag(key, 'reported', !isReported)}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24"
+                  fill={isReported ? 'currentColor' : 'none'}
+                  stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                  <line x1="4" y1="22" x2="4" y2="15"/>
+                </svg>
+                {isReported ? 'Reported' : 'Report issue'}
+              </button>
+            </div>
+          )}
 
           {/* ── Stats ───────────────────────────────────────────── */}
           <div className="stats-row slide-up" style={{ animationDelay: '0.05s' }}>
@@ -152,7 +184,7 @@ export default function WordReviewScreen({ word, lesson, navigate, getWordMaster
                 className="btn btn-primary"
                 style={{ background: MASTERY_LEVELS[pendingLevel].color, borderColor: MASTERY_LEVELS[pendingLevel].color }}
                 onClick={() => {
-                  setWordLevel(wordKey(lesson.id, word.hanzi), pendingLevel);
+                  setWordLevel(key, pendingLevel);
                   setPendingLevel(null);
                 }}
               >
