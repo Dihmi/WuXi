@@ -43,7 +43,7 @@ function buildQuiz(lesson, getWordMastery, quizLength, quizType = 'mix') {
   return questions;
 }
 
-export default function QuizScreen({ lesson, navigate, updateMastery, getWordMastery, quizCount = 10, quizType = 'mix' }) {
+export default function QuizScreen({ lesson, navigate, updateMastery, getWordMastery, setWordFlag, quizCount = 10, quizType = 'mix' }) {
   const questions = useMemo(() => buildQuiz(lesson, getWordMastery, quizCount, quizType), [lesson, quizCount, quizType]);
   const [qIdx,     setQIdx]     = useState(0);
   const [selected, setSelected] = useState(null);
@@ -53,6 +53,16 @@ export default function QuizScreen({ lesson, navigate, updateMastery, getWordMas
   const q = questions[qIdx];
   const answered    = selected !== null;
   const correctIdx  = q ? q.options.findIndex(o => o.hanzi === q.word.hanzi) : -1;
+
+  const currentKey      = q ? wordKey(lesson.id, q.word.hanzi) : null;
+  const currentMastery  = q ? getWordMastery(currentKey) : null;
+  const isReported      = currentMastery?.reported  ?? false;
+  const isFavorite      = currentMastery?.favorite  ?? false;
+
+  function toggleFlag(flag, current) {
+    if (!currentKey) return;
+    setWordFlag(currentKey, flag, !current);
+  }
 
   function handleSelect(idx) {
     if (answered) return;
@@ -240,6 +250,40 @@ export default function QuizScreen({ lesson, navigate, updateMastery, getWordMas
                     ))}
                   </div>
                 )}
+
+                {/* Card actions: favorite, report, next */}
+                <div className="reveal-actions">
+                  <button
+                    className={`reveal-flag-btn${isFavorite ? ' active-fav' : ''}`}
+                    onClick={() => toggleFlag('favorite', isFavorite)}
+                    title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                  >
+                    <svg width="14" height="14" viewBox="0 0 24 24"
+                      fill={isFavorite ? 'currentColor' : 'none'}
+                      stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    {isFavorite ? 'Saved' : 'Favorite'}
+                  </button>
+
+                  <button
+                    className={`reveal-flag-btn${isReported ? ' active-report' : ''}`}
+                    onClick={() => toggleFlag('reported', isReported)}
+                    title={isReported ? 'Remove report' : 'Report card issue'}
+                  >
+                    <svg width="14" height="14" viewBox="0 0 24 24"
+                      fill={isReported ? 'currentColor' : 'none'}
+                      stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                      <line x1="4" y1="22" x2="4" y2="15"/>
+                    </svg>
+                    {isReported ? 'Reported' : 'Report'}
+                  </button>
+
+                  <button className="btn btn-primary reveal-next-btn" onClick={handleNext}>
+                    {qIdx + 1 >= questions.length ? 'Results' : 'Next →'}
+                  </button>
+                </div>
               </div>
 
             </div>
@@ -248,13 +292,6 @@ export default function QuizScreen({ lesson, navigate, updateMastery, getWordMas
           {/* Options */}
           <div className="quiz-options pop-in" key={`opts-${qIdx}`}>
             {q.options.map((opt, idx) => renderOption(opt, idx))}
-          </div>
-
-          {/* Next */}
-          <div className="quiz-nav">
-            <button className="btn btn-primary" onClick={handleNext} disabled={!answered}>
-              {qIdx + 1 >= questions.length ? 'See Results' : 'Next →'}
-            </button>
           </div>
 
         </div>

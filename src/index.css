@@ -1055,6 +1055,25 @@ html, body {
 
 .quiz-nav { display: flex; justify-content: flex-end; }
 
+/* ── Reveal card actions (favorite / report / next) ─── */
+.reveal-actions {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 16px; padding-top: 14px;
+  border-top: 1px solid var(--border);
+  width: 100%; justify-content: flex-end; flex-wrap: wrap;
+}
+.reveal-flag-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 6px 12px; border-radius: 20px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text2);
+  font-size: 12px; font-weight: 600; cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.reveal-flag-btn:hover { background: var(--surface3); color: var(--text); }
+.reveal-flag-btn.active-fav    { background: rgba(234,179,8,0.15); color: #eab308; border-color: #eab308; }
+.reveal-flag-btn.active-report { background: var(--danger-bg); color: var(--danger); border-color: var(--danger); }
+.reveal-next-btn { margin-left: auto; }
+
 /* ═══════════════════════════════════════════════════════════════
    QUIZ SUMMARY
    ═══════════════════════════════════════════════════════════════ */
@@ -1531,6 +1550,28 @@ html, body {
   position: absolute; bottom: 0; left: 0; right: 0;
   height: 3px; border-radius: 0 0 12px 12px;
 }
+
+/* ── Reported card indicator ── */
+.char-card.char-card-reported {
+  border-color: var(--danger) !important;
+  box-shadow: 0 0 0 1px var(--danger);
+}
+
+/* ── Favorite star button ── */
+.char-fav-btn {
+  position: absolute; top: 4px; right: 4px; z-index: 10;
+  width: 20px; height: 20px;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 50%; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; line-height: 1;
+  color: var(--text3); opacity: 0;
+  transition: opacity 0.15s, color 0.15s, background 0.15s;
+  padding: 0;
+}
+.char-card-wrap:hover .char-fav-btn { opacity: 1; }
+.char-fav-btn.active { opacity: 1; color: #eab308; background: rgba(234,179,8,0.15); border-color: #eab308; }
+.char-fav-btn:hover  { opacity: 1; color: #eab308; }
 
 /* ── Hover pop-up overlay ── */
 .char-card-wrap { position: relative; width: 100%; box-sizing: border-box; }

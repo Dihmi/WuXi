@@ -47,7 +47,7 @@ export default function App() {
     }, { merge: true }).catch(() => {});
   }, [currentProfile]);
 
-  const { masteryData, updateMastery, setWordLevel, resetMastery, getWordMastery, getLessonProgress, syncError } =
+  const { masteryData, updateMastery, setWordLevel, setWordFlag, resetMastery, getWordMastery, getLessonProgress, syncError } =
     useMastery(currentProfile?.id);
 
   const daysLearning = useMemo(() => {
@@ -198,6 +198,7 @@ export default function App() {
           navigate={navigate}
           updateMastery={updateMastery}
           getWordMastery={getWordMastery}
+          setWordFlag={setWordFlag}
           quizCount={quizCount}
           quizType={quizType}
         />
@@ -207,6 +208,7 @@ export default function App() {
           lessons={allLessons}
           navigate={navigate}
           getWordMastery={getWordMastery}
+          setWordFlag={setWordFlag}
         />
       )}
       {screen === 'leaderboard' && (
