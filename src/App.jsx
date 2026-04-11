@@ -21,6 +21,7 @@ export default function App() {
   const [wordOrigin,     setWordOrigin]     = useState('lesson');
   const [showTheme,      setShowTheme]      = useState(false);
   const [quizCount,      setQuizCount]      = useState(10);
+  const [quizType,       setQuizType]       = useState('mix');
 
   const { user, signInWithGoogle, logout } = useAuth();
   const { theme, applyTheme, themes }      = useTheme();
@@ -65,6 +66,7 @@ export default function App() {
     if (data.lesson     !== undefined) setSelectedLesson(data.lesson);
     if (data.word       !== undefined) setSelectedWord(data.word);
     if (data.quizCount  !== undefined) setQuizCount(data.quizCount);
+    if (data.quizType   !== undefined) setQuizType(data.quizType);
     setTimeout(() => {
       const s = document.querySelector('.screen');
       if (s) s.scrollTop = 0;
@@ -197,6 +199,7 @@ export default function App() {
           updateMastery={updateMastery}
           getWordMastery={getWordMastery}
           quizCount={quizCount}
+          quizType={quizType}
         />
       )}
       {screen === 'wall' && (

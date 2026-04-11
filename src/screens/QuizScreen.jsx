@@ -3,7 +3,13 @@ import { QUIZ_MODES } from '../data/lessons';
 import { wordKey, shuffle } from '../utils/helpers';
 import NavBar from '../components/NavBar';
 
-function buildQuiz(lesson, getWordMastery, quizLength) {
+function getModeForQuestion(idx, quizType) {
+  if (quizType === 'mix') return QUIZ_MODES[idx % QUIZ_MODES.length];
+  const modeId = parseInt(quizType, 10);
+  return QUIZ_MODES.find(m => m.id === modeId) ?? QUIZ_MODES[0];
+}
+
+function buildQuiz(lesson, getWordMastery, quizLength, quizType = 'mix') {
   const weighted = [];
   lesson.words.forEach(w => {
     const m = getWordMastery(wordKey(lesson.id, w.hanzi));
@@ -20,8 +26,7 @@ function buildQuiz(lesson, getWordMastery, quizLength) {
     if (questions.length >= quizLength) break;
     used.add(word.hanzi);
 
-    const modeIdx = questions.length % QUIZ_MODES.length;
-    const mode = QUIZ_MODES[modeIdx];
+    const mode = getModeForQuestion(questions.length, quizType);
     const others = shuffle(lesson.words.filter(w2 => w2.hanzi !== word.hanzi)).slice(0, 3);
     const allOpts = shuffle([word, ...others]);
     questions.push({ word, mode, options: allOpts });
@@ -29,8 +34,7 @@ function buildQuiz(lesson, getWordMastery, quizLength) {
 
   while (questions.length < Math.min(quizLength, lesson.words.length)) {
     const word = lesson.words[questions.length % lesson.words.length];
-    const modeIdx = questions.length % QUIZ_MODES.length;
-    const mode = QUIZ_MODES[modeIdx];
+    const mode = getModeForQuestion(questions.length, quizType);
     const others = shuffle(lesson.words.filter(w2 => w2.hanzi !== word.hanzi)).slice(0, 3);
     const allOpts = shuffle([word, ...others]);
     questions.push({ word, mode, options: allOpts });
@@ -39,8 +43,8 @@ function buildQuiz(lesson, getWordMastery, quizLength) {
   return questions;
 }
 
-export default function QuizScreen({ lesson, navigate, updateMastery, getWordMastery, quizCount = 10 }) {
-  const questions = useMemo(() => buildQuiz(lesson, getWordMastery, quizCount), [lesson, quizCount]);
+export default function QuizScreen({ lesson, navigate, updateMastery, getWordMastery, quizCount = 10, quizType = 'mix' }) {
+  const questions = useMemo(() => buildQuiz(lesson, getWordMastery, quizCount, quizType), [lesson, quizCount, quizType]);
   const [qIdx,     setQIdx]     = useState(0);
   const [selected, setSelected] = useState(null);
   const [results,  setResults]  = useState([]);
@@ -73,7 +77,7 @@ export default function QuizScreen({ lesson, navigate, updateMastery, getWordMas
       <>
         <div className="quiz-q-label">{mode.question}</div>
         <div className="quiz-hanzi">{word.hanzi}</div>
-        <div className="quiz-hanzi-sub">{word.pinyin}</div>
+        {mode.answer !== 'pinyin' && <div className="quiz-hanzi-sub">{word.pinyin}</div>}
       </>
     );
     if (mode.show === 'meaning') return (
@@ -108,6 +112,9 @@ export default function QuizScreen({ lesson, navigate, updateMastery, getWordMas
             <div className="quiz-opt-hanzi">{opt.hanzi}</div>
             {mode.show !== 'pinyin' && <div className="quiz-opt-pinyin">{opt.pinyin}</div>}
           </>
+        )}
+        {mode.answer === 'pinyin' && (
+          <div className="quiz-opt-pinyin">{opt.pinyin}</div>
         )}
       </div>
     );
