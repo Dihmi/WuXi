@@ -1055,24 +1055,43 @@ html, body {
 
 .quiz-nav { display: flex; justify-content: flex-end; }
 
-/* ── Reveal card actions (favorite / report / next) ─── */
-.reveal-actions {
-  display: flex; align-items: center; gap: 8px;
-  margin-top: 16px; padding-top: 14px;
-  border-top: 1px solid var(--border);
-  width: 100%; justify-content: flex-end; flex-wrap: wrap;
+/* ── Card + side action column ────────────────────────── */
+.quiz-card-row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-bottom: 18px;
 }
-.reveal-flag-btn {
-  display: inline-flex; align-items: center; gap: 5px;
-  padding: 6px 12px; border-radius: 20px; border: 1px solid var(--border);
+.quiz-card-row .quiz-flip-wrap {
+  flex: 1;
+  margin-bottom: 0;
+}
+.quiz-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 62px;
+  flex-shrink: 0;
+  animation: fade-in 0.18s ease;
+}
+@keyframes fade-in { from { opacity: 0; transform: translateX(6px); } to { opacity: 1; transform: none; } }
+.quiz-action-btn {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; padding: 10px 4px;
+  border-radius: 14px; border: 1px solid var(--border);
   background: var(--surface2); color: var(--text2);
-  font-size: 12px; font-weight: 600; cursor: pointer;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  font-size: 10px; font-weight: 600; cursor: pointer; width: 100%;
+  transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.1s;
 }
-.reveal-flag-btn:hover { background: var(--surface3); color: var(--text); }
-.reveal-flag-btn.active-fav    { background: rgba(234,179,8,0.15); color: #eab308; border-color: #eab308; }
-.reveal-flag-btn.active-report { background: var(--danger-bg); color: var(--danger); border-color: var(--danger); }
-.reveal-next-btn { margin-left: auto; }
+.quiz-action-btn:hover { background: var(--surface3); color: var(--text); transform: scale(1.04); }
+.quiz-action-btn.active-fav    { background: rgba(234,179,8,0.15); color: #eab308; border-color: #eab308; }
+.quiz-action-btn.active-report { background: var(--danger-bg); color: var(--danger); border-color: var(--danger); }
+.quiz-action-next {
+  margin-top: auto;
+  background: var(--accent); color: #fff; border-color: var(--accent);
+  padding: 14px 4px;
+}
+.quiz-action-next:hover { background: var(--accent); filter: brightness(1.1); transform: scale(1.04); }
 
 /* ═══════════════════════════════════════════════════════════════
    QUIZ SUMMARY
