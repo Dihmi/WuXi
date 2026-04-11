@@ -180,6 +180,7 @@ export default function App() {
           navigate={navigate}
           getWordMastery={getWordMastery}
           getLessonProgress={getLessonProgress}
+          setWordFlag={setWordFlag}
         />
       )}
       {screen === 'word' && selectedWord && selectedLesson && (
@@ -189,6 +190,7 @@ export default function App() {
           navigate={navigate}
           getWordMastery={getWordMastery}
           setWordLevel={setWordLevel}
+          setWordFlag={setWordFlag}
           wordOrigin={wordOrigin}
         />
       )}

@@ -58,7 +58,7 @@ function daysSince(ts) {
 const FILTER_OPTIONS = ['All', 'New', 'Learning', 'Familiar', 'Practiced', 'Mastered'];
 const QUIZ_COUNT_OPTIONS = [5, 10, 20, 'All'];
 
-export default function LessonScreen({ lesson, navigate, getWordMastery, getLessonProgress }) {
+export default function LessonScreen({ lesson, navigate, getWordMastery, getLessonProgress, setWordFlag }) {
   const [filter,    setFilter]    = useState('All');
   const [dropOpen,  setDropOpen]  = useState(false);
   const [menuPos,   setMenuPos]   = useState(null);
@@ -340,21 +340,40 @@ export default function LessonScreen({ lesson, navigate, getWordMastery, getLess
         ) : (
           <div className="word-grid">
             {filteredWords.map(w => {
-              const m = getWordMastery(wordKey(lesson.id, w.hanzi));
-              const ml = MASTERY_LEVELS[m.level];
+              const key = wordKey(lesson.id, w.hanzi);
+              const m   = getWordMastery(key);
+              const ml  = MASTERY_LEVELS[m.level];
+              const isFavorite = !!m.favorite;
+              const isReported = !!m.reported;
               return (
-                <div
-                  key={w.hanzi}
-                  className="card word-card"
-                  style={{ borderColor: `${ml.color}28` }}
-                  onClick={() => navigate('word', { lesson, word: w })}
-                >
-                  <div className="word-card-hanzi">{w.hanzi}</div>
-                  <div className="word-card-pinyin">{w.pinyin}</div>
-                  <div className="word-card-meaning">{w.meaning}</div>
-                  <div className="word-card-footer">
-                    <MasteryBadge level={m.level} />
+                <div key={w.hanzi} className="word-card-wrap">
+                  <div
+                    className={`card word-card${isReported ? ' word-card-reported' : ''}`}
+                    style={{ borderColor: isReported ? undefined : `${ml.color}28` }}
+                    onClick={() => navigate('word', { lesson, word: w })}
+                  >
+                    <div className="word-card-hanzi">{w.hanzi}</div>
+                    <div className="word-card-pinyin">{w.pinyin}</div>
+                    <div className="word-card-meaning">{w.meaning}</div>
+                    <div className="word-card-footer">
+                      <MasteryBadge level={m.level} />
+                    </div>
                   </div>
+
+                  {setWordFlag && (
+                    <div className="word-card-flags">
+                      <button
+                        className={`word-flag-icon-btn${isFavorite ? ' active-fav' : ''}`}
+                        onClick={e => { e.stopPropagation(); setWordFlag(key, 'favorite', !isFavorite); }}
+                        title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                      >★</button>
+                      <button
+                        className={`word-flag-icon-btn${isReported ? ' active-report' : ''}`}
+                        onClick={e => { e.stopPropagation(); setWordFlag(key, 'reported', !isReported); }}
+                        title={isReported ? 'Remove report' : 'Report card issue'}
+                      >⚑</button>
+                    </div>
+                  )}
                 </div>
               );
             })}
