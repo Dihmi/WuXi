@@ -35,6 +35,63 @@ function BubbleMosaic({ counts }) {
   );
 }
 
+function TrendLine({ data }) {
+  const W = 300, H = 44, pad = 2;
+  const max = Math.max(...data, 1);
+  const total = data.reduce((s, v) => s + v, 0);
+  const hasActivity = total > 0;
+
+  const pts = data.map((v, i) => [
+    pad + (i / (data.length - 1)) * (W - pad * 2),
+    pad + (1 - v / max) * (H - pad * 2),
+  ]);
+
+  // Smooth cubic bezier through all points
+  let linePath = `M ${pts[0][0]},${pts[0][1]}`;
+  for (let i = 1; i < pts.length; i++) {
+    const cpx = (pts[i - 1][0] + pts[i][0]) / 2;
+    linePath += ` C ${cpx},${pts[i - 1][1]} ${cpx},${pts[i][1]} ${pts[i][0]},${pts[i][1]}`;
+  }
+  const areaPath = `${linePath} L ${pts[pts.length - 1][0]},${H} L ${pts[0][0]},${H} Z`;
+
+  return (
+    <div className="hero-trend">
+      <div className="hero-trend-header">
+        <span className="hero-trend-label">Daily reviews</span>
+        <span className="hero-trend-meta">
+          {hasActivity ? `${total} in 14 days` : 'No activity yet'}
+        </span>
+      </div>
+      <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className="trend-svg"
+        aria-hidden="true">
+        <defs>
+          <linearGradient id="trendGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.28" />
+            <stop offset="100%" stopColor="var(--accent)" stopOpacity="0.01" />
+          </linearGradient>
+        </defs>
+        {hasActivity ? (
+          <>
+            <path d={areaPath} fill="url(#trendGrad)" />
+            <path d={linePath} fill="none" stroke="var(--accent)" strokeWidth="2"
+              strokeLinecap="round" strokeLinejoin="round" />
+            {/* Today marker dot */}
+            <circle cx={pts[pts.length - 1][0]} cy={pts[pts.length - 1][1]}
+              r="3" fill="var(--accent)" />
+          </>
+        ) : (
+          <line x1={pad} y1={H / 2} x2={W - pad} y2={H / 2}
+            stroke="var(--border)" strokeWidth="1.5" strokeDasharray="4 4" />
+        )}
+      </svg>
+      <div className="hero-trend-axis">
+        <span>14 days ago</span>
+        <span>Today</span>
+      </div>
+    </div>
+  );
+}
+
 function LessonDonut({ counts, pct, size = 54 }) {
   const total = counts.reduce((s, c) => s + c, 0);
   const cx = size / 2, cy = size / 2;
@@ -82,8 +139,8 @@ function LessonDonut({ counts, pct, size = 54 }) {
 }
 
 export default function HomeScreen({
-  lessons, deckStatus, deckErrors, navigate, getLessonProgress, daysLearning,
-  currentProfile, onThemeClick, onProfileClick, onLogout,
+  lessons, deckStatus, deckErrors, navigate, getLessonProgress, dailyActivity,
+  daysLearning, currentProfile, onThemeClick, onProfileClick, onLogout,
   onExport, onImport, onWall, onLeaderboard,
 }) {
   const [collapsedGroups, setCollapsedGroups] = useState({});
@@ -166,6 +223,8 @@ export default function HomeScreen({
               <span className="hsr-lbl">Days</span>
             </div>
           </div>
+
+          {dailyActivity && <TrendLine data={dailyActivity} />}
 
         </div>
 

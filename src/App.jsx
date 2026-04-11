@@ -60,6 +60,21 @@ export default function App() {
 
   const allLessons = useMemo(() => importedLessons, [importedLessons]);
 
+  // 14-day daily review counts (index 0 = 13 days ago, index 13 = today)
+  const dailyActivity = useMemo(() => {
+    const DAYS = 14;
+    const today = Math.floor(Date.now() / 86400000);
+    const counts = new Array(DAYS).fill(0);
+    Object.values(masteryData).forEach(m => {
+      if (!m.log) return;
+      m.log.forEach(({ t }) => {
+        const daysAgo = today - Math.floor(t / 86400000);
+        if (daysAgo >= 0 && daysAgo < DAYS) counts[DAYS - 1 - daysAgo]++;
+      });
+    });
+    return counts;
+  }, [masteryData]);
+
   const navigate = useCallback((nextScreen, data = {}) => {
     if (nextScreen === 'word') setWordOrigin(data.from ?? 'lesson');
     setScreen(nextScreen);
@@ -163,6 +178,7 @@ export default function App() {
           deckErrors={deckErrors}
           navigate={navigate}
           getLessonProgress={getLessonProgress}
+          dailyActivity={dailyActivity}
           daysLearning={daysLearning}
           currentProfile={currentProfile}
           onThemeClick={() => setShowTheme(true)}

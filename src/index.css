@@ -694,6 +694,29 @@ html, body {
   text-transform: uppercase; letter-spacing: 1px; line-height: 1; }
 .hsr-sep  { color: var(--border); font-size: 14px; line-height: 1; user-select: none; }
 
+/* ── Hero trendline ─────────────────────────────── */
+.hero-trend {
+  margin-top: 14px; padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.hero-trend-header {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 7px;
+}
+.hero-trend-label {
+  font-size: 9px; font-weight: 700; color: var(--text3);
+  text-transform: uppercase; letter-spacing: 1.1px;
+}
+.hero-trend-meta {
+  font-size: 9px; font-weight: 600; color: var(--text3);
+}
+.trend-svg { display: block; width: 100%; height: 44px; }
+.hero-trend-axis {
+  display: flex; justify-content: space-between;
+  font-size: 8px; color: var(--text3); margin-top: 5px;
+  font-weight: 600; letter-spacing: 0.3px;
+}
+
 /* Lesson group headers */
 .lesson-group { margin-bottom: 4px; }
 .lesson-group-header {
