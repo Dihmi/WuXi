@@ -36,14 +36,15 @@ function BubbleMosaic({ counts }) {
 }
 
 function TrendLine({ data }) {
-  const W = 300, H = 44, pad = 2;
+  const W = 300, padTop = 16, padBottom = 2, padSide = 2, chartH = 40;
+  const H = padTop + chartH + padBottom;
   const max = Math.max(...data, 1);
   const total = data.reduce((s, v) => s + v, 0);
   const hasActivity = total > 0;
 
   const pts = data.map((v, i) => [
-    pad + (i / (data.length - 1)) * (W - pad * 2),
-    pad + (1 - v / max) * (H - pad * 2),
+    padSide + (i / (data.length - 1)) * (W - padSide * 2),
+    padTop + (1 - v / max) * chartH,
   ]);
 
   // Smooth cubic bezier through all points
@@ -52,7 +53,7 @@ function TrendLine({ data }) {
     const cpx = (pts[i - 1][0] + pts[i][0]) / 2;
     linePath += ` C ${cpx},${pts[i - 1][1]} ${cpx},${pts[i][1]} ${pts[i][0]},${pts[i][1]}`;
   }
-  const areaPath = `${linePath} L ${pts[pts.length - 1][0]},${H} L ${pts[0][0]},${H} Z`;
+  const areaPath = `${linePath} L ${pts[pts.length - 1][0]},${H - padBottom} L ${pts[0][0]},${H - padBottom} Z`;
 
   return (
     <div className="hero-trend">
@@ -78,9 +79,18 @@ function TrendLine({ data }) {
             {/* Today marker dot */}
             <circle cx={pts[pts.length - 1][0]} cy={pts[pts.length - 1][1]}
               r="3" fill="var(--accent)" />
+            {/* Number labels above each non-zero point */}
+            {pts.map(([x, y], i) => data[i] > 0 && (
+              <text key={i} x={x} y={y - 5}
+                textAnchor="middle" fontSize="9" fontWeight="700"
+                fill="var(--accent)" fontFamily="inherit" opacity="0.9"
+              >
+                {data[i]}
+              </text>
+            ))}
           </>
         ) : (
-          <line x1={pad} y1={H / 2} x2={W - pad} y2={H / 2}
+          <line x1={padSide} y1={H / 2} x2={W - padSide} y2={H / 2}
             stroke="var(--border)" strokeWidth="1.5" strokeDasharray="4 4" />
         )}
       </svg>
