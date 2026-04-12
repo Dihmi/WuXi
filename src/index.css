@@ -710,7 +710,7 @@ html, body {
 .hero-trend-meta {
   font-size: 9px; font-weight: 600; color: var(--text3);
 }
-.trend-svg { display: block; width: 100%; height: 44px; }
+.trend-svg { display: block; width: 100%; height: 58px; }
 .hero-trend-axis {
   display: flex; justify-content: space-between;
   font-size: 8px; color: var(--text3); margin-top: 5px;
