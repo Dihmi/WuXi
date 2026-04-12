@@ -87,8 +87,7 @@ export default function QuizScreen({ lesson, navigate, updateMastery, getWordMas
       <>
         <div className="quiz-q-label">{mode.question}</div>
         <div className="quiz-hanzi">{word.hanzi}</div>
-        {mode.answer !== 'pinyin' && <div className="quiz-hanzi-sub">{word.pinyin}</div>}
-      </>
+</>
     );
     if (mode.show === 'meaning') return (
       <>
